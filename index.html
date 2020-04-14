@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./img/iPad-icon.png" type="image/png">
+    <meta name='description' content="iPad详细参数汇总, iPad Pro, iPad Air, iPad Mini, iPad">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPad</title>
+    <link rel="stylesheet" href="css/iPad.css">
+    <script src="../../lib/js/jquery-2.2.4.min.js"></script>
+    <script src="../../lib/js/vue.min.2.6.10.js"></script>
+</head>
+<body>
+
+<div class="container" id="app">
+
+    <div class="series" v-for="(series, index) in iPadsSeries" :key="index">
+        <div class="header">
+            <h3>{{series.title}}</h3>
+            <div class="sign">
+                <p>整理美化：<a class="link" href="https://kylebing.cn/">KyleBing</a></p>
+                <p>数据来源：<a class="link" href="https://en.wikipedia.org/wiki/iPad">Wikipedia.org</a></p>
+            </div>
+        </div>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                <tr>
+                    <th>iPad</th>
+                    <th>屏幕<sup>寸</sup></th>
+                    <th>分辨率<sup>px</sup></th>
+                    <th>密度<sup>ppi</sup></th>
+                    <th>长x宽<sup>mm</sup></th>
+                    <th>厚度<sup>mm</sup></th>
+                    <th>CPU<sup>GHz x 核</sup></th>
+                    <th>GPU<sup>核</sup></th>
+                    <th>内存<sup>GB</sup></th>
+                    <th>存储<sup>GB</sup></th>
+                    <th>电池<sup>mAh</sup></th>
+                    <th>时间</th>
+                    <th>型号</th>
+                    <th>代号 + 重量<sup>g</sup></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr v-for="(iPad,index) in series.iPads"
+                    :key="'iPad' + index"
+                    :data-series="iPad.title"
+                    :data-index="index"
+                >
+                    <td class="text-emphasis">{{iPad.name_short}}</td>
+                    <td class="text-emphasis">{{iPad.screen_size}}</td>
+                    <td>{{iPad.screen_resolution}}</td>
+                    <td>
+                        <span v-if="iPad.screen_density" class="label-purple">{{iPad.screen_density}}</span>
+                    </td>
+                    <td>{{`${iPad.width} x ${iPad.height}`}}</td>
+                    <td class="text-emphasis">{{iPad.thickness}}</td>
+                    <td>
+                        <div class="dual-label-cpu">
+                            <div class="model">{{iPad.cpu.model}}</div>
+                            <div class="rate">{{iPad.cpu.rate + ' x ' + iPad.cpu.core}}</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="dual-label-gpu" v-if="iPad.gpu.model">
+                            <div class="model">{{iPad.gpu.model}}</div>
+                            <div class="rate">{{iPad.gpu.core ? iPad.gpu.core : '&nbsp;'}}</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="dual-label-memory" v-for="(memory,index) in iPad.memory" :key="'memory' + index">
+                            <div class="model">{{memory.size}}</div>
+                            <div class="rate">{{memory.type}}  {{memory.name}}</div>
+
+                        </div>
+                    </td>
+                    <td>
+                        <span v-for="(size,index) in iPad.storage" :key="'size' + index" class="label-cyan">{{size}}</span>
+                    </td>
+                    <td>
+                        <div v-if="iPad.battery" class="battery">{{iPad.battery}}</div>
+                    </td>
+                    <td class="text-emphasis">{{iPad.release}}</td>
+                    <td class="text-small">
+                        <p v-for="model in iPad.models" :key="model.id">
+                            <span>{{model.name}}</span>
+                        </p>
+                    </td>
+                    <td class="text-small">
+                        <p v-for="model in iPad.models" :key="model.id">
+                            <span>{{model.model}}</span> <span class="label-gray">{{model.weight}}</span>
+                        </p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="iPad.js"></script>
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?1e6cadf1b902683e03caa1ef60cc56a2";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+
+</body>
+</html>

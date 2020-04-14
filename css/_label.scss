@@ -1,0 +1,161 @@
+$dual-label-types: (
+        "cpu": $magenta,
+        "gpu": $orange,
+        "memory": $red
+);
+
+@each $name, $color in $dual-label-types{
+  .dual-label-#{$name}{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: $label-font-size;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    & > div{
+      line-height: 1;
+      font-weight: bold;
+      text-align: center;
+      padding: $label-padding $label-padding * 2;
+      min-width: 30px;
+      @if $use-shadow {
+        @extend .shadow;
+      }
+    }
+    .model{
+      min-width: $label-font-size * 2;
+      @include border-radius($label-corner 0 0 $label-corner);
+      background-color: transparentize($color, $label-transparent-rate);
+      color: white;
+      border-color: transparentize($color, $label-transparent-rate);
+      border-style: solid;
+      border-width: 1px 0 1px 1px;
+    }
+    .rate{
+      @include border-radius(0 $label-corner $label-corner 0);
+      border-color: transparentize($color, $label-transparent-rate);
+      color: $color;
+      font-weight: normal;
+      background-color: white;
+      border-style: solid;
+      border-width: 1px 1px 1px 0;
+    }
+  }
+}
+
+
+$gpu-color: transparentize($orange, $label-transparent-rate);
+.gpu{
+  display: flex;
+  justify-content: space-between;
+  font-size: $label-font-size;
+  .model{
+    @include border-radius($label-corner);
+    background-color: $gpu-color;
+    color: white;
+    border: 1px solid $gpu-color;
+    padding: $label-padding;
+    line-height: 1;
+    text-align: center;
+    @if $use-shadow {
+      @extend .shadow;
+    }
+  }
+}
+
+
+.label{
+  font-size: $label-font-size;
+  display: inline-block;
+  padding: ($label-padding - 1) 5px;
+  @include border-radius($label-corner);
+  margin-right: 3px;
+  line-height: 1;
+  @if $use-shadow {
+    @extend .shadow;
+  }
+}
+
+$label-styles: (
+        "blue": $blue,
+        "green": $green,
+        "orange": $orange,
+        "yellow": $yellow,
+        "gray": $gray,
+        "red": $red,
+        "cyan": $cyan,
+        "purple": $purple
+);
+
+@each $name, $color in $label-styles {
+  .label-#{$name}{
+    color: white;
+    border: 1px solid transparentize($color, $label-transparent-rate / 2);
+    background-color: transparentize($color, $label-transparent-rate);
+    @extend .label;
+  }
+}
+
+$height-battery: 20px;
+$color-battery: transparentize($green, $label-transparent-rate);
+
+.battery{
+  display: inline-block;
+  font-size: $label-font-size;
+  line-height: $height-battery - 10;
+  padding: $label-padding + 1 8px;
+  border: 1px solid $color-battery;
+  text-align: center;
+  color: white;
+  background-color: $color-battery;
+  position: relative;
+  @include border-radius(3px);
+  &::after{
+    content: "";
+    position: absolute;
+    right: -3px - 1px - 1px;
+    top: ($height-battery - 10px)/2 - 1px;
+    height: 10px;
+    width: 3px;
+    background-color: $color-battery;
+    @include border-radius(0 2px 2px 0);
+  }
+}
+
+
+
+// HOVER
+tbody tr.active {
+  td:first-child {
+    transform: scale(1.1);
+  }
+
+  @each $name, $color in $label-styles {
+    .label-#{$name} {
+      background-color: $color;
+      color: white;
+    }
+  }
+  @each $name, $color in $dual-label-types {
+    .dual-label-#{$name} {
+      .model {
+        background-color: $color;
+        border-color: $color;
+      }
+
+      .rate {
+        border-color: $color;
+        color: $color;
+      }
+    }
+  }
+
+  .gpu {
+    .model {
+      background-color: $green;
+      border: 1px solid $green;
+    }
+  }
+}

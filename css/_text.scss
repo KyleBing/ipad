@@ -1,0 +1,33 @@
+
+.text-emphasis{
+  font-weight: bold;
+  font-size: $font-size * 1.1;
+}
+
+.text-title{
+  font-size: $font-size * 1.2;
+  font-weight: bold;
+}
+
+.text-small{
+  font-size: $font-size * 0.8;
+}
+
+
+
+$text-colors: (
+        "purple": $purple,
+        "blue": $blue,
+        "cyan": $cyan,
+        "green": $green,
+        "yellow": $yellow,
+        "orange": $orange,
+        "red": $red,
+        "magenta": $magenta,
+);
+
+@each $name, $color in $text-colors {
+  .#{$name}{
+    color: $color;
+  }
+}
