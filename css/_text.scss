@@ -1,18 +1,27 @@
 
 .text-emphasis{
-  font-weight: bold;
-  font-size: $font-size * 1.1;
+  @extend .bold;
+  font-size: $font-size * 1.1 !important;
 }
 
 .text-title{
-  font-size: $font-size * 1.2;
+  font-size: $font-size * 1.2 !important;
   font-weight: bold;
+}
+.text-normal{
+  font-weight: normal;
 }
 
 .text-small{
-  font-size: $font-size * 0.8;
+  font-size: $font-size * 0.8 !important;
 }
 
+.text-narrow{
+  font-family: "Arial Narrow", Sans-serf !important;
+}
+.bold{
+  font-weight: bold;
+}
 
 
 $text-colors: (
@@ -24,6 +33,8 @@ $text-colors: (
         "orange": $orange,
         "red": $red,
         "magenta": $magenta,
+        "gray": $gray,
+        "light-gray": lighten($gray, 10%),
 );
 
 @each $name, $color in $text-colors {

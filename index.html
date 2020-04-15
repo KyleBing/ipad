@@ -7,7 +7,7 @@
     <meta name='keywords' content="iPad详细参数汇总,iPad Pro,iPad Air,iPad Mini,iPad">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iPad</title>
-    <link rel="stylesheet" href="css/iPad.css?v=20200415094840">
+    <link rel="stylesheet" href="css/iPad.css?v=20200415121208">
     <script src="../../lib/js/jquery-2.2.4.min.js"></script>
     <script src="../../lib/js/vue.min.2.6.10.js"></script>
 </head>
@@ -30,6 +30,7 @@
                 <tr>
                     <th>iPad</th>
                     <th>屏幕<sup>寸</sup></th>
+                    <th>发布年月</th>
                     <th>分辨率<sup>px</sup></th>
                     <th>密度<sup>ppi</sup></th>
                     <th>长x宽<sup>mm</sup></th>
@@ -39,7 +40,7 @@
                     <th>内存<sup>GB</sup></th>
                     <th>存储<sup>GB</sup></th>
                     <th>电池<sup>mAh</sup></th>
-                    <th>发布时间</th>
+                    <th>系统支持</th>
                     <th>型号</th>
                     <th>代号 + 重量<sup>g</sup></th>
                 </tr>
@@ -48,10 +49,15 @@
                 <tr v-for="(iPad,index) in series.iPads"
                     :key="'iPad' + index"
                     :data-series="iPad.title"
-                    :data-index="index"
-                >
+                    :data-index="index">
                     <td class="text-emphasis">{{iPad.name_short}}</td>
-                    <td class="text-emphasis">{{iPad.screen_size}}</td>
+                    <td>
+                        <span class="label-red text-emphasis">{{iPad.screen_size}}</span>
+                    </td>
+<!--                    <td class="text-emphasis">{{iPad.release.substring(0,4) + '/' + iPad.release.substring(5,7)}}</td>-->
+                    <td class="text-emphasis">
+                        <p>{{iPad.release.substring(0,4)}}<span class="text-normal light-gray">·</span><span class="gray text-normal">{{iPad.release.substring(5,7)}}</span></p>
+                    </td>
                     <td>{{iPad.screen_resolution}}</td>
                     <td>
                         <span v-if="iPad.screen_density" class="label-purple">{{iPad.screen_density}}</span>
@@ -83,8 +89,11 @@
                     <td>
                         <div v-if="iPad.battery" class="battery">{{iPad.battery}}</div>
                     </td>
-                    <td class="text-emphasis">{{iPad.release}}</td>
                     <td class="text-small">
+                        <p>初始：{{iPad.os.init}}</p>
+                        <p>最终：<span :class="{'green bold': iPad.os.last == 'iPadOS 13.4.1'}">{{iPad.os.last}}</span></p>
+                    </td>
+                    <td class="text-small text-narrow">
                         <p v-for="model in iPad.models" :key="model.id">
                             <span>{{model.name}}</span>
                         </p>
@@ -94,6 +103,7 @@
                             <span>{{model.model}}</span> <span class="label-gray">{{model.weight}}</span>
                         </p>
                     </td>
+
                 </tr>
                 </tbody>
             </table>
@@ -101,7 +111,7 @@
     </div>
 </div>
 
-<script src="iPad.js?v=20200415094840"></script>
+<script src="iPad.js?v=20200415121208"></script>
 <script>
   var _hmt = _hmt || [];
   (function() {

@@ -16,6 +16,10 @@ const iPadPro =[
     width: 305.7,
     height: 220.6,
     thickness: 6.9,
+    os: {
+      init: "iOS 9.1",
+      last: "iPadOS 13.4.1"
+    },
     cpu: {
       model: 'A9X',
       rate: '2.26',
@@ -47,6 +51,10 @@ const iPadPro =[
     width: 240,
     height: 169.5,
     thickness: 6.1,
+    os: {
+      init: "iOS 9.3",
+      last: "iPadOS 13.4.1"
+    },
     cpu: {
       model: 'A9X',
       rate: '2.26',
@@ -80,6 +88,10 @@ const iPadPro =[
     width: 240,
     height: 169.5,
     thickness: 6.1,
+    os: {
+      init: "iOS 10.3.2",
+      last: "iPadOS 13.4.1"
+    },
     cpu: {
       model: 'A10X',
       rate: '2.36',
@@ -111,6 +123,10 @@ const iPadPro =[
     width: 240,
     height: 169.5,
     thickness: 6.1,
+    os: {
+      init: "iOS 9.1",
+      last: "iPadOS 13.4.1"
+    },
     cpu: {
       model: 'A10X',
       rate: '2.36',
@@ -144,6 +160,10 @@ const iPadPro =[
     width: 280.6,
     height: 241.9,
     thickness: 5.9,
+    os: {
+      init: "iOS 12.1",
+      last: "iPadOS 13.4.1"
+    },
     cpu: {
       model: 'A12X',
       rate: '2.36',
@@ -177,6 +197,10 @@ const iPadPro =[
     width: 247.6,
     height: 178.5,
     thickness: 5.9,
+    os: {
+      init: "iOS 12.1",
+      last: "iPadOS 13.4.1"
+    },
     cpu: {
       model: 'A12X',
       rate: '2.36',
@@ -212,6 +236,10 @@ const iPadPro =[
     width: 280.6,
     height: 214.9,
     thickness: 5.9,
+    os: {
+      init: "iPadOS 13.4",
+      last: "iPadOS 13.4.1"
+    },
     cpu: {
       model: 'A12Z',
       rate: '≈2.5',
@@ -241,6 +269,10 @@ const iPadPro =[
     width: 247.6,
     height: 178.5,
     thickness: 5.9,
+    os: {
+      init: "iPadOS 13.4",
+      last: "iPadOS 13.4.1"
+    },
     cpu: {
       model: 'A12Z',
       rate: '≈2.5',
