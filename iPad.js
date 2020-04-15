@@ -32,8 +32,8 @@ const iPadPro =[
     price: "",
     battery: "10307",
     models: [
-      {id: 1, name: "iPad6,7", model: "A1584 (Wi-Fi)", weight: 710},
-      {id: 2, name: "iPad6,8", model: "A1652 (Cellular)", weight: 720}
+      {id: 1, name: "iPad6,7", model: "A1584 (WiFi)", weight: 710},
+      {id: 2, name: "iPad6,8", model: "A1652 (蜂窝)", weight: 720}
     ],
     release: "2015-09-11"
   },
@@ -63,8 +63,8 @@ const iPadPro =[
     price: "",
     battery: "7306",
     models: [
-      {id: 1, name: "iPad6,3", model: "A1673 (Wi-Fi)", weight: 437},
-      {id: 2, name: "iPad6,4", model: "A1674 or A1675 (Wi-Fi + Cellular)", weight: 444}
+      {id: 1, name: "iPad6,3", model: "A1673 (WiFi)", weight: 437},
+      {id: 2, name: "iPad6,4", model: "A1674 or A1675 (WiFi + 蜂窝)", weight: 444}
     ],
     release: "2016-05-31"
   },
@@ -96,8 +96,8 @@ const iPadPro =[
     price: "",
     battery: "10875",
     models: [
-      {id: 1, name: "iPad7,1", model: "A1670 (Wi-Fi)", weight: 677},
-      {id: 2, name: "iPad7,2", model: "A1671 (Wi-Fi + Cellular)", weight: 692}
+      {id: 1, name: "iPad7,1", model: "A1670 (WiFi)", weight: 677},
+      {id: 2, name: "iPad7,2", model: "A1671 (WiFi + 蜂窝)", weight: 692}
     ],
     release: "2017-06-13"
   },
@@ -127,8 +127,8 @@ const iPadPro =[
     price: "",
     battery: "8134",
     models: [
-      {id: 1, name: "iPad7,3", model: "A1701 (Wi-Fi)", weight: 469},
-      {id: 2, name: "iPad7,4", model: "A1709 (Wi-Fi + Cellular)", weight: 477}
+      {id: 1, name: "iPad7,3", model: "A1701 (WiFi)", weight: 469},
+      {id: 2, name: "iPad7,4", model: "A1709 (WiFi + 蜂窝)", weight: 477}
     ],
     release: "2017-06-13"
   },
@@ -150,20 +150,20 @@ const iPadPro =[
       core: 8
     },
     gpu: {
-      model: "Apple",
+      model: "Apple GPU",
       core: 7
     },
     memory: [
       {name: "<1T", size: "4", type: "DDR4X"},
-      {name: ">1T", size: "6", type: "DDR4X"}
+      {name: "=1T", size: "6", type: "DDR4X"}
     ],
     storage: ["64", "256", "512", "1024"],
     price: "",
     battery: "9720",
     models: [
-      {id: 1, name: "iPad8,5 (>1TB) iPad8,6 (=1TB)", model: "A1876 (Wi-Fi)", weight: 631},
-      {id: 2, name: "iPad8,7 (<1TB)", model: "A1895, A2014 (Wi-Fi + Cellular)", weight: 633},
-      {id: 3, name: "iPad8,8 (=1TB)", model: "A1983 (Wi-Fi + Cellular, China model)", weight: 633}
+      {id: 1, name: "iPad8,5 (<1TB) iPad8,6 (=1TB)", model: "A1876 (WiFi)", weight: 631},
+      {id: 2, name: "iPad8,7 (<1TB)", model: "A1895, A2014 (WiFi + 蜂窝)", weight: 633},
+      {id: 3, name: "iPad8,8 (=1TB)", model: "A1983 (WiFi + 蜂窝, China model)", weight: 633}
     ],
     release: "2018-10-03"
   },
@@ -183,20 +183,20 @@ const iPadPro =[
       core: 8
     },
     gpu: {
-      model: "Apple",
+      model: "Apple GPU",
       core: 7
     },
     memory: [
       {name: "<1T", size: "4", type: "DDR4X"},
-      {name: ">1T", size: "6", type: "DDR4X"}
+      {name: "=1T", size: "6", type: "DDR4X"}
     ],
     storage: ["64", "256", "512", "1024"],
     price: "",
     battery: "7812",
     models: [
-      {id: 1, name: "iPad8,1 (<1TB) iPad8,2 (=1TB)", model: "A1980 (Wi-Fi)", weight: 468},
-      {id: 2, name: "iPad8,3 (<1TB)", model: "A1934, A2013 (Wi-Fi + Cellular)", weight: 468},
-      {id: 3, name: "iPad8,4 (=1TB)", model: "A1979 (Wi-Fi + Cellular, China model)", weight: 468},
+      {id: 1, name: "iPad8,1 (<1TB) iPad8,2 (=1TB)", model: "A1980 (WiFi)", weight: 468},
+      {id: 2, name: "iPad8,3 (<1TB)", model: "A1934, A2013 (WiFi + 蜂窝)", weight: 468},
+      {id: 3, name: "iPad8,4 (=1TB)", model: "A1979 (WiFi + 蜂窝, China model)", weight: 468},
     ],
     release: "2018-10-03"
   },
@@ -207,25 +207,28 @@ const iPadPro =[
     name_short: "Pro 4",
     active: false,
     screen_size: "12.9",
-    screen_resolution: "",
-    screen_density: "",
-    width: 0,
-    height: 0,
-    thickness: 0,
+    screen_resolution: "2732 x 2048",
+    screen_density: "264",
+    width: 280.6,
+    height: 214.9,
+    thickness: 5.9,
     cpu: {
       model: 'A12Z',
-      rate: '',
-      core: 0
+      rate: '≈2.5',
+      core: 8
     },
     gpu: {
-      model: "Apple",
+      model: "Apple GPU",
       core: 8
     },
     memory: [],
     storage: ["128", "256", "512", "1024"],
     price: "",
-    battery: "",
-    models: [],
+    battery: "28.65 W·h",
+    models: [
+      {id: 1, name: "iPad", model: "(WiFi)", weight: 471},
+      {id: 2, name: "iPad", model: "(WiFi + 蜂窝)", weight: 473},
+    ],
     release: "2020-03-18"
   },
   {
@@ -233,25 +236,28 @@ const iPadPro =[
     name_short: "Pro 4",
     active: false,
     screen_size: "11",
-    screen_resolution: "",
-    screen_density: "",
-    width: 0,
-    height: 0,
-    thickness: 0,
+    screen_resolution: "2388 x 1688",
+    screen_density: "264",
+    width: 247.6,
+    height: 178.5,
+    thickness: 5.9,
     cpu: {
       model: 'A12Z',
-      rate: '',
-      core: 0
+      rate: '≈2.5',
+      core: 8
     },
     gpu: {
-      model: "Apple",
+      model: "Apple GPU",
       core: 8
     },
     memory: [],
     storage: ["128", "256", "512", "1024"],
     price: "",
-    battery: "",
-    models: [],
+    battery: "36.71 W·h",
+    models: [
+      {id: 1, name: "iPad", model: "(WiFi)", weight: 641},
+      {id: 2, name: "iPad", model: "(WiFi + 蜂窝)", weight: 643},
+    ],
     release: "2020-03-18"
   },
 ];
@@ -287,8 +293,8 @@ const iPadAir =[
     price: "",
     battery: "8820",
     models: [
-      {id: 1, name: "iPad4,1", model: "A1474 (Wi-Fi)", weight: 469},
-      {id: 2, name: "iPad4,2", model: "A1475 (Wi-Fi + Cellular)", weight: 478},
+      {id: 1, name: "iPad4,1", model: "A1474 (WiFi)", weight: 469},
+      {id: 2, name: "iPad4,2", model: "A1475 (WiFi + 蜂窝)", weight: 478},
     ],
     release: "2013-09-01"
   },
@@ -322,8 +328,8 @@ const iPadAir =[
     price: "",
     battery: "7340",
     models: [
-      {id: 1, name: "iPad5,3 (Wi-Fi)", model: "A1566 (Wi-Fi)", weight: 437},
-      {id: 2, name: "iPad5,4 (Wi-Fi + Cellular)", model: "A1567 (Wi-Fi + Cellular)", weight: 444},
+      {id: 1, name: "iPad5,3 (WiFi)", model: "A1566 (WiFi)", weight: 437},
+      {id: 2, name: "iPad5,4 (WiFi + 蜂窝)", model: "A1567 (WiFi + 蜂窝)", weight: 444},
     ],
     release: "2016-03-21"
   },
@@ -331,7 +337,7 @@ const iPadAir =[
     name: "iPad Air 3 2019",
     name_short: "Air 3",
     active: false,
-    screen_size: "9.7",
+    screen_size: "10.5",
     screen_resolution: "2224 x 1668",
     screen_density: "264",
     width: 248.9,
@@ -347,7 +353,7 @@ const iPadAir =[
       core: 6
     },
     gpu: {
-      model: "Apple",
+      model: "Apple GPU",
       core: 4
     },
     memory: [
@@ -357,9 +363,9 @@ const iPadAir =[
     price: "",
     battery: "8134",
     models: [
-      {id: 1, name: "iPad11,3", model: "A2152 (Wi-Fi)", weight: 456},
-      {id: 2, name: "iPad11,4", model: "A2123, A2153 (Wi-Fi + Cellular)", weight: 464},
-      {id: 3, name: "iPad11,4", model: "A2154 (Wi-Fi + Cellular, China model)", weight: 464},
+      {id: 1, name: "iPad11,3", model: "A2152 (WiFi)", weight: 456},
+      {id: 2, name: "iPad11,4", model: "A2123, A2153 (WiFi + 蜂窝)", weight: 464},
+      {id: 3, name: "iPad11,4", model: "A2154 (WiFi + 蜂窝, China model)", weight: 464},
     ],
     release: "2019-03-18"
   },
@@ -396,9 +402,9 @@ const iPadMini =[
     price: "",
     battery: "4440",
     models: [
-      {id: 1, name: "iPad2,5", model: "A1432 (Wi-Fi)", weight: 310},
-      {id: 2, name: "iPad2,6", model: "A1454 (Wi-Fi + Cellular)", weight: 310},
-      {id: 3, name: "iPad2,7", model: "A1455 (Wi-Fi + Cellular MM)", weight: 310},
+      {id: 1, name: "iPad2,5", model: "A1432 (WiFi)", weight: 310},
+      {id: 2, name: "iPad2,6", model: "A1454 (WiFi + 蜂窝)", weight: 310},
+      {id: 3, name: "iPad2,7", model: "A1455 (WiFi + 蜂窝 MM)", weight: 310},
     ],
     release: "2012-09-02"
   },
@@ -432,9 +438,9 @@ const iPadMini =[
     price: "",
     battery: "6471",
     models: [
-      {id: 1, name: "iPad4,4", model: "A1489 (Wi-Fi)", weight: 330},
-      {id: 2, name: "iPad4,5", model: "A1490 (Wi-Fi + Cellular)", weight: 340},
-      {id: 3, name: "iPad4,6", model: "A1491 (Wi-Fi + Cellular TD-LTE)", weight: 340},
+      {id: 1, name: "iPad4,4", model: "A1489 (WiFi)", weight: 330},
+      {id: 2, name: "iPad4,5", model: "A1490 (WiFi + 蜂窝)", weight: 340},
+      {id: 3, name: "iPad4,6", model: "A1491 (WiFi + 蜂窝 TD-LTE)", weight: 340},
     ],
     release: "2013-09-12"
   },
@@ -468,9 +474,9 @@ const iPadMini =[
     price: "",
     battery: "6471",
     models: [
-      {id: 1, name: "iPad4,7", model: "A1599 (Wi-Fi)", weight: 310},
-      {id: 2, name: "iPad4,8", model: "A1600 (Wi-Fi + Cellular)", weight: 310},
-      {id: 3, name: "iPad4,9", model: "A1601 (Wi-Fi + Cellular TD-LTE)", weight: 310},
+      {id: 1, name: "iPad4,7", model: "A1599 (WiFi)", weight: 310},
+      {id: 2, name: "iPad4,8", model: "A1600 (WiFi + 蜂窝)", weight: 310},
+      {id: 3, name: "iPad4,9", model: "A1601 (WiFi + 蜂窝 TD-LTE)", weight: 310},
     ],
     release: "2014-10-22"
   },
@@ -504,8 +510,8 @@ const iPadMini =[
     price: "",
     battery: "5124",
     models: [
-      {id: 1, name: "iPad5,1", model: "A1538 (Wi-Fi)", weight: 290},
-      {id: 2, name: "iPad5,1", model: "A1550 (Wi-Fi + Cellular)", weight: 300},
+      {id: 1, name: "iPad5,1", model: "A1538 (WiFi)", weight: 290},
+      {id: 2, name: "iPad5,1", model: "A1550 (WiFi + 蜂窝)", weight: 300},
     ],
     release: "2015-09-09"
   },
@@ -529,7 +535,7 @@ const iPadMini =[
       core: 6
     },
     gpu: {
-      model: "Apple",
+      model: "Apple GPU",
       core: 4
     },
     memory: [
@@ -539,9 +545,9 @@ const iPadMini =[
     price: "",
     battery: "5124",
     models: [
-      {id: 1, name: "iPad11,1", model: "A2133 (Wi-Fi)", weight: 300},
-      {id: 2, name: "iPad11,2", model: "A2124, A2126 (Wi-Fi + Cellular)", weight: 310},
-      {id: 3, name: "iPad11,2", model: "A2125 (Wi-Fi + Cellular, China model)", weight: 310},
+      {id: 1, name: "iPad11,1", model: "A2133 (WiFi)", weight: 300},
+      {id: 2, name: "iPad11,2", model: "A2124, A2126 (WiFi + 蜂窝)", weight: 310},
+      {id: 3, name: "iPad11,2", model: "A2125 (WiFi + 蜂窝, China model)", weight: 310},
     ],
     release: "2019-03-18"
   },
@@ -579,8 +585,8 @@ const IPad =[
     price: "",
     battery: "6613",
     models: [
-      {id: 1, name: "iPad1,1", model: "A1219 (Wi-Fi)", weight: 680},
-      {id: 2, name: "iPad1,1", model: "A1337 (Wi-Fi + 3G)", weight: 730},
+      {id: 1, name: "iPad1,1", model: "A1219 (WiFi)", weight: 680},
+      {id: 2, name: "iPad1,1", model: "A1337 (WiFi + 3G)", weight: 730},
     ],
     release: "2010-04-03"
   },
@@ -614,9 +620,9 @@ const IPad =[
     price: "",
     battery: "6944",
     models: [
-      {id: 1, name: "iPad2,1", model: "A1395 (Wi-Fi)", weight: 601},
-      {id: 2, name: "iPad2,2", model: "A1397 (Wi-Fi + 3G CDMA)", weight: 613},
-      {id: 3, name: "iPad2,3", model: "A1396 (Wi-Fi + 3G GSM)", weight: 607},
+      {id: 1, name: "iPad2,1", model: "A1395 (WiFi)", weight: 601},
+      {id: 2, name: "iPad2,2", model: "A1397 (WiFi + 3G CDMA)", weight: 613},
+      {id: 3, name: "iPad2,3", model: "A1396 (WiFi + 3G GSM)", weight: 607},
     ],
     release: "2011-03-11"
   },
@@ -650,9 +656,9 @@ const IPad =[
     price: "",
     battery: "11560",
     models: [
-      {id: 1, name: "iPad3,1", model: "A1416 (Wi-Fi)", weight: 650},
-      {id: 2, name: "iPad3,2", model: "A1403 (Wi-Fi + Cellular VZ)", weight: 660},
-      {id: 3, name: "iPad3,3", model: "A1430 (Wi-Fi + Cellular)", weight: 660},
+      {id: 1, name: "iPad3,1", model: "A1416 (WiFi)", weight: 650},
+      {id: 2, name: "iPad3,2", model: "A1403 (WiFi + 蜂窝 VZ)", weight: 660},
+      {id: 3, name: "iPad3,3", model: "A1430 (WiFi + 蜂窝)", weight: 660},
     ],
     release: "2012-03-16"
   },
@@ -686,9 +692,9 @@ const IPad =[
     price: "",
     battery: "11560",
     models: [
-      {id: 1, name: "iPad5,3", model: "A1458 (Wi-Fi)", weight: 650},
-      {id: 2, name: "iPad5,4", model: "A1459 (Wi-Fi + Cellular)", weight: 660},
-      {id: 3, name: "iPad5,4", model: "A1460 (Wi-Fi + Cellular MM)", weight: 660},
+      {id: 1, name: "iPad5,3", model: "A1458 (WiFi)", weight: 650},
+      {id: 2, name: "iPad5,4", model: "A1459 (WiFi + 蜂窝)", weight: 660},
+      {id: 3, name: "iPad5,4", model: "A1460 (WiFi + 蜂窝 MM)", weight: 660},
     ],
     release: "2012-10-23"
   },
@@ -722,8 +728,8 @@ const IPad =[
     price: "",
     battery: "32.4 W·h",
     models: [
-      {id: 1, name: "iPad6,11", model: "A1822 (Wi-Fi)", weight: 469},
-      {id: 2, name: "iPad6,12", model: "A1823 (Wi-Fi + Cellular)", weight: 478},
+      {id: 1, name: "iPad6,11", model: "A1822 (WiFi)", weight: 469},
+      {id: 2, name: "iPad6,12", model: "A1823 (WiFi + 蜂窝)", weight: 478},
     ],
     release: "2017-03-21"
   },
@@ -757,8 +763,8 @@ const IPad =[
     price: "",
     battery: "32.4 W·h",
     models: [
-      {id: 1, name: "iPad7,5", model: "A1893 (Wi-Fi)", weight: 469},
-      {id: 2, name: "iPad7,6", model: "A1954 (Wi-Fi + Cellular)", weight: 478},
+      {id: 1, name: "iPad7,5", model: "A1893 (WiFi)", weight: 469},
+      {id: 2, name: "iPad7,6", model: "A1954 (WiFi + 蜂窝)", weight: 478},
     ],
     release: "2018-03-27"
   },
@@ -792,9 +798,9 @@ const IPad =[
     price: "",
     battery: "32.4 W·h",
     models: [
-      {id: 1, name: "iPad7,11", model: "A2197 (Wi-Fi)", weight: 483},
-      {id: 2, name: "iPad7,12", model: "A2200 (Wi-Fi + Cellular)", weight: 493},
-      {id: 2, name: "iPad7,12", model: "A2198 (Wi-Fi + Cellular)", weight: 493},
+      {id: 1, name: "iPad7,11", model: "A2197 (WiFi)", weight: 483},
+      {id: 2, name: "iPad7,12", model: "A2200 (WiFi + 蜂窝)", weight: 493},
+      {id: 2, name: "iPad7,12", model: "A2198 (WiFi + 蜂窝)", weight: 493},
     ],
     release: "2019-09-10"
   },

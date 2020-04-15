@@ -6,30 +6,32 @@
 
 body{
   font-size: 15px;
+  @media (max-width: 750px){
+    font-size: 10px;
+  }
 }
 
 .container{
   padding: 30px;
   margin: 0 auto;
-  @media (max-width: 1024px){
-    padding: 5px;
-  }
+  max-width: 1800px;
   @media (max-width: 1200px){
     padding: 5px;
   }
+
 }
 
 .header {
   padding: 20px 0;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
   font-size: $label-font-size;
   color: $color-text;
   h3{
     line-height: 1.5;
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
 
   $sign-text-color: lighten($color-text,30%);

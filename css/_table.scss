@@ -13,6 +13,7 @@ table{
 
 tbody{
   tr{
+    height: 70px;
     &:hover{
       background-color: $bg-highlight;
       color: #000;
