@@ -1,8 +1,9 @@
-/*
-Crate Date: 2020-04-14 12:23:39
-Update Date: 2020-04-14 12:23:50
- */
+/*****************************
+  Create Date: 20200414122339
+  Update Date: 20200416150225
+ *****************************/
 
+const lastOS = "iPadOS 13.4.1";
 
 const iPadPro =[
   // iPad pro 1 generation
@@ -18,7 +19,7 @@ const iPadPro =[
     thickness: 6.9,
     os: {
       init: "iOS 9.1",
-      last: "iPadOS 13.4.1"
+      last: lastOS
     },
     cpu: {
       model: 'A9X',
@@ -53,7 +54,7 @@ const iPadPro =[
     thickness: 6.1,
     os: {
       init: "iOS 9.3",
-      last: "iPadOS 13.4.1"
+      last: lastOS
     },
     cpu: {
       model: 'A9X',
@@ -90,7 +91,7 @@ const iPadPro =[
     thickness: 6.1,
     os: {
       init: "iOS 10.3.2",
-      last: "iPadOS 13.4.1"
+      last: lastOS
     },
     cpu: {
       model: 'A10X',
@@ -125,7 +126,7 @@ const iPadPro =[
     thickness: 6.1,
     os: {
       init: "iOS 9.1",
-      last: "iPadOS 13.4.1"
+      last: lastOS
     },
     cpu: {
       model: 'A10X',
@@ -162,7 +163,7 @@ const iPadPro =[
     thickness: 5.9,
     os: {
       init: "iOS 12.1",
-      last: "iPadOS 13.4.1"
+      last: lastOS
     },
     cpu: {
       model: 'A12X',
@@ -183,7 +184,7 @@ const iPadPro =[
     models: [
       {id: 1, name: "iPad8,5 (<1TB) iPad8,6 (=1TB)", model: "A1876 (WiFi)", weight: 631},
       {id: 2, name: "iPad8,7 (<1TB)", model: "A1895, A2014 (WiFi + 蜂窝)", weight: 633},
-      {id: 3, name: "iPad8,8 (=1TB)", model: "A1983 (WiFi + 蜂窝, China model)", weight: 633}
+      {id: 3, name: "iPad8,8 (=1TB)", model: "A1983 (WiFi + 蜂窝, 国行)", weight: 633}
     ],
     release: "2018-10-03"
   },
@@ -199,7 +200,7 @@ const iPadPro =[
     thickness: 5.9,
     os: {
       init: "iOS 12.1",
-      last: "iPadOS 13.4.1"
+      last: lastOS
     },
     cpu: {
       model: 'A12X',
@@ -220,7 +221,7 @@ const iPadPro =[
     models: [
       {id: 1, name: "iPad8,1 (<1TB) iPad8,2 (=1TB)", model: "A1980 (WiFi)", weight: 468},
       {id: 2, name: "iPad8,3 (<1TB)", model: "A1934, A2013 (WiFi + 蜂窝)", weight: 468},
-      {id: 3, name: "iPad8,4 (=1TB)", model: "A1979 (WiFi + 蜂窝, China model)", weight: 468},
+      {id: 3, name: "iPad8,4 (=1TB)", model: "A1979 (WiFi + 蜂窝, 国行)", weight: 468},
     ],
     release: "2018-10-03"
   },
@@ -238,7 +239,7 @@ const iPadPro =[
     thickness: 5.9,
     os: {
       init: "iPadOS 13.4",
-      last: "iPadOS 13.4.1"
+      last: lastOS
     },
     cpu: {
       model: 'A12Z',
@@ -271,7 +272,7 @@ const iPadPro =[
     thickness: 5.9,
     os: {
       init: "iPadOS 13.4",
-      last: "iPadOS 13.4.1"
+      last: lastOS
     },
     cpu: {
       model: 'A12Z',
@@ -342,7 +343,7 @@ const iPadAir =[
     thickness: 6.1,
     os: {
       init: "iOS 8.1",
-      last: "iPadOS 13.4.1"
+      last: lastOS
     },
     cpu: {
       model: 'A8X',
@@ -363,7 +364,7 @@ const iPadAir =[
       {id: 1, name: "iPad5,3 (WiFi)", model: "A1566 (WiFi)", weight: 437},
       {id: 2, name: "iPad5,4 (WiFi + 蜂窝)", model: "A1567 (WiFi + 蜂窝)", weight: 444},
     ],
-    release: "2016-03-21"
+    release: "2014-10-22"
   },
   {
     name: "iPad Air 3 2019",
@@ -377,7 +378,7 @@ const iPadAir =[
     thickness: 6.1,
     os: {
       init: "iOS 12.1.4",
-      last: "iPadOS 13.4.1"
+      last: lastOS
     },
     cpu: {
       model: 'A12',
@@ -397,7 +398,7 @@ const iPadAir =[
     models: [
       {id: 1, name: "iPad11,3", model: "A2152 (WiFi)", weight: 456},
       {id: 2, name: "iPad11,4", model: "A2123, A2153 (WiFi + 蜂窝)", weight: 464},
-      {id: 3, name: "iPad11,4", model: "A2154 (WiFi + 蜂窝, China model)", weight: 464},
+      {id: 3, name: "iPad11,4", model: "A2154 (WiFi + 蜂窝, 国行)", weight: 464},
     ],
     release: "2019-03-18"
   },
@@ -524,7 +525,7 @@ const iPadMini =[
     thickness: 6.1,
     os: {
       init: "iOS 9.0",
-      last: "iPadOS 13.4.1"
+      last: lastOS
     },
     cpu: {
       model: 'A8',
@@ -559,7 +560,7 @@ const iPadMini =[
     thickness: 6.1,
     os: {
       init: "iOS 12.1.4",
-      last: "iPadOS 13.4.1"
+      last: lastOS
     },
     cpu: {
       model: 'A12',
@@ -579,14 +580,14 @@ const iPadMini =[
     models: [
       {id: 1, name: "iPad11,1", model: "A2133 (WiFi)", weight: 300},
       {id: 2, name: "iPad11,2", model: "A2124, A2126 (WiFi + 蜂窝)", weight: 310},
-      {id: 3, name: "iPad11,2", model: "A2125 (WiFi + 蜂窝, China model)", weight: 310},
+      {id: 3, name: "iPad11,2", model: "A2125 (WiFi + 蜂窝, 国行)", weight: 310},
     ],
     release: "2019-03-18"
   },
 ];
 
 
-const IPad =[
+const iPad =[
   {
     name: "iPad 1",
     name_short: "iPad 1",
@@ -742,7 +743,7 @@ const IPad =[
     thickness: 7.4,
     os: {
       init: "iOS 10.3",
-      last: "iPadOS 13.4.1"
+      last: lastOS
     },
     cpu: {
       model: 'A9',
@@ -777,7 +778,7 @@ const IPad =[
     thickness: 7.4,
     os: {
       init: "iOS 11.3",
-      last: "iPadOS 13.4.1"
+      last: lastOS
     },
     cpu: {
       model: 'A10',
@@ -812,7 +813,7 @@ const IPad =[
     thickness: 7.4,
     os: {
       init: "iOS 13.3",
-      last: "iPadOS 13.4.1"
+      last: lastOS
     },
     cpu: {
       model: 'A10',
@@ -847,10 +848,8 @@ let app =new Vue({
       {title: "iPad Pro", iPads: iPadPro},
       {title: "iPad Air", iPads: iPadAir},
       {title: "iPad Mini", iPads: iPadMini},
-      {title: "iPad", iPads: IPad},
+      {title: "iPad", iPads: iPad},
     ]
   },
-  methods: {
-  }
-
+  methods: {}
 });

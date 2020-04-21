@@ -405,9 +405,6 @@ td {
 
 body {
   font-size: 15px; }
-  @media (max-width: 750px) {
-    body {
-      font-size: 10px; } }
 
 .container {
   padding: 30px;

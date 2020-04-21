@@ -2,12 +2,14 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" href="./img/iPad-icon.png" type="image/png">
     <meta name='description' content="iPad详细参数汇总, iPad Pro, iPad Air, iPad Mini, iPad">
     <meta name='keywords' content="iPad详细参数汇总,iPad Pro,iPad Air,iPad Mini,iPad">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>iPad</title>
-    <link rel="stylesheet" href="css/iPad.css?v=20200415121208">
+    <link rel="shortcut icon" href="./img/iPad-icon.png" type="image/png">
+    <link rel="stylesheet" href="css/iPad.css?v=20200421171726">
+    <link rel="apple-touch-icon" href="./img/iPad-icon.png">
     <script src="../../lib/js/jquery-2.2.4.min.js"></script>
     <script src="../../lib/js/vue.min.2.6.10.js"></script>
 </head>
@@ -80,7 +82,6 @@
                         <div class="dual-label-memory" v-for="(memory,index) in iPad.memory" :key="'memory' + index">
                             <div class="model">{{memory.size}}</div>
                             <div class="rate">{{memory.type}}  {{memory.name}}</div>
-
                         </div>
                     </td>
                     <td>
@@ -103,7 +104,6 @@
                             <span>{{model.model}}</span> <span class="label-gray">{{model.weight}}</span>
                         </p>
                     </td>
-
                 </tr>
                 </tbody>
             </table>
@@ -111,7 +111,7 @@
     </div>
 </div>
 
-<script src="iPad.js?v=20200415121208"></script>
+<script src="iPad.js?v=20200421171726"></script>
 <script>
   var _hmt = _hmt || [];
   (function() {
