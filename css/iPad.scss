@@ -24,14 +24,14 @@ body{
   align-items: center;
   justify-content: space-between;
   font-size: $label-font-size;
-  color: $color-text;
+  color: $text-header;
   h3{
     line-height: 1.5;
     text-align: left;
     font-size: 2.5rem;
   }
 
-  $sign-text-color: lighten($color-text,30%);
+  $sign-text-color: lighten($text,30%);
   .sign{
     line-height: 1.3;
     font-size: 10px;
