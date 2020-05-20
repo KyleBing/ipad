@@ -1,7 +1,7 @@
 $dual-label-types: (
-        "cpu": $magenta,
+        "cpu": $red,
         "gpu": $orange,
-        "memory": $red
+        "memory": $blue
 );
 
 @each $name, $color in $dual-label-types{

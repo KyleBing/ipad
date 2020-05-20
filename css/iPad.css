@@ -127,9 +127,9 @@ tt {
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     border-radius: 15px;
-    background-color: rgba(255, 45, 112, 0.8);
+    background-color: rgba(255, 59, 48, 0.8);
     color: white;
-    border-color: rgba(255, 45, 112, 0.8);
+    border-color: rgba(255, 59, 48, 0.8);
     border-style: solid;
     border-width: 1px 0 1px 1px;
     z-index: 5;
@@ -144,8 +144,8 @@ tt {
     -webkit-border-radius: 0 15px 15px 0;
     -moz-border-radius: 0 15px 15px 0;
     border-radius: 0 15px 15px 0;
-    border-color: rgba(255, 45, 112, 0.8);
-    color: #FF2D70;
+    border-color: rgba(255, 59, 48, 0.8);
+    color: #FF3B30;
     font-weight: normal;
     background-color: white;
     border-style: solid;
@@ -215,9 +215,9 @@ tt {
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     border-radius: 15px;
-    background-color: rgba(255, 59, 48, 0.8);
+    background-color: rgba(0, 122, 255, 0.8);
     color: white;
-    border-color: rgba(255, 59, 48, 0.8);
+    border-color: rgba(0, 122, 255, 0.8);
     border-style: solid;
     border-width: 1px 0 1px 1px;
     z-index: 5;
@@ -232,8 +232,8 @@ tt {
     -webkit-border-radius: 0 15px 15px 0;
     -moz-border-radius: 0 15px 15px 0;
     border-radius: 0 15px 15px 0;
-    border-color: rgba(255, 59, 48, 0.8);
-    color: #FF3B30;
+    border-color: rgba(0, 122, 255, 0.8);
+    color: #007AFF;
     font-weight: normal;
     background-color: white;
     border-style: solid;
@@ -365,11 +365,11 @@ tbody tr.active .label-purple {
   background-color: #5856D6;
   color: white; }
 tbody tr.active .dual-label-cpu .model {
-  background-color: #FF2D70;
-  border-color: #FF2D70; }
+  background-color: #FF3B30;
+  border-color: #FF3B30; }
 tbody tr.active .dual-label-cpu .rate {
-  border-color: #FF2D70;
-  color: #FF2D70; }
+  border-color: #FF3B30;
+  color: #FF3B30; }
 tbody tr.active .dual-label-gpu .model {
   background-color: #FF9500;
   border-color: #FF9500; }
@@ -377,11 +377,11 @@ tbody tr.active .dual-label-gpu .rate {
   border-color: #FF9500;
   color: #FF9500; }
 tbody tr.active .dual-label-memory .model {
-  background-color: #FF3B30;
-  border-color: #FF3B30; }
+  background-color: #007AFF;
+  border-color: #007AFF; }
 tbody tr.active .dual-label-memory .rate {
-  border-color: #FF3B30;
-  color: #FF3B30; }
+  border-color: #007AFF;
+  color: #007AFF; }
 tbody tr.active .gpu .model {
   background-color: #00b56b;
   border: 1px solid #00b56b; }
@@ -501,6 +501,6 @@ body {
   transform: translateY(2px); }
 
 .text-shadow-light, .label, .battery {
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
+  text-shadow: 0 0.5px 0px rgba(0, 0, 0, 0.2); }
 
 /*# sourceMappingURL=iPad.css.map */

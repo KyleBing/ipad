@@ -8,7 +8,7 @@
 
     <title>iPad</title>
     <link rel="shortcut icon" href="./img/iPad-icon.png" type="image/png">
-    <link rel="stylesheet" href="css/iPad.css?v=20200520162617">
+    <link rel="stylesheet" href="css/iPad.css?v=20200520164813">
     <link rel="apple-touch-icon" href="./img/iPad-icon.png">
     <script src="../../lib/js/jquery-2.2.4.min.js"></script>
     <script src="../../lib/js/vue.min.2.6.10.js"></script>
@@ -62,7 +62,7 @@
                     </td>
                     <td>{{iPad.screen_resolution}}</td>
                     <td>
-                        <span v-if="iPad.screen_density" class="label-blue label">{{iPad.screen_density}}</span>
+                        <span v-if="iPad.screen_density" class="label-green label">{{iPad.screen_density}}</span>
                     </td>
                     <td>{{`${iPad.width} × ${iPad.height}`}}</td>
                     <td class="text-emphasis">{{iPad.thickness}}</td>
@@ -85,7 +85,7 @@
                         </div>
                     </td>
                     <td>
-                        <span v-for="(size,index) in iPad.storage" :key="'size' + index" class="label-yellow label label-sm label-narrow">{{size}}</span>
+                        <span v-for="(size,index) in iPad.storage" :key="'size' + index" class="label-cyan label label-sm">{{size}}</span>
                     </td>
                     <td>
                         <div v-if="iPad.battery" class="battery">{{iPad.battery}}</div>
@@ -111,7 +111,7 @@
     </div>
 </div>
 
-<script src="iPad.js?v=20200520162617"></script>
+<script src="iPad.js?v=20200520164813"></script>
 <script>
   setTimeout(()=>{
       if (location.href.indexOf('http://a.kylebing.cn') !== -1 || location.href.indexOf('http://localhost') !== -1) {
