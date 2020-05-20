@@ -1,6 +1,6 @@
 /*****************************
   Create Date: 20200414122339
-  Update Date: 20200416150225
+  Update Date: 20200513134856
  *****************************/
 
 const lastOS = "iPadOS 13.4.1";
@@ -8,46 +8,11 @@ const lastOS = "iPadOS 13.4.1";
 const iPadPro =[
   // iPad pro 1 generation
   {
-    name: "iPad Pro 1 12.9",
-    name_short: "Pro 1",
-    active: false,
-    screen_size: "12.9",
-    screen_resolution: "2732 x 2048",
-    screen_density: "264",
-    width: 305.7,
-    height: 220.6,
-    thickness: 6.9,
-    os: {
-      init: "iOS 9.1",
-      last: lastOS
-    },
-    cpu: {
-      model: 'A9X',
-      rate: '2.26',
-      core: 2
-    },
-    gpu: {
-      model: "PowerVR Series 7XT",
-      core: 12
-    },
-    memory: [
-      {size: "4", type: "DDR4"}
-    ],
-    storage: ["32", "128", "256"],
-    price: "",
-    battery: "10307",
-    models: [
-      {id: 1, name: "iPad6,7", model: "A1584 (WiFi)", weight: 710},
-      {id: 2, name: "iPad6,8", model: "A1652 (蜂窝)", weight: 720}
-    ],
-    release: "2015-09-11"
-  },
-  {
     name: "iPad Pro 1 9.7",
     name_short: "Pro 1",
     active: false,
     screen_size: "9.7",
-    screen_resolution: "2048 x 1536",
+    screen_resolution: "2048 × 1536",
     screen_density: "264",
     width: 240,
     height: 169.5,
@@ -77,26 +42,24 @@ const iPadPro =[
     ],
     release: "2016-05-31"
   },
-
-  // iPad pro 2 generation
   {
-    name: "iPad Pro 2 12.9",
-    name_short: "Pro 2",
+    name: "iPad Pro 1 12.9",
+    name_short: "Pro 1",
     active: false,
     screen_size: "12.9",
-    screen_resolution: "2732 x 2048",
+    screen_resolution: "2732 × 2048",
     screen_density: "264",
-    width: 240,
-    height: 169.5,
-    thickness: 6.1,
+    width: 305.7,
+    height: 220.6,
+    thickness: 6.9,
     os: {
-      init: "iOS 10.3.2",
+      init: "iOS 9.1",
       last: lastOS
     },
     cpu: {
-      model: 'A10X',
-      rate: '2.36',
-      core: 6
+      model: 'A9X',
+      rate: '2.26',
+      core: 2
     },
     gpu: {
       model: "PowerVR Series 7XT",
@@ -105,21 +68,23 @@ const iPadPro =[
     memory: [
       {size: "4", type: "DDR4"}
     ],
-    storage: ["64", "256", "512"],
+    storage: ["32", "128", "256"],
     price: "",
-    battery: "10875",
+    battery: "10307",
     models: [
-      {id: 1, name: "iPad7,1", model: "A1670 (WiFi)", weight: 677},
-      {id: 2, name: "iPad7,2", model: "A1671 (WiFi + 蜂窝)", weight: 692}
+      {id: 1, name: "iPad6,7", model: "A1584 (WiFi)", weight: 710},
+      {id: 2, name: "iPad6,8", model: "A1652 (蜂窝)", weight: 720}
     ],
-    release: "2017-06-13"
+    release: "2015-09-11"
   },
+
+  // iPad pro 2 generation
   {
     name: "iPad Pro 2 10.5",
     name_short: "Pro 2",
     active: false,
     screen_size: "10.5",
-    screen_resolution: "2224 x 1668",
+    screen_resolution: "2224 × 1668",
     screen_density: "264",
     width: 240,
     height: 169.5,
@@ -149,51 +114,49 @@ const iPadPro =[
     ],
     release: "2017-06-13"
   },
-
-  // iPad pro 3 generation
   {
-    name: "iPad Pro 3 12.9",
-    name_short: "Pro 3",
+    name: "iPad Pro 2 12.9",
+    name_short: "Pro 2",
     active: false,
     screen_size: "12.9",
-    screen_resolution: "2732 x 2048",
+    screen_resolution: "2732 × 2048",
     screen_density: "264",
-    width: 280.6,
-    height: 241.9,
-    thickness: 5.9,
+    width: 240,
+    height: 169.5,
+    thickness: 6.1,
     os: {
-      init: "iOS 12.1",
+      init: "iOS 10.3.2",
       last: lastOS
     },
     cpu: {
-      model: 'A12X',
+      model: 'A10X',
       rate: '2.36',
-      core: 8
+      core: 6
     },
     gpu: {
-      model: "Apple GPU",
-      core: 7
+      model: "PowerVR Series 7XT",
+      core: 12
     },
     memory: [
-      {name: "<1T", size: "4", type: "DDR4X"},
-      {name: "=1T", size: "6", type: "DDR4X"}
+      {size: "4", type: "DDR4"}
     ],
-    storage: ["64", "256", "512", "1024"],
+    storage: ["64", "256", "512"],
     price: "",
-    battery: "9720",
+    battery: "10875",
     models: [
-      {id: 1, name: "iPad8,5 (<1TB) iPad8,6 (=1TB)", model: "A1876 (WiFi)", weight: 631},
-      {id: 2, name: "iPad8,7 (<1TB)", model: "A1895, A2014 (WiFi + 蜂窝)", weight: 633},
-      {id: 3, name: "iPad8,8 (=1TB)", model: "A1983 (WiFi + 蜂窝, 国行)", weight: 633}
+      {id: 1, name: "iPad7,1", model: "A1670 (WiFi)", weight: 677},
+      {id: 2, name: "iPad7,2", model: "A1671 (WiFi + 蜂窝)", weight: 692}
     ],
-    release: "2018-10-03"
+    release: "2017-06-13"
   },
+
+  // iPad pro 3 generation
   {
     name: "iPad Pro 3 11",
     name_short: "Pro 3",
     active: false,
     screen_size: "11",
-    screen_resolution: "2388 x 1668",
+    screen_resolution: "2388 × 1668",
     screen_density: "264",
     width: 247.6,
     height: 178.5,
@@ -212,8 +175,8 @@ const iPadPro =[
       core: 7
     },
     memory: [
-      {name: "<1T", size: "4", type: "DDR4X"},
-      {name: "=1T", size: "6", type: "DDR4X"}
+      {name: "< 1T", size: "4", type: "DDR4X"},
+      {name: "= 1T", size: "6", type: "DDR4X"}
     ],
     storage: ["64", "256", "512", "1024"],
     price: "",
@@ -225,17 +188,54 @@ const iPadPro =[
     ],
     release: "2018-10-03"
   },
+  {
+    name: "iPad Pro 3 12.9",
+    name_short: "Pro 3",
+    active: false,
+    screen_size: "12.9",
+    screen_resolution: "2732 × 2048",
+    screen_density: "264",
+    width: 280.6,
+    height: 241.9,
+    thickness: 5.9,
+    os: {
+      init: "iOS 12.1",
+      last: lastOS
+    },
+    cpu: {
+      model: 'A12X',
+      rate: '2.36',
+      core: 8
+    },
+    gpu: {
+      model: "Apple GPU",
+      core: 7
+    },
+    memory: [
+      {name: "< 1T", size: "4", type: "DDR4X"},
+      {name: "= 1T", size: "6", type: "DDR4X"}
+    ],
+    storage: ["64", "256", "512", "1024"],
+    price: "",
+    battery: "9720",
+    models: [
+      {id: 1, name: "iPad8,5 (<1TB) iPad8,6 (=1TB)", model: "A1876 (WiFi)", weight: 631},
+      {id: 2, name: "iPad8,7 (<1TB)", model: "A1895, A2014 (WiFi + 蜂窝)", weight: 633},
+      {id: 3, name: "iPad8,8 (=1TB)", model: "A1983 (WiFi + 蜂窝, 国行)", weight: 633}
+    ],
+    release: "2018-10-03"
+  },
 
   // iPad pro 4 generation
   {
-    name: "iPad Pro 4 12.9",
+    name: "iPad Pro 4 11",
     name_short: "Pro 4",
     active: false,
-    screen_size: "12.9",
-    screen_resolution: "2732 x 2048",
+    screen_size: "11",
+    screen_resolution: "2388 × 1688",
     screen_density: "264",
-    width: 280.6,
-    height: 214.9,
+    width: 247.6,
+    height: 178.5,
     thickness: 5.9,
     os: {
       init: "iPadOS 13.4",
@@ -261,14 +261,14 @@ const iPadPro =[
     release: "2020-03-18"
   },
   {
-    name: "iPad Pro 4 11",
+    name: "iPad Pro 4 12.9",
     name_short: "Pro 4",
     active: false,
-    screen_size: "11",
-    screen_resolution: "2388 x 1688",
+    screen_size: "12.9",
+    screen_resolution: "2732 × 2048",
     screen_density: "264",
-    width: 247.6,
-    height: 178.5,
+    width: 280.6,
+    height: 214.9,
     thickness: 5.9,
     os: {
       init: "iPadOS 13.4",
@@ -371,7 +371,7 @@ const iPadAir =[
     name_short: "Air 3",
     active: false,
     screen_size: "10.5",
-    screen_resolution: "2224 x 1668",
+    screen_resolution: "2224 × 1668",
     screen_density: "264",
     width: 248.9,
     height: 172.7,
@@ -410,7 +410,7 @@ const iPadMini =[
     name_short: "mini",
     active: false,
     screen_size: "7.9",
-    screen_resolution: "1024 x 768",
+    screen_resolution: "1024 × 768",
     screen_density: 163,
     width: 199.9,
     height: 134.6,
@@ -593,7 +593,7 @@ const iPad =[
     name_short: "iPad 1",
     active: false,
     screen_size: "9.7",
-    screen_resolution: "1024 x 768",
+    screen_resolution: "1024 × 768",
     screen_density: 132,
     width: 242.8,
     height: 189.7,
@@ -628,7 +628,7 @@ const iPad =[
     name_short: "iPad 2",
     active: false,
     screen_size: "9.7",
-    screen_resolution: "1024 x 768",
+    screen_resolution: "1024 × 768",
     screen_density: 132,
     width: 241.3,
     height: 185.7,
@@ -664,7 +664,7 @@ const iPad =[
     name_short: "iPad 3",
     active: false,
     screen_size: "9.7",
-    screen_resolution: "2048 x 1536",
+    screen_resolution: "2048 × 1536",
     screen_density: 264,
     width: 241.3,
     height: 185.7,
@@ -700,7 +700,7 @@ const iPad =[
     name_short: "iPad 4",
     active: false,
     screen_size: "9.7",
-    screen_resolution: "2048 x 1536",
+    screen_resolution: "2048 × 1536",
     screen_density: 132,
     width: 241.3,
     height: 185.7,
@@ -736,7 +736,7 @@ const iPad =[
     name_short: "iPad 5",
     active: false,
     screen_size: "9.7",
-    screen_resolution: "2048 x 1536",
+    screen_resolution: "2048 × 1536",
     screen_density: 264,
     width: 238.8,
     height: 167.6,
@@ -771,7 +771,7 @@ const iPad =[
     name_short: "iPad 6",
     active: false,
     screen_size: "9.7",
-    screen_resolution: "2048 x 1536",
+    screen_resolution: "2048 × 1536",
     screen_density: 264,
     width: 238.8,
     height: 167.6,
@@ -806,7 +806,7 @@ const iPad =[
     name_short: "iPad 7",
     active: false,
     screen_size: "10.2",
-    screen_resolution: "2160 x 1620",
+    screen_resolution: "2160 × 1620",
     screen_density: 264,
     width: 248.9,
     height: 172.7,

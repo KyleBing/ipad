@@ -14,6 +14,7 @@ table{
 tbody{
   tr{
     height: 70px;
+    position: relative;;
     &:hover{
       background-color: $bg-highlight;
       color: #000;
@@ -24,7 +25,16 @@ tbody{
   }
 }
 
-tr{
+tr td{
+  &:first-child{
+    padding-left: 10px;
+  }
+  &:last-child{
+    padding-right: 10px;
+  }
+}
+
+tbody tr{
   border-bottom: 1px solid #eeeeee;
   &:nth-child(odd){
     background-color: #ffffff;
@@ -36,10 +46,13 @@ tr{
     border-bottom: 0;
   }
 }
+thead{
+  @extend .shadow;
+}
 
 th{
   white-space: nowrap;
-  border-bottom: 1px solid $color-border;
+  border-bottom: 1px solid lighten($color-border, 5%);
   border-top: 1px solid lighten($color-border, 5%);
   text-align: left;
   vertical-align: bottom;

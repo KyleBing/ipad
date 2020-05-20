@@ -8,7 +8,7 @@
 
     <title>iPad</title>
     <link rel="shortcut icon" href="./img/iPad-icon.png" type="image/png">
-    <link rel="stylesheet" href="css/iPad.css?v=20200510222342">
+    <link rel="stylesheet" href="css/iPad.css?v=20200513134948">
     <link rel="apple-touch-icon" href="./img/iPad-icon.png">
     <script src="../../lib/js/jquery-2.2.4.min.js"></script>
     <script src="../../lib/js/vue.min.2.6.10.js"></script>
@@ -23,7 +23,7 @@
             <div class="sign">
                 <p>整理美化：<a class="link" href="https://kylebing.cn/">KyleBing</a></p>
                 <p>数据来源：<a class="link" href="https://en.wikipedia.org/wiki/iPad">Wikipedia.org</a></p>
-                <p>最后更新：2020年04月21日</p>
+                <p>最后更新：2020年05月13日</p>
             </div>
         </div>
         <div class="table-wrapper">
@@ -54,7 +54,7 @@
                     :data-index="index">
                     <td class="text-emphasis">{{iPad.name_short}}</td>
                     <td>
-                        <span class="label-red text-emphasis">{{iPad.screen_size}}</span>
+                        <span class="label-magenta text-emphasis">{{iPad.screen_size}}</span>
                     </td>
 <!--                    <td class="text-emphasis">{{iPad.release.substring(0,4) + '/' + iPad.release.substring(5,7)}}</td>-->
                     <td class="text-emphasis">
@@ -62,9 +62,9 @@
                     </td>
                     <td>{{iPad.screen_resolution}}</td>
                     <td>
-                        <span v-if="iPad.screen_density" class="label-purple">{{iPad.screen_density}}</span>
+                        <span v-if="iPad.screen_density" class="label-blue">{{iPad.screen_density}}</span>
                     </td>
-                    <td>{{`${iPad.width} x ${iPad.height}`}}</td>
+                    <td>{{`${iPad.width} × ${iPad.height}`}}</td>
                     <td class="text-emphasis">{{iPad.thickness}}</td>
                     <td>
                         <div class="dual-label-cpu">
@@ -111,15 +111,18 @@
     </div>
 </div>
 
-<script src="iPad.js?v=20200510222342"></script>
+<script src="iPad.js?v=20200513134948"></script>
 <script>
-  var _hmt = _hmt || [];
-  (function() {
-    var hm = document.createElement("script");
-    hm.src = "https://hm.baidu.com/hm.js?1e6cadf1b902683e03caa1ef60cc56a2";
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(hm, s);
-  })();
+  setTimeout(()=>{
+      if (location.href.indexOf('http://a.kylebing.cn') !== -1 || location.href.indexOf('http://localhost') !== -1) {
+
+      } else {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?1e6cadf1b902683e03caa1ef60cc56a2";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+      }
+  }, 1000)
 </script>
 
 

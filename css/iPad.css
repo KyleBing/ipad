@@ -112,29 +112,39 @@ tt {
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 5px;
-  font-size: 0.8rem; }
+  font-size: 0.9rem; }
   .dual-label-cpu:last-child {
     margin-bottom: 0; }
   .dual-label-cpu > div {
     line-height: 1;
     font-weight: bold;
     text-align: center;
-    padding: 3px 6px;
+    padding: 3px 8px;
     min-width: 30px; }
   .dual-label-cpu .model {
-    min-width: 1.6rem;
-    -webkit-border-radius: 3px 0 0 3px;
-    -moz-border-radius: 3px 0 0 3px;
-    border-radius: 3px 0 0 3px;
+    padding-right: 10px;
+    min-width: 1.8rem;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
     background-color: rgba(255, 45, 112, 0.8);
     color: white;
     border-color: rgba(255, 45, 112, 0.8);
     border-style: solid;
-    border-width: 1px 0 1px 1px; }
+    border-width: 1px 0 1px 1px;
+    z-index: 5;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
   .dual-label-cpu .rate {
-    -webkit-border-radius: 0 3px 3px 0;
-    -moz-border-radius: 0 3px 3px 0;
-    border-radius: 0 3px 3px 0;
+    font-family: 'Arial Narrow', sans-serif;
+    margin-left: -10px;
+    padding-left: 15px;
+    padding-right: 10px;
+    font-size: 0.8rem;
+    -webkit-border-radius: 0 15px 15px 0;
+    -moz-border-radius: 0 15px 15px 0;
+    border-radius: 0 15px 15px 0;
     border-color: rgba(255, 45, 112, 0.8);
     color: #FF2D70;
     font-weight: normal;
@@ -147,29 +157,39 @@ tt {
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 5px;
-  font-size: 0.8rem; }
+  font-size: 0.9rem; }
   .dual-label-gpu:last-child {
     margin-bottom: 0; }
   .dual-label-gpu > div {
     line-height: 1;
     font-weight: bold;
     text-align: center;
-    padding: 3px 6px;
+    padding: 3px 8px;
     min-width: 30px; }
   .dual-label-gpu .model {
-    min-width: 1.6rem;
-    -webkit-border-radius: 3px 0 0 3px;
-    -moz-border-radius: 3px 0 0 3px;
-    border-radius: 3px 0 0 3px;
+    padding-right: 10px;
+    min-width: 1.8rem;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
     background-color: rgba(255, 149, 0, 0.8);
     color: white;
     border-color: rgba(255, 149, 0, 0.8);
     border-style: solid;
-    border-width: 1px 0 1px 1px; }
+    border-width: 1px 0 1px 1px;
+    z-index: 5;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
   .dual-label-gpu .rate {
-    -webkit-border-radius: 0 3px 3px 0;
-    -moz-border-radius: 0 3px 3px 0;
-    border-radius: 0 3px 3px 0;
+    font-family: 'Arial Narrow', sans-serif;
+    margin-left: -10px;
+    padding-left: 15px;
+    padding-right: 10px;
+    font-size: 0.8rem;
+    -webkit-border-radius: 0 15px 15px 0;
+    -moz-border-radius: 0 15px 15px 0;
+    border-radius: 0 15px 15px 0;
     border-color: rgba(255, 149, 0, 0.8);
     color: #FF9500;
     font-weight: normal;
@@ -182,29 +202,39 @@ tt {
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 5px;
-  font-size: 0.8rem; }
+  font-size: 0.9rem; }
   .dual-label-memory:last-child {
     margin-bottom: 0; }
   .dual-label-memory > div {
     line-height: 1;
     font-weight: bold;
     text-align: center;
-    padding: 3px 6px;
+    padding: 3px 8px;
     min-width: 30px; }
   .dual-label-memory .model {
-    min-width: 1.6rem;
-    -webkit-border-radius: 3px 0 0 3px;
-    -moz-border-radius: 3px 0 0 3px;
-    border-radius: 3px 0 0 3px;
+    padding-right: 10px;
+    min-width: 1.8rem;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
     background-color: rgba(255, 59, 48, 0.8);
     color: white;
     border-color: rgba(255, 59, 48, 0.8);
     border-style: solid;
-    border-width: 1px 0 1px 1px; }
+    border-width: 1px 0 1px 1px;
+    z-index: 5;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
   .dual-label-memory .rate {
-    -webkit-border-radius: 0 3px 3px 0;
-    -moz-border-radius: 0 3px 3px 0;
-    border-radius: 0 3px 3px 0;
+    font-family: 'Arial Narrow', sans-serif;
+    margin-left: -10px;
+    padding-left: 15px;
+    padding-right: 10px;
+    font-size: 0.8rem;
+    -webkit-border-radius: 0 15px 15px 0;
+    -moz-border-radius: 0 15px 15px 0;
+    border-radius: 0 15px 15px 0;
     border-color: rgba(255, 59, 48, 0.8);
     color: #FF3B30;
     font-weight: normal;
@@ -212,30 +242,24 @@ tt {
     border-style: solid;
     border-width: 1px 1px 1px 0; }
 
-.gpu {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.8rem; }
-  .gpu .model {
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    background-color: rgba(255, 149, 0, 0.8);
-    color: white;
-    border: 1px solid rgba(255, 149, 0, 0.8);
-    padding: 3px;
-    line-height: 1;
-    text-align: center; }
+.gpu .modal {
+  font-family: 'Arial Narrow', sans-serif; }
 
-.label, .label-blue, .label-green, .label-orange, .label-yellow, .label-gray, .label-red, .label-cyan, .label-purple {
-  font-size: 0.8rem;
+.label, .label-magenta, .label-blue, .label-green, .label-orange, .label-yellow, .label-gray, .label-red, .label-cyan, .label-purple {
+  font-size: 0.9rem;
   display: inline-block;
-  padding: 2px 5px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  padding: 2px 8px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
   margin-right: 3px;
-  line-height: 1; }
+  line-height: 1;
+  font-weight: bold; }
+
+.label-magenta {
+  color: white;
+  border: 1px solid rgba(255, 45, 112, 0.9);
+  background-color: rgba(255, 45, 112, 0.8); }
 
 .label-blue {
   color: white;
@@ -279,18 +303,19 @@ tt {
 
 .battery {
   display: inline-block;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   line-height: 10px;
   padding: 4px 8px;
   border: 1px solid rgba(0, 181, 107, 0.8);
   text-align: center;
+  font-weight: bold;
   color: white;
   background-color: rgba(0, 181, 107, 0.8);
   position: relative;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px; }
-  .battery::after {
+  .battery:after {
     content: "";
     position: absolute;
     right: -5px;
@@ -304,6 +329,9 @@ tt {
 
 tbody tr.active td:first-child {
   transform: scale(1.1); }
+tbody tr.active .label-magenta {
+  background-color: #FF2D70;
+  color: white; }
 tbody tr.active .label-blue {
   background-color: #007AFF;
   color: white; }
@@ -364,25 +392,31 @@ table {
     cursor: crosshair; }
 
 tbody tr {
-  height: 70px; }
+  height: 70px;
+  position: relative; }
   tbody tr:hover {
     background-color: #eeeeee;
     color: #000; }
   tbody tr.active {
     background-color: #d5d5d5; }
 
-tr {
+tr td:first-child {
+  padding-left: 10px; }
+tr td:last-child {
+  padding-right: 10px; }
+
+tbody tr {
   border-bottom: 1px solid #eeeeee; }
-  tr:nth-child(odd) {
+  tbody tr:nth-child(odd) {
     background-color: #ffffff; }
-  tr:nth-child(even) {
+  tbody tr:nth-child(even) {
     background-color: #fdfcfc; }
-  tr:last-child {
+  tbody tr:last-child {
     border-bottom: 0; }
 
 th {
   white-space: nowrap;
-  border-bottom: 1px solid #dadada;
+  border-bottom: 1px solid #e7e7e7;
   border-top: 1px solid #e7e7e7;
   text-align: left;
   vertical-align: bottom;
@@ -390,7 +424,7 @@ th {
   th sup {
     font-family: "Arial Narrow", Sans-serf;
     color: #8E8E93;
-    font-size: 0.64rem;
+    font-size: 0.72rem;
     font-weight: normal;
     padding: 0 2px; }
 
@@ -419,7 +453,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: #000; }
   .header h3 {
     line-height: 1.5;
@@ -448,7 +482,7 @@ body {
   background-color: #fff;
   margin-bottom: 30px; }
 
-.shadow {
+.shadow, thead {
   -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15); }
@@ -457,5 +491,8 @@ body {
   color: #FF2D70 !important; }
 .link:active {
   transform: translateY(2px); }
+
+.text-shadow-light, .label, .label-magenta, .label-blue, .label-green, .label-orange, .label-yellow, .label-gray, .label-red, .label-cyan, .label-purple, .battery {
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
 
 /*# sourceMappingURL=iPad.css.map */

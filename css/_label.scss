@@ -18,22 +18,31 @@ $dual-label-types: (
       line-height: 1;
       font-weight: bold;
       text-align: center;
-      padding: $label-padding $label-padding * 2;
+      padding: $label-padding $label-padding-lr;
       min-width: 30px;
       @if $use-shadow {
         @extend .shadow;
       }
     }
     .model{
+      padding-right: $label-padding-lr + 2px;
       min-width: $label-font-size * 2;
-      @include border-radius($label-corner 0 0 $label-corner);
+      //@include border-radius($label-corner 0 0 $label-corner);
+      @include border-radius($label-corner );
       background-color: transparentize($color, $label-transparent-rate);
       color: white;
       border-color: transparentize($color, $label-transparent-rate);
       border-style: solid;
       border-width: 1px 0 1px 1px;
+      z-index: 5;
+      @include box-shadow(0 1px 2px rgba(0,0,0,0.1))
     }
     .rate{
+      font-family: 'Arial Narrow', sans-serif;
+      margin-left: -10px;
+      padding-left: 15px;
+      padding-right: 10px;
+      font-size: 0.8rem;
       @include border-radius(0 $label-corner $label-corner 0);
       border-color: transparentize($color, $label-transparent-rate);
       color: $color;
@@ -45,40 +54,30 @@ $dual-label-types: (
   }
 }
 
-
-$gpu-color: transparentize($orange, $label-transparent-rate);
 .gpu{
-  display: flex;
-  justify-content: space-between;
-  font-size: $label-font-size;
-  .model{
-    @include border-radius($label-corner);
-    background-color: $gpu-color;
-    color: white;
-    border: 1px solid $gpu-color;
-    padding: $label-padding;
-    line-height: 1;
-    text-align: center;
-    @if $use-shadow {
-      @extend .shadow;
-    }
+  .modal{
+    font-family: 'Arial Narrow', sans-serif;
   }
 }
+
 
 
 .label{
   font-size: $label-font-size;
   display: inline-block;
-  padding: ($label-padding - 1) 5px;
+  padding: ($label-padding - 1) $label-padding-lr;
   @include border-radius($label-corner);
   margin-right: 3px;
   line-height: 1;
+  font-weight: bold;
+  @extend .text-shadow-light;
   @if $use-shadow {
     @extend .shadow;
   }
 }
 
 $label-styles: (
+        "magenta": $magenta,
         "blue": $blue,
         "green": $green,
         "orange": $orange,
@@ -102,17 +101,19 @@ $height-battery: 20px;
 $color-battery: transparentize($green, $label-transparent-rate);
 
 .battery{
+  @extend .text-shadow-light;
   display: inline-block;
   font-size: $label-font-size;
   line-height: $height-battery - 10;
   padding: $label-padding + 1 8px;
   border: 1px solid $color-battery;
   text-align: center;
+  font-weight: bold;
   color: white;
   background-color: $color-battery;
   position: relative;
   @include border-radius(3px);
-  &::after{
+  &:after{
     content: "";
     position: absolute;
     right: -3px - 1px - 1px;
