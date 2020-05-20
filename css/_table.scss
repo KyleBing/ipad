@@ -14,9 +14,8 @@ table{
 tbody{
   tr{
     height: 70px;
-    position: relative;;
     &:hover{
-      background-color: $bg-highlight;
+      background-color: $bg-highlight !important;
       color: #000;
     }
     &.active{

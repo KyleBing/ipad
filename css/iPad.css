@@ -400,10 +400,9 @@ table {
     cursor: crosshair; }
 
 tbody tr {
-  height: 70px;
-  position: relative; }
+  height: 70px; }
   tbody tr:hover {
-    background-color: #eeeeee;
+    background-color: #eeeeee !important;
     color: #000; }
   tbody tr.active {
     background-color: #d5d5d5; }
