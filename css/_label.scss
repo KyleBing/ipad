@@ -55,8 +55,9 @@ $dual-label-types: (
 }
 
 .gpu{
-  .modal{
-    font-family: 'Arial Narrow', sans-serif;
+  .model{
+    font-weight: normal;
+    font-family: 'Arial Narrow', sans-serif !important;
   }
 }
 
@@ -105,7 +106,7 @@ $color-battery: transparentize($green, $label-transparent-rate);
   display: inline-block;
   font-size: $label-font-size;
   line-height: $height-battery - 10;
-  padding: $label-padding + 1 8px;
+  padding: $label-padding + 1 5px;
   border: 1px solid $color-battery;
   text-align: center;
   font-weight: bold;

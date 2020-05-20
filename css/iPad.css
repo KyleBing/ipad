@@ -242,8 +242,9 @@ tt {
     border-style: solid;
     border-width: 1px 1px 1px 0; }
 
-.gpu .modal {
-  font-family: 'Arial Narrow', sans-serif; }
+.gpu .model {
+  font-weight: normal;
+  font-family: 'Arial Narrow', sans-serif !important; }
 
 .label, .label-magenta, .label-blue, .label-green, .label-orange, .label-yellow, .label-gray, .label-red, .label-cyan, .label-purple {
   font-size: 0.9rem;
@@ -305,7 +306,7 @@ tt {
   display: inline-block;
   font-size: 0.9rem;
   line-height: 10px;
-  padding: 4px 8px;
+  padding: 4px 5px;
   border: 1px solid rgba(0, 181, 107, 0.8);
   text-align: center;
   font-weight: bold;

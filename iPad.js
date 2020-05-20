@@ -1,6 +1,6 @@
 /*****************************
   Create Date: 20200414122339
-  Update Date: 20200513134856
+  Update Date: 20200520162624
  *****************************/
 
 const lastOS = "iPadOS 13.4.1";
@@ -243,7 +243,7 @@ const iPadPro =[
     },
     cpu: {
       model: 'A12Z',
-      rate: '≈2.5',
+      rate: '≈ 2.5',
       core: 8
     },
     gpu: {
@@ -276,7 +276,7 @@ const iPadPro =[
     },
     cpu: {
       model: 'A12Z',
-      rate: '≈2.5',
+      rate: '≈ 2.5',
       core: 8
     },
     gpu: {

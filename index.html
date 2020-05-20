@@ -8,7 +8,7 @@
 
     <title>iPad</title>
     <link rel="shortcut icon" href="./img/iPad-icon.png" type="image/png">
-    <link rel="stylesheet" href="css/iPad.css?v=20200513134948">
+    <link rel="stylesheet" href="css/iPad.css?v=20200520162617">
     <link rel="apple-touch-icon" href="./img/iPad-icon.png">
     <script src="../../lib/js/jquery-2.2.4.min.js"></script>
     <script src="../../lib/js/vue.min.2.6.10.js"></script>
@@ -73,7 +73,7 @@
                         </div>
                     </td>
                     <td>
-                        <div class="dual-label-gpu" v-if="iPad.gpu.model">
+                        <div class="dual-label-gpu gpu" v-if="iPad.gpu.model">
                             <div class="model">{{iPad.gpu.model}}</div>
                             <div class="rate">{{iPad.gpu.core ? iPad.gpu.core : '&nbsp;'}}</div>
                         </div>
@@ -111,7 +111,7 @@
     </div>
 </div>
 
-<script src="iPad.js?v=20200513134948"></script>
+<script src="iPad.js?v=20200520162617"></script>
 <script>
   setTimeout(()=>{
       if (location.href.indexOf('http://a.kylebing.cn') !== -1 || location.href.indexOf('http://localhost') !== -1) {
