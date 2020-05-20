@@ -38,11 +38,10 @@ $dual-label-types: (
       @include box-shadow(0 1px 2px rgba(0,0,0,0.1))
     }
     .rate{
-      font-family: 'Arial Narrow', sans-serif;
       margin-left: -10px;
       padding-left: 15px;
       padding-right: 10px;
-      font-size: 0.8rem;
+      font-size: $label-font-size-sm;
       @include border-radius(0 $label-corner $label-corner 0);
       border-color: transparentize($color, $label-transparent-rate);
       color: $color;
@@ -77,6 +76,18 @@ $dual-label-types: (
   }
 }
 
+.label-sm{
+  font-size: $label-font-size-sm;
+  padding: ($label-padding - 1) $label-padding-lr - 2;
+}
+
+.label-narrow{
+  @include border-radius(0);
+  padding: ($label-padding - 1) $label-padding-lr - 5;
+}
+
+
+
 $label-styles: (
         "magenta": $magenta,
         "blue": $blue,
@@ -94,7 +105,6 @@ $label-styles: (
     color: white;
     border: 1px solid transparentize($color, $label-transparent-rate / 2);
     background-color: transparentize($color, $label-transparent-rate);
-    @extend .label;
   }
 }
 
@@ -104,7 +114,7 @@ $color-battery: transparentize($green, $label-transparent-rate);
 .battery{
   @extend .text-shadow-light;
   display: inline-block;
-  font-size: $label-font-size;
+  font-size: $label-font-size-sm;
   line-height: $height-battery - 10;
   padding: $label-padding + 1 5px;
   border: 1px solid $color-battery;
@@ -125,7 +135,6 @@ $color-battery: transparentize($green, $label-transparent-rate);
     @include border-radius(0 2px 2px 0);
   }
 }
-
 
 
 // HOVER

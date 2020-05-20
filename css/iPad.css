@@ -137,7 +137,6 @@ tt {
     -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
   .dual-label-cpu .rate {
-    font-family: 'Arial Narrow', sans-serif;
     margin-left: -10px;
     padding-left: 15px;
     padding-right: 10px;
@@ -182,7 +181,6 @@ tt {
     -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
   .dual-label-gpu .rate {
-    font-family: 'Arial Narrow', sans-serif;
     margin-left: -10px;
     padding-left: 15px;
     padding-right: 10px;
@@ -227,7 +225,6 @@ tt {
     -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
   .dual-label-memory .rate {
-    font-family: 'Arial Narrow', sans-serif;
     margin-left: -10px;
     padding-left: 15px;
     padding-right: 10px;
@@ -246,7 +243,7 @@ tt {
   font-weight: normal;
   font-family: 'Arial Narrow', sans-serif !important; }
 
-.label, .label-magenta, .label-blue, .label-green, .label-orange, .label-yellow, .label-gray, .label-red, .label-cyan, .label-purple {
+.label {
   font-size: 0.9rem;
   display: inline-block;
   padding: 2px 8px;
@@ -256,6 +253,16 @@ tt {
   margin-right: 3px;
   line-height: 1;
   font-weight: bold; }
+
+.label-sm {
+  font-size: 0.8rem;
+  padding: 2px 6px; }
+
+.label-narrow {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  padding: 2px 3px; }
 
 .label-magenta {
   color: white;
@@ -304,7 +311,7 @@ tt {
 
 .battery {
   display: inline-block;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   line-height: 10px;
   padding: 4px 5px;
   border: 1px solid rgba(0, 181, 107, 0.8);
@@ -493,7 +500,7 @@ body {
 .link:active {
   transform: translateY(2px); }
 
-.text-shadow-light, .label, .label-magenta, .label-blue, .label-green, .label-orange, .label-yellow, .label-gray, .label-red, .label-cyan, .label-purple, .battery {
+.text-shadow-light, .label, .battery {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
 
 /*# sourceMappingURL=iPad.css.map */

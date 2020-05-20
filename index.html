@@ -23,7 +23,7 @@
             <div class="sign">
                 <p>整理美化：<a class="link" href="https://kylebing.cn/">KyleBing</a></p>
                 <p>数据来源：<a class="link" href="https://en.wikipedia.org/wiki/iPad">Wikipedia.org</a></p>
-                <p>最后更新：2020年05月13日</p>
+                <p>最后更新：2020年05月20日</p>
             </div>
         </div>
         <div class="table-wrapper">
@@ -54,7 +54,7 @@
                     :data-index="index">
                     <td class="text-emphasis">{{iPad.name_short}}</td>
                     <td>
-                        <span class="label-magenta text-emphasis">{{iPad.screen_size}}</span>
+                        <span class="label-magenta label text-emphasis">{{iPad.screen_size}}</span>
                     </td>
 <!--                    <td class="text-emphasis">{{iPad.release.substring(0,4) + '/' + iPad.release.substring(5,7)}}</td>-->
                     <td class="text-emphasis">
@@ -62,7 +62,7 @@
                     </td>
                     <td>{{iPad.screen_resolution}}</td>
                     <td>
-                        <span v-if="iPad.screen_density" class="label-blue">{{iPad.screen_density}}</span>
+                        <span v-if="iPad.screen_density" class="label-blue label">{{iPad.screen_density}}</span>
                     </td>
                     <td>{{`${iPad.width} × ${iPad.height}`}}</td>
                     <td class="text-emphasis">{{iPad.thickness}}</td>
@@ -85,7 +85,7 @@
                         </div>
                     </td>
                     <td>
-                        <span v-for="(size,index) in iPad.storage" :key="'size' + index" class="label-cyan">{{size}}</span>
+                        <span v-for="(size,index) in iPad.storage" :key="'size' + index" class="label-yellow label label-sm label-narrow">{{size}}</span>
                     </td>
                     <td>
                         <div v-if="iPad.battery" class="battery">{{iPad.battery}}</div>
@@ -101,7 +101,7 @@
                     </td>
                     <td class="text-small">
                         <p v-for="model in iPad.models" :key="model.id">
-                            <span>{{model.model}}</span> <span class="label-gray">{{model.weight}}</span>
+                            <span>{{model.model}}</span> <span class="label-gray label label-sm">{{model.weight}}</span>
                         </p>
                     </td>
                 </tr>
