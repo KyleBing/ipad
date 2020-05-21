@@ -1,9 +1,9 @@
 /*****************************
   Create Date: 20200414122339
-  Update Date: 20200520162624
+  Update Date: 20200521093050
  *****************************/
 
-const lastOS = "iPadOS 13.4.1";
+const lastOS = "iPadOS 13.5";
 
 const iPadPro =[
   // iPad pro 1 generation
