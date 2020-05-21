@@ -8,7 +8,7 @@
 
     <title>iPad</title>
     <link rel="shortcut icon" href="./img/iPad-icon.png" type="image/png">
-    <link rel="stylesheet" href="css/iPad.css?v=20200521093059">
+    <link rel="stylesheet" href="css/iPad.css?v=20200521122901">
     <link rel="apple-touch-icon" href="./img/iPad-icon.png">
     <script src="../../lib/js/jquery-2.2.4.min.js"></script>
     <script src="../../lib/js/vue.min.2.6.10.js"></script>
@@ -39,7 +39,7 @@
                     <th>厚度<sup>mm</sup></th>
                     <th>CPU<sup>GHz x 核</sup></th>
                     <th>GPU<sup>核</sup></th>
-                    <th>内存<sup>GB</sup></th>
+                    <th>内存</th>
                     <th>存储<sup>GB</sup></th>
                     <th>电池<sup>mAh</sup></th>
                     <th>系统支持</th>
@@ -65,7 +65,7 @@
                         <span v-if="iPad.screen_density" class="label-green label">{{iPad.screen_density}}</span>
                     </td>
                     <td>{{`${iPad.width} × ${iPad.height}`}}</td>
-                    <td class="text-emphasis">{{iPad.thickness}}</td>
+                    <td class="text-emphasis"><span class="label label-pink">{{iPad.thickness}}</span></td>
                     <td>
                         <div class="dual-label-cpu">
                             <div class="model">{{iPad.cpu.model}}</div>
@@ -79,20 +79,24 @@
                         </div>
                     </td>
                     <td>
-                        <div class="dual-label-memory" v-for="(memory,index) in iPad.memory" :key="'memory' + index">
-                            <div class="model">{{memory.size}}</div>
+                        <div class="dual-label-memory memory" v-for="(memory,index) in iPad.memory" :key="'memory' + index">
+                            <div v-if="memory.size < 1" class="model">{{memory.size * 1000}} M</div>
+                            <div v-else class="model">{{memory.size}} G</div>
                             <div class="rate">{{memory.type}}  {{memory.name}}</div>
                         </div>
                     </td>
                     <td>
-                        <span v-for="(size,index) in iPad.storage" :key="'size' + index" class="label-cyan label label-sm">{{size}}</span>
+                        <span v-for="(size,index) in iPad.storage" :key="'size' + index" class="label-cyan label label-sm">
+                            <span v-if="size < 1024">{{size}}</span>
+                            <span v-else>{{Math.round((size/1024))}}T</span>
+                        </span>
                     </td>
                     <td>
                         <div v-if="iPad.battery" class="battery">{{iPad.battery}}</div>
                     </td>
                     <td class="text-small">
                         <p>初始：{{iPad.os.init}}</p>
-                        <p>最终：<span :class="{'green bold': iPad.os.last == 'iPadOS 13.5'}">{{iPad.os.last}}</span></p>
+                        <p>最终：<span :class="{'green bold': iPad.os.last == latesOS}">{{iPad.os.last}}</span></p>
                     </td>
                     <td class="text-small text-narrow">
                         <p v-for="model in iPad.models" :key="model.id">
@@ -111,7 +115,7 @@
     </div>
 </div>
 
-<script src="iPad.js?v=20200521093059"></script>
+<script src="iPad.js?v=20200521122901"></script>
 <script>
   setTimeout(()=>{
       if (location.href.indexOf('http://a.kylebing.cn') !== -1 || location.href.indexOf('http://localhost') !== -1) {

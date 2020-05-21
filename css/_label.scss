@@ -60,6 +60,12 @@ $dual-label-types: (
   }
 }
 
+.memory{
+  .rate{
+    font-weight: normal;
+    font-family: 'Arial Narrow', sans-serif !important;
+  }
+}
 
 
 .label{
@@ -89,15 +95,16 @@ $dual-label-types: (
 
 
 $label-styles: (
-        "magenta": $magenta,
-        "blue": $blue,
         "green": $green,
+        "cyan": $cyan,
+        "blue": $blue,
+        "purple": $purple,
+        "magenta": $magenta,
+        "pink": $pink,
+        "red": $red,
         "orange": $orange,
         "yellow": $yellow,
         "gray": $gray,
-        "red": $red,
-        "cyan": $cyan,
-        "purple": $purple
 );
 
 @each $name, $color in $label-styles {
@@ -155,14 +162,12 @@ tbody tr.active {
         background-color: $color;
         border-color: $color;
       }
-
       .rate {
         border-color: $color;
         color: $color;
       }
     }
   }
-
   .gpu {
     .model {
       background-color: $green;

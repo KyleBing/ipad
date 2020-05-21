@@ -1,6 +1,6 @@
 /*****************************
   Create Date: 20200414122339
-  Update Date: 20200521093050
+  Update Date: 20200521122906
  *****************************/
 
 const lastOS = "iPadOS 13.5";
@@ -182,9 +182,9 @@ const iPadPro =[
     price: "",
     battery: "7812",
     models: [
-      {id: 1, name: "iPad8,1 (<1TB) iPad8,2 (=1TB)", model: "A1980 (WiFi)", weight: 468},
-      {id: 2, name: "iPad8,3 (<1TB)", model: "A1934, A2013 (WiFi + 蜂窝)", weight: 468},
-      {id: 3, name: "iPad8,4 (=1TB)", model: "A1979 (WiFi + 蜂窝, 国行)", weight: 468},
+      {id: 1, name: "iPad8,1 (<1T) iPad8,2 (=1T)", model: "A1980 (WiFi)", weight: 468},
+      {id: 2, name: "iPad8,3 (<1T)", model: "A1934, A2013 (WiFi + 蜂窝)", weight: 468},
+      {id: 3, name: "iPad8,4 (=1T)", model: "A1979 (WiFi + 蜂窝, 国行)", weight: 468},
     ],
     release: "2018-10-03"
   },
@@ -219,9 +219,9 @@ const iPadPro =[
     price: "",
     battery: "9720",
     models: [
-      {id: 1, name: "iPad8,5 (<1TB) iPad8,6 (=1TB)", model: "A1876 (WiFi)", weight: 631},
-      {id: 2, name: "iPad8,7 (<1TB)", model: "A1895, A2014 (WiFi + 蜂窝)", weight: 633},
-      {id: 3, name: "iPad8,8 (=1TB)", model: "A1983 (WiFi + 蜂窝, 国行)", weight: 633}
+      {id: 1, name: "iPad8,5 (<1T) iPad8,6 (=1T)", model: "A1876 (WiFi)", weight: 631},
+      {id: 2, name: "iPad8,7 (<1T)", model: "A1895, A2014 (WiFi + 蜂窝)", weight: 633},
+      {id: 3, name: "iPad8,8 (=1T)", model: "A1983 (WiFi + 蜂窝, 国行)", weight: 633}
     ],
     release: "2018-10-03"
   },
@@ -844,6 +844,7 @@ const iPad =[
 let app =new Vue({
   el: "#app",
   data: {
+    latesOS: lastOS,
     iPadsSeries: [
       {title: "iPad Pro", iPads: iPadPro},
       {title: "iPad Air", iPads: iPadAir},

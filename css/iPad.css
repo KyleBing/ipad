@@ -244,6 +244,10 @@ tt {
   font-weight: normal;
   font-family: 'Arial Narrow', sans-serif !important; }
 
+.memory .rate {
+  font-weight: normal;
+  font-family: 'Arial Narrow', sans-serif !important; }
+
 .label {
   font-size: 0.9rem;
   display: inline-block;
@@ -265,20 +269,40 @@ tt {
   border-radius: 0;
   padding: 2px 3px; }
 
-.label-magenta {
+.label-green {
   color: white;
-  border: 1px solid rgba(255, 45, 112, 0.9);
-  background-color: rgba(255, 45, 112, 0.8); }
+  border: 1px solid rgba(0, 181, 107, 0.9);
+  background-color: rgba(0, 181, 107, 0.8); }
+
+.label-cyan {
+  color: white;
+  border: 1px solid rgba(90, 200, 250, 0.9);
+  background-color: rgba(90, 200, 250, 0.8); }
 
 .label-blue {
   color: white;
   border: 1px solid rgba(0, 122, 255, 0.9);
   background-color: rgba(0, 122, 255, 0.8); }
 
-.label-green {
+.label-purple {
   color: white;
-  border: 1px solid rgba(0, 181, 107, 0.9);
-  background-color: rgba(0, 181, 107, 0.8); }
+  border: 1px solid rgba(88, 86, 214, 0.9);
+  background-color: rgba(88, 86, 214, 0.8); }
+
+.label-magenta {
+  color: white;
+  border: 1px solid rgba(255, 45, 112, 0.9);
+  background-color: rgba(255, 45, 112, 0.8); }
+
+.label-pink {
+  color: white;
+  border: 1px solid rgba(255, 99, 216, 0.9);
+  background-color: rgba(255, 99, 216, 0.8); }
+
+.label-red {
+  color: white;
+  border: 1px solid rgba(255, 59, 48, 0.9);
+  background-color: rgba(255, 59, 48, 0.8); }
 
 .label-orange {
   color: white;
@@ -294,21 +318,6 @@ tt {
   color: white;
   border: 1px solid rgba(142, 142, 147, 0.9);
   background-color: rgba(142, 142, 147, 0.8); }
-
-.label-red {
-  color: white;
-  border: 1px solid rgba(255, 59, 48, 0.9);
-  background-color: rgba(255, 59, 48, 0.8); }
-
-.label-cyan {
-  color: white;
-  border: 1px solid rgba(90, 200, 250, 0.9);
-  background-color: rgba(90, 200, 250, 0.8); }
-
-.label-purple {
-  color: white;
-  border: 1px solid rgba(88, 86, 214, 0.9);
-  background-color: rgba(88, 86, 214, 0.8); }
 
 .battery {
   display: inline-block;
@@ -338,14 +347,26 @@ tt {
 
 tbody tr.active td:first-child {
   transform: scale(1.1); }
-tbody tr.active .label-magenta {
-  background-color: #FF2D70;
+tbody tr.active .label-green {
+  background-color: #00b56b;
+  color: white; }
+tbody tr.active .label-cyan {
+  background-color: #5AC8FA;
   color: white; }
 tbody tr.active .label-blue {
   background-color: #007AFF;
   color: white; }
-tbody tr.active .label-green {
-  background-color: #00b56b;
+tbody tr.active .label-purple {
+  background-color: #5856D6;
+  color: white; }
+tbody tr.active .label-magenta {
+  background-color: #FF2D70;
+  color: white; }
+tbody tr.active .label-pink {
+  background-color: #ff63d8;
+  color: white; }
+tbody tr.active .label-red {
+  background-color: #FF3B30;
   color: white; }
 tbody tr.active .label-orange {
   background-color: #FF9500;
@@ -355,15 +376,6 @@ tbody tr.active .label-yellow {
   color: white; }
 tbody tr.active .label-gray {
   background-color: #8E8E93;
-  color: white; }
-tbody tr.active .label-red {
-  background-color: #FF3B30;
-  color: white; }
-tbody tr.active .label-cyan {
-  background-color: #5AC8FA;
-  color: white; }
-tbody tr.active .label-purple {
-  background-color: #5856D6;
   color: white; }
 tbody tr.active .dual-label-cpu .model {
   background-color: #FF3B30;
