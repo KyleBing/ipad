@@ -1,6 +1,6 @@
 /*****************************
   Create Date: 20200414122339
-  Update Date: 20200521122906
+  Update Date: 20200602115430
  *****************************/
 
 const lastOS = "iPadOS 13.5";
@@ -250,13 +250,15 @@ const iPadPro =[
       model: "Apple GPU",
       core: 8
     },
-    memory: [],
+    memory: [
+      {name: "", size: "6", type: "DDR4X ?"},
+    ],
     storage: ["128", "256", "512", "1024"],
     price: "",
     battery: "28.65 W·h",
     models: [
-      {id: 1, name: "iPad", model: "(WiFi)", weight: 471},
-      {id: 2, name: "iPad", model: "(WiFi + 蜂窝)", weight: 473},
+      {id: 1, name: "iPad8,10", model: "(WiFi)", weight: 471},
+      {id: 2, name: "iPad ?", model: "(WiFi + 蜂窝)", weight: 473},
     ],
     release: "2020-03-18"
   },
@@ -283,13 +285,15 @@ const iPadPro =[
       model: "Apple GPU",
       core: 8
     },
-    memory: [],
+    memory: [
+      {name: "", size: "6", type: "DDR4X ?"},
+    ],
     storage: ["128", "256", "512", "1024"],
     price: "",
     battery: "36.71 W·h",
     models: [
-      {id: 1, name: "iPad", model: "(WiFi)", weight: 641},
-      {id: 2, name: "iPad", model: "(WiFi + 蜂窝)", weight: 643},
+      {id: 1, name: "iPad ?", model: "(WiFi)", weight: 641},
+      {id: 2, name: "iPad ?", model: "(WiFi + 蜂窝)", weight: 643},
     ],
     release: "2020-03-18"
   },
