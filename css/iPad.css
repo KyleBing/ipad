@@ -460,6 +460,23 @@ td {
 body {
   font-size: 15px; }
 
+.out-link {
+  padding: 10px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #FF2D70;
+  color: #FF2D70; }
+  .out-link:hover {
+    color: white;
+    background-color: #FF2D70; }
+  .out-link:active {
+    -webkit-transform: translateY(2px);
+    -moz-transform: translateY(2px);
+    -ms-transform: translateY(2px);
+    -o-transform: translateY(2px);
+    transform: translateY(2px); }
+
 .container {
   padding: 30px;
   margin: 0 auto;

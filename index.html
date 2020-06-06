@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>iPad</title>
-    <link rel="shortcut icon" href="./img/iPad-icon.png" type="image/png">
-    <link rel="stylesheet" href="css/iPad.css?v=20200602115421">
-    <link rel="apple-touch-icon" href="./img/iPad-icon.png">
+    <link rel="shortcut icon" href="./img/ipad.png" type="image/png">
+    <link rel="stylesheet" href="css/iPad.css?v=20200603190428">
+    <link rel="apple-touch-icon" href="./img/ipad.png">
     <script src="../../lib/js/jquery-2.2.4.min.js"></script>
     <script src="../../lib/js/vue.min.2.6.10.js"></script>
 </head>
@@ -17,13 +17,14 @@
 
 <div class="container" id="app">
 
+    <h4><a class="out-link" href="https://kylebing.cn/tools/apple-chip">Apple 处理器参数大全</a></h4>
     <div class="series" v-for="(series, index) in iPadsSeries" :key="index">
         <div class="header">
             <h3>{{series.title}}</h3>
             <div class="sign">
                 <p>整理美化：<a class="link" href="https://kylebing.cn/">KyleBing</a></p>
                 <p>数据来源：<a class="link" href="https://en.wikipedia.org/wiki/iPad">Wikipedia.org</a></p>
-                <p>最后更新：2020年05月21日</p>
+                <p>最后更新：2020年06月03日</p>
             </div>
         </div>
         <div class="table-wrapper">
@@ -115,7 +116,7 @@
     </div>
 </div>
 
-<script src="iPad.js?v=20200602115421"></script>
+<script src="iPad.js?v=20200603190428"></script>
 <script>
   setTimeout(()=>{
       if (location.href.indexOf('http://a.kylebing.cn') !== -1 || location.href.indexOf('http://localhost') !== -1) {

@@ -8,6 +8,21 @@ body{
   font-size: 15px;
 }
 
+.out-link{
+  padding: 10px;
+  @include border-radius(3px);
+  border: 1px solid $magenta;
+  color: $magenta;
+  &:hover{
+    color: white;
+    background-color: $magenta;
+  }
+  &:active{
+    @include transform(translateY(2px))
+  }
+
+}
+
 .container{
   padding: 30px;
   margin: 0 auto;
