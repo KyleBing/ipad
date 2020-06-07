@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0;
   border: 0;
-  font-family: "PingFang SC", "Microsoft Yahei UI", "Microsoft Yahei", "Helvetica", sans-serif;
+  font-family: inherit;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -12,6 +12,7 @@
 body {
   width: 100%;
   margin: 0 auto;
+  font-family: "PingFang SC", "Microsoft Yahei UI", "Microsoft Yahei", "Helvetica", sans-serif;
 }
 
 a {
@@ -89,10 +90,11 @@ tt {
 }
 
 .text-narrow {
-  font-family: "Arial Narrow", Sans-serf !important;
+  font-family: "PTSans-Narrow", Sans-serf !important;
 }
 
-.bold, .text-emphasis {
+.text-bold, .text-emphasis {
+  font-family: "PingFang SC", "Microsoft Yahei UI", "Microsoft Yahei", "Helvetica", sans-serif;
   font-weight: bold;
 }
 
@@ -141,7 +143,7 @@ tt {
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 5px;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 .dual-label-cpu:last-child {
   margin-bottom: 0;
@@ -155,13 +157,13 @@ tt {
 }
 .dual-label-cpu .model {
   padding-right: 10px;
-  min-width: 1.8rem;
+  min-width: 1.6rem;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
-  background-color: rgba(255, 59, 48, 0.8);
+  background-color: rgba(255, 45, 112, 0.8);
   color: white;
-  border-color: rgba(255, 59, 48, 0.8);
+  border-color: rgba(255, 45, 112, 0.8);
   border-style: solid;
   border-width: 1px 0 1px 1px;
   z-index: 5;
@@ -173,12 +175,11 @@ tt {
   margin-left: -10px;
   padding-left: 15px;
   padding-right: 10px;
-  font-size: 0.8rem;
   -webkit-border-radius: 0 15px 15px 0;
   -moz-border-radius: 0 15px 15px 0;
   border-radius: 0 15px 15px 0;
-  border-color: rgba(255, 59, 48, 0.8);
-  color: #FF3B30;
+  border-color: rgba(255, 45, 112, 0.8);
+  color: #FF2D70;
   font-weight: normal;
   background-color: white;
   border-style: solid;
@@ -190,7 +191,7 @@ tt {
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 5px;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 .dual-label-gpu:last-child {
   margin-bottom: 0;
@@ -204,7 +205,7 @@ tt {
 }
 .dual-label-gpu .model {
   padding-right: 10px;
-  min-width: 1.8rem;
+  min-width: 1.6rem;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
@@ -222,7 +223,6 @@ tt {
   margin-left: -10px;
   padding-left: 15px;
   padding-right: 10px;
-  font-size: 0.8rem;
   -webkit-border-radius: 0 15px 15px 0;
   -moz-border-radius: 0 15px 15px 0;
   border-radius: 0 15px 15px 0;
@@ -239,7 +239,7 @@ tt {
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 5px;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 .dual-label-memory:last-child {
   margin-bottom: 0;
@@ -253,7 +253,7 @@ tt {
 }
 .dual-label-memory .model {
   padding-right: 10px;
-  min-width: 1.8rem;
+  min-width: 1.6rem;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
@@ -271,7 +271,6 @@ tt {
   margin-left: -10px;
   padding-left: 15px;
   padding-right: 10px;
-  font-size: 0.8rem;
   -webkit-border-radius: 0 15px 15px 0;
   -moz-border-radius: 0 15px 15px 0;
   border-radius: 0 15px 15px 0;
@@ -285,29 +284,28 @@ tt {
 
 .gpu .model {
   font-weight: normal;
-  font-family: "Arial Narrow", sans-serif !important;
 }
 
 .memory .rate {
   font-weight: normal;
-  font-family: "Arial Narrow", sans-serif !important;
 }
 
 .label {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   display: inline-block;
   padding: 2px 8px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
   margin-right: 3px;
+  font-family: "PingFang SC", "Microsoft Yahei UI", "Microsoft Yahei", "Helvetica", sans-serif;
   line-height: 1;
-  font-weight: bold;
 }
 
-.label-sm {
-  font-size: 0.8rem;
-  padding: 2px 6px;
+.label-block {
+  text-align: center;
+  margin-bottom: 2px;
+  display: block;
 }
 
 .label-narrow {
@@ -384,7 +382,6 @@ tt {
   padding: 4px 5px;
   border: 1px solid rgba(0, 181, 107, 0.8);
   text-align: center;
-  font-weight: bold;
   color: white;
   background-color: rgba(0, 181, 107, 0.8);
   position: relative;
@@ -403,6 +400,14 @@ tt {
   -webkit-border-radius: 0 2px 2px 0;
   -moz-border-radius: 0 2px 2px 0;
   border-radius: 0 2px 2px 0;
+}
+
+.label-storage:after {
+  content: "·";
+  color: #8E8E93;
+}
+.label-storage:last-child:after {
+  content: "";
 }
 
 tbody tr.active td:first-child {
@@ -449,12 +454,12 @@ tbody tr.active .label-gray {
   color: white;
 }
 tbody tr.active .dual-label-cpu .model {
-  background-color: #FF3B30;
-  border-color: #FF3B30;
+  background-color: #FF2D70;
+  border-color: #FF2D70;
 }
 tbody tr.active .dual-label-cpu .rate {
-  border-color: #FF3B30;
-  color: #FF3B30;
+  border-color: #FF2D70;
+  color: #FF2D70;
 }
 tbody tr.active .dual-label-gpu .model {
   background-color: #FF9500;
@@ -535,7 +540,7 @@ th {
 th sup {
   font-family: "Arial Narrow", Sans-serf;
   color: #8E8E93;
-  font-size: 0.72rem;
+  font-size: 0.64rem;
   font-weight: normal;
   padding: 0 2px;
 }
@@ -549,6 +554,18 @@ td {
 }
 td p {
   margin-bottom: 2px;
+}
+
+@font-face {
+  font-family: "PTSans-Narrow";
+  src: url("../fonts/PTSans-Narrow.ttf");
+}
+@font-face {
+  font-family: "Impact";
+  src: url("../fonts/ImpactPureNumber.ttf");
+}
+.impact {
+  font-family: "Impact", sans-serif;
 }
 
 body {
@@ -572,7 +589,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: #000;
 }
 .header h3 {
@@ -583,15 +600,14 @@ body {
 .header .sign {
   line-height: 1.3;
   font-size: 10px;
+  letter-spacing: 0.5px;
   color: gray;
   padding: 8px 10px 8px 8px;
   background-color: rgba(0, 0, 0, 0.03);
+  border: 1px solid #f1f1f1;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.05);
 }
 .header .sign p:last-child {
   margin-bottom: 0;

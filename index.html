@@ -8,7 +8,7 @@
 
     <title>iPad 所有机型参数大全</title>
     <link rel="shortcut icon" href="./img/ipad.png" type="image/png">
-    <link rel="stylesheet" href="css/iPad.css?v=20200606161251">
+    <link rel="stylesheet" href="css/iPad.css?v=20200607161901">
     <link rel="apple-touch-icon" href="./img/ipad.png">
     <script src="../../lib/js/jquery-2.2.4.min.js"></script>
     <script src="../../lib/js/vue.min.2.6.10.js"></script>
@@ -27,7 +27,7 @@
             <div class="sign">
                 <p>整理美化：<a class="link" href="https://kylebing.cn/">KyleBing</a></p>
                 <p>数据来源：<a class="link" href="https://en.wikipedia.org/wiki/iPad">Wikipedia.org</a></p>
-                <p>最后更新：2020年06月03日</p>
+                <p>最后更新：2020年06月07日</p>
             </div>
         </div>
         <div class="table-wrapper">
@@ -46,9 +46,10 @@
                     <th>内存</th>
                     <th>存储<sup>GB</sup></th>
                     <th>电池<sup>mAh</sup></th>
+                    <th>接口</th>
                     <th>系统支持</th>
+                    <th>重量<sup>g</sup> + 代号</th>
                     <th>型号</th>
-                    <th>代号 + 重量<sup>g</sup></th>
                 </tr>
                 </thead>
                 <tbody>
@@ -57,16 +58,13 @@
                     :data-series="iPad.title"
                     :data-index="index">
                     <td class="text-emphasis">{{iPad.name_short}}</td>
-                    <td>
-                        <span class="label-magenta label text-emphasis">{{iPad.screen_size}}</span>
-                    </td>
-<!--                    <td class="text-emphasis">{{iPad.release.substring(0,4) + '/' + iPad.release.substring(5,7)}}</td>-->
-                    <td class="text-emphasis">
+                    <td class="text-emphasis">{{iPad.screen_size}}</td>
+                    <td class="text-emphasis impact">
                         <p>{{iPad.release.substring(0,4)}}<span class="text-normal light-gray">·</span><span class="gray text-normal">{{iPad.release.substring(5,7)}}</span></p>
                     </td>
                     <td>{{iPad.screen_resolution}}</td>
                     <td>
-                        <span v-if="iPad.screen_density" class="label-green label">{{iPad.screen_density}}</span>
+                        <span v-if="iPad.screen_density" class="label-magenta label">{{iPad.screen_density}}</span>
                     </td>
                     <td>{{`${iPad.width} × ${iPad.height}`}}</td>
                     <td class="text-emphasis"><span class="label label-pink">{{iPad.thickness}}</span></td>
@@ -98,18 +96,20 @@
                     <td>
                         <div v-if="iPad.battery" class="battery">{{iPad.battery}}</div>
                     </td>
+                    <td>{{iPad.connector}}</td>
                     <td class="text-small">
                         <p>初始：{{iPad.os.init}}</p>
-                        <p>最终：<span :class="{'green bold': iPad.os.last == latesOS}">{{iPad.os.last}}</span></p>
+                        <p>最终：<span :class="{'green text-bold': iPad.os.last == latesOS}">{{iPad.os.last}}</span></p>
+                    </td>
+
+                    <td class="text-small text-narrow">
+                        <p v-for="model in iPad.models" :key="model.id">
+                            <span class="text-bold">{{model.weight}} - </span><span>{{model.model}}</span>
+                        </p>
                     </td>
                     <td class="text-small text-narrow">
                         <p v-for="model in iPad.models" :key="model.id">
                             <span>{{model.name}}</span>
-                        </p>
-                    </td>
-                    <td class="text-small">
-                        <p v-for="model in iPad.models" :key="model.id">
-                            <span>{{model.model}}</span> <span class="label-gray label label-sm">{{model.weight}}</span>
                         </p>
                     </td>
                 </tr>
@@ -119,7 +119,7 @@
     </div>
 </div>
 
-<script src="iPad.js?v=20200606161251"></script>
+<script src="iPad.js?v=20200607161901"></script>
 <script>
   setTimeout(()=>{
       if (location.href.indexOf('http://a.kylebing.cn') !== -1 || location.href.indexOf('http://localhost') !== -1) {

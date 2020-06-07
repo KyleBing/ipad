@@ -1,6 +1,6 @@
 
 .text-emphasis{
-  @extend .bold;
+  @extend .text-bold;
   font-size: $font-size * 1.1 !important;
 }
 
@@ -17,9 +17,10 @@
 }
 
 .text-narrow{
-  font-family: "Arial Narrow", Sans-serf !important;
+  font-family: "PTSans-Narrow", Sans-serf !important;
 }
-.bold{
+.text-bold{
+  font-family: "PingFang SC", "Microsoft Yahei UI", "Microsoft Yahei", "Helvetica", sans-serif;
   font-weight: bold;
 }
 

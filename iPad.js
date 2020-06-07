@@ -1,6 +1,6 @@
 /*****************************
   Create Date: 20200414122339
-  Update Date: 20200603190422
+  Update Date: 20200607162652
  *****************************/
 
 const lastOS = "iPadOS 13.5";
@@ -36,6 +36,7 @@ const iPadPro =[
     storage: ["32", "128", "256"],
     price: "",
     battery: "7306",
+    connector: '闪电',
     models: [
       {id: 1, name: "iPad6,3", model: "A1673 (WiFi)", weight: 437},
       {id: 2, name: "iPad6,4", model: "A1674 or A1675 (WiFi + 蜂窝)", weight: 444}
@@ -71,6 +72,7 @@ const iPadPro =[
     storage: ["32", "128", "256"],
     price: "",
     battery: "10307",
+    connector: '闪电',
     models: [
       {id: 1, name: "iPad6,7", model: "A1584 (WiFi)", weight: 710},
       {id: 2, name: "iPad6,8", model: "A1652 (蜂窝)", weight: 720}
@@ -108,6 +110,7 @@ const iPadPro =[
     storage: ["64", "256", "512"],
     price: "",
     battery: "8134",
+    connector: '闪电',
     models: [
       {id: 1, name: "iPad7,3", model: "A1701 (WiFi)", weight: 469},
       {id: 2, name: "iPad7,4", model: "A1709 (WiFi + 蜂窝)", weight: 477}
@@ -143,6 +146,7 @@ const iPadPro =[
     storage: ["64", "256", "512"],
     price: "",
     battery: "10875",
+    connector: '闪电',
     models: [
       {id: 1, name: "iPad7,1", model: "A1670 (WiFi)", weight: 677},
       {id: 2, name: "iPad7,2", model: "A1671 (WiFi + 蜂窝)", weight: 692}
@@ -181,6 +185,7 @@ const iPadPro =[
     storage: ["64", "256", "512", "1024"],
     price: "",
     battery: "7812",
+    connector: 'USB-C',
     models: [
       {id: 1, name: "iPad8,1 (<1T) iPad8,2 (=1T)", model: "A1980 (WiFi)", weight: 468},
       {id: 2, name: "iPad8,3 (<1T)", model: "A1934, A2013 (WiFi + 蜂窝)", weight: 468},
@@ -218,6 +223,7 @@ const iPadPro =[
     storage: ["64", "256", "512", "1024"],
     price: "",
     battery: "9720",
+    connector: 'USB-C',
     models: [
       {id: 1, name: "iPad8,5 (<1T) iPad8,6 (=1T)", model: "A1876 (WiFi)", weight: 631},
       {id: 2, name: "iPad8,7 (<1T)", model: "A1895, A2014 (WiFi + 蜂窝)", weight: 633},
@@ -243,7 +249,7 @@ const iPadPro =[
     },
     cpu: {
       model: 'A12Z',
-      rate: '≈ 2.5',
+      rate: '2.49',
       core: 8
     },
     gpu: {
@@ -256,6 +262,7 @@ const iPadPro =[
     storage: ["128", "256", "512", "1024"],
     price: "",
     battery: "28.65 W·h",
+    connector: 'USB-C',
     models: [
       {id: 1, name: "iPad", model: "A2228 (WiFi)", weight: 471},
       {id: 2, name: "iPad", model: "A2068, A2230 (WiFi + 蜂窝)", weight: 473},
@@ -279,7 +286,7 @@ const iPadPro =[
     },
     cpu: {
       model: 'A12Z',
-      rate: '≈ 2.5',
+      rate: '2.49',
       core: 8
     },
     gpu: {
@@ -292,6 +299,7 @@ const iPadPro =[
     storage: ["128", "256", "512", "1024"],
     price: "",
     battery: "36.71 W·h",
+    connector: 'USB-C',
     models: [
       {id: 1, name: "iPad", model: "A2229 (WiFi)", weight: 641},
       {id: 2, name: "iPad", model: "A2069, A2232 (WiFi + 蜂窝)", weight: 643},
@@ -332,6 +340,7 @@ const iPadAir =[
     storage: [16, 32, 64, 128],
     price: "",
     battery: "8820",
+    connector: '闪电',
     models: [
       {id: 1, name: "iPad4,1", model: "A1474 (WiFi)", weight: 469},
       {id: 2, name: "iPad4,2", model: "A1475 (WiFi + 蜂窝)", weight: 478},
@@ -367,6 +376,7 @@ const iPadAir =[
     storage: [16, 64, 128],
     price: "",
     battery: "7340",
+    connector: '闪电',
     models: [
       {id: 1, name: "iPad5,3 (WiFi)", model: "A1566 (WiFi)", weight: 437},
       {id: 2, name: "iPad5,4 (WiFi + 蜂窝)", model: "A1567 (WiFi + 蜂窝)", weight: 444},
@@ -402,6 +412,7 @@ const iPadAir =[
     storage: [64, 256],
     price: "",
     battery: "8134",
+    connector: '闪电',
     models: [
       {id: 1, name: "iPad11,3", model: "A2152 (WiFi)", weight: 456},
       {id: 2, name: "iPad11,4", model: "A2123, A2153 (WiFi + 蜂窝)", weight: 464},
@@ -441,6 +452,7 @@ const iPadMini =[
     storage: [16, 32, 64],
     price: "",
     battery: "4440",
+    connector: '闪电',
     models: [
       {id: 1, name: "iPad2,5", model: "A1432 (WiFi)", weight: 310},
       {id: 2, name: "iPad2,6", model: "A1454 (WiFi + 蜂窝)", weight: 310},
@@ -477,6 +489,7 @@ const iPadMini =[
     storage: [16, 32, 64, 128],
     price: "",
     battery: "6471",
+    connector: '闪电',
     models: [
       {id: 1, name: "iPad4,4", model: "A1489 (WiFi)", weight: 330},
       {id: 2, name: "iPad4,5", model: "A1490 (WiFi + 蜂窝)", weight: 340},
@@ -513,6 +526,7 @@ const iPadMini =[
     storage: [16, 32, 64],
     price: "",
     battery: "6471",
+    connector: '闪电',
     models: [
       {id: 1, name: "iPad4,7", model: "A1599 (WiFi)", weight: 310},
       {id: 2, name: "iPad4,8", model: "A1600 (WiFi + 蜂窝)", weight: 310},
@@ -549,6 +563,7 @@ const iPadMini =[
     storage: [16, 64, 128],
     price: "",
     battery: "5124",
+    connector: '闪电',
     models: [
       {id: 1, name: "iPad5,1", model: "A1538 (WiFi)", weight: 290},
       {id: 2, name: "iPad5,1", model: "A1550 (WiFi + 蜂窝)", weight: 300},
@@ -584,6 +599,7 @@ const iPadMini =[
     storage: [64, 256],
     price: "",
     battery: "5124",
+    connector: '闪电',
     models: [
       {id: 1, name: "iPad11,1", model: "A2133 (WiFi)", weight: 300},
       {id: 2, name: "iPad11,2", model: "A2124, A2126 (WiFi + 蜂窝)", weight: 310},
@@ -624,6 +640,7 @@ const iPad =[
     storage: [16, 32, 64],
     price: "",
     battery: "6613",
+    connector: '30针',
     models: [
       {id: 1, name: "iPad1,1", model: "A1219 (WiFi)", weight: 680},
       {id: 2, name: "iPad1,1", model: "A1337 (WiFi + 3G)", weight: 730},
@@ -659,6 +676,7 @@ const iPad =[
     storage: [16, 32, 64],
     price: "",
     battery: "6944",
+    connector: '30针',
     models: [
       {id: 1, name: "iPad2,1", model: "A1395 (WiFi)", weight: 601},
       {id: 2, name: "iPad2,2", model: "A1397 (WiFi + 3G CDMA)", weight: 613},
@@ -695,6 +713,7 @@ const iPad =[
     storage: [16, 32, 64],
     price: "",
     battery: "11560",
+    connector: '30针',
     models: [
       {id: 1, name: "iPad3,1", model: "A1416 (WiFi)", weight: 650},
       {id: 2, name: "iPad3,2", model: "A1403 (WiFi + 蜂窝 VZ)", weight: 660},
@@ -731,6 +750,7 @@ const iPad =[
     storage: [16, 32, 64, 128],
     price: "",
     battery: "11560",
+    connector: '闪电',
     models: [
       {id: 1, name: "iPad5,3", model: "A1458 (WiFi)", weight: 650},
       {id: 2, name: "iPad5,4", model: "A1459 (WiFi + 蜂窝)", weight: 660},
@@ -767,6 +787,7 @@ const iPad =[
     storage: [32, 128],
     price: "",
     battery: "32.4 W·h",
+    connector: '闪电',
     models: [
       {id: 1, name: "iPad6,11", model: "A1822 (WiFi)", weight: 469},
       {id: 2, name: "iPad6,12", model: "A1823 (WiFi + 蜂窝)", weight: 478},
@@ -802,6 +823,7 @@ const iPad =[
     storage: [32, 128],
     price: "",
     battery: "32.4 W·h",
+    connector: '闪电',
     models: [
       {id: 1, name: "iPad7,5", model: "A1893 (WiFi)", weight: 469},
       {id: 2, name: "iPad7,6", model: "A1954 (WiFi + 蜂窝)", weight: 478},
@@ -837,6 +859,7 @@ const iPad =[
     storage: [32, 128],
     price: "",
     battery: "32.4 W·h",
+    connector: '闪电',
     models: [
       {id: 1, name: "iPad7,11", model: "A2197 (WiFi)", weight: 483},
       {id: 2, name: "iPad7,12", model: "A2200 (WiFi + 蜂窝)", weight: 493},

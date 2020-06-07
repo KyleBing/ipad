@@ -1,5 +1,5 @@
 $dual-label-types: (
-        "cpu": $red,
+        "cpu": $magenta,
         "gpu": $orange,
         "memory": $blue
 );
@@ -41,7 +41,6 @@ $dual-label-types: (
       margin-left: -10px;
       padding-left: 15px;
       padding-right: 10px;
-      font-size: $label-font-size-sm;
       @include border-radius(0 $label-corner $label-corner 0);
       border-color: transparentize($color, $label-transparent-rate);
       color: $color;
@@ -56,17 +55,16 @@ $dual-label-types: (
 .gpu{
   .model{
     font-weight: normal;
-    font-family: 'Arial Narrow', sans-serif !important;
+    //font-family: 'PTSans-Narrow', sans-serif !important;
   }
 }
 
 .memory{
   .rate{
     font-weight: normal;
-    font-family: 'Arial Narrow', sans-serif !important;
+    //font-family: 'PTSans-Narrow', sans-serif !important;
   }
 }
-
 
 .label{
   font-size: $label-font-size;
@@ -74,25 +72,24 @@ $dual-label-types: (
   padding: ($label-padding - 1) $label-padding-lr;
   @include border-radius($label-corner);
   margin-right: 3px;
+  font-family: "PingFang SC", "Microsoft Yahei UI", "Microsoft Yahei", "Helvetica", sans-serif;
   line-height: 1;
-  font-weight: bold;
   @extend .text-shadow-light;
   @if $use-shadow {
     @extend .shadow;
   }
 }
 
-.label-sm{
-  font-size: $label-font-size-sm;
-  padding: ($label-padding - 1) $label-padding-lr - 2;
+.label-block{
+  text-align: center;
+  margin-bottom: 2px;
+  display: block;
 }
 
 .label-narrow{
   @include border-radius(0);
   padding: ($label-padding - 1) $label-padding-lr - 5;
 }
-
-
 
 $label-styles: (
         "green": $green,
@@ -117,16 +114,14 @@ $label-styles: (
 
 $height-battery: 20px;
 $color-battery: transparentize($green, $label-transparent-rate);
-
 .battery{
   @extend .text-shadow-light;
   display: inline-block;
-  font-size: $label-font-size-sm;
+  font-size: $label-font-size;
   line-height: $height-battery - 10;
   padding: $label-padding + 1 5px;
   border: 1px solid $color-battery;
   text-align: center;
-  font-weight: bold;
   color: white;
   background-color: $color-battery;
   position: relative;
@@ -140,6 +135,18 @@ $color-battery: transparentize($green, $label-transparent-rate);
     width: 3px;
     background-color: $color-battery;
     @include border-radius(0 2px 2px 0);
+  }
+}
+
+.label-storage{
+  &:after{
+    content: '·';
+    color: $gray;
+  }
+  &:last-child{
+    &:after{
+      content: '';
+    }
   }
 }
 
