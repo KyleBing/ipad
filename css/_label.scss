@@ -72,7 +72,6 @@ $dual-label-types: (
   padding: ($label-padding - 1) $label-padding-lr;
   @include border-radius($label-corner);
   margin-right: 3px;
-  font-family: "PingFang SC", "Microsoft Yahei UI", "Microsoft Yahei", "Helvetica", sans-serif;
   line-height: 1;
   @extend .text-shadow-light;
   @if $use-shadow {

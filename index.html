@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name='description' content="iPad详细参数汇总, iPad Pro, iPad Air, iPad Mini, iPad">
     <meta name='keywords' content="iPad详细参数汇总,iPad Pro,iPad Air,iPad Mini,iPad">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>iPad 所有机型参数大全</title>
-    <link rel="shortcut icon" href="./img/ipad.png" type="image/png">
-    <link rel="stylesheet" href="css/iPad.css?v=20200607161901">
-    <link rel="apple-touch-icon" href="./img/ipad.png">
+    <link rel="shortcut icon" href="img/ipad.png" type="image/png">
+    <link rel="stylesheet" href="css/iPad.css?v=20200620092035">
+    <link rel="apple-touch-icon" href="img/ipad.png">
     <script src="../../lib/js/jquery-2.2.4.min.js"></script>
     <script src="../../lib/js/vue.min.2.6.10.js"></script>
 </head>
@@ -18,7 +17,7 @@
 <div class="container" id="app">
 
 
-    <div class="series">
+    <div class="series mb-2">
             相关链接：    <a class="link" href="https://kylebing.cn/tools/apple-chip">Apple A系列处理器 参数大全</a>
     </div>
     <div class="series" v-for="(series, index) in iPadsSeries" :key="index">
@@ -35,7 +34,7 @@
                 <thead>
                 <tr>
                     <th>iPad</th>
-                    <th>屏幕<sup>寸</sup></th>
+<!--                    <th>屏幕<sup>寸</sup></th>-->
                     <th>发布年月</th>
                     <th>分辨率<sup>px</sup></th>
                     <th>密度<sup>ppi</sup></th>
@@ -57,8 +56,14 @@
                     :key="'iPad' + index"
                     :data-series="iPad.title"
                     :data-index="index">
-                    <td class="text-emphasis">{{iPad.name_short}}</td>
-                    <td class="text-emphasis">{{iPad.screen_size}}</td>
+                    <td>
+                        <div class="dual-label-memory">
+                            <div class="model">{{iPad.name_short}}</div>
+                            <div class="rate">{{iPad.screen_size}}</div>
+                        </div>
+                    </td>
+<!--                    <td class="text-emphasis">{{iPad.name_short}}</td>-->
+<!--                    <td class="text-emphasis"><span class="label label-magenta">{{iPad.screen_size}}</span></td>-->
                     <td class="text-emphasis impact">
                         <p>{{iPad.release.substring(0,4)}}<span class="text-normal light-gray">·</span><span class="gray text-normal">{{iPad.release.substring(5,7)}}</span></p>
                     </td>
@@ -119,7 +124,7 @@
     </div>
 </div>
 
-<script src="iPad.js?v=20200607161901"></script>
+<script src="iPad.js?v=20200620092035"></script>
 <script>
   setTimeout(()=>{
       if (location.href.indexOf('http://a.kylebing.cn') !== -1 || location.href.indexOf('http://localhost') !== -1) {

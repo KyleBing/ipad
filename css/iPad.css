@@ -94,7 +94,6 @@ tt {
 }
 
 .text-bold, .text-emphasis {
-  font-family: "PingFang SC", "Microsoft Yahei UI", "Microsoft Yahei", "Helvetica", sans-serif;
   font-weight: bold;
 }
 
@@ -298,7 +297,6 @@ tt {
   -moz-border-radius: 15px;
   border-radius: 15px;
   margin-right: 3px;
-  font-family: "PingFang SC", "Microsoft Yahei UI", "Microsoft Yahei", "Helvetica", sans-serif;
   line-height: 1;
 }
 
@@ -571,6 +569,7 @@ td p {
 body {
   font-size: 15px;
   background-color: #eeeeee;
+  font-family: "PingFang SC", "Microsoft Yahei UI", "Microsoft Yahei", "Helvetica", sans-serif;
 }
 
 .container {
@@ -578,7 +577,17 @@ body {
   margin: 0 auto;
   max-width: 1800px;
 }
-@media (max-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 1440px) {
+  .container {
+    padding: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .container {
+    padding: 10px;
+  }
+}
+@media (max-width: 768px) {
   .container {
     padding: 5px;
   }
@@ -626,6 +635,12 @@ body {
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
+@media (max-width: 768px) {
+  .series {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+}
 
 .shadow, thead {
   -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
@@ -651,6 +666,10 @@ body {
 .block {
   display: block;
   width: 100%;
+}
+
+.mb-2 {
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=iPad.css.map */

@@ -261,7 +261,7 @@ const iPadPro =[
     ],
     storage: ["128", "256", "512", "1024"],
     price: "",
-    battery: "28.65 W·h",
+    battery: "7600",
     connector: 'USB-C',
     models: [
       {id: 1, name: "iPad", model: "A2228 (WiFi)", weight: 471},
@@ -298,7 +298,7 @@ const iPadPro =[
     ],
     storage: ["128", "256", "512", "1024"],
     price: "",
-    battery: "36.71 W·h",
+    battery: "9737",
     connector: 'USB-C',
     models: [
       {id: 1, name: "iPad", model: "A2229 (WiFi)", weight: 641},
@@ -424,8 +424,8 @@ const iPadAir =[
 
 const iPadMini =[
   {
-    name: "iPad mini",
-    name_short: "mini",
+    name: "iPad Mini",
+    name_short: "Mini 1",
     active: false,
     screen_size: "7.9",
     screen_resolution: "1024 × 768",
@@ -461,8 +461,8 @@ const iPadMini =[
     release: "2012-09-02"
   },
   {
-    name: "iPad mini 2",
-    name_short: "mini 2",
+    name: "iPad Mini 2",
+    name_short: "Mini 2",
     active: false,
     screen_size: "7.9",
     screen_resolution: "2048 × 1536",
@@ -498,8 +498,8 @@ const iPadMini =[
     release: "2013-09-12"
   },
   {
-    name: "iPad mini 3",
-    name_short: "mini 3",
+    name: "iPad Mini 3",
+    name_short: "Mini 3",
     active: false,
     screen_size: "7.9",
     screen_resolution: "2048 × 1536",
@@ -535,8 +535,8 @@ const iPadMini =[
     release: "2014-10-22"
   },
   {
-    name: "iPad mini 4",
-    name_short: "mini 4",
+    name: "iPad Mini 4",
+    name_short: "Mini 4",
     active: false,
     screen_size: "7.9",
     screen_resolution: "2048 × 1536",
@@ -571,8 +571,8 @@ const iPadMini =[
     release: "2015-09-09"
   },
   {
-    name: "iPad mini 5",
-    name_short: "mini 5",
+    name: "iPad Mini 5",
+    name_short: "Mini 5",
     active: false,
     screen_size: "7.9",
     screen_resolution: "2048 × 1536",
@@ -786,7 +786,7 @@ const iPad =[
     ],
     storage: [32, 128],
     price: "",
-    battery: "32.4 W·h",
+    battery: "8594",
     connector: '闪电',
     models: [
       {id: 1, name: "iPad6,11", model: "A1822 (WiFi)", weight: 469},
@@ -822,7 +822,7 @@ const iPad =[
     ],
     storage: [32, 128],
     price: "",
-    battery: "32.4 W·h",
+    battery: "8594",
     connector: '闪电',
     models: [
       {id: 1, name: "iPad7,5", model: "A1893 (WiFi)", weight: 469},
@@ -858,7 +858,7 @@ const iPad =[
     ],
     storage: [32, 128],
     price: "",
-    battery: "32.4 W·h",
+    battery: "8594",
     connector: '闪电',
     models: [
       {id: 1, name: "iPad7,11", model: "A2197 (WiFi)", weight: 483},

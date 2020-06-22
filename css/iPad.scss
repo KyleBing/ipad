@@ -8,13 +8,21 @@
 body{
   font-size: 15px;
   background-color: $bg-highlight;
+  font-family: "PingFang SC", "Microsoft Yahei UI", "Microsoft Yahei", "Helvetica", sans-serif;
 }
 
 .container{
   padding: 30px;
   margin: 0 auto;
   max-width: 1800px;
-  @media (max-width: 1200px){
+
+  @media (min-width: 1200px) and (max-width:1440px){
+    padding: 20px;
+  }
+  @media (min-width: 768px) and (max-width:1200px){
+    padding: 10px;
+  }
+  @media (max-width: 768px){
     padding: 5px;
   }
 }
@@ -60,7 +68,10 @@ body{
   margin-bottom: 30px;
   border: 1px solid $color-border;
   @include border-radius(3px);
-
+  @media (max-width: 768px){
+    padding: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 .shadow{
@@ -88,4 +99,8 @@ body{
 .block{
   display: block;
   width: 100%;
+}
+
+.mb-2{
+  margin-bottom: 10px;
 }
