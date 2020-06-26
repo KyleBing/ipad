@@ -672,4 +672,29 @@ body {
   margin-bottom: 10px;
 }
 
+.full-screen {
+  cursor: pointer;
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  z-index: 100;
+}
+.full-screen-btn {
+  width: 30px;
+}
+.full-screen-btn img {
+  display: block;
+  width: 100%;
+}
+.full-screen-tip {
+  font-size: 12px;
+  color: #999;
+}
+.full-screen-tip-mobile {
+  left: 20px;
+  bottom: 20px;
+  font-size: 12px;
+  color: #999;
+}
+
 /*# sourceMappingURL=iPad.css.map */

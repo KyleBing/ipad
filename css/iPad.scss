@@ -104,3 +104,29 @@ body{
 .mb-2{
   margin-bottom: 10px;
 }
+
+.full-screen{
+  cursor: pointer;
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  z-index: 100;
+  &-btn {
+    width: 30px;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+  &-tip{
+    font-size: 12px;
+    color: #999;
+  }
+  &-tip-mobile{
+    left: 20px;
+    bottom: 20px;
+    font-size: 12px;
+    color: #999;
+  }
+}

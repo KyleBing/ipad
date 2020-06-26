@@ -1,9 +1,9 @@
 /*****************************
   Create Date: 20200414122339
-  Update Date: 20200607162652
+  Update Date: 20200622085437
  *****************************/
 
-const lastOS = "iPadOS 13.5";
+const lastOS = "iPadOS 13.5.1";
 
 const iPadPro =[
   // iPad pro 1 generation
@@ -609,7 +609,6 @@ const iPadMini =[
   },
 ];
 
-
 const iPad =[
   {
     name: "iPad 1",
@@ -874,6 +873,13 @@ const iPad =[
 let app =new Vue({
   el: "#app",
   data: {
+    // full screen 相关
+    showFullScreenBtn: false,
+    didEnteredFullScreen: false,
+    // 浏览器参数
+    portraitMode: false,
+    mobileMode: false,
+
     latesOS: lastOS,
     iPadsSeries: [
       {title: "iPad Pro", iPads: iPadPro},
@@ -882,5 +888,25 @@ let app =new Vue({
       {title: "iPad", iPads: iPad},
     ]
   },
-  methods: {}
+  mounted: function(){
+    // 全屏相关
+    let chromeCore = /Chrome/i.test(navigator.userAgent);
+    let mobileMode = /Mobile/i.test(navigator.userAgent);
+    this.portraitMode = window.innerWidth > window.innerHeight;
+    this.mobileMode = mobileMode;
+    this.showFullScreenBtn = chromeCore && !mobileMode;
+  },
+  methods: {
+    // 全屏显示
+    enterFullScreen: function () {
+      document.documentElement.requestFullscreen();
+    }
+  }
 });
+
+
+// 当全屏模式变化时
+document.documentElement.onfullscreenchange  = () => {
+  app.didEnteredFullScreen = Boolean(document.fullscreenElement)
+}
+

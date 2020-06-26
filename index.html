@@ -7,7 +7,7 @@
 
     <title>iPad 所有机型参数大全</title>
     <link rel="shortcut icon" href="img/ipad.png" type="image/png">
-    <link rel="stylesheet" href="css/iPad.css?v=20200620092035">
+    <link rel="stylesheet" href="css/iPad.css?v=20200622084932">
     <link rel="apple-touch-icon" href="img/ipad.png">
     <script src="../../lib/js/jquery-2.2.4.min.js"></script>
     <script src="../../lib/js/vue.min.2.6.10.js"></script>
@@ -26,7 +26,7 @@
             <div class="sign">
                 <p>整理美化：<a class="link" href="https://kylebing.cn/">KyleBing</a></p>
                 <p>数据来源：<a class="link" href="https://en.wikipedia.org/wiki/iPad">Wikipedia.org</a></p>
-                <p>最后更新：2020年06月07日</p>
+                <p>最后更新：2020年06月22日</p>
             </div>
         </div>
         <div class="table-wrapper">
@@ -122,9 +122,22 @@
             </table>
         </div>
     </div>
+
+
+    <!--进入全屏按钮-->
+    <div v-if="showFullScreenBtn"
+         v-show="!didEnteredFullScreen"
+         class="full-screen full-screen-btn"
+         @click="enterFullScreen">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAkCAYAAADGrhlwAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAANKADAAQAAAABAAAAJAAAAAAel1i7AAAA30lEQVRYCe1YwQ2EMAw7TrdHV+kO3aSDdJMO1Uk4HVI/UKuSdTUoCp9CROrYDgiyxRj3l6HjbYjLQcUJPd3Rz7nAWus5NLxOKQ3j/wqydVwI9YJaa/30lnWGH0IY1gUJ5ZyHCargDB856C8FlUMsjjvEKqfKM+fQ5t9yqt4hccy1nBMiO0GW5g7JpCaB3CFSOFmaOySTmgSy79DvTxD9DZKiLUlDddp3aImcwk3dIaHYFBQcY6G5V0eZzc36few6w0f7QkKlFJRzxFdPTmf4qDhzz5DPFJDVT4mbazlzhL7+TyWpzAcGkAAAAABJRU5ErkJggg==" alt="fullscreen-button" title="进入全屏模式">
+    </div>
+
+    <!--TIPS-->
+    <p v-show="didEnteredFullScreen" class="full-screen full-screen-tip">Esc 退出全屏模式</p>
+
 </div>
 
-<script src="iPad.js?v=20200620092035"></script>
+<script src="iPad.js?v=20200622084932"></script>
 <script>
   setTimeout(()=>{
       if (location.href.indexOf('http://a.kylebing.cn') !== -1 || location.href.indexOf('http://localhost') !== -1) {
