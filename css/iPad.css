@@ -661,11 +661,25 @@ body {
   z-index: 100;
 }
 .full-screen-btn {
+  opacity: 0.3;
   width: 30px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .full-screen-btn img {
   display: block;
   width: 100%;
+}
+.full-screen-btn:hover {
+  opacity: 1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .full-screen-tip {
   font-size: 12px;

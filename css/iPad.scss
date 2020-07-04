@@ -92,11 +92,16 @@ body{
   bottom: 10px;
   z-index: 100;
   &-btn {
+    opacity: 0.3;
     width: 30px;
-
+    @include transition(all 0.3s);
     img {
       display: block;
       width: 100%;
+    }
+    &:hover{
+      opacity: 1;
+      @include transition(all 0.3s)
     }
   }
   &-tip{

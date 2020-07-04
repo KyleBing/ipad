@@ -201,7 +201,7 @@ const iPadPro =[
     screen_resolution: "2732 × 2048",
     screen_density: "264",
     width: 280.6,
-    height: 241.9,
+    height: 214.9,
     thickness: 5.9,
     os: {
       init: "iOS 12.1",
