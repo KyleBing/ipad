@@ -1,9 +1,9 @@
 /*****************************
   Create Date: 20200414122339
-  Update Date: 20200622085437
+  Update Date: 20200813125614
  *****************************/
 
-const lastOS = "iPadOS 13.5.1";
+const lastOS = "最新";
 
 const iPadPro =[
   // iPad pro 1 generation
@@ -312,8 +312,8 @@ const iPadPro =[
 
 const iPadAir =[
   {
-    name: "iPad Air",
-    name_short: "Air",
+    name: "iPad Air 1",
+    name_short: "Air 1",
     active: false,
     screen_size: "9.7",
     screen_resolution: "2048×1536",
