@@ -1,6 +1,6 @@
 /*****************************
   Create Date: 20200414122339
-  Update Date: 20200813125614
+  Update Date: 20200916080726
  *****************************/
 
 const lastOS = "最新";
@@ -419,6 +419,42 @@ const iPadAir =[
       {id: 3, name: "iPad11,4", model: "A2154 (WiFi + 蜂窝, 国行)", weight: 464},
     ],
     release: "2019-03-18"
+  },
+  {
+    name: "iPad Air 4",
+    name_short: "Air 4",
+    active: false,
+    screen_size: "10.9",
+    screen_resolution: "2360 × 1640",
+    screen_density: "264",
+    width: 247.6,
+    height: 178.5,
+    thickness: 6.1,
+    os: {
+      init: "iPadOS",
+      last: lastOS
+    },
+    cpu: {
+      model: 'A14',
+      rate: '--',
+      core: 6
+    },
+    gpu: {
+      model: "Apple GPU",
+      core: "4"
+    },
+    memory: [
+      {name: "", size: "--", type: "--"},
+    ],
+    storage: [64, 256],
+    price: "",
+    battery: "28.6 WH",
+    connector: 'USB-C',
+    models: [
+      {id: 1, name: "--", model: "--(WiFi)", weight: 458},
+      {id: 2, name: "--", model: "--(WiFi + 蜂窝)", weight: 460},
+    ],
+    release: "2020-09-16"
   },
 ];
 
@@ -865,6 +901,42 @@ const iPad =[
       {id: 2, name: "iPad7,12", model: "A2198 (WiFi + 蜂窝)", weight: 493},
     ],
     release: "2019-09-10"
+  },
+  {
+    name: "iPad 8",
+    name_short: "iPad 8",
+    active: false,
+    screen_size: "10.2",
+    screen_resolution: "2160 × 1620",
+    screen_density: 264,
+    width: 250.6,
+    height: 174.1,
+    thickness: 7.5,
+    os: {
+      init: "iPadOS",
+      last: lastOS
+    },
+    cpu: {
+      model: 'A12',
+      rate: '2.49',
+      core: 6
+    },
+    gpu: {
+      model: "Apple",
+      core: 4
+    },
+    memory: [
+      {name: "", size: "--", type: "--"},
+    ],
+    storage: [32, 128],
+    price: "",
+    battery: "32.4 WH",
+    connector: '闪电',
+    models: [
+      {id: 1, name: "--", model: "-- (WiFi)", weight: 490},
+      {id: 2, name: "--", model: "-- (WiFi + 蜂窝)", weight: 495},
+    ],
+    release: "2020-09-16"
   },
 ];
 

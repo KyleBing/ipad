@@ -8,7 +8,7 @@
     <title>iPad 所有机型参数大全</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/ipad.png" type="image/png">
-    <link rel="stylesheet" href="css/iPad.css?v=20200813125620">
+    <link rel="stylesheet" href="css/iPad.css?v=20200916080734">
     <link rel="apple-touch-icon" href="img/ipad.png">
     <script src="../../lib/js/jquery-2.2.4.min.js"></script>
     <script src="../../lib/js/vue.min.2.6.10.js"></script>
@@ -23,18 +23,23 @@
 
         <div class="content">
             <h1 class="title">所有 iPad 参数大全</h1>
-            <p>Hi，你们好。</p>
+            <p>你们好，</p>
             <p>想买 iPad 的时候，网上找参数也没找到，这也太不应该了，所以自己做了这么一个关于 iPad 的参数大全，也为了方便购机的朋友。</p>
             <p>自己向来反对广告，所以该页面不会有广告。电脑上谷歌浏览器中查看本页面，获得最佳体验。</p>
             <p>后来又做了个关于所有苹果A系统处理器参数的页面，此处：<a class="link" href="https://kylebing.cn/tools/apple-chip">《Apple A系列处理器 参数大全》</a></p>
-            <p>又有了苹果产品图，此处：<a href="https://kylebing.cn/apple">《苹果产品图》</a></p>
+
             <div class="copyright">
                 <p>作者主页：<a class="link" href="https://kylebing.cn/">KyleBing.cn</a></p>
                 <p>数据来源：<a class="link" href="https://en.wikipedia.org/wiki/iPad">Wikipedia.org</a></p>
-                <p>最后更新: 2020/08/13</p>
+                <p>最后更新: 2020/09/16</p>
             </div>
         </div>
     </div>
+
+    <div class="series">
+        <p>2020年09月16日发布会发布了两款iPad: iPad 8 和 iPad Air 4</p>
+    </div>
+
     <div class="series" v-for="(series, index) in iPadsSeries" :key="index">
         <div class="header">
             <h3>{{series.title}}</h3>
@@ -148,7 +153,7 @@
 
 </div>
 
-<script src="iPad.js?v=20200813125620"></script>
+<script src="iPad.js?v=20200916080734"></script>
 <script>
   setTimeout(()=>{
       if (location.href.indexOf('http://a.kylebing.cn') !== -1 || location.href.indexOf('http://localhost') !== -1) {
