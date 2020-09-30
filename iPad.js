@@ -1,6 +1,6 @@
 /*****************************
   Create Date: 20200414122339
-  Update Date: 20200916080726
+  Update Date: 20200917084112
  *****************************/
 
 const lastOS = "最新";
@@ -431,12 +431,12 @@ const iPadAir =[
     height: 178.5,
     thickness: 6.1,
     os: {
-      init: "iPadOS",
+      init: "iPadOS 14",
       last: lastOS
     },
     cpu: {
       model: 'A14',
-      rate: '--',
+      rate: '3.09',
       core: 6
     },
     gpu: {

@@ -8,14 +8,14 @@
     <title>iPad 所有机型参数大全</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/ipad.png" type="image/png">
-    <link rel="stylesheet" href="css/iPad.css?v=20200916080734">
+    <link rel="stylesheet" href="css/iPad.css?v=20200917084107">
     <link rel="apple-touch-icon" href="img/ipad.png">
     <script src="../../lib/js/jquery-2.2.4.min.js"></script>
     <script src="../../lib/js/vue.min.2.6.10.js"></script>
 </head>
 <body>
 
-<div class="container" id="app">
+<div class="container" id="app" v-cloak>
     <div class="series about">
         <div class="logo">
             <img src="img/ipad.png" alt="logo">
@@ -31,14 +31,11 @@
             <div class="copyright">
                 <p>作者主页：<a class="link" href="https://kylebing.cn/">KyleBing.cn</a></p>
                 <p>数据来源：<a class="link" href="https://en.wikipedia.org/wiki/iPad">Wikipedia.org</a></p>
-                <p>最后更新: 2020/09/16</p>
+                <p>最后更新: 2020/09/17</p>
             </div>
         </div>
     </div>
 
-    <div class="series">
-        <p>2020年09月16日发布会发布了两款iPad: iPad 8 和 iPad Air 4</p>
-    </div>
 
     <div class="series" v-for="(series, index) in iPadsSeries" :key="index">
         <div class="header">
@@ -153,7 +150,7 @@
 
 </div>
 
-<script src="iPad.js?v=20200916080734"></script>
+<script src="iPad.js?v=20200917084107"></script>
 <script>
   setTimeout(()=>{
       if (location.href.indexOf('http://a.kylebing.cn') !== -1 || location.href.indexOf('http://localhost') !== -1) {
