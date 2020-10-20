@@ -435,7 +435,7 @@ const iPadAir = [
       },
       cpu: {
          model: 'A14',
-         rate: '3.09',
+         rate: '2.99',
          core: 6
       },
       gpu: {
@@ -973,6 +973,11 @@ let app = new Vue({
       this.mobileMode = mobileMode;
       this.showFullScreenBtn = chromeCore && !mobileMode;
    },
+   watch: {
+      keyword(){
+         this.filterIpads();
+      }
+   },
    methods: {
       // 全屏显示
       enterFullScreen() {
@@ -1000,7 +1005,7 @@ let app = new Vue({
             this.iPadsSeries = this.originiPadsSeries
          }
 
-      }
+      },
    }
 });
 

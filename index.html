@@ -8,7 +8,7 @@
     <title>iPad 所有机型参数大全</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/ipad.png" type="image/png">
-    <link rel="stylesheet" href="css/iPad.css?v=20201020105215">
+    <link rel="stylesheet" href="css/iPad.css?v=20201020205607">
     <link rel="apple-touch-icon" href="img/ipad.png">
     <script src="../../lib/js/jquery-2.2.4.min.js"></script>
     <script src="../../lib/js/vue.min.2.6.10.js"></script>
@@ -16,28 +16,32 @@
 <body>
 
 <div class="container" id="app" v-cloak>
-    <div class="series about">
-        <div class="logo">
-            <img src="img/ipad.png" alt="logo">
+
+    <!--about-->
+    <div class="about gradient">
+        <div class="about-header">
+            <div class="icon">
+                <img src="img/ipad.svg" alt="">
+            </div>
+            <div class="content">
+                <h1 class="title">iPad 参数大全</h1>
+                <div class="search-bar">
+                    <input type="text" v-model="keyword" placeholder="按格式搜索： air4 / pro1 / ipad6">
+                </div>
+            </div>
         </div>
 
-        <div class="content">
-            <h1 class="title">所有 iPad 参数大全</h1>
-            <p>想买 iPad 的时候，网上找参数也没找到，这也太不应该了，所以自己做了这么一个关于 iPad 的参数大全，也为了方便购机的朋友。</p>
-            <p>其它：<a class="link" target="_blank" href="https://kylebing.cn/tools/apple-chip">Apple A系列处理器 参数大全</a></p>
-
-            <div class="search-bar">
-                <input type="text" @keydown.enter="filterIpads" v-model="keyword" placeholder="按格式搜索： air2 / pro2 / ipad8">
-            </div>
-
+        <div class="copyright-group">
             <div class="copyright">
                 <p>作者主页：<a class="link" href="https://kylebing.cn/">kylebing.cn</a></p>
                 <p>数据来源：<a class="link" href="https://en.wikipedia.org/wiki/iPad">wikipedia.org</a></p>
-                <p>我的邮箱: <a class="link" href="mailto:kylebing@163.com">kylebing@163.com</a></p>
-                <p>最后更新: 2020/10/20</p>
+                <p>我的邮箱：<a class="link" href="mailto:kylebing@163.com">kylebing@163.com</a></p>
             </div>
-
-
+            <div class="copyright">
+                <p>芯片参数：<a class="link" target="_blank" href="https://kylebing.cn/tools/apple-chip">苹果 A、S 系列处理器参数大全</a></p>
+                <p>iPad参数：<a class="link" target="_blank" href="https://kylebing.cn/tools/iphone">iPhone 参数大全</a></p>
+                <p>最后更新：2020/10/20</p>
+            </div>
         </div>
     </div>
 
@@ -155,7 +159,7 @@
 
 </div>
 
-<script src="iPad.js?v=20201020105215"></script>
+<script src="iPad.js?v=20201020205607"></script>
 <script>
   setTimeout(()=>{
       if (location.href.indexOf('http://a.kylebing.cn') !== -1 || location.href.indexOf('http://localhost') !== -1) {
