@@ -8,7 +8,7 @@
     <title>iPad 所有机型参数大全</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/ipad.png" type="image/png">
-    <link rel="stylesheet" href="css/iPad.css?v=20200917084107">
+    <link rel="stylesheet" href="css/iPad.css?v=20201020105215">
     <link rel="apple-touch-icon" href="img/ipad.png">
     <script src="../../lib/js/jquery-2.2.4.min.js"></script>
     <script src="../../lib/js/vue.min.2.6.10.js"></script>
@@ -23,17 +23,21 @@
 
         <div class="content">
             <h1 class="title">所有 iPad 参数大全</h1>
-            <p>你们好，</p>
             <p>想买 iPad 的时候，网上找参数也没找到，这也太不应该了，所以自己做了这么一个关于 iPad 的参数大全，也为了方便购机的朋友。</p>
-            <p>自己向来反对广告，所以该页面不会有广告。电脑上谷歌浏览器中查看本页面，获得最佳体验。</p>
-            <p>后来又做了个关于所有苹果A系统处理器参数的页面，此处：<a class="link" target="_blank" href="https://kylebing.cn/tools/apple-chip">《Apple A系列处理器 参数大全》</a></p>
+            <p>其它：<a class="link" target="_blank" href="https://kylebing.cn/tools/apple-chip">Apple A系列处理器 参数大全</a></p>
+
+            <div class="search-bar">
+                <input type="text" @keydown.enter="filterIpads" v-model="keyword" placeholder="按格式搜索： air2 / pro2 / ipad8">
+            </div>
 
             <div class="copyright">
-                <p>作者主页：<a class="link" href="https://kylebing.cn/">KyleBing.cn</a></p>
-                <p>数据来源：<a class="link" href="https://en.wikipedia.org/wiki/iPad">Wikipedia.org</a></p>
+                <p>作者主页：<a class="link" href="https://kylebing.cn/">kylebing.cn</a></p>
+                <p>数据来源：<a class="link" href="https://en.wikipedia.org/wiki/iPad">wikipedia.org</a></p>
                 <p>我的邮箱: <a class="link" href="mailto:kylebing@163.com">kylebing@163.com</a></p>
-                <p>最后更新: 2020/09/17</p>
+                <p>最后更新: 2020/10/20</p>
             </div>
+
+
         </div>
     </div>
 
@@ -151,7 +155,7 @@
 
 </div>
 
-<script src="iPad.js?v=20200917084107"></script>
+<script src="iPad.js?v=20201020105215"></script>
 <script>
   setTimeout(()=>{
       if (location.href.indexOf('http://a.kylebing.cn') !== -1 || location.href.indexOf('http://localhost') !== -1) {

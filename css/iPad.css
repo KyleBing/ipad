@@ -593,6 +593,19 @@ body {
   }
 }
 
+.search-bar {
+  width: 20rem;
+  margin-top: 5px;
+}
+.search-bar input {
+  width: 100%;
+  padding: 5px 8px;
+  border: 1px solid #dadada;
+}
+.search-bar input:focus {
+  border-color: #555;
+}
+
 .header {
   padding-bottom: 15px;
   display: flex;
@@ -728,6 +741,8 @@ body {
 }
 
 .copyright {
+  display: flex;
+  justify-content: space-between;
   margin-top: 15px;
   line-height: 1.5;
   font-size: 12px;
@@ -738,6 +753,9 @@ body {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
+}
+.copyright p {
+  margin-right: 20px;
 }
 .copyright p:last-child {
   margin-bottom: 0;

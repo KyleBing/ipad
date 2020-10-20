@@ -27,6 +27,19 @@ body{
   }
 }
 
+.search-bar{
+  width: 20rem;
+  margin-top: 5px;
+  input{
+    width: 100%;
+    padding: 5px 8px;
+    border: 1px solid $color-border;
+    &:focus{
+      border-color: $text-about;
+    }
+  }
+}
+
 .header {
   padding-bottom: 15px;
   display: flex;
@@ -154,6 +167,8 @@ body{
 }
 
 .copyright{
+  display: flex;
+  justify-content: space-between;
   margin-top: 15px;
   line-height: 1.5;
   font-size: 12px;
@@ -163,6 +178,7 @@ body{
   border: 1px solid lighten($color-border, 9%);
   @include border-radius(3px);
   p{
+    margin-right: 20px;
     &:last-child{
       margin-bottom: 0;
     }
