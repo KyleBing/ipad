@@ -2,6 +2,7 @@
 .search-bar{
   width: 20rem;
   margin-top: 5px;
+  margin-bottom: 5px;
   input{
     @include border-radius(2px);
     background-color: transparent;
@@ -42,7 +43,12 @@
     margin-left: 50px;
     justify-content: center;
     align-items: flex-start;
-
+    p{
+      margin-bottom: 5px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
   }
 
   @media (max-width: 768px){
@@ -104,7 +110,6 @@
     margin: 0 0 10px;
   }
 }
-
 
 .link{
   &:hover{

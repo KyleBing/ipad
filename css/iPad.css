@@ -557,6 +557,7 @@ td p {
 .search-bar {
   width: 20rem;
   margin-top: 5px;
+  margin-bottom: 5px;
 }
 .search-bar input {
   -webkit-border-radius: 2px;
@@ -598,6 +599,12 @@ td p {
   margin-left: 50px;
   justify-content: center;
   align-items: flex-start;
+}
+.about-header .content p {
+  margin-bottom: 5px;
+}
+.about-header .content p:last-child {
+  margin-bottom: 0;
 }
 @media (max-width: 768px) {
   .about-header {
@@ -803,7 +810,7 @@ body {
   }
 }
 .gradient {
-  background-image: linear-gradient(to top left, #1c1461, #ef9221);
+  background-image: linear-gradient(to bottom right, #1c1461, #ef9221);
 }
 
 /*# sourceMappingURL=iPad.css.map */
