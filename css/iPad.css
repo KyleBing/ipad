@@ -727,13 +727,15 @@ body {
   overflow: auto;
   background-color: #fff;
   margin-bottom: 30px;
-  border: 1px solid #dadada;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  border-top: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
 }
 @media (max-width: 768px) {
   .series {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #dadada;
     padding: 10px;
     margin-bottom: 10px;
   }
@@ -810,7 +812,7 @@ body {
   }
 }
 .gradient {
-  background-image: linear-gradient(to bottom right, #1c1461, #ef9221);
+  background-image: linear-gradient(to bottom right, #363d40, #6a7282);
 }
 
 /*# sourceMappingURL=iPad.css.map */

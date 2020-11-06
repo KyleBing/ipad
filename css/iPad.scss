@@ -35,9 +35,11 @@ body{
   overflow: auto;
   background-color: #fff;
   margin-bottom: 30px;
-  border: 1px solid $color-border;
-  @include border-radius(3px);
+  border-top: 1px solid $color-border;;
+  border-bottom: 1px solid $color-border;;
   @media (max-width: 768px){
+    @include border-radius(3px);
+    border: 1px solid $color-border;
     padding: 10px;
     margin-bottom: 10px;
   }
@@ -110,7 +112,6 @@ body{
 
 
 .gradient{
-  //background-image: linear-gradient(to top left, #F550EC, #0A90FF);
   //background-image: linear-gradient(to top left, #d03064, #0058a0);
-  background-image: linear-gradient(to bottom right, #1c1461, #ef9221);
+  background-image: linear-gradient(to bottom right, #363d40, #6a7282);
 }
