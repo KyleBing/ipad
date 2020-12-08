@@ -1010,6 +1010,8 @@ let app = new Vue({
 });
 
 
+document.addEventListener('touchstart', ()=>{}, false)
+
 // 当全屏模式变化时
 document.documentElement.onfullscreenchange = () => {
    app.didEnteredFullScreen = Boolean(document.fullscreenElement)

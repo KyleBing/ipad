@@ -39,9 +39,9 @@ body{
   border-bottom: 1px solid $color-border;;
   @media (max-width: 768px){
     @include border-radius(3px);
-    border: 1px solid $color-border;
+    border-bottom: none;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
 }
 
@@ -103,7 +103,7 @@ body{
 
 @media (max-width: 768px){
   .header{
-    padding-bottom: 5px;
+    padding: 15px 10px 10px 5px;
     h3{
       font-size: 2rem;
     }
