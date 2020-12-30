@@ -886,7 +886,7 @@ const iPad = [
          core: 6
       },
       memory: [
-         {name: "", size: "3", type: "DDR4"},
+         {name: "", size: "3", type: "LPDDR4 DRAM"},
       ],
       storage: [32, 128],
       price: "",
@@ -923,7 +923,7 @@ const iPad = [
          core: 4
       },
       memory: [
-         {name: "", size: "--", type: "--"},
+         {name: "", size: "3", type: "LPDDR4 DRAM"},
       ],
       storage: [32, 128],
       price: "",
