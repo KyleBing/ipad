@@ -13,7 +13,13 @@ body{
 
 .container{
   margin: 0 auto;
+  padding: 0 20px;
   max-width: 1920px;
+}
+
+.about{
+  overflow: hidden;
+  @include border-radius(0 0 5px 5px);
 }
 
 
@@ -30,19 +36,17 @@ body{
   }
 }
 
+.series-list{
+  margin-top: 20px;
+}
+
 .series{
+  @include border-radius(5px);
   padding: 20px;
   overflow: auto;
   background-color: #fff;
   margin-bottom: 30px;
-  border-top: 1px solid $color-border;;
-  border-bottom: 1px solid $color-border;;
-  @media (max-width: 768px){
-    @include border-radius(3px);
-    border-bottom: none;
-    padding: 10px;
-    margin-bottom: 30px;
-  }
+  border: 1px solid $color-border;;
 }
 
 .shadow{
@@ -102,11 +106,26 @@ body{
 }
 
 @media (max-width: 768px){
+  .container{
+    padding: 0;
+  }
+  .about{
+    @include border-radius(0);
+  }
   .header{
     padding: 15px 10px 10px 5px;
     h3{
       font-size: 2rem;
     }
+  }
+  .series-list{
+    padding: 0 10px;
+    margin-top: 20px;
+  }
+  .series{
+    @include border-radius(3px);
+    padding: 10px;
+    margin-bottom: 30px;
   }
 }
 

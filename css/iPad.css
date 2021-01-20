@@ -762,7 +762,15 @@ body {
 
 .container {
   margin: 0 auto;
+  padding: 0 20px;
   max-width: 1920px;
+}
+
+.about {
+  overflow: hidden;
+  -webkit-border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
 }
 
 .header {
@@ -778,23 +786,19 @@ body {
   font-size: 2.5rem;
 }
 
+.series-list {
+  margin-top: 20px;
+}
+
 .series {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   padding: 20px;
   overflow: auto;
   background-color: #fff;
   margin-bottom: 30px;
-  border-top: 1px solid #dadada;
-  border-bottom: 1px solid #dadada;
-}
-@media (max-width: 768px) {
-  .series {
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    border-bottom: none;
-    padding: 10px;
-    margin-bottom: 30px;
-  }
+  border: 1px solid #dadada;
 }
 
 .shadow, thead {
@@ -860,11 +864,34 @@ body {
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 0;
+  }
+
+  .about {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+  }
+
   .header {
     padding: 15px 10px 10px 5px;
   }
   .header h3 {
     font-size: 2rem;
+  }
+
+  .series-list {
+    padding: 0 10px;
+    margin-top: 20px;
+  }
+
+  .series {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 30px;
   }
 }
 .gradient {
