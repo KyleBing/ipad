@@ -1,3 +1,4 @@
+$color-bg: rgba(255,255,255,0.10);
 
 .search-bar{
   width: 20rem;
@@ -6,7 +7,7 @@
   input{
     @include border-radius(2px);
     background-color: transparent;
-    border: 1px solid rgba(255,255,255,0.5);
+    border: 1px solid rgba(white, 0.3);
     width: 100%;
     padding: 5px 8px;
     color: white;
@@ -15,7 +16,7 @@
       color: rgba(255,255,255,0.5);
     }
     &:focus{
-      border-color: white;
+      border-color: rgba(white, 0.8);
       &::-webkit-input-placeholder{
         color: rgba(255,255,255,0.8);
       }
@@ -30,7 +31,7 @@
     cursor: pointer;
     padding: 5px 10px;
     @include border-radius(2px);
-    border: 1px solid transparentize(white, 0.7);
+    background-color: $color-bg;
     &.active{
       background-color:transparentize(white, 0.5);
     }
@@ -61,8 +62,6 @@
   }
 }
 
-
-
 .about-header{
   display: flex;
   justify-content: space-between;
@@ -70,8 +69,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 30px;
     img{
-      width: 80px;
+      width: 60px;
     }
   }
   .content{
@@ -139,8 +139,8 @@
   line-height: 1.5;
   font-size: 12px;
   letter-spacing: 0.5px;
-  background-color: rgba(255,255,255,0.03);
-  border: 1px solid rgba(255,255,255,0.6);
+  @include border-radius(5px);
+  background-color: $color-bg;
   p{
     color: rgba(255,255,255,0.7);
     &:last-child{
