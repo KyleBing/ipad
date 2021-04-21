@@ -769,6 +769,14 @@ body {
   max-width: 1920px;
 }
 
+footer {
+  padding: 20px 0 40px;
+  font-family: "PTSans-Narrow";
+  font-size: 12px;
+  text-align: center;
+  color: #8E8E93;
+}
+
 .about {
   overflow: hidden;
   -webkit-border-radius: 0 0 5px 5px;

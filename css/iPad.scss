@@ -17,6 +17,14 @@ body{
   max-width: 1920px;
 }
 
+footer{
+  padding: 20px 0 40px;
+  font-family: 'PTSans-Narrow';
+  font-size: 12px;
+  text-align: center;
+  color: $gray;
+}
+
 .about{
   overflow: hidden;
   @include border-radius(0 0 5px 5px);
@@ -133,4 +141,5 @@ body{
 .gradient{
   //background-image: linear-gradient(to top left, #d03064, #0058a0);
   background-image: linear-gradient(to bottom right, #363d40, #6a7282);
+  //background-image: linear-gradient(to bottom right, #4D4D4D, #616161);
 }

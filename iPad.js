@@ -1,6 +1,6 @@
 /*****************************
  Create Date: 20200414122339
- Update Date: 20200917084112
+ Update Date: 20210421095546
  *****************************/
 
 const lastOS = "最新";
@@ -308,6 +308,80 @@ const iPadPro = [
       ],
       release: "2020-03-18"
    },
+
+   // iPad pro 5 th?
+   {
+      name: "iPad Pro 5 11",
+      name_short: "Pro 5",
+      active: false,
+      screen_size: "11",
+      screen_resolution: "2388 x 1668",
+      screen_density: "264",
+      width: '178.5',
+      height: '247.6',
+      thickness: '5.9',
+      os: {
+         init: "iPadOS 14.5",
+         last: lastOS
+      },
+      cpu: {
+         model: 'M1',
+         rate: '3.2',
+         core: '8'
+      },
+      gpu: {
+         model: "Apple GPU",
+         core: '8'
+      },
+      memory: [
+         {name: "", size: "?", type: "?"},
+      ],
+      storage: ['128','256','512','1024','2048'],
+      price: "",
+      battery: "28.65wh",
+      connector: 'USB-C',
+      models: [
+         {id: 1, name: "", model: "WiFi", weight: 466},
+         {id: 2, name: "", model: "WiFi + 蜂窝", weight: 468},
+      ],
+      release: "2021-04-21"
+   },
+   {
+      name: "iPad Pro 5 12.9",
+      name_short: "Pro 5",
+      active: false,
+      screen_size: "12.9",
+      screen_resolution: "2732 x 2048",
+      screen_density: "264",
+      width: '214.9',
+      height: '280.6',
+      thickness: '6.4',
+      os: {
+         init: "iPadOS 14.5",
+         last: lastOS
+      },
+      cpu: {
+         model: 'M1',
+         rate: '3.2',
+         core: '8'
+      },
+      gpu: {
+         model: "Apple GPU",
+         core: '8'
+      },
+      memory: [
+         {name: "", size: "?", type: "?"},
+      ],
+      storage: ['128','256','512','1024','2048'],
+      price: "",
+      battery: "28.65wh",
+      connector: 'USB-C',
+      models: [
+         {id: 1, name: "", model: "WiFi", weight: 682},
+         {id: 2, name: "", model: "WiFi + 蜂窝", weight: 684},
+      ],
+      release: "2021-04-21"
+   },
 ];
 const iPadAir = [
    {
@@ -443,7 +517,7 @@ const iPadAir = [
          core: "4"
       },
       memory: [
-         {name: "", size: "--", type: "--"},
+         {name: "", size: "4", type: "--"},
       ],
       storage: [64, 256],
       price: "",
