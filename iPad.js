@@ -317,8 +317,8 @@ const iPadPro = [
       screen_size: "11",
       screen_resolution: "2388 x 1668",
       screen_density: "264",
-      width: '178.5',
-      height: '247.6',
+      width: '247.6',
+      height: '178.5',
       thickness: '5.9',
       os: {
          init: "iPadOS 14.5",
@@ -334,7 +334,8 @@ const iPadPro = [
          core: '8'
       },
       memory: [
-         {name: "", size: "?", type: "?"},
+         {name: "", size: "8", type: "DDR4X"},
+         {name: "≥ 1T", size: "16", type: "DDR4X"},
       ],
       storage: ['128','256','512','1024','2048'],
       price: "",
@@ -353,8 +354,8 @@ const iPadPro = [
       screen_size: "12.9",
       screen_resolution: "2732 x 2048",
       screen_density: "264",
-      width: '214.9',
-      height: '280.6',
+      width: '280.6',
+      height: '214.9',
       thickness: '6.4',
       os: {
          init: "iPadOS 14.5",
@@ -370,11 +371,12 @@ const iPadPro = [
          core: '8'
       },
       memory: [
-         {name: "", size: "?", type: "?"},
+         {name: "", size: "8", type: "DDR4X"},
+         {name: "≥ 1T", size: "16", type: "DDR4X"},
       ],
       storage: ['128','256','512','1024','2048'],
       price: "",
-      battery: "28.65wh",
+      battery: "40.88wh",
       connector: 'USB-C',
       models: [
          {id: 1, name: "", model: "WiFi", weight: 682},
