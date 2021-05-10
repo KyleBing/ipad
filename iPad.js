@@ -1,6 +1,6 @@
 /*****************************
  Create Date: 20200414122339
- Update Date: 20210421095546
+ Update Date: 20210510192231
  *****************************/
 
 const lastOS = "最新";
@@ -41,6 +41,16 @@ const iPadPro = [
          {id: 1, name: "iPad6,3", model: "A1673 (WiFi)", weight: 437},
          {id: 2, name: "iPad6,4", model: "A1674 or A1675 (WiFi + 蜂窝)", weight: 444}
       ],
+      cameras: {
+         front: {
+            pixelCount: '120万像素, ƒ/2.2',
+            dimension: ['720p'],
+            zoomRate: ''
+         },
+         back: [
+            {name: '默认', pixelCount: '1200万像素, ƒ/2.2', dimension: ['4k 30fps', '1080p 30/60fps', '720p 240fps'],  zoomRate: '3'},
+         ]
+      },
       release: "2016-05-31"
    },
    {
@@ -77,6 +87,16 @@ const iPadPro = [
          {id: 1, name: "iPad6,7", model: "A1584 (WiFi)", weight: 710},
          {id: 2, name: "iPad6,8", model: "A1652 (蜂窝)", weight: 720}
       ],
+      cameras: {
+         front: {
+            pixelCount: '120万像素, ƒ/2.2',
+            dimension: ['720p'],
+            zoomRate: ''
+         },
+         back: [
+            {name: '默认', pixelCount: '800万像素, ƒ/2.4', dimension: ['1080p 30fps', '720p 120fps'],  zoomRate: '3'},
+         ]
+      },
       release: "2015-09-11"
    },
 
@@ -115,6 +135,16 @@ const iPadPro = [
          {id: 1, name: "iPad7,3", model: "A1701 (WiFi)", weight: 469},
          {id: 2, name: "iPad7,4", model: "A1709 (WiFi + 蜂窝)", weight: 477}
       ],
+      cameras: {
+         front: {
+            pixelCount: '700万像素, ƒ/2.2',
+            dimension: ['1080p'],
+            zoomRate: ''
+         },
+         back: [
+            {name: '默认', pixelCount: '1200万像素, ƒ/1.8', dimension: ['4k 30fps', '1080p 30/60/120fps', '720p 240fps'],  zoomRate: '3'},
+         ]
+      },
       release: "2017-06-13"
    },
    {
@@ -151,6 +181,16 @@ const iPadPro = [
          {id: 1, name: "iPad7,1", model: "A1670 (WiFi)", weight: 677},
          {id: 2, name: "iPad7,2", model: "A1671 (WiFi + 蜂窝)", weight: 692}
       ],
+      cameras: {
+         front: {
+            pixelCount: '700万像素, ƒ/2.2',
+            dimension: ['1080p'],
+            zoomRate: ''
+         },
+         back: [
+            {name: '默认', pixelCount: '1200万像素, ƒ/1.8', dimension: ['4k 30fps', '1080p 30/60/120fps', '720p 240fps'],  zoomRate: '3'},
+         ]
+      },
       release: "2017-06-13"
    },
 
@@ -191,6 +231,17 @@ const iPadPro = [
          {id: 2, name: "iPad8,3 (<1T)", model: "A1934, A2013 (WiFi + 蜂窝)", weight: 468},
          {id: 3, name: "iPad8,4 (=1T)", model: "A1979 (WiFi + 蜂窝, 国行)", weight: 468},
       ],
+      cameras: {
+         front: {
+            pixelCount: '700万像素, ƒ/2.2',
+            dimension: ['1080p 30/60fps'],
+            zoomRate: '',
+            hdr: true
+         },
+         back: [
+            {name: '默认', pixelCount: '1200万像素, ƒ/1.8', dimension: ['4k 30/60fps', '1080p 30/60/120fps', '720p 240fps'],  zoomRate: '5', hdr: true},
+         ]
+      },
       release: "2018-10-03"
    },
    {
@@ -229,6 +280,17 @@ const iPadPro = [
          {id: 2, name: "iPad8,7 (<1T)", model: "A1895, A2014 (WiFi + 蜂窝)", weight: 633},
          {id: 3, name: "iPad8,8 (=1T)", model: "A1983 (WiFi + 蜂窝, 国行)", weight: 633}
       ],
+      cameras: {
+         front: {
+            pixelCount: '700万像素, ƒ/2.2',
+            dimension: ['1080p 30/60fps'],
+            zoomRate: '',
+            hdr: true
+         },
+         back: [
+            {name: '默认', pixelCount: '1200万像素, ƒ/1.8', dimension: ['4k 30/60fps', '1080p 30/60/120fps', '720p 240fps'],  zoomRate: '5', hdr: true},
+         ]
+      },
       release: "2018-10-03"
    },
 
@@ -268,6 +330,18 @@ const iPadPro = [
          {id: 2, name: "iPad", model: "A2068, A2230 (WiFi + 蜂窝)", weight: 473},
          {id: 3, name: "iPad", model: "A2231 (WiFi + 蜂窝, 国行)", weight: 473}
       ],
+      cameras: {
+         front: {
+            pixelCount: '700万像素, ƒ/2.2',
+            dimension: ['1080p 30/60fps'],
+            zoomRate: '',
+            hdr: true
+         },
+         back: [
+            {name: '默认', pixelCount: '1200万像素, ƒ/1.8', dimension: ['4k 30/60fps', '1080p 30/60/120fps', '720p 240fps'],  zoomRate: '5', hdr: true},
+            {name: '广角', pixelCount: '1000万像素, ƒ/2.4， 125˚', dimension: ['4k 30/60fps', '1080p 30/60/120fps', '720p 240fps'],  zoomRate: '5', hdr: true},
+         ]
+      },
       release: "2020-03-18"
    },
    {
@@ -306,6 +380,18 @@ const iPadPro = [
          {id: 3, name: "iPad", model: "A2233 (WiFi + 蜂窝, 国行)", weight: 643},
 
       ],
+      cameras: {
+         front: {
+            pixelCount: '700万像素, ƒ/2.2',
+            dimension: ['1080p 30/60fps'],
+            zoomRate: '',
+            hdr: true
+         },
+         back: [
+            {name: '默认', pixelCount: '1200万像素, ƒ/1.8', dimension: ['4k 30/60fps', '1080p 30/60/120fps', '720p 240fps'],  zoomRate: '5', hdr: true},
+            {name: '广角', pixelCount: '1000万像素, ƒ/2.4， 125˚', dimension: ['4k 30/60fps', '1080p 30/60/120fps', '720p 240fps'],  zoomRate: '5', hdr: true},
+         ]
+      },
       release: "2020-03-18"
    },
 
@@ -345,6 +431,18 @@ const iPadPro = [
          {id: 1, name: "", model: "WiFi", weight: 466},
          {id: 2, name: "", model: "WiFi + 蜂窝", weight: 468},
       ],
+      cameras: {
+         front: {
+            pixelCount: '1200万像素, ƒ/2.4',
+            dimension: ['1080p 30/60fps'],
+            zoomRate: '',
+            hdr: true
+         },
+         back: [
+            {name: '默认', pixelCount: '1200万像素, ƒ/1.8', dimension: ['4k 30/60fps', '1080p 30/60/120fps', '720p 240fps'],  zoomRate: '5', hdr: true},
+            {name: '广角', pixelCount: '1000万像素, ƒ/2.4， 125˚', dimension: ['4k 30/60fps', '1080p 30/60/120fps', '720p 240fps'],  zoomRate: '5', hdr: true},
+         ]
+      },
       release: "2021-04-21"
    },
    {
@@ -382,6 +480,18 @@ const iPadPro = [
          {id: 1, name: "", model: "WiFi", weight: 682},
          {id: 2, name: "", model: "WiFi + 蜂窝", weight: 684},
       ],
+      cameras: {
+         front: {
+            pixelCount: '1200万像素, ƒ/2.4',
+            dimension: ['1080p 30/60fps'],
+            zoomRate: '',
+            hdr: true
+         },
+         back: [
+            {name: '默认', pixelCount: '1200万像素, ƒ/1.8', dimension: ['4k 30/60fps', '1080p 30/60/120fps', '720p 240fps'],  zoomRate: '5', hdr: true},
+            {name: '广角', pixelCount: '1000万像素, ƒ/2.4， 125˚', dimension: ['4k 30/60fps', '1080p 30/60/120fps', '720p 240fps'],  zoomRate: '5', hdr: true},
+         ]
+      },
       release: "2021-04-21"
    },
 ];
@@ -420,6 +530,17 @@ const iPadAir = [
          {id: 1, name: "iPad4,1", model: "A1474 (WiFi)", weight: 469},
          {id: 2, name: "iPad4,2", model: "A1475 (WiFi + 蜂窝)", weight: 478},
       ],
+      cameras: {
+         front: {
+            pixelCount: '120万像素, ƒ/2.2',
+            dimension: ['720p'],
+            zoomRate: '',
+            hdr: false
+         },
+         back: [
+            {name: '默认', pixelCount: '500万像素, ƒ/2.4', dimension: ['1080p 30fps'], zoomRate: '5', hdr: false},
+         ]
+      },
       release: "2013-09-01"
    },
    {
@@ -456,6 +577,17 @@ const iPadAir = [
          {id: 1, name: "iPad5,3 (WiFi)", model: "A1566 (WiFi)", weight: 437},
          {id: 2, name: "iPad5,4 (WiFi + 蜂窝)", model: "A1567 (WiFi + 蜂窝)", weight: 444},
       ],
+      cameras: {
+         front: {
+            pixelCount: '120万像素, ƒ/2.2',
+            dimension: ['720p'],
+            zoomRate: '',
+            hdr: false
+         },
+         back: [
+            {name: '默认', pixelCount: '800万像素, ƒ/2.4', dimension: ['1080p 30fps'],  zoomRate: '5', hdr: false},
+         ]
+      },
       release: "2014-10-22"
    },
    {
@@ -493,6 +625,17 @@ const iPadAir = [
          {id: 2, name: "iPad11,4", model: "A2123, A2153 (WiFi + 蜂窝)", weight: 464},
          {id: 3, name: "iPad11,4", model: "A2154 (WiFi + 蜂窝, 国行)", weight: 464},
       ],
+      cameras: {
+         front: {
+            pixelCount: '700万像素, ƒ/2.2',
+            dimension: ['1080p'],
+            zoomRate: '',
+            hdr: false
+         },
+         back: [
+            {name: '默认', pixelCount: '800万像素, ƒ/2.4', dimension: ['1080p 30fps'], zoomRate: '5', hdr: false},
+         ]
+      },
       release: "2019-03-18"
    },
    {
@@ -529,6 +672,18 @@ const iPadAir = [
          {id: 1, name: "--", model: "--(WiFi)", weight: 458},
          {id: 2, name: "--", model: "--(WiFi + 蜂窝)", weight: 460},
       ],
+      cameras: {
+         front: {
+            pixelCount: '700万像素, ƒ/2.0',
+            dimension: ['1080p'],
+            rate: '',
+            zoomRate: '',
+            hdr: false
+         },
+         back: [
+            {name: '默认', pixelCount: '1200万像素, ƒ/1.8', dimension: ['4K 24/30/60fps', '1080p HD 30/60fps'],  zoomRate: '5', hdr: false},
+         ]
+      },
       release: "2020-09-16"
    },
 ];
@@ -553,7 +708,7 @@ const iPadMini = [
          core: 2
       },
       gpu: {
-         model: "PowerVR SGX543MP2",
+         model: "PowerVR SGX5400万像素2",
          core: 4
       },
       memory: [
@@ -568,6 +723,17 @@ const iPadMini = [
          {id: 2, name: "iPad2,6", model: "A1454 (WiFi + 蜂窝)", weight: 310},
          {id: 3, name: "iPad2,7", model: "A1455 (WiFi + 蜂窝 MM)", weight: 310},
       ],
+      cameras: {
+         front: {
+            pixelCount: '120万像素',
+            dimension: ['720p'],
+            zoomRate: '',
+            hdr: false
+         },
+         back: [
+            {name: '默认', pixelCount: '500万像素', dimension: ['1080p 30fps'], zoomRate: '5', hdr: false},
+         ]
+      },
       release: "2012-09-02"
    },
    {
@@ -605,6 +771,17 @@ const iPadMini = [
          {id: 2, name: "iPad4,5", model: "A1490 (WiFi + 蜂窝)", weight: 340},
          {id: 3, name: "iPad4,6", model: "A1491 (WiFi + 蜂窝 TD-LTE)", weight: 340},
       ],
+      cameras: {
+         front: {
+            pixelCount: '120万像素',
+            dimension: ['720p'],
+            zoomRate: '',
+            hdr: false
+         },
+         back: [
+            {name: '默认', pixelCount: '500万像素', dimension: ['1080p 30fps'],  zoomRate: '5', hdr: false},
+         ]
+      },
       release: "2013-09-12"
    },
    {
@@ -642,6 +819,17 @@ const iPadMini = [
          {id: 2, name: "iPad4,8", model: "A1600 (WiFi + 蜂窝)", weight: 310},
          {id: 3, name: "iPad4,9", model: "A1601 (WiFi + 蜂窝 TD-LTE)", weight: 310},
       ],
+      cameras: {
+         front: {
+            pixelCount: '120万像素',
+            dimension: ['720p'],
+            zoomRate: '',
+            hdr: false
+         },
+         back: [
+            {name: '默认', pixelCount: '500万像素', dimension: ['1080p 30fps'], zoomRate: '5', hdr: false},
+         ]
+      },
       release: "2014-10-22"
    },
    {
@@ -678,6 +866,17 @@ const iPadMini = [
          {id: 1, name: "iPad5,1", model: "A1538 (WiFi)", weight: 290},
          {id: 2, name: "iPad5,1", model: "A1550 (WiFi + 蜂窝)", weight: 300},
       ],
+      cameras: {
+         front: {
+            pixelCount: '120万像素',
+            dimension: ['720p'],
+            zoomRate: '',
+            hdr: false
+         },
+         back: [
+            {name: '默认', pixelCount: '800万像素', dimension: ['1080p 30fps'], zoomRate: '3', hdr: false},
+         ]
+      },
       release: "2015-09-09"
    },
    {
@@ -715,6 +914,17 @@ const iPadMini = [
          {id: 2, name: "iPad11,2", model: "A2124, A2126 (WiFi + 蜂窝)", weight: 310},
          {id: 3, name: "iPad11,2", model: "A2125 (WiFi + 蜂窝, 国行)", weight: 310},
       ],
+      cameras: {
+         front: {
+            pixelCount: '700万像素',
+            dimension: ['1080p'],
+            zoomRate: '',
+            hdr: false
+         },
+         back: [
+            {name: '默认', pixelCount: '800万像素', dimension: ['1080p 30fps'], zoomRate: '3', hdr: false},
+         ]
+      },
       release: "2019-03-18"
    },
 ];
@@ -753,6 +963,10 @@ const iPad = [
          {id: 1, name: "iPad1,1", model: "A1219 (WiFi)", weight: 680},
          {id: 2, name: "iPad1,1", model: "A1337 (WiFi + 3G)", weight: 730},
       ],
+      cameras: {
+         front: {},
+         back: []
+      },
       release: "2010-04-03"
    },
    {
@@ -775,7 +989,7 @@ const iPad = [
          core: 2
       },
       gpu: {
-         model: "PowerVR SGX543MP2",
+         model: "PowerVR SGX5400万像素2",
          core: 2
       },
       memory: [
@@ -790,6 +1004,17 @@ const iPad = [
          {id: 2, name: "iPad2,2", model: "A1397 (WiFi + 3G CDMA)", weight: 613},
          {id: 3, name: "iPad2,3", model: "A1396 (WiFi + 3G GSM)", weight: 607},
       ],
+      cameras: {
+         front: {
+            pixelCount: '30万像素',
+            dimension: '',
+            zoomRate: '',
+            hdr: false
+         },
+         back: [
+            {name: '默认', pixelCount: '70万像素', dimension: ['720p 30fps'], zoomRate: '5', hdr: false},
+         ]
+      },
       release: "2011-03-11"
    },
    {
@@ -812,7 +1037,7 @@ const iPad = [
          core: 2
       },
       gpu: {
-         model: "PowerVR SGX543MP4",
+         model: "PowerVR SGX5400万像素4",
          core: 4
       },
       memory: [
@@ -827,6 +1052,17 @@ const iPad = [
          {id: 2, name: "iPad3,2", model: "A1403 (WiFi + 蜂窝 VZ)", weight: 660},
          {id: 3, name: "iPad3,3", model: "A1430 (WiFi + 蜂窝)", weight: 660},
       ],
+      cameras: {
+         front: {
+            pixelCount: '30万像素',
+            dimension: '',
+            zoomRate: '',
+            hdr: false
+         },
+         back: [
+            {name: '默认', pixelCount: '500万像素, f/2.4', dimension: ['1080p 30fps'], zoomRate: '5', hdr: false},
+         ]
+      },
       release: "2012-03-16"
    },
    {
@@ -849,7 +1085,7 @@ const iPad = [
          core: 2
       },
       gpu: {
-         model: "PowerVR SGX554MP4",
+         model: "PowerVR SGX5500万像素4",
          core: 4
       },
       memory: [
@@ -864,6 +1100,17 @@ const iPad = [
          {id: 2, name: "iPad5,4", model: "A1459 (WiFi + 蜂窝)", weight: 660},
          {id: 3, name: "iPad5,4", model: "A1460 (WiFi + 蜂窝 MM)", weight: 660},
       ],
+      cameras: {
+         front: {
+            pixelCount: '120万像素, ƒ/2.2 ',
+            dimension: ['720p'],
+            zoomRate: '',
+            hdr: false
+         },
+         back: [
+            {name: '默认', pixelCount: '500万像素, f/2.4', dimension: ['1080p 30fps'], zoomRate: '5', hdr: false},
+         ]
+      },
       release: "2012-10-23"
    },
    {
@@ -900,6 +1147,17 @@ const iPad = [
          {id: 1, name: "iPad6,11", model: "A1822 (WiFi)", weight: 469},
          {id: 2, name: "iPad6,12", model: "A1823 (WiFi + 蜂窝)", weight: 478},
       ],
+      cameras: {
+         front: {
+            pixelCount: '120万像素, ƒ/2.2 ',
+            dimension: ['720p'],
+            zoomRate: '',
+            hdr: false
+         },
+         back: [
+            {name: '默认', pixelCount: '800万像素, ƒ/2.4', dimension: ['1080p 30fps'], zoomRate: '3', hdr: false},
+         ]
+      },
       release: "2017-03-21"
    },
    {
@@ -936,6 +1194,17 @@ const iPad = [
          {id: 1, name: "iPad7,5", model: "A1893 (WiFi)", weight: 469},
          {id: 2, name: "iPad7,6", model: "A1954 (WiFi + 蜂窝)", weight: 478},
       ],
+      cameras: {
+         front: {
+            pixelCount: '120万像素, ƒ/2.2 ',
+            dimension: ['720p'],
+            zoomRate: '',
+            hdr: false
+         },
+         back: [
+            {name: '默认', pixelCount: '800万像素, ƒ/2.4', dimension: ['1080p 30fps'], zoomRate: '3', hdr: false},
+         ]
+      },
       release: "2018-03-27"
    },
    {
@@ -973,6 +1242,17 @@ const iPad = [
          {id: 2, name: "iPad7,12", model: "A2200 (WiFi + 蜂窝)", weight: 493},
          {id: 2, name: "iPad7,12", model: "A2198 (WiFi + 蜂窝)", weight: 493},
       ],
+      cameras: {
+         front: {
+            pixelCount: '120万像素, ƒ/2.2 ',
+            dimension: ['720p'],
+            zoomRate: '',
+            hdr: false
+         },
+         back: [
+            {name: '默认', pixelCount: '800万像素, ƒ/2.4', dimension: ['1080p 30fps'], zoomRate: '3', hdr: false},
+         ]
+      },
       release: "2019-09-10"
    },
    {
@@ -1009,6 +1289,17 @@ const iPad = [
          {id: 1, name: "--", model: "-- (WiFi)", weight: 490},
          {id: 2, name: "--", model: "-- (WiFi + 蜂窝)", weight: 495},
       ],
+      cameras: {
+         front: {
+            pixelCount: '120万像素, ƒ/2.2 ',
+            dimension: ['720p'],
+            zoomRate: '',
+            hdr: false
+         },
+         back: [
+            {name: '默认', pixelCount: '800万像素, ƒ/2.4', dimension: ['1080p 30fps'], zoomRate: '3', hdr: false},
+         ]
+      },
       release: "2020-09-16"
    },
 ];

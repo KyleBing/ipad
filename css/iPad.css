@@ -130,11 +130,11 @@ tt {
 }
 
 .gray {
-  color: #8E8E93;
+  color: #5f5f5f;
 }
 
 .light-gray {
-  color: #a8a8ac;
+  color: #797979;
 }
 
 .dual-label-cpu {
@@ -369,8 +369,8 @@ tt {
 
 .label-gray {
   color: white;
-  border: 1px solid rgba(142, 142, 147, 0.9);
-  background-color: rgba(142, 142, 147, 0.8);
+  border: 1px solid rgba(95, 95, 95, 0.9);
+  background-color: rgba(95, 95, 95, 0.8);
 }
 
 .battery {
@@ -402,7 +402,7 @@ tt {
 
 .label-storage:after {
   content: "·";
-  color: #8E8E93;
+  color: #5f5f5f;
 }
 .label-storage:last-child:after {
   content: "";
@@ -448,7 +448,7 @@ tbody tr.active .label-yellow {
   color: white;
 }
 tbody tr.active .label-gray {
-  background-color: #8E8E93;
+  background-color: #5f5f5f;
   color: white;
 }
 tbody tr.active .dual-label-cpu .model {
@@ -537,7 +537,7 @@ th {
 }
 th sup {
   font-family: "Arial Narrow", Sans-serf;
-  color: #8E8E93;
+  color: #5f5f5f;
   font-size: 0.64rem;
   font-weight: normal;
   padding: 0 2px;
@@ -774,7 +774,7 @@ footer {
   font-family: "PTSans-Narrow";
   font-size: 12px;
   text-align: center;
-  color: #8E8E93;
+  color: #5f5f5f;
 }
 
 .about {

@@ -8,7 +8,7 @@
     <title>iPad 所有机型参数大全</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/iPad-black.png" type="image/png">
-    <link rel="stylesheet" href="css/iPad.css?v=20210422215530">
+    <link rel="stylesheet" href="css/iPad.css?v=20210510202011">
     <link rel="apple-touch-icon" href="img/iPad-black.png">
     <script src="../../lib/js/jquery-2.2.4.min.js"></script>
     <script src="../../lib/js/vue.min.2.6.10.js"></script>
@@ -47,7 +47,7 @@
             <div class="copyright">
                 <p>芯片参数：<a class="link" target="_blank" href="https://kylebing.cn/tools/apple-chip">苹果处理器参数大全</a></p>
                 <p>iPhone参数：<a class="link" target="_blank" href="https://kylebing.cn/tools/iphone">iPhone 参数大全</a></p>
-                <p>最后更新：2021/04/22</p>
+                <p>最后更新：2021/05/10</p>
             </div>
         </div>
     </div>
@@ -73,6 +73,8 @@
                         <th>GPU<sup>核</sup></th>
                         <th>内存</th>
                         <th>存储<sup>GB</sup></th>
+                        <th>摄像头<sup>前</sup></th>
+                        <th>摄像头<sup>后</sup></th>
                         <th>电池<sup>mAh</sup></th>
                         <th>接口</th>
                         <th>系统支持</th>
@@ -122,10 +124,25 @@
                             </div>
                         </td>
                         <td>
-                        <span v-for="(size,index) in iPad.storage" :key="'size' + index" class="label-cyan label label-sm">
+                        <span v-for="(size,index) in iPad.storage" :key="'size' + index" class="label-gray label label-sm">
                             <span v-if="size < 1024">{{size}}</span>
                             <span v-else>{{Math.round((size/1024))}}T</span>
                         </span>
+                        </td>
+                        <!--camera front-->
+                        <td class="text-small">
+                            <span class="label-magenta label" v-if="iPad.cameras.front.hdr">HDR</span>
+                            {{iPad.cameras.front.pixelCount}}
+                            <p class="label label-pink" v-for="item in iPad.cameras.front.dimension">{{item}}</p>
+                        </td>
+                        <!--camera back-->
+                        <td class="text-small">
+                            <p v-for="lens in iPad.cameras.back">
+                                <span class="label-magenta label" v-if="lens.hdr">HDR</span>
+                                <span class="label label-blue" v-if="iPad.cameras.back.length > 1">{{lens.name}}</span>{{lens.pixelCount}}
+                                <span class="label label-pink" v-for="item in lens.dimension">{{item}}</span>
+                            </p>
+
                         </td>
                         <td>
                             <div v-if="iPad.battery" class="battery">{{iPad.battery}}</div>
@@ -154,7 +171,7 @@
     </div>
 
     <footer>
-        2020-04-14 ~ 2021-04-22
+        2020-04-14 ~ 2021-05-10
     </footer>
 
     <!--进入全屏按钮-->
@@ -170,7 +187,7 @@
 
 </div>
 
-<script src="iPad.js?v=20210422215530"></script>
+<script src="iPad.js?v=20210510202011"></script>
 <script>
     setTimeout(() => {
         if (!/^http:\/\/(a\.kylebing\.cn|localhost|192\.168\.\d{1,3}\.\d{1,3})/i.test(location.href)) {
