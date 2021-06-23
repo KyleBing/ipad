@@ -1,7 +1,17 @@
+.model-title{
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  .model{
+    margin-right: 10px;
+  }
+}
 $dual-label-types: (
         "cpu": $magenta,
         "gpu": $orange,
-        "memory": $blue
+        "memory": $green
 );
 
 @each $name, $color in $dual-label-types{

@@ -137,6 +137,17 @@ tt {
   color: #797979;
 }
 
+.model-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.model-title .model {
+  margin-right: 10px;
+}
+
 .dual-label-cpu {
   display: flex;
   justify-content: flex-start;
@@ -256,9 +267,9 @@ tt {
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
-  background-color: rgba(0, 122, 255, 0.8);
+  background-color: rgba(0, 181, 107, 0.8);
   color: white;
-  border-color: rgba(0, 122, 255, 0.8);
+  border-color: rgba(0, 181, 107, 0.8);
   border-style: solid;
   border-width: 1px 0 1px 1px;
   z-index: 5;
@@ -273,8 +284,8 @@ tt {
   -webkit-border-radius: 0 15px 15px 0;
   -moz-border-radius: 0 15px 15px 0;
   border-radius: 0 15px 15px 0;
-  border-color: rgba(0, 122, 255, 0.8);
-  color: #007AFF;
+  border-color: rgba(0, 181, 107, 0.8);
+  color: #00b56b;
   font-weight: normal;
   background-color: white;
   border-style: solid;
@@ -468,12 +479,12 @@ tbody tr.active .dual-label-gpu .rate {
   color: #FF9500;
 }
 tbody tr.active .dual-label-memory .model {
-  background-color: #007AFF;
-  border-color: #007AFF;
+  background-color: #00b56b;
+  border-color: #00b56b;
 }
 tbody tr.active .dual-label-memory .rate {
-  border-color: #007AFF;
-  color: #007AFF;
+  border-color: #00b56b;
+  color: #00b56b;
 }
 tbody tr.active .gpu .model {
   background-color: #00b56b;
