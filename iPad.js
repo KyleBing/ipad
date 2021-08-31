@@ -1,9 +1,9 @@
 /*****************************
  Create Date: 20200414122339
- Update Date: 20210510192231
+ Update Date: 20210831230046
  *****************************/
 
-const lastOS = "最新";
+const lastOS = "最新"
 
 const iPadPro = [
    // iPad pro 1 generation
@@ -11,9 +11,14 @@ const iPadPro = [
       name: "iPad Pro 1 9.7",
       name_short: "Pro 1",
       active: false,
-      screen_size: "9.7",
-      screen_resolution: "2048 × 1536",
-      screen_density: "264",
+      screen:
+          {
+             size: "9.7",
+             width: 2048,
+             height: 1536,
+             density: 264,
+             refreshRate: 60,
+          },
       width: 240,
       height: 169.5,
       thickness: 6.1,
@@ -43,12 +48,17 @@ const iPadPro = [
       ],
       cameras: {
          front: {
-            pixelCount: '120万像素, ƒ/2.2',
+            pixelCount: '120万, ƒ/2.2',
             dimension: ['720p'],
             zoomRate: ''
          },
          back: [
-            {name: '默认', pixelCount: '1200万像素, ƒ/2.2', dimension: ['4k 30fps', '1080p 30/60fps', '720p 240fps'],  zoomRate: '3'},
+            {
+               name: '默认',
+               pixelCount: '1200万, ƒ/2.2',
+               dimension: ['4k 30fps', '1080p 30/60fps', '720p 240fps'],
+               zoomRate: '3'
+            },
          ]
       },
       release: "2016-05-31"
@@ -57,9 +67,14 @@ const iPadPro = [
       name: "iPad Pro 1 12.9",
       name_short: "Pro 1",
       active: false,
-      screen_size: "12.9",
-      screen_resolution: "2732 × 2048",
-      screen_density: "264",
+      screen:
+          {
+             size: "12.9",
+             width: 2732,
+             height: 2048,
+             density: 264,
+             refreshRate: 60,
+          },
       width: 305.7,
       height: 220.6,
       thickness: 6.9,
@@ -89,25 +104,29 @@ const iPadPro = [
       ],
       cameras: {
          front: {
-            pixelCount: '120万像素, ƒ/2.2',
+            pixelCount: '120万, ƒ/2.2',
             dimension: ['720p'],
             zoomRate: ''
          },
          back: [
-            {name: '默认', pixelCount: '800万像素, ƒ/2.4', dimension: ['1080p 30fps', '720p 120fps'],  zoomRate: '3'},
+            {name: '默认', pixelCount: '800万, ƒ/2.4', dimension: ['1080p 30fps', '720p 120fps'], zoomRate: '3'},
          ]
       },
       release: "2015-09-11"
    },
-
    // iPad pro 2 generation
    {
       name: "iPad Pro 2 10.5",
       name_short: "Pro 2",
       active: false,
-      screen_size: "10.5",
-      screen_resolution: "2224 × 1668",
-      screen_density: "264",
+      screen:
+          {
+             size: "10.5",
+             width: 2224,
+             height: 1668,
+             density: 264,
+             refreshRate: 120,
+          },
       width: 240,
       height: 169.5,
       thickness: 6.1,
@@ -137,12 +156,17 @@ const iPadPro = [
       ],
       cameras: {
          front: {
-            pixelCount: '700万像素, ƒ/2.2',
+            pixelCount: '700万, ƒ/2.2',
             dimension: ['1080p'],
             zoomRate: ''
          },
          back: [
-            {name: '默认', pixelCount: '1200万像素, ƒ/1.8', dimension: ['4k 30fps', '1080p 30/60/120fps', '720p 240fps'],  zoomRate: '3'},
+            {
+               name: '默认',
+               pixelCount: '1200万, ƒ/1.8',
+               dimension: ['4k 30fps', '1080p 30/60/120fps', '720p 240fps'],
+               zoomRate: '3'
+            },
          ]
       },
       release: "2017-06-13"
@@ -151,9 +175,14 @@ const iPadPro = [
       name: "iPad Pro 2 12.9",
       name_short: "Pro 2",
       active: false,
-      screen_size: "12.9",
-      screen_resolution: "2732 × 2048",
-      screen_density: "264",
+      screen:
+          {
+             size: "12.9",
+             width: 2732,
+             height: 2048,
+             density: 264,
+             refreshRate: 120,
+          },
       width: 240,
       height: 169.5,
       thickness: 6.1,
@@ -183,25 +212,34 @@ const iPadPro = [
       ],
       cameras: {
          front: {
-            pixelCount: '700万像素, ƒ/2.2',
+            pixelCount: '700万, ƒ/2.2',
             dimension: ['1080p'],
             zoomRate: ''
          },
          back: [
-            {name: '默认', pixelCount: '1200万像素, ƒ/1.8', dimension: ['4k 30fps', '1080p 30/60/120fps', '720p 240fps'],  zoomRate: '3'},
+            {
+               name: '默认',
+               pixelCount: '1200万, ƒ/1.8',
+               dimension: ['4k 30fps', '1080p 30/60/120fps', '720p 240fps'],
+               zoomRate: '3'
+            },
          ]
       },
       release: "2017-06-13"
    },
-
    // iPad pro 3 generation
    {
       name: "iPad Pro 3 11",
       name_short: "Pro 3",
       active: false,
-      screen_size: "11",
-      screen_resolution: "2388 × 1668",
-      screen_density: "264",
+      screen:
+          {
+             size: "11",
+             width: 2388,
+             height: 1668,
+             density: 264,
+             refreshRate: 120,
+          },
       width: 247.6,
       height: 178.5,
       thickness: 5.9,
@@ -233,13 +271,19 @@ const iPadPro = [
       ],
       cameras: {
          front: {
-            pixelCount: '700万像素, ƒ/2.2',
+            pixelCount: '700万, ƒ/2.2',
             dimension: ['1080p 30/60fps'],
             zoomRate: '',
             hdr: true
          },
          back: [
-            {name: '默认', pixelCount: '1200万像素, ƒ/1.8', dimension: ['4k 30/60fps', '1080p 30/60/120fps', '720p 240fps'],  zoomRate: '5', hdr: true},
+            {
+               name: '默认',
+               pixelCount: '1200万, ƒ/1.8',
+               dimension: ['4k 30/60fps', '1080p 30/60/120fps', '720p 240fps'],
+               zoomRate: '5',
+               hdr: true
+            },
          ]
       },
       release: "2018-10-03"
@@ -248,9 +292,14 @@ const iPadPro = [
       name: "iPad Pro 3 12.9",
       name_short: "Pro 3",
       active: false,
-      screen_size: "12.9",
-      screen_resolution: "2732 × 2048",
-      screen_density: "264",
+      screen:
+          {
+             size: "12.9",
+             width: 2732,
+             height: 2048,
+             density: 264,
+             refreshRate: 120,
+          },
       width: 280.6,
       height: 214.9,
       thickness: 5.9,
@@ -282,26 +331,36 @@ const iPadPro = [
       ],
       cameras: {
          front: {
-            pixelCount: '700万像素, ƒ/2.2',
+            pixelCount: '700万, ƒ/2.2',
             dimension: ['1080p 30/60fps'],
             zoomRate: '',
             hdr: true
          },
          back: [
-            {name: '默认', pixelCount: '1200万像素, ƒ/1.8', dimension: ['4k 30/60fps', '1080p 30/60/120fps', '720p 240fps'],  zoomRate: '5', hdr: true},
+            {
+               name: '默认',
+               pixelCount: '1200万, ƒ/1.8',
+               dimension: ['4k 30/60fps', '1080p 30/60/120fps', '720p 240fps'],
+               zoomRate: '5',
+               hdr: true
+            },
          ]
       },
       release: "2018-10-03"
    },
-
    // iPad pro 4 generation
    {
       name: "iPad Pro 4 11",
       name_short: "Pro 4",
       active: false,
-      screen_size: "11",
-      screen_resolution: "2388 × 1688",
-      screen_density: "264",
+      screen:
+          {
+             size: "11",
+             width: 2388,
+             height: 1688,
+             density: 264,
+             refreshRate: 120,
+          },
       width: 247.6,
       height: 178.5,
       thickness: 5.9,
@@ -332,14 +391,26 @@ const iPadPro = [
       ],
       cameras: {
          front: {
-            pixelCount: '700万像素, ƒ/2.2',
+            pixelCount: '700万, ƒ/2.2',
             dimension: ['1080p 30/60fps'],
             zoomRate: '',
             hdr: true
          },
          back: [
-            {name: '默认', pixelCount: '1200万像素, ƒ/1.8', dimension: ['4k 30/60fps', '1080p 30/60/120fps', '720p 240fps'],  zoomRate: '5', hdr: true},
-            {name: '广角', pixelCount: '1000万像素, ƒ/2.4， 125˚', dimension: ['4k 30/60fps', '1080p 30/60/120fps', '720p 240fps'],  zoomRate: '5', hdr: true},
+            {
+               name: '默认',
+               pixelCount: '1200万, ƒ/1.8',
+               dimension: ['4k 30/60fps', '1080p 30/60/120fps', '720p 240fps'],
+               zoomRate: '5',
+               hdr: true
+            },
+            {
+               name: '广角',
+               pixelCount: '1000万, ƒ/2.4， 125˚',
+               dimension: ['4k 30/60fps', '1080p 30/60/120fps', '720p 240fps'],
+               zoomRate: '5',
+               hdr: true
+            },
          ]
       },
       release: "2020-03-18"
@@ -348,9 +419,14 @@ const iPadPro = [
       name: "iPad Pro 4 12.9",
       name_short: "Pro 4",
       active: false,
-      screen_size: "12.9",
-      screen_resolution: "2732 × 2048",
-      screen_density: "264",
+      screen:
+          {
+             size: "12.9",
+             width: 2732,
+             height: 2048,
+             density: 264,
+             refreshRate: 120,
+          },
       width: 280.6,
       height: 214.9,
       thickness: 5.9,
@@ -378,31 +454,46 @@ const iPadPro = [
          {id: 1, name: "iPad", model: "A2229 (WiFi)", weight: 641},
          {id: 2, name: "iPad", model: "A2069, A2232 (WiFi + 蜂窝)", weight: 643},
          {id: 3, name: "iPad", model: "A2233 (WiFi + 蜂窝, 国行)", weight: 643},
-
       ],
       cameras: {
          front: {
-            pixelCount: '700万像素, ƒ/2.2',
+            pixelCount: '700万, ƒ/2.2',
             dimension: ['1080p 30/60fps'],
             zoomRate: '',
             hdr: true
          },
          back: [
-            {name: '默认', pixelCount: '1200万像素, ƒ/1.8', dimension: ['4k 30/60fps', '1080p 30/60/120fps', '720p 240fps'],  zoomRate: '5', hdr: true},
-            {name: '广角', pixelCount: '1000万像素, ƒ/2.4， 125˚', dimension: ['4k 30/60fps', '1080p 30/60/120fps', '720p 240fps'],  zoomRate: '5', hdr: true},
+            {
+               name: '默认',
+               pixelCount: '1200万, ƒ/1.8',
+               dimension: ['4k 30/60fps', '1080p 30/60/120fps', '720p 240fps'],
+               zoomRate: '5',
+               hdr: true
+            },
+            {
+               name: '广角',
+               pixelCount: '1000万, ƒ/2.4， 125˚',
+               dimension: ['4k 30/60fps', '1080p 30/60/120fps', '720p 240fps'],
+               zoomRate: '5',
+               hdr: true
+            },
          ]
       },
       release: "2020-03-18"
    },
-
-   // iPad pro 5 th?
+   // iPad pro 5 th
    {
       name: "iPad Pro 5 11",
       name_short: "Pro 5",
       active: false,
-      screen_size: "11",
-      screen_resolution: "2388 x 1668",
-      screen_density: "264",
+      screen:
+          {
+             size: "11",
+             width: 2388,
+             height: 1668,
+             density: 264,
+             refreshRate: 120,
+          },
       width: '247.6',
       height: '178.5',
       thickness: '5.9',
@@ -423,7 +514,7 @@ const iPadPro = [
          {name: "", size: "8", type: "DDR4X"},
          {name: "≥ 1T", size: "16", type: "DDR4X"},
       ],
-      storage: ['128','256','512','1024','2048'],
+      storage: ['128', '256', '512', '1024', '2048'],
       price: "",
       battery: "28.65wh",
       connector: 'USB-C',
@@ -433,14 +524,26 @@ const iPadPro = [
       ],
       cameras: {
          front: {
-            pixelCount: '1200万像素, ƒ/2.4',
+            pixelCount: '1200万, ƒ/2.4',
             dimension: ['1080p 30/60fps'],
             zoomRate: '',
             hdr: true
          },
          back: [
-            {name: '默认', pixelCount: '1200万像素, ƒ/1.8', dimension: ['4k 30/60fps', '1080p 30/60/120fps', '720p 240fps'],  zoomRate: '5', hdr: true},
-            {name: '广角', pixelCount: '1000万像素, ƒ/2.4， 125˚', dimension: ['4k 30/60fps', '1080p 30/60/120fps', '720p 240fps'],  zoomRate: '5', hdr: true},
+            {
+               name: '默认',
+               pixelCount: '1200万, ƒ/1.8',
+               dimension: ['4k 30/60fps', '1080p 30/60/120fps', '720p 240fps'],
+               zoomRate: '5',
+               hdr: true
+            },
+            {
+               name: '广角',
+               pixelCount: '1000万, ƒ/2.4， 125˚',
+               dimension: ['4k 30/60fps', '1080p 30/60/120fps', '720p 240fps'],
+               zoomRate: '5',
+               hdr: true
+            },
          ]
       },
       release: "2021-04-21"
@@ -449,9 +552,14 @@ const iPadPro = [
       name: "iPad Pro 5 12.9",
       name_short: "Pro 5",
       active: false,
-      screen_size: "12.9",
-      screen_resolution: "2732 x 2048",
-      screen_density: "264",
+      screen:
+          {
+             size: "12.9",
+             width: 2732,
+             height: 2048,
+             density: 264,
+             refreshRate: 120,
+          },
       width: '280.6',
       height: '214.9',
       thickness: '6.4',
@@ -472,7 +580,7 @@ const iPadPro = [
          {name: "", size: "8", type: "DDR4X"},
          {name: "≥ 1T", size: "16", type: "DDR4X"},
       ],
-      storage: ['128','256','512','1024','2048'],
+      storage: ['128', '256', '512', '1024', '2048'],
       price: "",
       battery: "40.88wh",
       connector: 'USB-C',
@@ -482,27 +590,44 @@ const iPadPro = [
       ],
       cameras: {
          front: {
-            pixelCount: '1200万像素, ƒ/2.4',
+            pixelCount: '1200万, ƒ/2.4',
             dimension: ['1080p 30/60fps'],
             zoomRate: '',
             hdr: true
          },
          back: [
-            {name: '默认', pixelCount: '1200万像素, ƒ/1.8', dimension: ['4k 30/60fps', '1080p 30/60/120fps', '720p 240fps'],  zoomRate: '5', hdr: true},
-            {name: '广角', pixelCount: '1000万像素, ƒ/2.4， 125˚', dimension: ['4k 30/60fps', '1080p 30/60/120fps', '720p 240fps'],  zoomRate: '5', hdr: true},
+            {
+               name: '默认',
+               pixelCount: '1200万, ƒ/1.8',
+               dimension: ['4k 30/60fps', '1080p 30/60/120fps', '720p 240fps'],
+               zoomRate: '5',
+               hdr: true
+            },
+            {
+               name: '广角',
+               pixelCount: '1000万, ƒ/2.4， 125˚',
+               dimension: ['4k 30/60fps', '1080p 30/60/120fps', '720p 240fps'],
+               zoomRate: '5',
+               hdr: true
+            },
          ]
       },
       release: "2021-04-21"
    },
-];
+]
 const iPadAir = [
    {
       name: "iPad Air 1",
       name_short: "Air 1",
       active: false,
-      screen_size: "9.7",
-      screen_resolution: "2048×1536",
-      screen_density: "264",
+      screen:
+          {
+             size: "9.7",
+             width: 2048,
+             height: 1536,
+             density: 264,
+             refreshRate: 60,
+          },
       width: 238.8,
       height: 167.6,
       thickness: 7.5,
@@ -532,13 +657,13 @@ const iPadAir = [
       ],
       cameras: {
          front: {
-            pixelCount: '120万像素, ƒ/2.2',
+            pixelCount: '120万, ƒ/2.2',
             dimension: ['720p'],
             zoomRate: '',
             hdr: false
          },
          back: [
-            {name: '默认', pixelCount: '500万像素, ƒ/2.4', dimension: ['1080p 30fps'], zoomRate: '5', hdr: false},
+            {name: '默认', pixelCount: '500万, ƒ/2.4', dimension: ['1080p 30fps'], zoomRate: '5', hdr: false},
          ]
       },
       release: "2013-09-01"
@@ -547,9 +672,14 @@ const iPadAir = [
       name: "iPad Air 2",
       name_short: "Air 2",
       active: false,
-      screen_size: "9.7",
-      screen_resolution: "2048×1536",
-      screen_density: "264",
+      screen:
+          {
+             size: "9.7",
+             width: 2048,
+             height: 1536,
+             density: 264,
+             refreshRate: 60,
+          },
       width: 238.8,
       height: 167.6,
       thickness: 6.1,
@@ -579,13 +709,13 @@ const iPadAir = [
       ],
       cameras: {
          front: {
-            pixelCount: '120万像素, ƒ/2.2',
+            pixelCount: '120万, ƒ/2.2',
             dimension: ['720p'],
             zoomRate: '',
             hdr: false
          },
          back: [
-            {name: '默认', pixelCount: '800万像素, ƒ/2.4', dimension: ['1080p 30fps'],  zoomRate: '5', hdr: false},
+            {name: '默认', pixelCount: '800万, ƒ/2.4', dimension: ['1080p 30fps'], zoomRate: '5', hdr: false},
          ]
       },
       release: "2014-10-22"
@@ -594,9 +724,14 @@ const iPadAir = [
       name: "iPad Air 3 2019",
       name_short: "Air 3",
       active: false,
-      screen_size: "10.5",
-      screen_resolution: "2224 × 1668",
-      screen_density: "264",
+      screen:
+          {
+             size: "10.5",
+             width: 2224,
+             height: 1668,
+             density: 264,
+             refreshRate: 60,
+          },
       width: 248.9,
       height: 172.7,
       thickness: 6.1,
@@ -627,13 +762,13 @@ const iPadAir = [
       ],
       cameras: {
          front: {
-            pixelCount: '700万像素, ƒ/2.2',
+            pixelCount: '700万, ƒ/2.2',
             dimension: ['1080p'],
             zoomRate: '',
             hdr: false
          },
          back: [
-            {name: '默认', pixelCount: '800万像素, ƒ/2.4', dimension: ['1080p 30fps'], zoomRate: '5', hdr: false},
+            {name: '默认', pixelCount: '800万, ƒ/2.4', dimension: ['1080p 30fps'], zoomRate: '5', hdr: false},
          ]
       },
       release: "2019-03-18"
@@ -642,9 +777,14 @@ const iPadAir = [
       name: "iPad Air 4",
       name_short: "Air 4",
       active: false,
-      screen_size: "10.9",
-      screen_resolution: "2360 × 1640",
-      screen_density: "264",
+      screen:
+          {
+             size: "10.9",
+             width: 2360,
+             height: 1640,
+             density: 264,
+             refreshRate: 60,
+          },
       width: 247.6,
       height: 178.5,
       thickness: 6.1,
@@ -674,27 +814,37 @@ const iPadAir = [
       ],
       cameras: {
          front: {
-            pixelCount: '700万像素, ƒ/2.0',
+            pixelCount: '700万, ƒ/2.0',
             dimension: ['1080p'],
             rate: '',
             zoomRate: '',
             hdr: false
          },
          back: [
-            {name: '默认', pixelCount: '1200万像素, ƒ/1.8', dimension: ['4K 24/30/60fps', '1080p HD 30/60fps'],  zoomRate: '5', hdr: false},
+            {
+               name: '默认',
+               pixelCount: '1200万, ƒ/1.8',
+               dimension: ['4K 24/30/60fps', '1080p HD 30/60fps'],
+               zoomRate: '5',
+               hdr: false
+            },
          ]
       },
       release: "2020-09-16"
    },
-];
-const iPadMini = [
-   {
+]
+const iPadMini = [   {
       name: "iPad Mini",
       name_short: "Mini 1",
       active: false,
-      screen_size: "7.9",
-      screen_resolution: "1024 × 768",
-      screen_density: 163,
+      screen:
+          {
+             size: "7.9",
+             width: 1024,
+             height: 768,
+             density: 163,
+             refreshRate: 60,
+          },
       width: 199.9,
       height: 134.6,
       thickness: 7.1,
@@ -708,7 +858,7 @@ const iPadMini = [
          core: 2
       },
       gpu: {
-         model: "PowerVR SGX5400万像素2",
+         model: "PowerVR SGX5400万2",
          core: 4
       },
       memory: [
@@ -725,13 +875,13 @@ const iPadMini = [
       ],
       cameras: {
          front: {
-            pixelCount: '120万像素',
+            pixelCount: '120万',
             dimension: ['720p'],
             zoomRate: '',
             hdr: false
          },
          back: [
-            {name: '默认', pixelCount: '500万像素', dimension: ['1080p 30fps'], zoomRate: '5', hdr: false},
+            {name: '默认', pixelCount: '500万', dimension: ['1080p 30fps'], zoomRate: '5', hdr: false},
          ]
       },
       release: "2012-09-02"
@@ -740,9 +890,14 @@ const iPadMini = [
       name: "iPad Mini 2",
       name_short: "Mini 2",
       active: false,
-      screen_size: "7.9",
-      screen_resolution: "2048 × 1536",
-      screen_density: 326,
+      screen:
+          {
+             size: "7.9",
+             width: 2048,
+             height: 1536,
+             density: 326,
+             refreshRate: 60,
+          },
       width: 199.9,
       height: 134.6,
       thickness: 7.4,
@@ -773,13 +928,13 @@ const iPadMini = [
       ],
       cameras: {
          front: {
-            pixelCount: '120万像素',
+            pixelCount: '120万',
             dimension: ['720p'],
             zoomRate: '',
             hdr: false
          },
          back: [
-            {name: '默认', pixelCount: '500万像素', dimension: ['1080p 30fps'],  zoomRate: '5', hdr: false},
+            {name: '默认', pixelCount: '500万', dimension: ['1080p 30fps'], zoomRate: '5', hdr: false},
          ]
       },
       release: "2013-09-12"
@@ -788,9 +943,14 @@ const iPadMini = [
       name: "iPad Mini 3",
       name_short: "Mini 3",
       active: false,
-      screen_size: "7.9",
-      screen_resolution: "2048 × 1536",
-      screen_density: 326,
+      screen:
+          {
+             size: "7.9",
+             width: 2048,
+             height: 1536,
+             density: 326,
+             refreshRate: 60,
+          },
       width: 199.9,
       height: 134.6,
       thickness: 7.4,
@@ -821,13 +981,13 @@ const iPadMini = [
       ],
       cameras: {
          front: {
-            pixelCount: '120万像素',
+            pixelCount: '120万',
             dimension: ['720p'],
             zoomRate: '',
             hdr: false
          },
          back: [
-            {name: '默认', pixelCount: '500万像素', dimension: ['1080p 30fps'], zoomRate: '5', hdr: false},
+            {name: '默认', pixelCount: '500万', dimension: ['1080p 30fps'], zoomRate: '5', hdr: false},
          ]
       },
       release: "2014-10-22"
@@ -836,9 +996,14 @@ const iPadMini = [
       name: "iPad Mini 4",
       name_short: "Mini 4",
       active: false,
-      screen_size: "7.9",
-      screen_resolution: "2048 × 1536",
-      screen_density: 326,
+      screen:
+          {
+             size: "7.9",
+             width: 2048,
+             height: 1536,
+             density: 326,
+             refreshRate: 60,
+          },
       width: 203.2,
       height: 134.6,
       thickness: 6.1,
@@ -868,13 +1033,13 @@ const iPadMini = [
       ],
       cameras: {
          front: {
-            pixelCount: '120万像素',
+            pixelCount: '120万',
             dimension: ['720p'],
             zoomRate: '',
             hdr: false
          },
          back: [
-            {name: '默认', pixelCount: '800万像素', dimension: ['1080p 30fps'], zoomRate: '3', hdr: false},
+            {name: '默认', pixelCount: '800万', dimension: ['1080p 30fps'], zoomRate: '3', hdr: false},
          ]
       },
       release: "2015-09-09"
@@ -883,9 +1048,14 @@ const iPadMini = [
       name: "iPad Mini 5",
       name_short: "Mini 5",
       active: false,
-      screen_size: "7.9",
-      screen_resolution: "2048 × 1536",
-      screen_density: 326,
+      screen:
+          {
+             size: "7.9",
+             width: 2048,
+             height: 1536,
+             density: 326,
+             refreshRate: 60,
+          },
       width: 203.2,
       height: 134.6,
       thickness: 6.1,
@@ -916,26 +1086,31 @@ const iPadMini = [
       ],
       cameras: {
          front: {
-            pixelCount: '700万像素',
+            pixelCount: '700万',
             dimension: ['1080p'],
             zoomRate: '',
             hdr: false
          },
          back: [
-            {name: '默认', pixelCount: '800万像素', dimension: ['1080p 30fps'], zoomRate: '3', hdr: false},
+            {name: '默认', pixelCount: '800万', dimension: ['1080p 30fps'], zoomRate: '3', hdr: false},
          ]
       },
       release: "2019-03-18"
    },
-];
+]
 const iPad = [
-   {
+    {
       name: "iPad 1",
       name_short: "iPad 1",
       active: false,
-      screen_size: "9.7",
-      screen_resolution: "1024 × 768",
-      screen_density: 132,
+      screen:
+          {
+             size: "9.7",
+             width: 1024,
+             height: 768,
+             density: 132,
+             refreshRate: 60,
+          },
       width: 242.8,
       height: 189.7,
       thickness: 13.4,
@@ -973,9 +1148,14 @@ const iPad = [
       name: "iPad 2",
       name_short: "iPad 2",
       active: false,
-      screen_size: "9.7",
-      screen_resolution: "1024 × 768",
-      screen_density: 132,
+      screen:
+          {
+             size: "9.7",
+             width: 1024,
+             height: 768,
+             density: 132,
+             refreshRate: 60,
+          },
       width: 241.3,
       height: 185.7,
       thickness: 8.8,
@@ -989,7 +1169,7 @@ const iPad = [
          core: 2
       },
       gpu: {
-         model: "PowerVR SGX5400万像素2",
+         model: "PowerVR SGX5400万2",
          core: 2
       },
       memory: [
@@ -1006,13 +1186,13 @@ const iPad = [
       ],
       cameras: {
          front: {
-            pixelCount: '30万像素',
+            pixelCount: '30万',
             dimension: '',
             zoomRate: '',
             hdr: false
          },
          back: [
-            {name: '默认', pixelCount: '70万像素', dimension: ['720p 30fps'], zoomRate: '5', hdr: false},
+            {name: '默认', pixelCount: '70万', dimension: ['720p 30fps'], zoomRate: '5', hdr: false},
          ]
       },
       release: "2011-03-11"
@@ -1021,9 +1201,14 @@ const iPad = [
       name: "iPad 3",
       name_short: "iPad 3",
       active: false,
-      screen_size: "9.7",
-      screen_resolution: "2048 × 1536",
-      screen_density: 264,
+      screen:
+          {
+             size: "9.7",
+             width: 2048,
+             height: 1536,
+             density: 264,
+             refreshRate: 60,
+          },
       width: 241.3,
       height: 185.7,
       thickness: 9.4,
@@ -1037,7 +1222,7 @@ const iPad = [
          core: 2
       },
       gpu: {
-         model: "PowerVR SGX5400万像素4",
+         model: "PowerVR SGX5400万4",
          core: 4
       },
       memory: [
@@ -1054,13 +1239,13 @@ const iPad = [
       ],
       cameras: {
          front: {
-            pixelCount: '30万像素',
+            pixelCount: '30万',
             dimension: '',
             zoomRate: '',
             hdr: false
          },
          back: [
-            {name: '默认', pixelCount: '500万像素, f/2.4', dimension: ['1080p 30fps'], zoomRate: '5', hdr: false},
+            {name: '默认', pixelCount: '500万, f/2.4', dimension: ['1080p 30fps'], zoomRate: '5', hdr: false},
          ]
       },
       release: "2012-03-16"
@@ -1069,9 +1254,14 @@ const iPad = [
       name: "iPad 4",
       name_short: "iPad 4",
       active: false,
-      screen_size: "9.7",
-      screen_resolution: "2048 × 1536",
-      screen_density: 132,
+      screen:
+          {
+             size: "9.7",
+             width: 2048,
+             height: 1536,
+             density: 132,
+             refreshRate: 60,
+          },
       width: 241.3,
       height: 185.7,
       thickness: 9.4,
@@ -1085,7 +1275,7 @@ const iPad = [
          core: 2
       },
       gpu: {
-         model: "PowerVR SGX5500万像素4",
+         model: "PowerVR SGX5500万4",
          core: 4
       },
       memory: [
@@ -1102,13 +1292,13 @@ const iPad = [
       ],
       cameras: {
          front: {
-            pixelCount: '120万像素, ƒ/2.2 ',
+            pixelCount: '120万, ƒ/2.2 ',
             dimension: ['720p'],
             zoomRate: '',
             hdr: false
          },
          back: [
-            {name: '默认', pixelCount: '500万像素, f/2.4', dimension: ['1080p 30fps'], zoomRate: '5', hdr: false},
+            {name: '默认', pixelCount: '500万, f/2.4', dimension: ['1080p 30fps'], zoomRate: '5', hdr: false},
          ]
       },
       release: "2012-10-23"
@@ -1117,9 +1307,14 @@ const iPad = [
       name: "iPad 5",
       name_short: "iPad 5",
       active: false,
-      screen_size: "9.7",
-      screen_resolution: "2048 × 1536",
-      screen_density: 264,
+      screen:
+          {
+             size: "9.7",
+             width: 2048,
+             height: 1536,
+             density: 264,
+             refreshRate: 60,
+          },
       width: 238.8,
       height: 167.6,
       thickness: 7.4,
@@ -1149,13 +1344,13 @@ const iPad = [
       ],
       cameras: {
          front: {
-            pixelCount: '120万像素, ƒ/2.2 ',
+            pixelCount: '120万, ƒ/2.2 ',
             dimension: ['720p'],
             zoomRate: '',
             hdr: false
          },
          back: [
-            {name: '默认', pixelCount: '800万像素, ƒ/2.4', dimension: ['1080p 30fps'], zoomRate: '3', hdr: false},
+            {name: '默认', pixelCount: '800万, ƒ/2.4', dimension: ['1080p 30fps'], zoomRate: '3', hdr: false},
          ]
       },
       release: "2017-03-21"
@@ -1164,9 +1359,14 @@ const iPad = [
       name: "iPad 6",
       name_short: "iPad 6",
       active: false,
-      screen_size: "9.7",
-      screen_resolution: "2048 × 1536",
-      screen_density: 264,
+      screen:
+          {
+             size: "9.7",
+             width: 2048,
+             height: 1536,
+             density: 264,
+             refreshRate: 60,
+          },
       width: 238.8,
       height: 167.6,
       thickness: 7.4,
@@ -1196,13 +1396,13 @@ const iPad = [
       ],
       cameras: {
          front: {
-            pixelCount: '120万像素, ƒ/2.2 ',
+            pixelCount: '120万, ƒ/2.2 ',
             dimension: ['720p'],
             zoomRate: '',
             hdr: false
          },
          back: [
-            {name: '默认', pixelCount: '800万像素, ƒ/2.4', dimension: ['1080p 30fps'], zoomRate: '3', hdr: false},
+            {name: '默认', pixelCount: '800万, ƒ/2.4', dimension: ['1080p 30fps'], zoomRate: '3', hdr: false},
          ]
       },
       release: "2018-03-27"
@@ -1211,9 +1411,14 @@ const iPad = [
       name: "iPad 7",
       name_short: "iPad 7",
       active: false,
-      screen_size: "10.2",
-      screen_resolution: "2160 × 1620",
-      screen_density: 264,
+      screen:
+          {
+             size: "10.2",
+             width: 2160,
+             height: 1620,
+             density: 264,
+             refreshRate: 60,
+          },
       width: 248.9,
       height: 172.7,
       thickness: 7.4,
@@ -1244,13 +1449,13 @@ const iPad = [
       ],
       cameras: {
          front: {
-            pixelCount: '120万像素, ƒ/2.2 ',
+            pixelCount: '120万, ƒ/2.2 ',
             dimension: ['720p'],
             zoomRate: '',
             hdr: false
          },
          back: [
-            {name: '默认', pixelCount: '800万像素, ƒ/2.4', dimension: ['1080p 30fps'], zoomRate: '3', hdr: false},
+            {name: '默认', pixelCount: '800万, ƒ/2.4', dimension: ['1080p 30fps'], zoomRate: '3', hdr: false},
          ]
       },
       release: "2019-09-10"
@@ -1259,9 +1464,14 @@ const iPad = [
       name: "iPad 8",
       name_short: "iPad 8",
       active: false,
-      screen_size: "10.2",
-      screen_resolution: "2160 × 1620",
-      screen_density: 264,
+      screen:
+          {
+             size: "10.2",
+             width: 2160,
+             height: 1620,
+             density: 264,
+             refreshRate: 60,
+          },
       width: 250.6,
       height: 174.1,
       thickness: 7.5,
@@ -1291,18 +1501,18 @@ const iPad = [
       ],
       cameras: {
          front: {
-            pixelCount: '120万像素, ƒ/2.2 ',
+            pixelCount: '120万, ƒ/2.2 ',
             dimension: ['720p'],
             zoomRate: '',
             hdr: false
          },
          back: [
-            {name: '默认', pixelCount: '800万像素, ƒ/2.4', dimension: ['1080p 30fps'], zoomRate: '3', hdr: false},
+            {name: '默认', pixelCount: '800万, ƒ/2.4', dimension: ['1080p 30fps'], zoomRate: '3', hdr: false},
          ]
       },
       release: "2020-09-16"
    },
-];
+]
 
 let app = new Vue({
    el: "#app",
@@ -1334,36 +1544,36 @@ let app = new Vue({
    },
    mounted() {
       // 全屏相关
-      let chromeCore = /Chrome/i.test(navigator.userAgent);
-      let mobileMode = /Mobile/i.test(navigator.userAgent);
-      this.portraitMode = window.innerWidth > window.innerHeight;
-      this.mobileMode = mobileMode;
-      this.showFullScreenBtn = chromeCore && !mobileMode;
+      let chromeCore = /Chrome/i.test(navigator.userAgent)
+      let mobileMode = /Mobile/i.test(navigator.userAgent)
+      this.portraitMode = window.innerWidth > window.innerHeight
+      this.mobileMode = mobileMode
+      this.showFullScreenBtn = chromeCore && !mobileMode
    },
    watch: {
       keyword(){
-         this.filterIpads();
+         this.filterIpads()
       }
    },
    methods: {
       // 全屏显示
       enterFullScreen() {
-         document.documentElement.requestFullscreen();
+         document.documentElement.requestFullscreen()
       },
       filterIpads() {
          if (this.keyword) {
-            let finalKeyword = this.keyword.replace(/ /ig, '');
-            this.keywordArray = finalKeyword.split('/');
-            let tempCollection = [];
+            let finalKeyword = this.keyword.replace(/ /ig, '')
+            this.keywordArray = finalKeyword.split('/')
+            let tempCollection = []
             this.keywordArray.forEach(name => {
                this.allIpads.forEach(ipad => {
-                  let nameShort = ipad.name_short.replace(/ /ig, '');
-                  let reg = new RegExp(name, 'ig');
+                  let nameShort = ipad.name_short.replace(/ /ig, '')
+                  let reg = new RegExp(name, 'ig')
                   if (reg.test(nameShort)) {
-                     tempCollection.push(ipad);
+                     tempCollection.push(ipad)
                   }
                })
-            });
+            })
             this.iPadsSeries = [{
                title: this.keywordArray.join(', '),
                iPads: tempCollection
@@ -1374,7 +1584,7 @@ let app = new Vue({
 
       },
    }
-});
+})
 
 
 document.addEventListener('touchstart', ()=>{}, false)
