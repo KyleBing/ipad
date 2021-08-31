@@ -143,6 +143,7 @@ tt {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  font-family: "Galvji";
 }
 .model-title .model {
   margin-right: 10px;
@@ -547,7 +548,7 @@ th {
   padding: 10px 5px;
 }
 th sup {
-  font-family: "Arial Narrow", Sans-serf;
+  font-family: "Galvji", Sans-serf;
   color: #5f5f5f;
   font-size: 0.64rem;
   font-weight: normal;
@@ -764,6 +765,10 @@ td p {
   font-family: "Impact";
   src: url("../fonts/ImpactPureNumber.ttf");
 }
+@font-face {
+  font-family: "Galvji";
+  src: url("../fonts/Galvji.ttc");
+}
 .impact {
   font-family: "Impact", sans-serif;
 }
@@ -803,6 +808,7 @@ footer {
   color: #000;
 }
 .header h3 {
+  font-family: "Galvji";
   line-height: 1.5;
   text-align: left;
   font-size: 2.5rem;
@@ -919,5 +925,3 @@ footer {
 .gradient {
   background-image: linear-gradient(to bottom right, #363d40, #6a7282);
 }
-
-/*# sourceMappingURL=iPad.css.map */
