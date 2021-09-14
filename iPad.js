@@ -833,7 +833,8 @@ const iPadAir = [
       release: "2020-09-16"
    },
 ]
-const iPadMini = [   {
+const iPadMini = [
+    {
       name: "iPad Mini",
       name_short: "Mini 1",
       active: false,
@@ -1096,6 +1097,59 @@ const iPadMini = [   {
          ]
       },
       release: "2019-03-18"
+   },
+   {
+      name: "iPad Mini 6",
+      name_short: "Mini 6",
+      active: false,
+      screen:
+          {
+             size: "--",
+             width: 0,
+             height: 0,
+             density: 0,
+             refreshRate: 0,
+          },
+      width: 0,
+      height: 0,
+      thickness: 0,
+      os: {
+         init: "iPadOS",
+         last: lastOS
+      },
+      cpu: {
+         model: '--',
+         rate: '--',
+         core: 0
+      },
+      gpu: {
+         model: "Apple GPU",
+         core: 4
+      },
+      memory: [
+         {name: "", size: "3", type: "DDR4X"},
+      ],
+      storage: [64, 256],
+      price: "",
+      battery: "--",
+      connector: 'USB-C',
+      models: [
+         {id: 1, name: "--", model: "-- (WiFi)", weight: 0},
+         {id: 2, name: "--", model: "-- (WiFi + 蜂窝)", weight: 0},
+         {id: 3, name: "--", model: "-- (WiFi + 蜂窝, 国行)", weight: 0},
+      ],
+      cameras: {
+         front: {
+            pixelCount: '700万',
+            dimension: ['1080p'],
+            zoomRate: '',
+            hdr: false
+         },
+         back: [
+            {name: '默认', pixelCount: '800万', dimension: ['1080p 30fps'], zoomRate: '3', hdr: false},
+         ]
+      },
+      release: "2021-09-15"
    },
 ]
 const iPad = [
@@ -1496,6 +1550,58 @@ const iPad = [
       battery: "32.4 WH",
       connector: '闪电',
       models: [
+         {id: 1, name: "iPad11,6", model: "iPad11,6 (WiFi)", weight: 490},
+         {id: 2, name: "iPad11,7", model: "iPad11,7 (WiFi + 蜂窝)", weight: 495},
+      ],
+      cameras: {
+         front: {
+            pixelCount: '120万, ƒ/2.2 ',
+            dimension: ['720p'],
+            zoomRate: '',
+            hdr: false
+         },
+         back: [
+            {name: '默认', pixelCount: '800万, ƒ/2.4', dimension: ['1080p 30fps'], zoomRate: '3', hdr: false},
+         ]
+      },
+      release: "2020-09-16"
+   },
+   {
+      name: "iPad 9",
+      name_short: "iPad 9",
+      active: false,
+      screen:
+          {
+             size: "--",
+             width: 0,
+             height: 0,
+             density: 0,
+             refreshRate: 0,
+          },
+      width: 0,
+      height: 0,
+      thickness: 0,
+      os: {
+         init: "iPadOS",
+         last: lastOS
+      },
+      cpu: {
+         model: 'A13',
+         rate: '2.65',
+         core: 6
+      },
+      gpu: {
+         model: "Apple",
+         core: 4
+      },
+      memory: [
+         {name: "--", size: "--", type: "LPDDR4 DRAM"},
+      ],
+      storage: [32, 128],
+      price: "",
+      battery: "32.4 WH",
+      connector: '闪电',
+      models: [
          {id: 1, name: "--", model: "-- (WiFi)", weight: 490},
          {id: 2, name: "--", model: "-- (WiFi + 蜂窝)", weight: 495},
       ],
@@ -1510,7 +1616,7 @@ const iPad = [
             {name: '默认', pixelCount: '800万, ƒ/2.4', dimension: ['1080p 30fps'], zoomRate: '3', hdr: false},
          ]
       },
-      release: "2020-09-16"
+      release: "2021-09-15"
    },
 ]
 
