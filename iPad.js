@@ -1131,7 +1131,7 @@ const iPadMini = [
         ],
         storage: [64, 256],
         price: "",
-        battery: "--",
+        battery: "19.3 WH",
         connector: 'USB-C',
         models: [
             {id: 1, name: "--", model: "-- (WiFi)", weight: 293},
@@ -1596,7 +1596,7 @@ const iPad = [
         memory: [
             {name: "--", size: "--", type: "--"},
         ],
-        storage: [32, 128],
+        storage: [64, 256],
         price: "",
         battery: "32.4 WH",
         connector: '闪电',
