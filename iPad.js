@@ -127,8 +127,8 @@ const iPadPro = [
                 density: 264,
                 refreshRate: 120,
             },
-        width: 240,
-        height: 169.5,
+        width: 250.6,
+        height: 174.1,
         thickness: 6.1,
         os: {
             init: "iOS 9.1",
@@ -183,9 +183,9 @@ const iPadPro = [
                 density: 264,
                 refreshRate: 120,
             },
-        width: 240,
-        height: 169.5,
-        thickness: 6.1,
+        width: 305.7,
+        height: 220.6,
+        thickness: 6.9,
         os: {
             init: "iOS 10.3.2",
             last: lastOS
