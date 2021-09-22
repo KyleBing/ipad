@@ -1633,7 +1633,7 @@ let app = new Vue({
         keywordArray: [],
 
         latesOS: lastOS,
-        allIpads: iPadPro.concat(iPadAir, iPadMini, iPad),
+        allIpads: iPadPro.reverse().concat(iPadAir.reverse(), iPadMini.reverse(), iPad.reverse()),
         iPadsSeries: [
             {title: "iPad Pro", iPads: iPadPro},
             {title: "iPad Air", iPads: iPadAir},
