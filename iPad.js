@@ -1312,7 +1312,7 @@ const iPad = [
                 size: "9.7",
                 width: 2048,
                 height: 1536,
-                density: 132,
+                density: 264,
                 refreshRate: 60,
             },
         width: 241.3,
