@@ -36,7 +36,7 @@ const iPadPro = [
             core: 12
         },
         memory: [
-            {size: "2", type: "DDR4"}
+            {size: "2", type: "LPDDR4"}
         ],
         storage: ["32", "128", "256"],
         price: "",
@@ -92,7 +92,7 @@ const iPadPro = [
             core: 12
         },
         memory: [
-            {size: "4", type: "DDR4"}
+            {size: "4", type: "LPDDR4"}
         ],
         storage: ["32", "128", "256"],
         price: "",
@@ -144,7 +144,7 @@ const iPadPro = [
             core: 12
         },
         memory: [
-            {size: "4", type: "DDR4"}
+            {size: "4", type: "LPDDR4"}
         ],
         storage: ["64", "256", "512"],
         price: "",
@@ -200,7 +200,7 @@ const iPadPro = [
             core: 12
         },
         memory: [
-            {size: "4", type: "DDR4"}
+            {size: "4", type: "LPDDR4"}
         ],
         storage: ["64", "256", "512"],
         price: "",
@@ -257,8 +257,8 @@ const iPadPro = [
             core: 7
         },
         memory: [
-            {name: "< 1T", size: "4", type: "DDR4X"},
-            {name: "= 1T", size: "6", type: "DDR4X"}
+            {name: "< 1T", size: "4", type: "LPDDR4X"},
+            {name: "= 1T", size: "6", type: "LPDDR4X"}
         ],
         storage: ["64", "256", "512", "1024"],
         price: "",
@@ -317,8 +317,8 @@ const iPadPro = [
             core: 7
         },
         memory: [
-            {name: "< 1T", size: "4", type: "DDR4X"},
-            {name: "= 1T", size: "6", type: "DDR4X"}
+            {name: "< 1T", size: "4", type: "LPDDR4X"},
+            {name: "= 1T", size: "6", type: "LPDDR4X"}
         ],
         storage: ["64", "256", "512", "1024"],
         price: "",
@@ -378,7 +378,7 @@ const iPadPro = [
             core: 8
         },
         memory: [
-            {name: "", size: "6", type: "DDR4X"},
+            {name: "", size: "6", type: "LPDDR4X"},
         ],
         storage: ["128", "256", "512", "1024"],
         price: "",
@@ -444,7 +444,7 @@ const iPadPro = [
             core: 8
         },
         memory: [
-            {name: "", size: "6", type: "DDR4X"},
+            {name: "", size: "6", type: "LPDDR4X"},
         ],
         storage: ["128", "256", "512", "1024"],
         price: "",
@@ -511,8 +511,8 @@ const iPadPro = [
             core: '8'
         },
         memory: [
-            {name: "", size: "8", type: "DDR4X"},
-            {name: "≥ 1T", size: "16", type: "DDR4X"},
+            {name: "", size: "8", type: "LPDDR4X"},
+            {name: "≥ 1T", size: "16", type: "LPDDR4X"},
         ],
         storage: ['128', '256', '512', '1024', '2048'],
         price: "",
@@ -577,8 +577,8 @@ const iPadPro = [
             core: '8'
         },
         memory: [
-            {name: "", size: "8", type: "DDR4X"},
-            {name: "≥ 1T", size: "16", type: "DDR4X"},
+            {name: "", size: "8", type: "LPDDR4X"},
+            {name: "≥ 1T", size: "16", type: "LPDDR4X"},
         ],
         storage: ['128', '256', '512', '1024', '2048'],
         price: "",
@@ -645,7 +645,7 @@ const iPadAir = [
             core: 4
         },
         memory: [
-            {name: "", size: "1", type: "DDR3"},
+            {name: "", size: "1", type: "LPDDR3"},
         ],
         storage: [16, 32, 64, 128],
         price: "",
@@ -697,7 +697,7 @@ const iPadAir = [
             core: 8
         },
         memory: [
-            {name: "", size: "2", type: "DDR3"},
+            {name: "", size: "2", type: "LPDDR3"},
         ],
         storage: [16, 64, 128],
         price: "",
@@ -749,7 +749,7 @@ const iPadAir = [
             core: 4
         },
         memory: [
-            {name: "", size: "3", type: "DDR4X"},
+            {name: "", size: "3", type: "LPDDR4X"},
         ],
         storage: [64, 256],
         price: "",
@@ -802,7 +802,7 @@ const iPadAir = [
             core: "4"
         },
         memory: [
-            {name: "", size: "4", type: "--"},
+            {name: "", size: "4", type: "LPDDR4X"},
         ],
         storage: [64, 256],
         price: "",
@@ -916,7 +916,7 @@ const iPadMini = [
             core: 4
         },
         memory: [
-            {name: "", size: "1", type: "DDR3"},
+            {name: "", size: "1", type: "LPDDR3"},
         ],
         storage: [16, 32, 64, 128],
         price: "",
@@ -969,7 +969,7 @@ const iPadMini = [
             core: 4
         },
         memory: [
-            {name: "", size: "1", type: "DDR3"},
+            {name: "", size: "1", type: "LPDDR3"},
         ],
         storage: [16, 32, 64],
         price: "",
@@ -1022,7 +1022,7 @@ const iPadMini = [
             core: 4
         },
         memory: [
-            {name: "", size: "2", type: "DDR3"},
+            {name: "", size: "2", type: "LPDDR3"},
         ],
         storage: [16, 64, 128],
         price: "",
@@ -1074,7 +1074,7 @@ const iPadMini = [
             core: 4
         },
         memory: [
-            {name: "", size: "3", type: "DDR4X"},
+            {name: "", size: "3", type: "LPDDR4X"},
         ],
         storage: [64, 256],
         price: "",
@@ -1226,7 +1226,7 @@ const iPad = [
             core: 2
         },
         memory: [
-            {name: "", size: "0.512", type: "DDR"},
+            {name: "", size: "0.512", type: "DDR2"},
         ],
         storage: [16, 32, 64],
         price: "",
@@ -1279,7 +1279,7 @@ const iPad = [
             core: 4
         },
         memory: [
-            {name: "", size: "1", type: "DDR2"},
+            {name: "", size: "1", type: "LPDDR2"},
         ],
         storage: [16, 32, 64],
         price: "",
@@ -1332,7 +1332,7 @@ const iPad = [
             core: 4
         },
         memory: [
-            {name: "", size: "1", type: "DDR2"},
+            {name: "", size: "1", type: "LPDDR2"},
         ],
         storage: [16, 32, 64, 128],
         price: "",
@@ -1385,7 +1385,7 @@ const iPad = [
             core: 6
         },
         memory: [
-            {name: "", size: "2", type: "DDR4"},
+            {name: "", size: "2", type: "LPDDR4"},
         ],
         storage: [32, 128],
         price: "",
@@ -1437,7 +1437,7 @@ const iPad = [
             core: 6
         },
         memory: [
-            {name: "", size: "2", type: "DDR4"},
+            {name: "", size: "2", type: "LPDDR4"},
         ],
         storage: [32, 128],
         price: "",
@@ -1472,9 +1472,9 @@ const iPad = [
                 density: 264,
                 refreshRate: 60,
             },
-        width: 248.9,
-        height: 172.7,
-        thickness: 7.4,
+        width: 250.6,
+        height: 174.1,
+        thickness: 7.5,
         os: {
             init: "iOS 13.3",
             last: lastOS
@@ -1594,7 +1594,7 @@ const iPad = [
             core: 4
         },
         memory: [
-            {name: "--", size: "--", type: "--"},
+            {name: "", size: "3", type: "LPDDR4X SDRAM"},
         ],
         storage: [64, 256],
         price: "",
