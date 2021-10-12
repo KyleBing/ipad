@@ -859,7 +859,7 @@ const iPadMini = [
             core: 2
         },
         gpu: {
-            model: "PowerVR SGX5400万2",
+            model: "PowerVR SGX543MP2",
             core: 4
         },
         memory: [
@@ -1222,7 +1222,7 @@ const iPad = [
             core: 2
         },
         gpu: {
-            model: "PowerVR SGX5400万2",
+            model: "PowerVR SGX543MP2",
             core: 2
         },
         memory: [
@@ -1275,7 +1275,7 @@ const iPad = [
             core: 2
         },
         gpu: {
-            model: "PowerVR SGX5400万4",
+            model: "PowerVR SGX543MP4",
             core: 4
         },
         memory: [
@@ -1328,7 +1328,7 @@ const iPad = [
             core: 2
         },
         gpu: {
-            model: "PowerVR SGX5500万4",
+            model: "PowerVR SGX554MP4",
             core: 4
         },
         memory: [
