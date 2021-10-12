@@ -1119,7 +1119,7 @@ const iPadMini = [
         },
         cpu: {
             model: 'A15',
-            rate: '',
+            rate: '2.93',
             core: 6
         },
         gpu: {
@@ -1127,15 +1127,15 @@ const iPadMini = [
             core: 5
         },
         memory: [
-            {name: "", size: "", type: ""},
+            {name: "", size: "4", type: "LPDDR4X"},
         ],
         storage: [64, 256],
         price: "",
         battery: "19.3 WH",
         connector: 'USB-C',
         models: [
-            {id: 1, name: "--", model: "-- (WiFi)", weight: 293},
-            {id: 2, name: "--", model: "-- (WiFi + 蜂窝)", weight: 297},
+            {id: 1, name: "--", model: "-- (WiFi)", weight: 290},
+            {id: 2, name: "--", model: "-- (WiFi + 蜂窝)", weight: 300},
         ],
         cameras: {
             front: {
