@@ -49,14 +49,18 @@ const iPadPro = [
         cameras: {
             front: {
                 pixelCount: '120万, ƒ/2.2',
-                dimension: ['720p'],
+                dimension: [{size: '720p', fps: []}],
                 zoomRate: ''
             },
             back: [
                 {
                     name: '默认',
                     pixelCount: '1200万, ƒ/2.2',
-                    dimension: ['4k 30fps', '1080p 30/60fps', '720p 240fps'],
+                    dimension: [
+                        {size: '4k', fps: [30]},
+                        {size: '1080p', fps: [30,60]},
+                        {size: '720p', fps: [240]}
+                    ],
                     zoomRate: '3'
                 },
             ]
@@ -105,11 +109,18 @@ const iPadPro = [
         cameras: {
             front: {
                 pixelCount: '120万, ƒ/2.2',
-                dimension: ['720p'],
+                dimension: [{size: '720p', fps: []}],
                 zoomRate: ''
             },
             back: [
-                {name: '默认', pixelCount: '800万, ƒ/2.4', dimension: ['1080p 30fps', '720p 120fps'], zoomRate: '3'},
+                {
+                    name: '默认',
+                    pixelCount: '800万, ƒ/2.4',
+                    dimension: [
+                        {size: '1080p', fps: [30]},
+                        {size: '720p', fps: [120]}
+                    ],
+                    zoomRate: '3'},
             ]
         },
         release: "2015-09-11"
@@ -164,7 +175,11 @@ const iPadPro = [
                 {
                     name: '默认',
                     pixelCount: '1200万, ƒ/1.8',
-                    dimension: ['4k 30fps', '1080p 30/60/120fps', '720p 240fps'],
+                    dimension: [
+                        {size: '4k', fps: [30]},
+                        {size: '1080p', fps: [30, 60, 120]},
+                        {size: '720p', fps: [240]},
+                    ],
                     zoomRate: '3'
                 },
             ]
@@ -213,14 +228,20 @@ const iPadPro = [
         cameras: {
             front: {
                 pixelCount: '700万, ƒ/2.2',
-                dimension: ['1080p'],
+                dimension: [
+                    {size: '1080p', fps: []},
+                ],
                 zoomRate: ''
             },
             back: [
                 {
                     name: '默认',
                     pixelCount: '1200万, ƒ/1.8',
-                    dimension: ['4k 30fps', '1080p 30/60/120fps', '720p 240fps'],
+                    dimension: [
+                        {size: '4k', fps: [30]},
+                        {size: '1080p', fps: [30, 60, 120]},
+                        {size: '720p', fps: [240]},
+                    ],
                     zoomRate: '3'
                 },
             ]
@@ -272,7 +293,9 @@ const iPadPro = [
         cameras: {
             front: {
                 pixelCount: '700万, ƒ/2.2',
-                dimension: ['1080p 30/60fps'],
+                dimension: [
+                    {size: '1080p', fps: [30, 60]},
+                ],
                 zoomRate: '',
                 hdr: true
             },
@@ -280,7 +303,11 @@ const iPadPro = [
                 {
                     name: '默认',
                     pixelCount: '1200万, ƒ/1.8',
-                    dimension: ['4k 30/60fps', '1080p 30/60/120fps', '720p 240fps'],
+                    dimension: [
+                        {size: '4k', fps: [30,60]},
+                        {size: '1080p', fps: [30, 60, 120]},
+                        {size: '720p', fps: [240]},
+                    ],
                     zoomRate: '5',
                     hdr: true
                 },
@@ -332,7 +359,9 @@ const iPadPro = [
         cameras: {
             front: {
                 pixelCount: '700万, ƒ/2.2',
-                dimension: ['1080p 30/60fps'],
+                dimension: [
+                    {size: '1080p', fps: [30, 60]},
+                ],
                 zoomRate: '',
                 hdr: true
             },
@@ -340,7 +369,11 @@ const iPadPro = [
                 {
                     name: '默认',
                     pixelCount: '1200万, ƒ/1.8',
-                    dimension: ['4k 30/60fps', '1080p 30/60/120fps', '720p 240fps'],
+                    dimension: [
+                        {size: '4k', fps: [30,60]},
+                        {size: '1080p', fps: [30, 60, 120]},
+                        {size: '720p', fps: [240]},
+                    ],
                     zoomRate: '5',
                     hdr: true
                 },
@@ -392,7 +425,9 @@ const iPadPro = [
         cameras: {
             front: {
                 pixelCount: '700万, ƒ/2.2',
-                dimension: ['1080p 30/60fps'],
+                dimension: [
+                    {size: '1080p', fps: [30, 60]},
+                ],
                 zoomRate: '',
                 hdr: true
             },
@@ -400,14 +435,22 @@ const iPadPro = [
                 {
                     name: '默认',
                     pixelCount: '1200万, ƒ/1.8',
-                    dimension: ['4k 30/60fps', '1080p 30/60/120fps', '720p 240fps'],
+                    dimension: [
+                        {size: '4k', fps: [30,60]},
+                        {size: '1080p', fps: [30, 60, 120]},
+                        {size: '720p', fps: [240]},
+                    ],
                     zoomRate: '5',
                     hdr: true
                 },
                 {
                     name: '广角',
                     pixelCount: '1000万, ƒ/2.4， 125˚',
-                    dimension: ['4k 30/60fps', '1080p 30/60/120fps', '720p 240fps'],
+                    dimension: [
+                        {size: '4k', fps: [30,60]},
+                        {size: '1080p', fps: [30, 60, 120]},
+                        {size: '720p', fps: [240]},
+                    ],
                     zoomRate: '5',
                     hdr: true
                 },
@@ -458,7 +501,9 @@ const iPadPro = [
         cameras: {
             front: {
                 pixelCount: '700万, ƒ/2.2',
-                dimension: ['1080p 30/60fps'],
+                dimension: [
+                    {size: '1080p', fps: [30, 60]},
+                ],
                 zoomRate: '',
                 hdr: true
             },
@@ -466,14 +511,22 @@ const iPadPro = [
                 {
                     name: '默认',
                     pixelCount: '1200万, ƒ/1.8',
-                    dimension: ['4k 30/60fps', '1080p 30/60/120fps', '720p 240fps'],
+                    dimension: [
+                        {size: '4k', fps: [30,60]},
+                        {size: '1080p', fps: [30, 60, 120]},
+                        {size: '720p', fps: [240]},
+                    ],
                     zoomRate: '5',
                     hdr: true
                 },
                 {
                     name: '广角',
                     pixelCount: '1000万, ƒ/2.4， 125˚',
-                    dimension: ['4k 30/60fps', '1080p 30/60/120fps', '720p 240fps'],
+                    dimension: [
+                        {size: '4k', fps: [30,60]},
+                        {size: '1080p', fps: [30, 60, 120]},
+                        {size: '720p', fps: [240]},
+                    ],
                     zoomRate: '5',
                     hdr: true
                 },
@@ -525,7 +578,9 @@ const iPadPro = [
         cameras: {
             front: {
                 pixelCount: '1200万, ƒ/2.4',
-                dimension: ['1080p 30/60fps'],
+                dimension: [
+                    {size: '1080p', fps: [30, 60]},
+                ],
                 zoomRate: '',
                 hdr: true
             },
@@ -533,14 +588,22 @@ const iPadPro = [
                 {
                     name: '默认',
                     pixelCount: '1200万, ƒ/1.8',
-                    dimension: ['4k 30/60fps', '1080p 30/60/120fps', '720p 240fps'],
+                    dimension: [
+                        {size: '4k', fps: [30,60]},
+                        {size: '1080p', fps: [30, 60, 120]},
+                        {size: '720p', fps: [240]},
+                    ],
                     zoomRate: '5',
                     hdr: true
                 },
                 {
                     name: '广角',
                     pixelCount: '1000万, ƒ/2.4， 125˚',
-                    dimension: ['4k 30/60fps', '1080p 30/60/120fps', '720p 240fps'],
+                    dimension: [
+                        {size: '4k', fps: [30,60]},
+                        {size: '1080p', fps: [30, 60, 120]},
+                        {size: '720p', fps: [240]},
+                    ],
                     zoomRate: '5',
                     hdr: true
                 },
@@ -591,7 +654,9 @@ const iPadPro = [
         cameras: {
             front: {
                 pixelCount: '1200万, ƒ/2.4',
-                dimension: ['1080p 30/60fps'],
+                dimension: [
+                    {size: '1080p', fps: [30, 60,]},
+                ],
                 zoomRate: '',
                 hdr: true
             },
@@ -599,14 +664,22 @@ const iPadPro = [
                 {
                     name: '默认',
                     pixelCount: '1200万, ƒ/1.8',
-                    dimension: ['4k 30/60fps', '1080p 30/60/120fps', '720p 240fps'],
+                    dimension: [
+                        {size: '4k', fps: [30,60]},
+                        {size: '1080p', fps: [30, 60, 120]},
+                        {size: '720p', fps: [240]},
+                    ],
                     zoomRate: '5',
                     hdr: true
                 },
                 {
                     name: '广角',
                     pixelCount: '1000万, ƒ/2.4， 125˚',
-                    dimension: ['4k 30/60fps', '1080p 30/60/120fps', '720p 240fps'],
+                    dimension: [
+                        {size: '4k', fps: [30,60]},
+                        {size: '1080p', fps: [30, 60, 120]},
+                        {size: '720p', fps: [240]},
+                    ],
                     zoomRate: '5',
                     hdr: true
                 },
@@ -658,12 +731,21 @@ const iPadAir = [
         cameras: {
             front: {
                 pixelCount: '120万, ƒ/2.2',
-                dimension: ['720p'],
+                dimension: [
+                    {size: '720p', fps: []},
+                ],
                 zoomRate: '',
                 hdr: false
             },
             back: [
-                {name: '默认', pixelCount: '500万, ƒ/2.4', dimension: ['1080p 30fps'], zoomRate: '5', hdr: false},
+                {
+                    name: '默认',
+                    pixelCount: '500万, ƒ/2.4',
+                    dimension: [
+                        {size: '1080p', fps: [30]},
+                    ],
+                    zoomRate: '5',
+                    hdr: false},
             ]
         },
         release: "2013-09-01"
@@ -710,12 +792,21 @@ const iPadAir = [
         cameras: {
             front: {
                 pixelCount: '120万, ƒ/2.2',
-                dimension: ['720p'],
+                dimension: [
+                    {size: '720p', fps: []},
+                ],
                 zoomRate: '',
                 hdr: false
             },
             back: [
-                {name: '默认', pixelCount: '800万, ƒ/2.4', dimension: ['1080p 30fps'], zoomRate: '5', hdr: false},
+                {
+                    name: '默认',
+                    pixelCount: '800万, ƒ/2.4',
+                    dimension: [
+                        {size: '1080p', fps: [30]},
+                    ],
+                    zoomRate: '5',
+                    hdr: false},
             ]
         },
         release: "2014-10-22"
@@ -763,12 +854,22 @@ const iPadAir = [
         cameras: {
             front: {
                 pixelCount: '700万, ƒ/2.2',
-                dimension: ['1080p'],
+                dimension: [
+                    {size: '1080p', fps: []},
+                ],
                 zoomRate: '',
                 hdr: false
             },
             back: [
-                {name: '默认', pixelCount: '800万, ƒ/2.4', dimension: ['1080p 30fps'], zoomRate: '5', hdr: false},
+                {
+                    name: '默认',
+                    pixelCount: '800万, ƒ/2.4',
+                    dimension: [
+                        {size: '1080p', fps: [30]},
+                    ],
+                    zoomRate: '5',
+                    hdr: false
+                },
             ]
         },
         release: "2019-03-18"
@@ -815,7 +916,9 @@ const iPadAir = [
         cameras: {
             front: {
                 pixelCount: '700万, ƒ/2.0',
-                dimension: ['1080p'],
+                dimension: [
+                    {size: '1080p', fps: []},
+                ],
                 rate: '',
                 zoomRate: '',
                 hdr: false
@@ -824,7 +927,10 @@ const iPadAir = [
                 {
                     name: '默认',
                     pixelCount: '1200万, ƒ/1.8',
-                    dimension: ['4K 24/30/60fps', '1080p HD 30/60fps'],
+                    dimension: [
+                        {size: '4k', fps: [24, 30,60]},
+                        {size: '1080p', fps: [30, 60]},
+                    ],
                     zoomRate: '5',
                     hdr: false
                 },
@@ -877,12 +983,21 @@ const iPadMini = [
         cameras: {
             front: {
                 pixelCount: '120万',
-                dimension: ['720p'],
+                dimension: [
+                    {size: '720p', fps: []},
+                ],
                 zoomRate: '',
                 hdr: false
             },
             back: [
-                {name: '默认', pixelCount: '500万', dimension: ['1080p 30fps'], zoomRate: '5', hdr: false},
+                {
+                    name: '默认',
+                    pixelCount: '500万',
+                    dimension: [
+                        {size: '1080p', fps: [30]},
+                    ],
+                    zoomRate: '5',
+                    hdr: false},
             ]
         },
         release: "2012-09-02"
@@ -930,12 +1045,22 @@ const iPadMini = [
         cameras: {
             front: {
                 pixelCount: '120万',
-                dimension: ['720p'],
+                dimension: [
+                    {size: '720p', fps: []},
+                ],
                 zoomRate: '',
                 hdr: false
             },
             back: [
-                {name: '默认', pixelCount: '500万', dimension: ['1080p 30fps'], zoomRate: '5', hdr: false},
+                {
+                    name: '默认',
+                    pixelCount: '500万',
+                    dimension: [
+                        {size: '1080p', fps: [30]},
+                    ],
+                    zoomRate: '5',
+                    hdr: false
+                },
             ]
         },
         release: "2013-09-12"
@@ -983,12 +1108,22 @@ const iPadMini = [
         cameras: {
             front: {
                 pixelCount: '120万',
-                dimension: ['720p'],
+                dimension: [
+                    {size: '720p', fps: []},
+                ],
                 zoomRate: '',
                 hdr: false
             },
             back: [
-                {name: '默认', pixelCount: '500万', dimension: ['1080p 30fps'], zoomRate: '5', hdr: false},
+                {
+                    name: '默认',
+                    pixelCount: '500万',
+                    dimension: [
+                        {size: '1080p', fps: [30]},
+                    ],
+                    zoomRate: '5',
+                    hdr: false
+                },
             ]
         },
         release: "2014-10-22"
@@ -1035,12 +1170,21 @@ const iPadMini = [
         cameras: {
             front: {
                 pixelCount: '120万',
-                dimension: ['720p'],
+                dimension: [
+                    {size: '720p', fps: []},
+                ],
                 zoomRate: '',
                 hdr: false
             },
             back: [
-                {name: '默认', pixelCount: '800万', dimension: ['1080p 30fps'], zoomRate: '3', hdr: false},
+                {
+                    name: '默认',
+                    pixelCount: '800万',
+                    dimension: [
+                        {size: '1080p', fps: [30]},
+                    ],
+                    zoomRate: '3',
+                    hdr: false},
             ]
         },
         release: "2015-09-09"
@@ -1088,12 +1232,21 @@ const iPadMini = [
         cameras: {
             front: {
                 pixelCount: '700万',
-                dimension: ['1080p'],
+                dimension: [
+                    {size: '1080p', fps: []},
+                ],
                 zoomRate: '',
                 hdr: false
             },
             back: [
-                {name: '默认', pixelCount: '800万', dimension: ['1080p 30fps'], zoomRate: '3', hdr: false},
+                {
+                    name: '默认',
+                    pixelCount: '800万',
+                    dimension: [
+                        {size: '1080p', fps: [30]},
+                    ],
+                    zoomRate: '3',
+                    hdr: false},
             ]
         },
         release: "2019-03-18"
@@ -1140,12 +1293,21 @@ const iPadMini = [
         cameras: {
             front: {
                 pixelCount: '1200万 ƒ/2.4',
-                dimension: ['1080p 60fps'],
+                dimension: [
+                    {size: '1080p', fps: [60]},
+                ],
                 zoomRate: '',
                 hdr: true
             },
             back: [
-                {name: '默认', pixelCount: '1200万 ƒ/1.8', dimension: ['4k 60fps'], zoomRate: '5', hdr: true},
+                {
+                    name: '默认',
+                    pixelCount: '1200万 ƒ/1.8',
+                    dimension: [
+                        {size: '4k', fps: [60]},
+                    ],
+                    zoomRate: '5',
+                    hdr: true},
             ]
         },
         release: "2021-09-15"
@@ -1245,7 +1407,14 @@ const iPad = [
                 hdr: false
             },
             back: [
-                {name: '默认', pixelCount: '70万', dimension: ['720p 30fps'], zoomRate: '5', hdr: false},
+                {
+                    name: '默认',
+                    pixelCount: '70万',
+                    dimension: [
+                        {size: '720p', fps: [30]},
+                    ],
+                    zoomRate: '5',
+                    hdr: false},
             ]
         },
         release: "2011-03-11"
@@ -1298,7 +1467,14 @@ const iPad = [
                 hdr: false
             },
             back: [
-                {name: '默认', pixelCount: '500万, f/2.4', dimension: ['1080p 30fps'], zoomRate: '5', hdr: false},
+                {
+                    name: '默认',
+                    pixelCount: '500万, f/2.4',
+                    dimension: [
+                        {size: '1080p', fps: [30]},
+                    ],
+                    zoomRate: '5',
+                    hdr: false},
             ]
         },
         release: "2012-03-16"
@@ -1346,12 +1522,21 @@ const iPad = [
         cameras: {
             front: {
                 pixelCount: '120万, ƒ/2.2 ',
-                dimension: ['720p'],
+                dimension: [
+                    {size: '720p', fps: []},
+                ],
                 zoomRate: '',
                 hdr: false
             },
             back: [
-                {name: '默认', pixelCount: '500万, f/2.4', dimension: ['1080p 30fps'], zoomRate: '5', hdr: false},
+                {
+                    name: '默认',
+                    pixelCount: '500万, f/2.4',
+                    dimension: [
+                        {size: '1080p', fps: [30]},
+                    ],
+                    zoomRate: '5',
+                    hdr: false},
             ]
         },
         release: "2012-10-23"
@@ -1398,12 +1583,21 @@ const iPad = [
         cameras: {
             front: {
                 pixelCount: '120万, ƒ/2.2 ',
-                dimension: ['720p'],
+                dimension: [
+                    {size: '720p', fps: []},
+                ],
                 zoomRate: '',
                 hdr: false
             },
             back: [
-                {name: '默认', pixelCount: '800万, ƒ/2.4', dimension: ['1080p 30fps'], zoomRate: '3', hdr: false},
+                {
+                    name: '默认',
+                    pixelCount: '800万, ƒ/2.4',
+                    dimension: [
+                        {size: '1080p', fps: [30]},
+                    ],
+                    zoomRate: '3',
+                    hdr: false},
             ]
         },
         release: "2017-03-21"
@@ -1450,12 +1644,21 @@ const iPad = [
         cameras: {
             front: {
                 pixelCount: '120万, ƒ/2.2 ',
-                dimension: ['720p'],
+                dimension: [
+                    {size: '720p', fps: []},
+                ],
                 zoomRate: '',
                 hdr: false
             },
             back: [
-                {name: '默认', pixelCount: '800万, ƒ/2.4', dimension: ['1080p 30fps'], zoomRate: '3', hdr: false},
+                {
+                    name: '默认',
+                    pixelCount: '800万, ƒ/2.4',
+                    dimension: [
+                        {size: '1080p', fps: [30]},
+                    ],
+                    zoomRate: '3',
+                    hdr: false},
             ]
         },
         release: "2018-03-27"
@@ -1503,12 +1706,21 @@ const iPad = [
         cameras: {
             front: {
                 pixelCount: '120万, ƒ/2.2 ',
-                dimension: ['720p'],
+                dimension: [
+                    {size: '720p', fps: []},
+                ],
                 zoomRate: '',
                 hdr: false
             },
             back: [
-                {name: '默认', pixelCount: '800万, ƒ/2.4', dimension: ['1080p 30fps'], zoomRate: '3', hdr: false},
+                {
+                    name: '默认',
+                    pixelCount: '800万, ƒ/2.4',
+                    dimension: [
+                        {size: '1080p', fps: [30]},
+                    ],
+                    zoomRate: '3',
+                    hdr: false},
             ]
         },
         release: "2019-09-10"
@@ -1555,12 +1767,21 @@ const iPad = [
         cameras: {
             front: {
                 pixelCount: '120万, ƒ/2.2 ',
-                dimension: ['720p'],
+                dimension: [
+                    {size: '720p', fps: []},
+                ],
                 zoomRate: '',
                 hdr: false
             },
             back: [
-                {name: '默认', pixelCount: '800万, ƒ/2.4', dimension: ['1080p 30fps'], zoomRate: '3', hdr: false},
+                {
+                    name: '默认',
+                    pixelCount: '800万, ƒ/2.4',
+                    dimension: [
+                        {size: '1080p', fps: [30]},
+                    ],
+                    zoomRate: '3',
+                    hdr: false},
             ]
         },
         release: "2020-09-16"
@@ -1607,12 +1828,21 @@ const iPad = [
         cameras: {
             front: {
                 pixelCount: '1200万, ƒ/2.4 ',
-                dimension: ['1080p'],
+                dimension: [
+                    {size: '1080p', fps: []},
+                ],
                 zoomRate: '',
                 hdr: false
             },
             back: [
-                {name: '默认', pixelCount: '800万, ƒ/2.4', dimension: ['1080p 30fps'], zoomRate: '5', hdr: false},
+                {
+                    name: '默认',
+                    pixelCount: '800万, ƒ/2.4',
+                    dimension: [
+                        {size: '1080p', fps: [30]},
+                    ],
+                    zoomRate: '5',
+                    hdr: false},
             ]
         },
         release: "2021-09-15"

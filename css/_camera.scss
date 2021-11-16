@@ -1,0 +1,40 @@
+.camera{
+  min-height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+  background-color: rgba(0,0,0,0.05);
+  @include border-radius(5px);
+  padding: 2px 10px;
+  margin-bottom: 3px;
+  .base-info{
+    font-size: 12px;
+    .hdr{
+      @extend .impact
+    }
+    .pixel-count{
+
+    }
+  }
+
+  .dimension{
+    font-size: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    .dimension-item{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .size{
+        color: $text-label;
+        text-align: right;
+        width: 50px;
+        margin-right: 5px;
+      }
+      .fps{
+      }
+
+    }
+  }
+}

@@ -17,11 +17,13 @@ tbody{
     &:hover{
       background-color: $bg-highlight !important;
       color: #000;
+      .camera{
+        background-color: white;
+      }
     }
     &.active{
       background-color: darken($bg-highlight, 10%);
     }
-
   }
 }
 
