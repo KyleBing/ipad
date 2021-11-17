@@ -1,11 +1,11 @@
 
 .text-emphasis{
   @extend .text-bold;
-  font-size: $font-size * 1.1 !important;
+  font-size: $fz-default * 1.2 !important;
 }
 
 .text-title{
-  font-size: $font-size * 1.2 !important;
+  font-size: $fz-default * 1.2 !important;
   font-weight: bold;
 }
 .text-normal{
@@ -13,7 +13,7 @@
 }
 
 .text-small{
-  font-size: $font-size * 0.8 !important;
+  font-size: $fz-default * 0.8 !important;
 }
 
 .text-narrow{

@@ -3,18 +3,15 @@
 @import "utility";
 @import "mixin";
 @import "font";
+@import "gutter";
 
 
 body{
-  font-size: 15px;
-  background-color: $bg-highlight;
-  font-family: "PingFang SC", "Microsoft Yahei UI", "Microsoft Yahei", "Helvetica", sans-serif;
+  font-size: $fz-default;
 }
 
 .container{
   margin: 0 auto;
-  padding: 0 20px;
-  max-width: 1920px;
 }
 
 footer{
@@ -25,10 +22,6 @@ footer{
   color: $gray;
 }
 
-.about{
-  overflow: hidden;
-  @include border-radius(0 0 5px 5px);
-}
 
 
 .header {
@@ -41,21 +34,19 @@ footer{
     font-family: "Galvji";
     line-height: 1.5;
     text-align: left;
-    font-size: 2.5rem;
+    font-size: $fz-cap;
   }
 }
 
 .series-list{
-  margin-top: 20px;
+  //padding: 20px;
 }
 
 .series{
-  @include border-radius(5px);
-  padding: 20px;
+  padding: 40px 50px;
   overflow: auto;
   background-color: #fff;
   margin-bottom: 30px;
-  border: 1px solid $color-border;;
 }
 
 .shadow{
@@ -63,9 +54,8 @@ footer{
 }
 
 
-
 .text-shadow-light{
-  text-shadow: 0 0.5、；px 0px rgba(0,0,0,0.2);
+  text-shadow: 0 0.5px 0 rgba(0,0,0,0.2);
 }
 
 
@@ -78,9 +68,6 @@ footer{
   width: 100%;
 }
 
-.mb-2{
-  margin-bottom: 10px;
-}
 
 // 全屏
 .full-screen{

@@ -4,17 +4,17 @@
   justify-content: space-between;
   align-items: center;
   font-size: 10px;
+  border: 1px dashed rgba(0,0,0,0.05);
   background-color: rgba(0,0,0,0.05);
   @include border-radius(5px);
   padding: 2px 10px;
+  line-height: 1.2;
   margin-bottom: 3px;
   .base-info{
-    font-size: 12px;
     .hdr{
       @extend .impact
     }
     .pixel-count{
-
     }
   }
 

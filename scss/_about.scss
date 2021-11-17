@@ -110,7 +110,7 @@ $color-bg: rgba(255,255,255,0.10);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 0.8rem;
+  font-size: $fz-sm;
   padding: 35px;
   background-color: white;
   a{

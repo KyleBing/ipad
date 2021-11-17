@@ -1,5 +1,5 @@
-.model-title{
-  font-size: 1.1rem;
+.model-title{ // 模型字体大小
+  font-size:$fz-big;
   font-weight: bold;
   display: flex;
   justify-content: flex-start;
@@ -21,7 +21,7 @@ $dual-label-types: (
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 5px;
-    font-size: $label-font-size;
+    font-size: $fz-label;
     &:last-child{
       margin-bottom: 0;
     }
@@ -36,9 +36,8 @@ $dual-label-types: (
       }
     }
     .model{
+      min-width: 50px;
       padding-right: $label-padding-lr + 2px;
-      min-width: $label-font-size * 2;
-      //@include border-radius($label-corner 0 0 $label-corner);
       @include border-radius($label-corner );
       background-color: transparentize($color, $label-transparent-rate);
       color: white;
@@ -66,19 +65,17 @@ $dual-label-types: (
 .gpu{
   .model{
     font-weight: normal;
-    //font-family: 'PTSans-Narrow', sans-serif !important;
   }
 }
 
 .memory{
   .rate{
     font-weight: normal;
-    //font-family: 'PTSans-Narrow', sans-serif !important;
   }
 }
 
 .label{
-  font-size: $label-font-size;
+  font-size: $fz-label;
   display: inline-block;
   padding: ($label-padding - 1) $label-padding-lr;
   @include border-radius($label-corner);
@@ -127,7 +124,7 @@ $color-battery: transparentize($green, $label-transparent-rate);
 .battery{
   @extend .text-shadow-light;
   display: inline-block;
-  font-size: $label-font-size;
+  font-size: $fz-label;
   line-height: $height-battery - 10;
   padding: $label-padding + 1 5px;
   border: 1px solid $color-battery;

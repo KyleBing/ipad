@@ -32,7 +32,7 @@ const iPadPro = [
             core: 2
         },
         gpu: {
-            model: "PowerVR Series 7XT",
+            model: "PowerVR 7XT",
             core: 12
         },
         memory: [
@@ -92,7 +92,7 @@ const iPadPro = [
             core: 2
         },
         gpu: {
-            model: "PowerVR Series 7XT",
+            model: "PowerVR 7XT",
             core: 12
         },
         memory: [
@@ -151,7 +151,7 @@ const iPadPro = [
             core: 6
         },
         gpu: {
-            model: "PowerVR Series 7XT",
+            model: "PowerVR 7XT",
             core: 12
         },
         memory: [
@@ -211,7 +211,7 @@ const iPadPro = [
             core: 6
         },
         gpu: {
-            model: "PowerVR Series 7XT",
+            model: "PowerVR 7XT",
             core: 12
         },
         memory: [
@@ -274,7 +274,7 @@ const iPadPro = [
             core: 8
         },
         gpu: {
-            model: "Apple GPU",
+            model: "Apple",
             core: 7
         },
         memory: [
@@ -340,7 +340,7 @@ const iPadPro = [
             core: 8
         },
         gpu: {
-            model: "Apple GPU",
+            model: "Apple",
             core: 7
         },
         memory: [
@@ -407,7 +407,7 @@ const iPadPro = [
             core: 8
         },
         gpu: {
-            model: "Apple GPU",
+            model: "Apple",
             core: 8
         },
         memory: [
@@ -483,7 +483,7 @@ const iPadPro = [
             core: 8
         },
         gpu: {
-            model: "Apple GPU",
+            model: "Apple",
             core: 8
         },
         memory: [
@@ -560,7 +560,7 @@ const iPadPro = [
             core: '8'
         },
         gpu: {
-            model: "Apple GPU",
+            model: "Apple",
             core: '8'
         },
         memory: [
@@ -636,7 +636,7 @@ const iPadPro = [
             core: '8'
         },
         gpu: {
-            model: "Apple GPU",
+            model: "Apple",
             core: '8'
         },
         memory: [
@@ -836,7 +836,7 @@ const iPadAir = [
             core: 6
         },
         gpu: {
-            model: "Apple GPU",
+            model: "Apple",
             core: 4
         },
         memory: [
@@ -899,7 +899,7 @@ const iPadAir = [
             core: 6
         },
         gpu: {
-            model: "Apple GPU",
+            model: "Apple",
             core: "4"
         },
         memory: [
@@ -1214,7 +1214,7 @@ const iPadMini = [
             core: 6
         },
         gpu: {
-            model: "Apple GPU",
+            model: "Apple",
             core: 4
         },
         memory: [
@@ -1276,7 +1276,7 @@ const iPadMini = [
             core: 6
         },
         gpu: {
-            model: "Apple GPU",
+            model: "Apple",
             core: 5
         },
         memory: [
