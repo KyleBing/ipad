@@ -572,8 +572,10 @@ const iPadPro = [
         battery: "28.65wh",
         connector: 'USB-C',
         models: [
-            {id: 1, name: "", model: "WiFi", weight: 466},
-            {id: 2, name: "", model: "WiFi + 蜂窝", weight: 468},
+            {id: 1, name: "iPad", model: "A2377 WiFi", weight: 466},
+            {id: 2, name: "iPad", model: "A2459 WiFi + 蜂窝", weight: 470},
+            {id: 3, name: "iPad", model: "A2301 WiFi + 蜂窝 + mmWave", weight: 470},
+            {id: 4, name: "iPad", model: "A2460 WiFi + 蜂窝,国行", weight: 470},
         ],
         cameras: {
             front: {
@@ -648,8 +650,10 @@ const iPadPro = [
         battery: "40.88wh",
         connector: 'USB-C',
         models: [
-            {id: 1, name: "", model: "WiFi", weight: 682},
-            {id: 2, name: "", model: "WiFi + 蜂窝", weight: 684},
+            {id: 1, name: "iPad", model: "A2378 WiFi", weight: 682},
+            {id: 2, name: "iPad", model: "A2461 WiFi + 蜂窝", weight: 685},
+            {id: 3, name: "iPad", model: "A2379 WiFi + 蜂窝 + mmWave", weight: 685},
+            {id: 4, name: "iPad", model: "A2462 WiFi + 蜂窝,国行", weight: 685},
         ],
         cameras: {
             front: {
@@ -910,8 +914,9 @@ const iPadAir = [
         battery: "28.6 WH",
         connector: 'USB-C',
         models: [
-            {id: 1, name: "--", model: "--(WiFi)", weight: 458},
-            {id: 2, name: "--", model: "--(WiFi + 蜂窝)", weight: 460},
+            {id: 1, name: "iPad", model: "A2316 (WiFi)", weight: 458},
+            {id: 2, name: "iPad", model: "A2324, A2072(WiFi + 蜂窝)", weight: 460},
+            {id: 2, name: "iPad", model: "A2325 (WiFi + 蜂窝，国行)", weight: 460},
         ],
         cameras: {
             front: {
@@ -1287,8 +1292,8 @@ const iPadMini = [
         battery: "19.3 WH",
         connector: 'USB-C',
         models: [
-            {id: 1, name: "--", model: "-- (WiFi)", weight: 290},
-            {id: 2, name: "--", model: "-- (WiFi + 蜂窝)", weight: 300},
+            {id: 1, name: "iPad", model: "A2568  (WiFi)", weight: 290},
+            {id: 2, name: "iPad", model: "-- (WiFi + 蜂窝)", weight: 300},
         ],
         cameras: {
             front: {
