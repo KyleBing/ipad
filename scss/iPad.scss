@@ -15,8 +15,7 @@ body{
 }
 
 footer{
-  padding: 20px 0 40px;
-  font-family: 'PTSans-Narrow';
+  padding: 10px 0 40px;
   font-size: 12px;
   text-align: center;
   color: $gray;
@@ -46,7 +45,9 @@ footer{
   padding: 40px 50px;
   overflow: auto;
   background-color: #fff;
-  margin-bottom: 30px;
+  &:first-child{
+    margin-top: 0;
+  }
 }
 
 .shadow{
