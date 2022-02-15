@@ -1275,7 +1275,7 @@ footer {
     border-color: #2e2e2e;
   }
   tbody tr:hover {
-    background-color: #4d4d4d !important;
+    background-color: #404040 !important;
   }
   tbody tr:nth-child(odd) {
     background-color: #2e2e2e;
@@ -1334,10 +1334,10 @@ footer {
 
   :hover::-webkit-scrollbar-thumb {
     border: 1px solid #4d4d4d;
-    background-color: #4d4d4d;
+    background-color: #404040;
   }
 
   .gradient {
-    background-image: linear-gradient(to bottom right, #051933, #2f3631);
+    background-image: linear-gradient(to bottom right, #424242, #1f1f1f);
   }
 }

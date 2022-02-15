@@ -1,5 +1,5 @@
 $dark-bg: lighten(black, 10%);
-$dark-bg-highlight: lighten(black, 30%);
+$dark-bg-highlight: lighten(black, 25%);
 $dark-bg-light: lighten(black, 18%);
 
 
@@ -102,6 +102,6 @@ $dark-border: lighten(black, 30%);
 
   // ABOUT
   .gradient{
-    background-image: linear-gradient(to bottom right, #051933, #2f3631);
+    background-image: linear-gradient(to bottom right, #424242, #1f1f1f);
   }
 }
