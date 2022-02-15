@@ -1257,3 +1257,87 @@ footer {
 .gradient {
   background-image: linear-gradient(to bottom right, #363d40, #6a7282);
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1a1a1a;
+  }
+
+  .header {
+    color: #f2f2f2;
+  }
+
+  .series {
+    background-color: #1a1a1a;
+  }
+
+  tbody tr {
+    border-color: #2e2e2e;
+  }
+  tbody tr:hover {
+    background-color: #4d4d4d !important;
+  }
+  tbody tr:nth-child(odd) {
+    background-color: #2e2e2e;
+  }
+  tbody tr:nth-child(even) {
+    background-color: #1a1a1a;
+  }
+
+  th {
+    background-color: rgba(0, 0, 0, 0.03);
+    border-color: #4d4d4d;
+    color: #bfbfbf;
+  }
+  th sup {
+    color: #bfbfbf;
+  }
+
+  td {
+    color: #bfbfbf;
+  }
+  td p {
+    color: #bfbfbf;
+  }
+
+  .text-emphasis {
+    color: #f2f2f2;
+  }
+
+  .gray {
+    color: #bfbfbf;
+  }
+
+  .rate {
+    background-color: transparent !important;
+  }
+
+  .camera {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+
+  ::-webkit-scrollbar {
+    z-index: 50;
+    width: 8px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-color: transparent;
+    background-color: transparent;
+  }
+
+  :hover::-webkit-scrollbar-thumb {
+    border: 1px solid #4d4d4d;
+    background-color: #4d4d4d;
+  }
+
+  .gradient {
+    background-image: linear-gradient(to bottom right, #051933, #2f3631);
+  }
+}

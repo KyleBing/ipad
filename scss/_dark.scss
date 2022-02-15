@@ -1,0 +1,107 @@
+$dark-bg: lighten(black, 10%);
+$dark-bg-highlight: lighten(black, 30%);
+$dark-bg-light: lighten(black, 18%);
+
+
+$dark-text: lighten(black, 75%);
+$dark-text-title: lighten(black, 95%);
+$dark-text-subtitle: lighten(black, 75%);
+
+$dark-border: lighten(black, 30%);
+
+
+@media (prefers-color-scheme: dark) {
+  body{
+    background-color: $dark-bg;
+  }
+
+  .header {
+    color: $dark-text-title;
+  }
+
+  .series {
+    background-color: $dark-bg;
+  }
+
+
+
+  // TABLE
+  tbody tr{
+    border-color: $dark-bg-light;
+    &:hover {
+      background-color: $dark-bg-highlight !important;
+    }
+    &:nth-child(odd){
+      background-color: $dark-bg-light;
+    }
+    &:nth-child(even){
+      background-color: $dark-bg;
+    }
+  }
+
+  th{
+    background-color: rgba(0,0,0,0.03);
+    border-color: $dark-border;
+    color: $dark-text;
+    sup{
+      color: $dark-text-subtitle;
+    }
+  }
+
+  td{
+    color: $dark-text;
+    p{
+      color: $dark-text;
+    }
+  }
+
+  .light-gray{
+  }
+
+  .text-emphasis{
+    color: $dark-text-title;
+  }
+  .gray{
+    color: $dark-text-subtitle;
+  }
+
+  // LABEL
+  .rate{
+    background-color: transparent !important;
+  }
+
+
+  // CAMERA
+  .camera{
+    background-color: transparentize(white, 0.95);
+    border-color: transparentize(white, 0.90);
+  }
+
+  // SCROLL BAR
+  ::-webkit-scrollbar {
+    z-index: 50;
+    width: 8px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-color: transparent;
+    background-color: transparent;
+  }
+
+  :hover::-webkit-scrollbar-thumb {
+    border: 1px solid $dark-border;
+    background-color: $dark-bg-highlight;
+  }
+
+
+
+  // ABOUT
+  .gradient{
+    background-image: linear-gradient(to bottom right, #051933, #2f3631);
+  }
+}
