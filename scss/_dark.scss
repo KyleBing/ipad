@@ -1,11 +1,11 @@
 $dark-bg: lighten(black, 10%);
 $dark-bg-highlight: lighten(black, 25%);
-$dark-bg-light: lighten(black, 18%);
+$dark-bg-light: lighten(black, 15%);
 
 
 $dark-text: lighten(black, 75%);
-$dark-text-title: lighten(black, 95%);
-$dark-text-subtitle: lighten(black, 75%);
+$dark-text-title: lighten(black, 85%);
+$dark-text-subtitle: lighten(black, 65%);
 
 $dark-border: lighten(black, 30%);
 
@@ -22,6 +22,78 @@ $dark-border: lighten(black, 30%);
   .series {
     background-color: $dark-bg;
   }
+
+  // LABEL
+  $dark-text-label: transparentize(white, 0.3);
+
+  $label-styles: (
+          "green": $green,
+          "cyan": $cyan,
+          "blue": $blue,
+          "purple": $purple,
+          "magenta": $magenta,
+          "pink": $pink,
+          "red": $red,
+          "orange": $orange,
+          "yellow": $yellow,
+          "gray": $gray,
+  );
+
+  @each $name, $color in $label-styles {
+    .label-#{$name}{
+      color: $dark-text-label;
+      border: 1px solid transparentize(darken($color, 15%), $label-transparent-rate / 2);
+      background-color: transparentize(darken($color, 15%), $label-transparent-rate);
+    }
+  }
+
+  $dual-label-types: (
+          "cpu": $magenta,
+          "gpu": $orange,
+          "memory": $green
+  );
+
+  @each $name, $color in $dual-label-types{
+    .dual-label-#{$name}{
+      .model{
+        background-color: transparentize(darken($color, 18%), $label-transparent-rate);
+        color: $dark-text-label;
+        border-color: transparentize(darken($color, 18%), $label-transparent-rate);
+        @include box-shadow(0 1px 2px rgba(0,0,0,0.1))
+      }
+      .rate{
+        border-color: transparentize(darken($color, 18%), $label-transparent-rate);
+        color: darken($color, 13%);
+        background-color: white;
+      }
+    }
+  }
+
+  $color-battery: transparentize(darken($green, 18%), $label-transparent-rate);
+  .battery{
+    @extend .text-shadow-light;
+    display: inline-block;
+    font-size: $fz-label;
+    line-height: $height-battery - 10;
+    padding: $label-padding + 1 5px;
+    border: 1px solid $color-battery;
+    text-align: center;
+    color: white;
+    background-color: $color-battery;
+    position: relative;
+    @include border-radius(3px);
+    &:after{
+      content: "";
+      position: absolute;
+      right: -3px - 1px - 1px;
+      top: ($height-battery - 10px)/2 - 1px;
+      height: 10px;
+      width: 3px;
+      background-color: $color-battery;
+      @include border-radius(0 2px 2px 0);
+    }
+  }
+
 
 
 
@@ -102,6 +174,6 @@ $dark-border: lighten(black, 30%);
 
   // ABOUT
   .gradient{
-    background-image: linear-gradient(to bottom right, #424242, #1f1f1f);
+    background-image: linear-gradient(to bottom right, #2A2A2A, #373737);
   }
 }
