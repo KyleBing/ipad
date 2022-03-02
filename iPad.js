@@ -41,7 +41,7 @@ const iPadPro = [
         storage: ["32", "128", "256"],
         price: "",
         battery: "7306",
-        connector: ['闪电', 'SmartConnector', '3.5mm音频接口'],
+        connector: ['闪电', '智能接点', '3.5mm音频接口'],
         mechanicalKeys: ['Home键','开关机键','音量增减键'],
         pencil: ['Apple Pencil 1'],
         models: [
@@ -103,7 +103,7 @@ const iPadPro = [
         storage: ["32", "128", "256"],
         price: "",
         battery: "10307",
-        connector: ['闪电', 'SmartConnector', '3.5mm音频接口'],
+        connector: ['闪电', '智能接点', '3.5mm音频接口'],
         mechanicalKeys: ['Home键','开关机键','音量增减键'],
         pencil: ['Apple Pencil 1'],
         models: [
@@ -164,7 +164,7 @@ const iPadPro = [
         storage: ["64", "256", "512"],
         price: "",
         battery: "8134",
-        connector: ['闪电', 'SmartConnector', '3.5mm音频接口'],
+        connector: ['闪电', '智能接点', '3.5mm音频接口'],
         mechanicalKeys: ['Home键','开关机键','音量增减键'],
         pencil: ['Apple Pencil 1'],
         models: [
@@ -226,7 +226,7 @@ const iPadPro = [
         storage: ["64", "256", "512"],
         price: "",
         battery: "10875",
-        connector: ['闪电', 'SmartConnector', '3.5mm音频接口'],
+        connector: ['闪电', '智能接点', '3.5mm音频接口'],
         mechanicalKeys: ['Home键','开关机键','音量增减键'],
         pencil: ['Apple Pencil 1'],
         models: [
@@ -292,7 +292,7 @@ const iPadPro = [
         storage: ["64", "256", "512", "1024"],
         price: "",
         battery: "7812",
-        connector: ['USB-C', 'SmartConnector', 'MagicConnector(ApplePencil)'],
+        connector: ['USB-C', '智能接点', '磁力接点'],
         mechanicalKeys: ['开关机键','音量增减键'],
         pencil: ['Apple Pencil 1', 'Apple Pencil 2'],
         models: [
@@ -360,7 +360,7 @@ const iPadPro = [
         storage: ["64", "256", "512", "1024"],
         price: "",
         battery: "9720",
-        connector: ['USB-C', 'SmartConnector', 'MagicConnector(ApplePencil)'],
+        connector: ['USB-C', '智能接点', '磁力接点'],
         mechanicalKeys: ['开关机键','音量增减键'],
         pencil: ['Apple Pencil 1', 'Apple Pencil 2'],
         models: [
@@ -428,7 +428,7 @@ const iPadPro = [
         storage: ["128", "256", "512", "1024"],
         price: "",
         battery: "7600",
-        connector: ['USB-C', 'SmartConnector', 'MagicConnector(ApplePencil)'],
+        connector: ['USB-C', '智能接点', '磁力接点'],
         mechanicalKeys: ['开关机键','音量增减键'],
         pencil: ['Apple Pencil 1', 'Apple Pencil 2'],
         models: [
@@ -506,7 +506,7 @@ const iPadPro = [
         storage: ["128", "256", "512", "1024"],
         price: "",
         battery: "9737",
-        connector: ['USB-C', 'SmartConnector', 'MagicConnector(ApplePencil)'],
+        connector: ['USB-C', '智能接点', '磁力接点'],
         mechanicalKeys: ['开关机键','音量增减键'],
         pencil: ['Apple Pencil 1', 'Apple Pencil 2'],
         models: [
@@ -586,7 +586,7 @@ const iPadPro = [
         storage: ['128', '256', '512', '1024', '2048'],
         price: "",
         battery: "28.65wh",
-        connector: ['USB-C(Thunderbolt3)', 'SmartConnector', 'MagicConnector(ApplePencil)'],
+        connector: ['USB-C(Thunderbolt3)', '智能接点', '磁力接点'],
         mechanicalKeys: ['开关机键','音量增减键'],
         pencil: ['Apple Pencil 1', 'Apple Pencil 2'],
         models: [
@@ -666,7 +666,7 @@ const iPadPro = [
         storage: ['128', '256', '512', '1024', '2048'],
         price: "",
         battery: "40.88wh",
-        connector: ['USB-C(Thunderbolt3)', 'SmartConnector', 'MagicConnector(ApplePencil)'],
+        connector: ['USB-C(Thunderbolt3)', '智能接点', '磁力接点'],
         mechanicalKeys: ['开关机键','音量增减键'],
         pencil: ['Apple Pencil 1', 'Apple Pencil 2'],
         models: [
@@ -1265,6 +1265,7 @@ const iPadMini = [
         battery: "5124",
         mechanicalKeys: ['Home键','开关机键','音量增减键'],
         connector: ['闪电'],
+        pencil: ['Apple Pencil 1'],
         models: [
             {id: 1, name: "iPad11,1", model: "A2133 (WiFi)", weight: 300},
             {id: 2, name: "iPad11,2", model: "A2124, A2126 (WiFi + 蜂窝)", weight: 310},

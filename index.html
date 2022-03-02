@@ -8,7 +8,7 @@
     <title>iPad 所有机型参数大全</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/ipad_favicon256w.png" type="image/png">
-    <link rel="stylesheet" href="scss/iPad.css?v=20220217093859">
+    <link rel="stylesheet" href="scss/iPad.css?v=20220302154901">
     <link rel="apple-touch-icon" href="img/ipad@3x.png">
     <script src="../../lib/js/vue.min.2.6.10.js"></script>
 
@@ -41,7 +41,7 @@
             <div class="copyright">
                 <p>主页：<a class="link" target="_blank" href="https://kylebing.cn/">kylebing.cn</a></p>
                 <p>邮箱：<a class="link" target="_blank" href="mailto:kylebing@163.com">kylebing@163.com</a></p>
-                <p>更新：<a target="_blank"  href="https://en.wikipedia.org/wiki/iPad">2022.01.23</a></p>
+                <p>更新：<a target="_blank"  href="https://en.wikipedia.org/wiki/iPad">2022.03.02</a></p>
             </div>
             <div class="copyright">
                 <p><a class="link" target="_blank" href="https://kylebing.cn/tools/apple-chip">参数大全：苹果处理器</a></p>
@@ -72,10 +72,13 @@
                         <th>GPU<sup>核</sup></th>
                         <th>内存</th>
                         <th>存储<sup>GB</sup></th>
-                        <th>前 - 摄像头</th>
-                        <th>后 - 摄像头</th>
                         <th>电池<sup>mAh</sup></th>
                         <th>接口</th>
+                        <th>笔</th>
+                        <th>按键</th>
+                        <th>颜色</th>
+                        <th>前 - 摄像头</th>
+                        <th>后 - 摄像头</th>
                         <th>系统支持</th>
                         <th>重量 + 代号</th>
                         <th>型号</th>
@@ -92,30 +95,39 @@
                                 <div class="label label-blue"> {{iPad.screen.size}}'</div>
                             </div>
                         </td>
+                        <!--日期-->
                         <td class="text-emphasis impact">
                             <div>{{iPad.release.substring(0,4)}}<span class="text-normal light-gray">·</span><span class="gray text-normal">{{iPad.release.substring(5,7)}}</span></div>
                         </td>
+                        <!--屏幕 长x宽-->
                         <td class="font-galvji">{{iPad.screen.width}} × {{iPad.screen.height}}</td>
+                        <!--屏幕密度-->
                         <td>
                             <span v-if="iPad.screen.density" class="label-magenta label">{{iPad.screen.density}}</span>
                         </td>
+                        <!--屏幕刷新率-->
                         <td>
                             <span v-if="iPad.screen.density" class="label-magenta label">{{iPad.screen.refreshRate}} hz</span>
                         </td>
+                        <!--长x宽-->
                         <td class="font-galvji">{{iPad.width}} × {{iPad.height}}</td>
+                        <!--厚度-->
                         <td class="text-emphasis"><span class="label label-pink">{{iPad.thickness}}</span></td>
+                        <!--cpu-->
                         <td>
                             <div class="dual-label-cpu">
                                 <div class="model">{{iPad.cpu.model}}</div>
                                 <div class="rate">{{iPad.cpu.rate + ' x ' + iPad.cpu.core}}</div>
                             </div>
                         </td>
+                        <!--gpu-->
                         <td>
                             <div class="dual-label-gpu gpu" v-if="iPad.gpu.model">
                                 <div class="model">{{iPad.gpu.model}}</div>
                                 <div class="rate">{{iPad.gpu.core ? iPad.gpu.core : '&nbsp;'}}</div>
                             </div>
                         </td>
+                        <!--memory-->
                         <td>
                             <div class="dual-label-memory memory" v-for="(memory,index) in iPad.memory" :key="'memory' + index">
                                 <div v-if="memory.size < 1" class="model">{{memory.size * 1000}} M</div>
@@ -123,13 +135,41 @@
                                 <div class="rate">{{memory.type}}  {{memory.name}}</div>
                             </div>
                         </td>
+                        <!--存储-->
                         <td>
-                        <span v-for="(size,index) in iPad.storage" :key="'size' + index" class="label-blue label label-sm">
-                            <span v-if="size < 1024">{{size}}</span>
-                            <span v-else>{{Math.round((size/1024))}}T</span>
-                        </span>
+                            <span v-for="(size,index) in iPad.storage" :key="'size' + index" class="label-blue label label-sm">
+                                <span v-if="size < 1024">{{size}}</span>
+                                <span v-else>{{Math.round((size/1024))}}T</span>
+                            </span>
                         </td>
-
+                        <!--电池-->
+                        <td>
+                            <div v-if="iPad.battery" class="battery">{{iPad.battery}}</div>
+                        </td>
+                        <!--connector-->
+                        <td class="text-small">
+                            <p v-for="connector in iPad.connector" :key="connector">
+                                <span>{{connector}}</span>
+                            </p>
+                        </td>
+                        <!--pencil-->
+                        <td class="text-small text-narrow">
+                            <p v-for="applePencil in iPad.pencil" :key="applePencil">
+                                <span class="text-bold">{{applePencil}}</span>
+                            </p>
+                        </td>
+                        <!--按键-->
+                        <td class="text-small">
+                            <p v-for="key in iPad.mechanicalKeys" :key="key">
+                                <span>{{key}}</span>
+                            </p>
+                        </td>
+                        <!--颜色-->
+                        <td class="text-small text-narrow">
+                            <p v-for="color in iPad.colors" :key="color">
+                                <span>{{color}}</span>
+                            </p>
+                        </td>
                         <!--camera front-->
                         <td>
                             <div class="camera" v-if="iPad.cameras.front.pixelCount">
@@ -162,15 +202,11 @@
                                 </div>
                             </div>
                         </td>
-                        <td>
-                            <div v-if="iPad.battery" class="battery">{{iPad.battery}}</div>
-                        </td>
-                        <td>{{iPad.connector}}</td>
+                        <!-- OS -->
                         <td class="text-small">
                             <p>初始：{{iPad.os.init}}</p>
                             <p>最终：<span :class="{'green text-bold': iPad.os.last === latesOS}">{{iPad.os.last}}</span></p>
                         </td>
-
                         <td class="text-small text-narrow">
                             <p v-for="model in iPad.models" :key="model.id">
                                 <span class="text-bold">{{model.weight}}克   </span><span>{{model.model}}</span>
@@ -189,7 +225,7 @@
     </div>
 
     <footer>
-        2020.04.14 ~ 2021.11.16
+        2020.04.14 ~ 2022.03.02
     </footer>
 
     <!--进入全屏按钮-->
@@ -205,7 +241,7 @@
 
 </div>
 
-<script src="iPad.js?v=20220217093859"></script>
+<script src="iPad.js?v=20220302154901"></script>
 <script>
     setTimeout(() => {
         if (!/^http:\/\/(a\.kylebing\.cn|localhost|192\.168\.\d{1,3}\.\d{1,3})/i.test(location.href)) {
