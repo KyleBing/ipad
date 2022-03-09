@@ -11,6 +11,7 @@ const iPadPro = [
         name: "iPad Pro 1 9.7",
         name_short: "Pro 1",
         active: false,
+        isNew: false,
         screen:
             {
                 size: "9.7",
@@ -73,6 +74,7 @@ const iPadPro = [
         name: "iPad Pro 1 12.9",
         name_short: "Pro 1",
         active: false,
+        isNew: false,
         screen:
             {
                 size: "12.9",
@@ -134,6 +136,7 @@ const iPadPro = [
         name: "iPad Pro 2 10.5",
         name_short: "Pro 2",
         active: false,
+        isNew: false,
         screen:
             {
                 size: "10.5",
@@ -196,6 +199,7 @@ const iPadPro = [
         name: "iPad Pro 2 12.9",
         name_short: "Pro 2",
         active: false,
+        isNew: false,
         screen:
             {
                 size: "12.9",
@@ -261,6 +265,7 @@ const iPadPro = [
         name: "iPad Pro 3 11",
         name_short: "Pro 3",
         active: false,
+        isNew: false,
         screen:
             {
                 size: "11",
@@ -329,6 +334,7 @@ const iPadPro = [
         name: "iPad Pro 3 12.9",
         name_short: "Pro 3",
         active: false,
+        isNew: false,
         screen:
             {
                 size: "12.9",
@@ -398,6 +404,7 @@ const iPadPro = [
         name: "iPad Pro 4 11",
         name_short: "Pro 4",
         active: false,
+        isNew: false,
         screen:
             {
                 size: "11",
@@ -476,6 +483,7 @@ const iPadPro = [
         name: "iPad Pro 4 12.9",
         name_short: "Pro 4",
         active: false,
+        isNew: false,
         screen:
             {
                 size: "12.9",
@@ -555,6 +563,7 @@ const iPadPro = [
         name: "iPad Pro 5 11",
         name_short: "Pro 5",
         active: false,
+        isNew: false,
         screen:
             {
                 size: "11",
@@ -635,6 +644,7 @@ const iPadPro = [
         name: "iPad Pro 5 12.9",
         name_short: "Pro 5",
         active: false,
+        isNew: false,
         screen:
             {
                 size: "12.9",
@@ -717,6 +727,7 @@ const iPadAir = [
         name: "iPad Air 1",
         name_short: "Air 1",
         active: false,
+        isNew: false,
         screen:
             {
                 size: "9.7",
@@ -779,6 +790,7 @@ const iPadAir = [
         name: "iPad Air 2",
         name_short: "Air 2",
         active: false,
+        isNew: false,
         screen:
             {
                 size: "9.7",
@@ -841,6 +853,7 @@ const iPadAir = [
         name: "iPad Air 3 2019",
         name_short: "Air 3",
         active: false,
+        isNew: false,
         screen:
             {
                 size: "10.5",
@@ -906,6 +919,7 @@ const iPadAir = [
         name: "iPad Air 4",
         name_short: "Air 4",
         active: false,
+        isNew: false,
         screen:
             {
                 size: "10.9",
@@ -969,6 +983,75 @@ const iPadAir = [
         },
         release: "2020-09-16"
     },
+    {
+        name: "iPad Air 5",
+        name_short: "Air 5",
+        active: false,
+        isNew: true,
+        screen:
+            {
+                size: "10.9",
+                width: 2360,
+                height: 1640,
+                density: 264,
+                refreshRate: 60,
+                brightness: 500, // nit
+            },
+        width: 247.6,
+        height: 178.5,
+        thickness: 6.1,
+        os: {
+            init: "iPadOS 15",
+            last: lastOS
+        },
+        cpu: {
+            model: 'M1',
+            rate: '3.20',
+            core: 8
+        },
+        gpu: {
+            model: "Apple",
+            core: "8"
+        },
+        memory: [
+            {name: "", size: "8", type: ""},
+        ],
+        storage: [64, 256],
+        price: "",
+        battery: "28.6 WH",
+        mechanicalKeys: ['开关机键','音量增减键'],
+        connector: ['USB-C'],
+        pencil: ['Apple Pencil 1', 'Apple Pencil 2'],
+        models: [
+            // {id: 1, name: "iPad", model: "A2316 (WiFi)", weight: 458},
+            // {id: 2, name: "iPad", model: "A2324, A2072(WiFi + 蜂窝)", weight: 460},
+            // {id: 2, name: "iPad", model: "A2325 (WiFi + 蜂窝，国行)", weight: 460},
+        ],
+        cameras: {
+            front: {
+                pixelCount: '1200万, ƒ/2.4',
+                dimension: [
+                    {size: '1080p', fps: []},
+                ],
+                rate: '',
+                zoomRate: '',
+                hdr: true
+            },
+            back: [
+                {
+                    name: '默认',
+                    pixelCount: '1200万, ƒ/1.8',
+                    dimension: [
+                        {size: '4k', fps: [24, 30,60]},
+                        {size: '1080p', fps: [30, 60]},
+                    ],
+                    zoomRate: '5',
+                    hdr: true
+                },
+            ]
+        },
+        release: "2022-03-18"
+    },
 ]
 const iPadMini = [
     {
@@ -976,6 +1059,7 @@ const iPadMini = [
         name_short: "Mini 1",
         colors: ['Silver', 'Slate'],
         active: false,
+        isNew: false,
         screen:
             {
                 size: "7.9",
@@ -1040,6 +1124,7 @@ const iPadMini = [
         name_short: "Mini 2",
         colors: ['Silver', 'Space Gray'],
         active: false,
+        isNew: false,
         screen:
             {
                 size: "7.9",
@@ -1105,6 +1190,7 @@ const iPadMini = [
         name_short: "Mini 3",
         colors: ['Silver', 'Gold', 'Space Gray'],
         active: false,
+        isNew: false,
         screen:
             {
                 size: "7.9",
@@ -1170,6 +1256,7 @@ const iPadMini = [
         name_short: "Mini 4",
         colors: ['Silver', 'Gold', 'Space Gray'],
         active: false,
+        isNew: false,
         screen:
             {
                 size: "7.9",
@@ -1233,6 +1320,7 @@ const iPadMini = [
         name_short: "Mini 5",
         colors: ['Silver', 'Gold', 'Space Gray'],
         active: false,
+        isNew: false,
         screen:
             {
                 size: "7.9",
@@ -1298,6 +1386,7 @@ const iPadMini = [
         name_short: "Mini 6",
         colors: ['Space Gray', 'Pink', 'Purple', 'Starlight'],
         active: false,
+        isNew: false,
         screen:
             {
                 size: "8.3",
@@ -1363,6 +1452,7 @@ const iPad = [
         name: "iPad 1",
         name_short: "iPad 1",
         active: false,
+        isNew: false,
         screen:
             {
                 size: "9.7",
@@ -1410,6 +1500,7 @@ const iPad = [
         name: "iPad 2",
         name_short: "iPad 2",
         active: false,
+        isNew: false,
         screen:
             {
                 size: "9.7",
@@ -1472,6 +1563,7 @@ const iPad = [
         name: "iPad 3",
         name_short: "iPad 3",
         active: false,
+        isNew: false,
         screen:
             {
                 size: "9.7",
@@ -1534,6 +1626,7 @@ const iPad = [
         name: "iPad 4",
         name_short: "iPad 4",
         active: false,
+        isNew: false,
         screen:
             {
                 size: "9.7",
@@ -1598,6 +1691,7 @@ const iPad = [
         name: "iPad 5",
         name_short: "iPad 5",
         active: false,
+        isNew: false,
         screen:
             {
                 size: "9.7",
@@ -1661,6 +1755,7 @@ const iPad = [
         name: "iPad 6",
         name_short: "iPad 6",
         active: false,
+        isNew: false,
         screen:
             {
                 size: "9.7",
@@ -1724,6 +1819,7 @@ const iPad = [
         name: "iPad 7",
         name_short: "iPad 7",
         active: false,
+        isNew: false,
         screen:
             {
                 size: "10.2",
@@ -1788,6 +1884,7 @@ const iPad = [
         name: "iPad 8",
         name_short: "iPad 8",
         active: false,
+        isNew: false,
         screen:
             {
                 size: "10.2",
@@ -1851,6 +1948,7 @@ const iPad = [
         name: "iPad 9",
         name_short: "iPad 9",
         active: false,
+        isNew: false,
         screen:
             {
                 size: "10.2",

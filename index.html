@@ -8,7 +8,7 @@
     <title>iPad 所有机型参数大全</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/ipad_favicon256w.png" type="image/png">
-    <link rel="stylesheet" href="scss/iPad.css?v=20220302154901">
+    <link rel="stylesheet" href="scss/iPad.css?v=20220309095302">
     <link rel="apple-touch-icon" href="img/ipad@3x.png">
     <script src="../../lib/js/vue.min.2.6.10.js"></script>
 
@@ -32,7 +32,7 @@
             <div class="content">
                 <h1 class="title">iPad 参数大全</h1>
                 <div class="search-bar">
-                    <input type="text" v-model="keyword" placeholder="按格式搜索： air4 / pro1 / ipad6">
+                    <input type="text" v-model="keyword" placeholder="按格式搜索： air5 / pro1 / ipad6">
                 </div>
             </div>
         </div>
@@ -41,7 +41,7 @@
             <div class="copyright">
                 <p>主页：<a class="link" target="_blank" href="https://kylebing.cn/">kylebing.cn</a></p>
                 <p>邮箱：<a class="link" target="_blank" href="mailto:kylebing@163.com">kylebing@163.com</a></p>
-                <p>更新：<a target="_blank"  href="https://en.wikipedia.org/wiki/iPad">2022.03.02</a></p>
+                <p>更新：<a target="_blank"  href="https://en.wikipedia.org/wiki/iPad">2022.03.09</a></p>
             </div>
             <div class="copyright">
                 <p><a class="link" target="_blank" href="https://kylebing.cn/tools/apple-chip">参数大全：苹果处理器</a></p>
@@ -91,7 +91,7 @@
                         :data-index="index">
                         <td>
                             <div class="model-title">
-                                <div class="model">{{iPad.name_short}}</div>
+                                <div :class="['model', {'is-new': iPad.isNew}]">{{iPad.name_short}}</div>
                                 <div class="label label-blue"> {{iPad.screen.size}}'</div>
                             </div>
                         </td>
@@ -241,7 +241,7 @@
 
 </div>
 
-<script src="iPad.js?v=20220302154901"></script>
+<script src="iPad.js?v=20220309095302"></script>
 <script>
     setTimeout(() => {
         if (!/^http:\/\/(a\.kylebing\.cn|localhost|192\.168\.\d{1,3}\.\d{1,3})/i.test(location.href)) {

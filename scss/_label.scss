@@ -1,4 +1,7 @@
+$dot-width: 20px; // 新机型标记的大小
+
 .model-title{ // 模型字体大小
+  position: relative;
   font-size:$fz-big;
   font-weight: bold;
   display: flex;
@@ -7,7 +10,13 @@
   .model{
     font-family: "Galvji";
     margin-right: 10px;
+    &.is-new{
+      text-decoration: underline;
+      color: $green;
+    }
   }
+
+
 }
 $dual-label-types: (
         "cpu": $magenta,

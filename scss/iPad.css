@@ -137,6 +137,7 @@ tt {
 }
 
 .model-title {
+  position: relative;
   font-size: 18px;
   font-weight: bold;
   display: flex;
@@ -146,6 +147,10 @@ tt {
 .model-title .model {
   font-family: "Galvji";
   margin-right: 10px;
+}
+.model-title .model.is-new {
+  text-decoration: underline;
+  color: #00b56b;
 }
 
 .dual-label-cpu {
