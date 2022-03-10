@@ -155,6 +155,29 @@ $color-bg: rgba(255,255,255,0.10);
   }
 }
 
+.links{
+  display: flex;
+  justify-content: center;
+  flex-flow: row nowrap;
+  .link-item{
+    width: 80px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    img{
+      display: block;
+      height: 40px;
+    }
+    h3{
+      margin-top: 3px;
+      font-weight: normal;
+      font-size: 13px;
+      text-align: center;
+    }
+  }
+}
+
 .link{
   &:hover{
     color: $magenta !important;
