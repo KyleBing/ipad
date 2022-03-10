@@ -771,6 +771,11 @@ td p {
   font-size: 13px;
   text-align: center;
 }
+@media (max-width: 768px) {
+  .links {
+    margin-bottom: 20px;
+  }
+}
 
 .link:hover {
   color: #FF2D70 !important;
