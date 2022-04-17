@@ -1020,7 +1020,7 @@ const iPadAir = [
         price: "",
         battery: "28.6 WH",
         mechanicalKeys: ['开关机键','音量增减键'],
-        connector: ['USB-C'],
+        connector: ['USB-C', '智能接点', '磁力接点'],
         pencil: ['Apple Pencil 1', 'Apple Pencil 2'],
         models: [
             // {id: 1, name: "iPad", model: "A2316 (WiFi)", weight: 458},
@@ -1051,7 +1051,7 @@ const iPadAir = [
             ]
         },
         release: "2022-03-18"
-    },
+    }
 ]
 const iPadMini = [
     {
