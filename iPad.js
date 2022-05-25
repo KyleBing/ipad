@@ -1014,7 +1014,7 @@ const iPadAir = [
             core: "8"
         },
         memory: [
-            {name: "", size: "8", type: ""},
+            {name: "", size: "8", type: "LPDDR4X SDRAM"},
         ],
         storage: [64, 256],
         price: "",
@@ -1042,8 +1042,7 @@ const iPadAir = [
                     name: '默认',
                     pixelCount: '1200万, ƒ/1.8',
                     dimension: [
-                        {size: '4k', fps: [24, 30,60]},
-                        {size: '1080p', fps: [30, 60]},
+                        {size: '1080p', fps: [30]},
                     ],
                     zoomRate: '5',
                     hdr: true
