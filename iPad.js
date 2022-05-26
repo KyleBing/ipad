@@ -2093,7 +2093,7 @@ let app = new Vue({
                 })
         },
         websocketInit(){
-            this.websocket = new WebSocket('wss://kylebing.cn:9999')
+            this.websocket = new WebSocket('wss://kylebing.cn/portal/ws')
             this.websocket.onopen = this.websocketOnOpen
             this.websocket.onmessage = this.websocketOnMessage
             this.websocket.onerror = this.websocketOnError
