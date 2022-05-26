@@ -2087,7 +2087,7 @@ let app = new Vue({
         getInitThumbsUpCount(){
             axios.get('../../portal/thumbs-up?key=ipad')
                 .then(res => {
-                    if (res.data && res.data.count){
+                    if (res.data && res.data.data){
                         this.thumbsUpCount = res.data.data
                     }
                 })
