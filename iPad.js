@@ -2012,6 +2012,7 @@ const iPad = [
 let app = new Vue({
     el: "#app",
     data: {
+        heartActive: false,
         thumbsUpCount: 0,
         // full screen 相关
         showFullScreenBtn: false,
@@ -2121,6 +2122,7 @@ let app = new Vue({
 
         sendMessage(key){
             if (this.websocket){
+                this.heartActive = true
                 this.websocket.send(JSON.stringify({
                     key: key
                 }))

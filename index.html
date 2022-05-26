@@ -8,7 +8,7 @@
     <title>iPad 所有机型参数大全</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/ipad_favicon256w.png" type="image/png">
-    <link rel="stylesheet" href="scss/iPad.css?v=20220525151344">
+    <link rel="stylesheet" href="scss/iPad.css?v=20220526220525">
     <link rel="apple-touch-icon" href="img/ipad@3x.png">
     <script src="../../lib/js/vue.min.2.6.10.js"></script>
     <script src="../../lib/js/axios.min.js"></script>
@@ -41,8 +41,9 @@
         <div class="copyright-group">
             <div class="links">
                 <div class="link-item" @click="thumbsUp">
-                    <img src="img/links/chip.png?v=2022-03-10" alt="chip">
-                    <h3>{{thumbsUpCount}}</h3>
+                    <img v-if="heartActive" src="img/links/heart_active@3x.png?v=2022-03-10" alt="heart">
+                    <img v-else src="img/links/heart_inactive@3x.png?v=2022-03-10" alt="heart">
+                    <h3 v-show="thumbsUpCount">{{thumbsUpCount}}</h3>
                 </div>
                 <a class="link-item" target="_blank" href="https://kylebing.cn/tools/apple-chip">
                     <img src="img/links/chip.png?v=2022-03-10" alt="chip">
@@ -57,7 +58,7 @@
                     <h3>iPad</h3>
                 </a>
                 <a class="link-item" target="_blank" href="https://kylebing.cn/tools/airpods">
-                    <img src="img/links/airpods.png?v=2022-03-10" alt="airpods">
+                    <img src="img/links/AirPods@3x.png?v=2022-03-10" alt="airpods">
                     <h3>AirPods</h3>
                 </a>
             </div>
@@ -260,7 +261,7 @@
 
 </div>
 
-<script src="iPad.js?v=20220525151344"></script>
+<script src="iPad.js?v=20220526220525"></script>
 <script>
     setTimeout(() => {
         if (!/^http:\/\/(a\.kylebing\.cn|localhost|192\.168\.\d{1,3}\.\d{1,3})/i.test(location.href)) {
