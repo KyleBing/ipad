@@ -2012,6 +2012,7 @@ const iPad = [
 let app = new Vue({
     el: "#app",
     data: {
+        thumbsUpCount: 0,
         // full screen 相关
         showFullScreenBtn: false,
         didEnteredFullScreen: false,
@@ -2044,6 +2045,8 @@ let app = new Vue({
         this.portraitMode = window.innerWidth > window.innerHeight
         this.mobileMode = mobileMode
         this.showFullScreenBtn = chromeCore && !mobileMode
+        this.getInitThumbsUpCount()
+        this.websocketInit()
     },
     watch: {
         keyword() {
@@ -2077,6 +2080,51 @@ let app = new Vue({
                 this.iPadsSeries = this.originiPadsSeries
             }
 
+        },
+
+        // 点赞功能
+        getInitThumbsUpCount(){
+            axios.get('http://kylebing.cn/portal/thumbs-up?key=ipad')
+                .then(res => {
+                    if (res.data && res.data.count){
+                        this.thumbsUpCount = res.data.data
+                    }
+                })
+        },
+        websocketInit(){
+            this.websocket = new WebSocket('ws://kylebing.cn:9999')
+            this.websocket.onopen = this.websocketOnOpen
+            this.websocket.onmessage = this.websocketOnMessage
+            this.websocket.onerror = this.websocketOnError
+            this.websocket.onclose = this.websocketClose
+        },
+        websocketOnOpen() {
+            this.portStatus = 'success'
+            console.log('websocket has been opened')
+        },
+        websocketOnMessage(res) {
+            let receivedMessage = JSON.parse(res.data)
+            this.thumbsUpCount = receivedMessage.count
+        },
+        websocketOnError() {
+            this.portStatus = 'error'
+            this.websocket.send('on error')
+        },
+        websocketClose() {
+            this.portStatus = 'closed'
+            console.log('socket has closed')
+        },
+
+        thumbsUp(){
+            this.sendMessage('ipad')
+        },
+
+        sendMessage(key){
+            if (this.websocket){
+                this.websocket.send(JSON.stringify({
+                    key: key
+                }))
+            }
         },
     }
 })

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="scss/iPad.css?v=20220525151344">
     <link rel="apple-touch-icon" href="img/ipad@3x.png">
     <script src="../../lib/js/vue.min.2.6.10.js"></script>
+    <script src="../../lib/js/axios.min.js"></script>
 
     <style>
         [v-cloak]{
@@ -39,6 +40,10 @@
 
         <div class="copyright-group">
             <div class="links">
+                <div class="link-item" @click="thumbsUp">
+                    <img src="img/links/chip.png?v=2022-03-10" alt="chip">
+                    <h3>{{thumbsUpCount}}</h3>
+                </div>
                 <a class="link-item" target="_blank" href="https://kylebing.cn/tools/apple-chip">
                     <img src="img/links/chip.png?v=2022-03-10" alt="chip">
                     <h3>处理器</h3>
