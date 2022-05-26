@@ -2012,6 +2012,7 @@ const iPad = [
 let app = new Vue({
     el: "#app",
     data: {
+        thumbsUpKey: 'ipad',
         heartActive: false,
         thumbsUpCount: 0,
         // full screen 相关
@@ -2085,7 +2086,7 @@ let app = new Vue({
 
         // 点赞功能
         getInitThumbsUpCount(){
-            axios.get('../../portal/thumbs-up?key=ipad')
+            axios.get('../../portal/thumbs-up?key=' + this.thumbsUpKey)
                 .then(res => {
                     if (res.data && res.data.data){
                         this.thumbsUpCount = res.data.data
@@ -2117,7 +2118,7 @@ let app = new Vue({
         },
 
         thumbsUp(){
-            this.sendMessage('ipad')
+            this.sendMessage(this.thumbsUpKey)
         },
 
         sendMessage(key){
