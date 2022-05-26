@@ -190,6 +190,11 @@ $color-bg: rgba(255,255,255,0.10);
   }
 }
 
+.thumbs-up{
+  @include transform(translateY(2px));
+  cursor: pointer;
+}
+
 @media (max-width: 768px){
   .search-bar{
     display: none;
