@@ -2012,6 +2012,7 @@ const iPad = [
 let app = new Vue({
     el: "#app",
     data: {
+        pingPongInterval: null,
         thumbsUpKey: 'ipad',
         heartActive: false,
         thumbsUpCount: 0,
@@ -2109,7 +2110,6 @@ let app = new Vue({
         },
         websocketOnMessage(res) {
             let receivedMessage = JSON.parse(res.data)
-            this.thumbsUpCount = receivedMessage.count
             switch (receivedMessage.type){
                 case WSMessage.type.heartBeat:
                     break;
@@ -2134,11 +2134,11 @@ let app = new Vue({
         },
 
         sendMessage(key){
-            if (this.websocket){
-                this.heartActive = true
-                this.websocket.send(JSON.stringify({
+            if (this.websocket) {
+                let message = new WSMessage(WSMessage.type.thumbsUp, {
                     key: key
-                }))
+                })
+                this.websocket.send(JSON.stringify(message))
             }
         },
     }
