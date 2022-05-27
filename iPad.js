@@ -2012,6 +2012,9 @@ const iPad = [
 let app = new Vue({
     el: "#app",
     data: {
+        // date
+        dateEnd: '2022.05.27',
+        // thumb up
         pingPongInterval: null,
         thumbsUpKey: 'ipad',
         heartActive: false,
@@ -2135,6 +2138,7 @@ let app = new Vue({
 
         sendMessage(key){
             if (this.websocket) {
+                this.heartActive = true
                 let message = new WSMessage(WSMessage.type.thumbsUp, {
                     key: key
                 })
