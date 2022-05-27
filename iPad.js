@@ -2102,11 +2102,23 @@ let app = new Vue({
         },
         websocketOnOpen() {
             this.portStatus = 'success'
-            console.log('websocket has been opened')
+            this.pingPongInterval = setInterval(()=>{
+                let message = new WSMessage(WSMessage.type.heartBeat, 'ping')
+                this.websocket.send(JSON.stringify(message))
+            }, 10000)
         },
         websocketOnMessage(res) {
             let receivedMessage = JSON.parse(res.data)
             this.thumbsUpCount = receivedMessage.count
+            switch (receivedMessage.type){
+                case WSMessage.type.heartBeat:
+                    break;
+                case WSMessage.type.thumbsUp:
+                    if (receivedMessage.content.key === this.thumbsUpKey){
+                        this.thumbsUpCount = receivedMessage.content.count
+                    }
+                    break;
+            }
         },
         websocketOnError() {
             this.portStatus = 'error'
@@ -2131,6 +2143,17 @@ let app = new Vue({
         },
     }
 })
+
+class WSMessage{
+    constructor(type, content) {
+        this.type = type
+        this.content = content
+    }
+    static type = {
+        thumbsUp: 'thumbs-up',
+        heartBeat: 'heart-beat',
+    }
+}
 
 
 document.addEventListener('touchstart', () => {
