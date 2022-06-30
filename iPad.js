@@ -2107,8 +2107,22 @@ let app = new Vue({
         websocketOnOpen() {
             this.portStatus = 'success'
             this.pingPongInterval = setInterval(()=>{
-                let message = new WSMessage(WSMessage.type.heartBeat, 'ping')
-                this.websocket.send(JSON.stringify(message))
+                if (this.websocket){
+                    switch (this.websocket.readyState){
+                        case 0: // connecting
+                            break;
+                        case 1: // open
+                            let message = new WSMessage(WSMessage.type.heartBeat, 'ping')
+                            this.websocket.send(JSON.stringify(message))
+                            break;
+                        case 2:  // closing
+                            clearInterval(this.pingPongInterval)
+                            break;
+                        case 3: // closed
+                            clearInterval(this.pingPongInterval)
+                            break;
+                    }
+                }
             }, 10000)
         },
         websocketOnMessage(res) {
