@@ -27,6 +27,7 @@ const iPadPro = [
             init: "iOS 9.3",
             last: lastOS
         },
+        geekbench_score: 1175,
         cpu: {
             model: 'A9X',
             rate: '2.26',
@@ -90,6 +91,7 @@ const iPadPro = [
             init: "iOS 9.1",
             last: lastOS
         },
+        geekbench_score: 1188,
         cpu: {
             model: 'A9X',
             rate: '2.26',
@@ -152,6 +154,7 @@ const iPadPro = [
             init: "iOS 9.1",
             last: lastOS
         },
+        geekbench_score: 2263,
         cpu: {
             model: 'A10X',
             rate: '2.36',
@@ -215,6 +218,7 @@ const iPadPro = [
             init: "iOS 10.3.2",
             last: lastOS
         },
+        geekbench_score: 2276,
         cpu: {
             model: 'A10X',
             rate: '2.36',
@@ -281,6 +285,7 @@ const iPadPro = [
             init: "iOS 12.1",
             last: lastOS
         },
+        geekbench_score: 4622,
         cpu: {
             model: 'A12X',
             rate: '2.36',
@@ -350,6 +355,7 @@ const iPadPro = [
             init: "iOS 12.1",
             last: lastOS
         },
+        geekbench_score: 4768,
         cpu: {
             model: 'A12X',
             rate: '2.36',
@@ -420,6 +426,7 @@ const iPadPro = [
             init: "iPadOS 13.4",
             last: lastOS
         },
+        geekbench_score: 4649,
         cpu: {
             model: 'A12Z',
             rate: '2.49',
@@ -499,6 +506,7 @@ const iPadPro = [
             init: "iPadOS 13.4",
             last: lastOS
         },
+        geekbench_score: 4664,
         cpu: {
             model: 'A12Z',
             rate: '2.49',
@@ -579,6 +587,7 @@ const iPadPro = [
             init: "iPadOS 14.5",
             last: lastOS
         },
+        geekbench_score: 7211,
         cpu: {
             model: 'M1',
             rate: '3.2',
@@ -660,6 +669,7 @@ const iPadPro = [
             init: "iPadOS 14.5",
             last: lastOS
         },
+        geekbench_score: 7214,
         cpu: {
             model: 'M1',
             rate: '3.2',
@@ -743,6 +753,7 @@ const iPadAir = [
             init: "iOS 7.0.3",
             last: "iOS 12.4.5"
         },
+        geekbench_score: 530,
         cpu: {
             model: 'A7',
             rate: '1.4',
@@ -806,6 +817,7 @@ const iPadAir = [
             init: "iOS 8.1",
             last: lastOS
         },
+        geekbench_score: 1055,
         cpu: {
             model: 'A8X',
             rate: '1.5',
@@ -869,6 +881,7 @@ const iPadAir = [
             init: "iOS 12.1.4",
             last: lastOS
         },
+        geekbench_score: 2838,
         cpu: {
             model: 'A12',
             rate: '2.49',
@@ -935,6 +948,7 @@ const iPadAir = [
             init: "iPadOS 14",
             last: lastOS
         },
+        geekbench_score: 4206,
         cpu: {
             model: 'A14',
             rate: '2.99',
@@ -1004,6 +1018,7 @@ const iPadAir = [
             init: "iPadOS 15",
             last: lastOS
         },
+        geekbench_score: 7128,
         cpu: {
             model: 'M1',
             rate: '3.20',
@@ -1074,6 +1089,7 @@ const iPadMini = [
             init: "iOS 6.0",
             last: "iOS 9.3.6"
         },
+        geekbench_score: 0,
         cpu: {
             model: 'A5',
             rate: '1',
@@ -1139,6 +1155,7 @@ const iPadMini = [
             init: "iOS 7.0",
             last: "iOS 12.4.5"
         },
+        geekbench_score: 490,
         cpu: {
             model: 'A7',
             rate: '1.3',
@@ -1205,6 +1222,7 @@ const iPadMini = [
             init: "iOS 8.1",
             last: "iOS 12.4.5"
         },
+        geekbench_score: 489,
         cpu: {
             model: 'A7',
             rate: '1.3',
@@ -1271,6 +1289,7 @@ const iPadMini = [
             init: "iOS 9.0",
             last: lastOS
         },
+        geekbench_score: 664,
         cpu: {
             model: 'A8',
             rate: '1.5',
@@ -1335,6 +1354,7 @@ const iPadMini = [
             init: "iOS 12.1.4",
             last: lastOS
         },
+        geekbench_score: 2717,
         cpu: {
             model: 'A12',
             rate: '2.49',
@@ -1401,6 +1421,7 @@ const iPadMini = [
             init: "iPadOS 15",
             last: lastOS
         },
+        geekbench_score: 4455,
         cpu: {
             model: 'A15',
             rate: '2.93',
@@ -1467,6 +1488,7 @@ const iPad = [
             init: "iPhoneOS 3.2",
             last: "iOS 5.1.1"
         },
+        geekbench_score: 0,
         cpu: {
             model: 'A4',
             rate: '1',
@@ -1515,6 +1537,7 @@ const iPad = [
             init: "iOS 4.2.1",
             last: "iOS 9.3.6"
         },
+        geekbench_score: 0,
         cpu: {
             model: 'A5',
             rate: '1',
@@ -1578,6 +1601,7 @@ const iPad = [
             init: "iOS 5.1",
             last: "iOS 9.3.6"
         },
+        geekbench_score: 0,
         cpu: {
             model: 'A5X',
             rate: '1',
@@ -1641,6 +1665,7 @@ const iPad = [
             init: "iOS 6.0",
             last: "iOS 10.3.4"
         },
+        geekbench_score: 0,
         cpu: {
             model: 'A6X',
             rate: '1.4',
@@ -1706,6 +1731,7 @@ const iPad = [
             init: "iOS 10.3",
             last: lastOS
         },
+        geekbench_score: 1020,
         cpu: {
             model: 'A9',
             rate: '1.85',
@@ -1770,6 +1796,7 @@ const iPad = [
             init: "iOS 11.3",
             last: lastOS
         },
+        geekbench_score: 1397,
         cpu: {
             model: 'A10',
             rate: '2.34',
@@ -1834,6 +1861,7 @@ const iPad = [
             init: "iOS 13.3",
             last: lastOS
         },
+        geekbench_score: 1384,
         cpu: {
             model: 'A10',
             rate: '2.34',
@@ -1899,6 +1927,7 @@ const iPad = [
             init: "iPadOS",
             last: lastOS
         },
+        geekbench_score: 2501,
         cpu: {
             model: 'A12',
             rate: '2.49',
@@ -1963,6 +1992,7 @@ const iPad = [
             init: "iPadOS 15",
             last: lastOS
         },
+        geekbench_score: 3310,
         cpu: {
             model: 'A13',
             rate: '2.65',
@@ -2013,7 +2043,7 @@ let app = new Vue({
     el: "#app",
     data: {
         // date
-        dateEnd: '2022.05.27',
+        dateEnd: '2022.07.04',
         // thumb up
         pingPongInterval: null,
         thumbsUpKey: 'ipad',
@@ -2159,6 +2189,17 @@ let app = new Vue({
                 this.websocket.send(JSON.stringify(message))
             }
         },
+    },
+    computed: {
+        maxScore(){
+            let max = 0
+            iPad.concat(iPadPro, iPadAir, iPadMini).forEach(item => {
+                if (max < item.geekbench_score) {
+                    max = item.geekbench_score
+                }
+            })
+            return max
+        }
     }
 })
 

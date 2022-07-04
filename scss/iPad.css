@@ -496,6 +496,24 @@ tbody tr.active .gpu .model {
   border: 1px solid #00b56b;
 }
 
+.score-bar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 20px;
+}
+.score-bar .bar {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  height: 8px;
+  background: linear-gradient(135deg, #049cb7, #3dd9bd);
+}
+.score-bar .score {
+  margin-left: 3px;
+  font-size: 12px;
+}
+
 /* Table */
 .table-wrapper {
   overflow-x: auto;
