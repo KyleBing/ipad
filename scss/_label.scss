@@ -208,7 +208,7 @@ tbody tr.active {
   height: 20px;
   .bar{
     @include border-radius(2px);
-    height: 8px;
+    height: 5px;
     background: $gradient-bg-green
   }
   .score{

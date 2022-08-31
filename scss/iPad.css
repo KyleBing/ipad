@@ -506,7 +506,7 @@ tbody tr.active .gpu .model {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  height: 8px;
+  height: 5px;
   background: linear-gradient(135deg, #049cb7, #3dd9bd);
 }
 .score-bar .score {
