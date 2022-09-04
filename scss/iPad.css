@@ -628,16 +628,13 @@ td p {
 .about-header .content {
   flex-grow: 1;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
   margin-left: 30px;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: flex-start;
+  align-items: center;
 }
-.about-header .content p {
-  margin-bottom: 5px;
-}
-.about-header .content p:last-child {
-  margin-bottom: 0;
+.about-header .content .title {
+  font-size: 30px;
 }
 @media (max-width: 768px) {
   .about-header {
@@ -647,7 +644,11 @@ td p {
     display: none;
   }
   .about-header .content {
-    margin-left: 5px;
+    flex-flow: column nowrap;
+    margin-left: 0;
+  }
+  .about-header .content .thumbs-up {
+    padding: 15px 0;
   }
   .about-header .content .title {
     width: 100%;
@@ -662,6 +663,8 @@ td p {
 @media (max-width: 768px) {
   .copyright-group {
     flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -671,31 +674,28 @@ td p {
   padding: 10px 15px;
   justify-content: space-between;
   line-height: 1.4;
-  font-size: 12px;
+  font-size: 11px;
   letter-spacing: 0.5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.1);
-}
-.author-info p {
-  color: rgba(255, 255, 255, 0.7);
 }
 .author-info p:last-child {
   margin-bottom: 0;
 }
 @media (max-width: 768px) {
   .author-info {
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
+    padding: 15px 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.05);
     border: none;
     margin: 0 0 10px;
   }
 }
 .author-info .link:hover {
-  color: #00A5FF !important;
+  color: white !important;
 }
 .author-info .link:active {
   transform: translateY(2px);
@@ -720,12 +720,15 @@ td p {
   display: block;
   height: 40px;
 }
-.share-links .link-item:hover {
+.share-links .link-item[href]:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
 @media (max-width: 768px) {
   .share-links {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+  }
+  .share-links .link-item {
+    padding: 10px 0;
   }
 }
 
@@ -1169,6 +1172,15 @@ td p {
   color: white;
 }
 
+@media (max-width: 768px) {
+  .filter-list .iphone-tag-list .iphone-tag {
+    font-size: 14px;
+    padding: 5px 10px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+  }
+}
 body {
   font-size: 14px;
 }

@@ -32,3 +32,15 @@
     }
   }
 }
+
+@media (max-width: 768px){
+  .filter-list{
+    .iphone-tag-list{
+      .iphone-tag{
+        font-size: 14px;
+        padding: 5px 10px;
+        @include border-radius(6px);
+      }
+    }
+  }
+}

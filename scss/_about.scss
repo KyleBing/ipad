@@ -1,5 +1,3 @@
-$color-bg: rgba(255,255,255,0.10);
-
 
 // 关于
 .about{
@@ -23,6 +21,7 @@ $color-bg: rgba(255,255,255,0.10);
     flex-flow: column nowrap;
   }
 }
+
 .about-header{
   display: flex;
   justify-content: space-between;
@@ -38,15 +37,12 @@ $color-bg: rgba(255,255,255,0.10);
   .content{
     flex-grow: 1;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row nowrap;
     margin-left: 30px;
-    justify-content: center;
-    align-items: flex-start;
-    p{
-      margin-bottom: 5px;
-      &:last-child{
-        margin-bottom: 0;
-      }
+    justify-content: flex-start;
+    align-items: center;
+    .title{
+      font-size: $fz-title;
     }
   }
 
@@ -56,7 +52,11 @@ $color-bg: rgba(255,255,255,0.10);
       display: none;
     }
     .content{
-      margin-left: 5px;
+      flex-flow: column nowrap;
+      margin-left: 0;
+      .thumbs-up{
+        padding: 15px 0;
+      }
       .title{
         width: 100%;
         text-align: center;
@@ -69,6 +69,8 @@ $color-bg: rgba(255,255,255,0.10);
   justify-content: space-between;
   @media (max-width: 768px){
     flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
   }
 }
 .author-info{
@@ -77,18 +79,17 @@ $color-bg: rgba(255,255,255,0.10);
   padding: 10px 15px;
   justify-content: space-between;
   line-height: 1.4;
-  font-size: 12px;
+  font-size: 11px;
   letter-spacing: 0.5px;
   @include border-radius(5px);
-  background-color: $color-bg;
   p{
-    color: rgba(255,255,255,0.7);
     &:last-child{
       margin-bottom: 0;
     }
   }
   @media (max-width: 768px){
-    @include border-radius(3px);
+    padding: 15px 20px;
+    @include border-radius(5px);
     background-color: rgba(255,255,255,0.05);
     border: none;
     margin: 0 0 10px;
@@ -96,13 +97,12 @@ $color-bg: rgba(255,255,255,0.10);
 
   .link{
     &:hover{
-      color: $color-main !important;
+      color: white !important;
     }
     &:active{
       transform: translateY(2px);
     }
   }
-
 }
 
 .share-links{
@@ -120,12 +120,15 @@ $color-bg: rgba(255,255,255,0.10);
       display: block;
       height: 40px;
     }
-    &:hover{
+    &[href]:hover{
       background-color: transparentize(black, 0.8);
     }
   }
   @media (max-width: 768px){
-    margin-bottom: 20px;
+    .link-item{
+      padding: 10px 0;
+    }
+    margin-bottom: 30px;
   }
 }
 
