@@ -2056,10 +2056,11 @@ let app = new Vue({
         portraitMode: false,
         mobileMode: false,
 
-        keyword: '',
-        keywordArray: [],
+        // 机型信息筛选
+        selectedNames: [], // 已选中的名字
+        deviceMap: new Map(),
 
-        latesOS: lastOS,
+        latestOS: lastOS,
         allIpads: iPadPro.reverse().concat(iPadAir.reverse(), iPadMini.reverse(), iPad.reverse()),
         iPadsSeries: [
             {title: "iPad Pro", iPads: iPadPro},
@@ -2083,39 +2084,45 @@ let app = new Vue({
         this.showFullScreenBtn = chromeCore && !mobileMode
         this.getInitThumbsUpCount()
         this.websocketInit()
-    },
-    watch: {
-        keyword() {
-            this.filterIpads()
-        }
+
+        this.generateDeviceMap()
     },
     methods: {
+        generateDeviceMap(){
+            this.allIpads.forEach(ipadInfo => {
+                this.deviceMap.set(ipadInfo.name, ipadInfo)
+            })
+        },
+
+        // 筛选手机信息
+        filterTagToggle(deviceName){
+            if (this.selectedNames.includes(deviceName)){
+                this.selectedNames.splice(this.selectedNames.indexOf(deviceName), 1)
+            } else {
+                this.selectedNames.push(deviceName)
+            }
+            this.updateShowingDevices()
+
+        },
+        updateShowingDevices(){
+            let filterIpads = this.selectedNames.map(name => this.deviceMap.get(name))
+            this.iPadsSeries = [
+                {
+                    title: '筛选结果',
+                    iPads: filterIpads
+                }
+            ]
+            if (filterIpads.length === 0){
+                this.iPadsSeries = this.originiPadsSeries
+            }
+            this.iPadsSeries.push(this.originiPadsSeries[0])
+            this.iPadsSeries.pop()
+        },
+
+
         // 全屏显示
         enterFullScreen() {
             document.documentElement.requestFullscreen()
-        },
-        filterIpads() {
-            if (this.keyword) {
-                let finalKeyword = this.keyword.replace(/ /ig, '')
-                this.keywordArray = finalKeyword.split('/')
-                let tempCollection = []
-                this.keywordArray.forEach(name => {
-                    this.allIpads.forEach(ipad => {
-                        let nameShort = ipad.name_short.replace(/ /ig, '')
-                        let reg = new RegExp(name, 'ig')
-                        if (reg.test(nameShort)) {
-                            tempCollection.push(ipad)
-                        }
-                    })
-                })
-                this.iPadsSeries = [{
-                    title: this.keywordArray.join(', '),
-                    iPads: tempCollection
-                }]
-            } else {
-                this.iPadsSeries = this.originiPadsSeries
-            }
-
         },
 
         // 点赞功能

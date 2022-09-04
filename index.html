@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/ipad_favicon256w.png" type="image/png">
     <link rel="stylesheet" href="scss/iPad.css?v=20220831115325">
-    <link rel="apple-touch-icon" href="img/ipad@3x.png">
+    <link rel="apple-touch-icon" href="img/links/ipad_white@2x.png">
     <script src="../../lib/js/vue.min.2.6.10.js"></script>
     <script src="../../lib/js/axios.min.js"></script>
 
@@ -27,42 +27,36 @@
     <div class="about gradient">
         <div class="about-header">
             <div class="icon">
-                <img style="display: none;" src="img/ipad@3x.png" alt="for 知乎链接图标抓取">
-                <img src="img/ipad_white@3x.png" alt="">
+                <img style="display: none;" src="img/links/ipad_white@2x.png" alt="for 知乎链接图标抓取">
+                <img src="img/links/ipad_white@2x.png" alt="logo ipad">
             </div>
             <div class="content">
                 <h1 class="title">iPad 参数大全</h1>
-                <div class="search-bar">
-                    <input type="text" v-model="keyword" placeholder="按格式搜索： air5 / pro1 / ipad6">
-                </div>
+            </div>
+            <div class="link-item thumbs-up" @click="thumbsUp">
+                <img v-if="heartActive" src="img/links/heart_active@1x.png?v=2022-09-04" alt="heart">
+                <img v-else src="img/links/heart_inactive@1x.png?v=2022-09-04" alt="heart">
+                <p v-show="thumbsUpCount" class="multiply">×</p>
+                <h3 v-show="thumbsUpCount">{{thumbsUpCount}}</h3>
             </div>
         </div>
 
         <div class="copyright-group">
-            <div class="links">
-                <div class="link-item thumbs-up" @click="thumbsUp">
-                    <img v-if="heartActive" src="img/links/heart_active@3x.png?v=2022-03-10" alt="heart">
-                    <img v-else src="img/links/heart_inactive@3x.png?v=2022-03-10" alt="heart">
-                    <h3 v-show="thumbsUpCount">{{thumbsUpCount}}</h3>
-                </div>
+            <div class="share-links">
                 <a class="link-item" target="_blank" href="https://kylebing.cn/tools/apple-chip">
-                    <img src="img/links/chip.png?v=2022-03-10" alt="chip">
-                    <h3>处理器</h3>
+                    <img src="img/links/chip_white@2x.png?v=2022-09-04" alt="chip">
                 </a>
                 <a class="link-item" target="_blank" href="https://kylebing.cn/tools/iphone">
-                    <img src="img/links/iphone.png?v=2022-03-10" alt="phone">
-                    <h3>iPhone</h3>
+                    <img src="img/links/iphone_white@2x.png?v=2022-09-04" alt="phone">
                 </a>
                 <a class="link-item">
-                    <img src="img/links/iapd.png?v=2022-03-10" alt="ipad">
-                    <h3>iPad</h3>
+                    <img src="img/links/ipad_white@2x.png?v=2022-09-04" alt="ipad">
                 </a>
                 <a class="link-item" target="_blank" href="https://kylebing.cn/tools/airpods">
-                    <img src="img/links/AirPods@3x.png?v=2022-03-10" alt="airpods">
-                    <h3>AirPods</h3>
+                    <img src="img/links/airpods_white@2x.png?v=2022-09-04" alt="airpods">
                 </a>
             </div>
-            <div class="copyright">
+            <div class="author-info">
                 <p>主页：<a class="link" target="_blank" href="https://kylebing.cn/">kylebing.cn</a></p>
                 <p>Q群：<a class="link" target="_blank" href="https://jq.qq.com/?_wv=1027&k=Z8E0HrWA">920084833</a></p>
                 <p>更新：<a target="_blank"  href="https://en.wikipedia.org/wiki/iPad">{{dateEnd}}</a></p>
@@ -70,6 +64,17 @@
 
         </div>
     </div>
+
+    <!-- FILTER LIST-->
+    <div class="filter-list">
+        <div class="iphone-tag-list">
+            <div :class="['iphone-tag', {active: selectedNames.includes(item.name)}]"
+                 v-for="item in allIpads" :key="item.name_short"
+                 @click="filterTagToggle(item.name)"
+            ><span>{{item.name_short}}</span> - <span class="text-small text-narrow light-gray">{{item.screen.size}}</span></div>
+        </div>
+    </div>
+
 
     <div class="series-list">
         <div class="series" v-for="(series, index) in iPadsSeries" :key="index">
@@ -229,7 +234,7 @@
                         <!-- OS -->
                         <td class="text-small">
                             <p>初始：{{iPad.os.init}}</p>
-                            <p>最终：<span :class="{'green text-bold': iPad.os.last === latesOS}">{{iPad.os.last}}</span></p>
+                            <p>最终：<span :class="{'green text-bold': iPad.os.last === latestOS}">{{iPad.os.last}}</span></p>
                         </td>
                         <td class="text-small text-narrow">
                             <p v-for="model in iPad.models" :key="model.id">

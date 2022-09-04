@@ -40,8 +40,8 @@ tt {
 
 ::-webkit-scrollbar {
   z-index: 50;
-  width: 8px;
-  height: 10px;
+  width: 3px;
+  height: 3px;
 }
 
 ::-webkit-scrollbar-track {
@@ -588,77 +588,27 @@ td p {
   margin-bottom: 2px;
 }
 
-.search-bar {
-  width: 20rem;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-.search-bar input {
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  width: 100%;
-  padding: 5px 8px;
+.about {
+  font-family: "Galvji";
   color: white;
-  transition: all 0.5s;
-}
-.search-bar input::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.5);
-}
-.search-bar input:focus {
-  border-color: rgba(255, 255, 255, 0.8);
-}
-.search-bar input:focus::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.hands-up {
-  position: relative;
-}
-.hands-up-trigger {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: pointer;
-  padding: 5px 10px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  background-color: rgba(255, 255, 255, 0.1);
-}
-.hands-up-trigger.active {
-  background-color: rgba(255, 255, 255, 0.5);
-}
-.hands-up-trigger:hover {
-  border-color: rgba(255, 255, 255, 0.5);
-}
-.hands-up-panel {
-  -webkit-box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.2);
-  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.2);
-  padding: 20px 25px;
-  color: #9e9e9e;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  border-radius: 8px;
-  left: 120%;
-  top: -50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  padding: 15px 35px;
   background-color: white;
-  position: absolute;
 }
-.hands-up-panel p {
-  white-space: nowrap;
+.about a {
+  color: white;
 }
-.hands-up-panel code {
-  color: #007AFF;
-  font-weight: bold;
+.about a:hover {
+  text-decoration: underline;
 }
 @media (max-width: 768px) {
-  .hands-up {
-    display: none;
+  .about {
+    align-items: stretch;
+    padding: 35px 25px 25px;
+    flex-flow: column nowrap;
   }
 }
 
@@ -673,13 +623,13 @@ td p {
   padding-left: 30px;
 }
 .about-header .icon img {
-  width: 60px;
+  height: 50px;
 }
 .about-header .content {
   flex-grow: 1;
   display: flex;
   flex-flow: column nowrap;
-  margin-left: 50px;
+  margin-left: 30px;
   justify-content: center;
   align-items: flex-start;
 }
@@ -705,29 +655,6 @@ td p {
   }
 }
 
-.about {
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 12px;
-  padding: 35px;
-  background-color: white;
-}
-.about a {
-  color: white;
-}
-.about a:hover {
-  text-decoration: underline;
-}
-@media (max-width: 768px) {
-  .about {
-    align-items: stretch;
-    padding: 35px 25px 25px;
-    flex-flow: column nowrap;
-  }
-}
-
 .copyright-group {
   display: flex;
   justify-content: space-between;
@@ -738,11 +665,12 @@ td p {
   }
 }
 
-.copyright {
+.author-info {
+  font-family: "Galvji";
   margin-left: 30px;
   padding: 10px 15px;
   justify-content: space-between;
-  line-height: 1.5;
+  line-height: 1.4;
   font-size: 12px;
   letter-spacing: 0.5px;
   -webkit-border-radius: 5px;
@@ -750,14 +678,14 @@ td p {
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.1);
 }
-.copyright p {
+.author-info p {
   color: rgba(255, 255, 255, 0.7);
 }
-.copyright p:last-child {
+.author-info p:last-child {
   margin-bottom: 0;
 }
 @media (max-width: 768px) {
-  .copyright {
+  .author-info {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -766,49 +694,64 @@ td p {
     margin: 0 0 10px;
   }
 }
+.author-info .link:hover {
+  color: #00A5FF !important;
+}
+.author-info .link:active {
+  transform: translateY(2px);
+}
 
-.links {
+.share-links {
   display: flex;
   justify-content: center;
   flex-flow: row nowrap;
 }
-.links .link-item {
-  width: 80px;
+.share-links .link-item {
+  width: 70px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
 }
-.links .link-item img {
+.share-links .link-item img {
   display: block;
   height: 40px;
 }
-.links .link-item h3 {
-  margin-top: 8px;
-  font-weight: normal;
-  font-size: 13px;
-  text-align: center;
+.share-links .link-item:hover {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 @media (max-width: 768px) {
-  .links {
+  .share-links {
     margin-bottom: 20px;
   }
 }
 
-.link:hover {
-  color: #FF2D70 !important;
-}
-.link:active {
-  transform: translateY(2px);
-}
-
 .thumbs-up {
+  width: 120px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap !important;
   -webkit-transform: translateY(2px);
   -moz-transform: translateY(2px);
   -ms-transform: translateY(2px);
   -o-transform: translateY(2px);
   transform: translateY(2px);
   cursor: pointer;
+}
+.thumbs-up img {
+  height: 30px !important;
+}
+.thumbs-up .multiply {
+  padding: 0 4px;
+}
+.thumbs-up h3 {
+  font-weight: normal;
+  font-size: 12px;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -842,7 +785,7 @@ td p {
   align-items: center;
 }
 .camera .dimension .dimension-item .size {
-  color: #9e9e9e;
+  color: #888;
   text-align: right;
   width: 50px;
   margin-right: 5px;
@@ -1185,6 +1128,45 @@ td p {
 
 .p-7 {
   padding: 70px !important;
+}
+
+.filter-list {
+  padding: 10px 30px 5px;
+  background-color: rgba(106, 114, 130, 0.1);
+}
+.filter-list .iphone-tag-list {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding: 10px;
+}
+.filter-list .iphone-tag-list .iphone-tag {
+  border: 1px solid #dadada;
+  font-family: "Galvji";
+  background-color: white;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 3px 8px;
+  margin-right: 5px;
+  line-height: 1.3;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #404040;
+}
+.filter-list .iphone-tag-list .iphone-tag:hover {
+  background-color: #eeeeee;
+}
+.filter-list .iphone-tag-list .iphone-tag.active {
+  background-color: #6a7282;
+  border-color: transparent;
+  color: white;
 }
 
 body {

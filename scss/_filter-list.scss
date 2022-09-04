@@ -1,0 +1,34 @@
+.filter-list{
+  padding: 10px 30px 5px;
+  background-color: transparentize(#6a7282, 0.9);
+  .iphone-tag-list{
+    @include border-radius(10px);
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    padding: 10px;
+    .iphone-tag{
+      border: 1px solid $color-border;
+      font-family: "Galvji";
+      background-color: white;
+      white-space: nowrap;
+      margin-bottom: 5px;
+      font-size: 13px;
+      cursor: pointer;
+      padding: 3px 8px;
+      margin-right: 5px;
+      line-height: 1.3;
+      @include border-radius(3px);
+      color: $text-main;
+      &:hover{
+        background-color: $bg-highlight;
+      }
+      &.active{
+        background-color: #6a7282;
+        border-color: transparent;
+        color: white;
+      }
+    }
+  }
+}

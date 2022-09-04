@@ -1,67 +1,28 @@
 $color-bg: rgba(255,255,255,0.10);
 
-.search-bar{
-  width: 20rem;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  input{
-    @include border-radius(2px);
-    background-color: transparent;
-    border: 1px solid rgba(white, 0.3);
-    width: 100%;
-    padding: 5px 8px;
-    color: white;
-    transition: all 0.5s;
-    &::-webkit-input-placeholder{
-      color: rgba(255,255,255,0.5);
-    }
-    &:focus{
-      border-color: rgba(white, 0.8);
-      &::-webkit-input-placeholder{
-        color: rgba(255,255,255,0.8);
-      }
-    }
-  }
-}
 
-.hands-up{
-  position: relative;
-  &-trigger{
-    @include unselectable;
-    cursor: pointer;
-    padding: 5px 10px;
-    @include border-radius(2px);
-    background-color: $color-bg;
-    &.active{
-      background-color:transparentize(white, 0.5);
-    }
+// 关于
+.about{
+  font-family: 'Galvji';
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  padding: 15px 35px;
+  background-color: white;
+  a{
     &:hover{
-      border-color: transparentize(white, 0.5);
+      text-decoration: underline;
     }
+    color: white;
   }
-  &-panel{
-    @include box-shadow(2px 3px 10px rgba(0,0,0,0.2));
-    padding: 20px 25px;
-    color: $text-label;
-    @include border-radius(8px);
-    left: 120%;
-    top: -50%;
-    background-color: white;
-    position: absolute;
-    p{
-      white-space: nowrap;
-    }
-    code{
-      color: $blue;
-      font-weight: bold;
-    }
-  }
-
-  @media (max-width: 768px) {
-    display: none;
+  @media (max-width: 768px){
+    align-items: stretch;
+    padding: 35px 25px 25px;
+    flex-flow: column nowrap;
   }
 }
-
 .about-header{
   display: flex;
   justify-content: space-between;
@@ -71,14 +32,14 @@ $color-bg: rgba(255,255,255,0.10);
     align-items: center;
     padding-left: 30px;
     img{
-      width: 60px;
+      height: 50px;
     }
   }
   .content{
     flex-grow: 1;
     display: flex;
     flex-flow: column nowrap;
-    margin-left: 50px;
+    margin-left: 30px;
     justify-content: center;
     align-items: flex-start;
     p{
@@ -103,28 +64,6 @@ $color-bg: rgba(255,255,255,0.10);
     }
   }
 }
-
-// 关于
-.about{
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: $fz-sm;
-  padding: 35px;
-  background-color: white;
-  a{
-    &:hover{
-      text-decoration: underline;
-    }
-    color: white;
-  }
-  @media (max-width: 768px){
-    align-items: stretch;
-    padding: 35px 25px 25px;
-    flex-flow: column nowrap;
-  }
-}
 .copyright-group{
   display: flex;
   justify-content: space-between;
@@ -132,11 +71,12 @@ $color-bg: rgba(255,255,255,0.10);
     flex-flow: column nowrap;
   }
 }
-.copyright{
+.author-info{
+  font-family: "Galvji";
   margin-left: 30px;
   padding: 10px 15px;
   justify-content: space-between;
-  line-height: 1.5;
+  line-height: 1.4;
   font-size: 12px;
   letter-spacing: 0.5px;
   @include border-radius(5px);
@@ -153,27 +93,35 @@ $color-bg: rgba(255,255,255,0.10);
     border: none;
     margin: 0 0 10px;
   }
+
+  .link{
+    &:hover{
+      color: $color-main !important;
+    }
+    &:active{
+      transform: translateY(2px);
+    }
+  }
+
 }
 
-.links{
+.share-links{
   display: flex;
   justify-content: center;
   flex-flow: row nowrap;
   .link-item{
-    width: 80px;
+    width: 70px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    @include border-radius(10px);
     img{
       display: block;
       height: 40px;
     }
-    h3{
-      margin-top: 8px;
-      font-weight: normal;
-      font-size: 13px;
-      text-align: center;
+    &:hover{
+      background-color: transparentize(black, 0.8);
     }
   }
   @media (max-width: 768px){
@@ -181,18 +129,26 @@ $color-bg: rgba(255,255,255,0.10);
   }
 }
 
-.link{
-  &:hover{
-    color: $magenta !important;
-  }
-  &:active{
-    transform: translateY(2px);
-  }
-}
 
 .thumbs-up{
+  width: 120px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap!important;
   @include transform(translateY(2px));
   cursor: pointer;
+  img{
+    height: 30px !important;
+  }
+  .multiply{
+    padding: 0 4px;
+  }
+  h3{
+    font-weight: normal;
+    font-size: 12px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 768px){
