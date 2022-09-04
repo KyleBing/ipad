@@ -41,7 +41,7 @@ tt {
 ::-webkit-scrollbar {
   z-index: 50;
   width: 3px;
-  height: 3px;
+  height: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -88,7 +88,7 @@ tt {
   font-size: 11.2px !important;
 }
 
-.text-narrow {
+.text-narrow, .filter-list .iphone-tag-list .iphone-tag .screen-size {
   font-family: "PTSans-Narrow", Sans-serf !important;
 }
 
@@ -132,7 +132,7 @@ tt {
   color: #5f5f5f;
 }
 
-.light-gray {
+.light-gray, .filter-list .iphone-tag-list .iphone-tag .screen-size {
   color: #797979;
 }
 
@@ -1169,6 +1169,9 @@ td p {
 .filter-list .iphone-tag-list .iphone-tag.active {
   background-color: #6a7282;
   border-color: transparent;
+  color: white !important;
+}
+.filter-list .iphone-tag-list .iphone-tag.active .screen-size {
   color: white;
 }
 

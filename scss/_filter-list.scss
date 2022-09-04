@@ -21,13 +21,20 @@
       line-height: 1.3;
       @include border-radius(3px);
       color: $text-main;
+      .screen-size{
+        @extend .text-narrow;
+        @extend .light-gray;
+      }
       &:hover{
         background-color: $bg-highlight;
       }
       &.active{
         background-color: #6a7282;
         border-color: transparent;
-        color: white;
+        color: white !important;
+        .screen-size{
+          color: white;
+        }
       }
     }
   }

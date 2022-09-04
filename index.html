@@ -8,7 +8,7 @@
     <title>iPad 所有机型参数大全</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/ipad_favicon256w.png" type="image/png">
-    <link rel="stylesheet" href="scss/iPad.css?v=20220904220412">
+    <link rel="stylesheet" href="scss/iPad.css?v=20220904225301">
     <link rel="apple-touch-icon" href="img/links/ipad_white@2x.png">
     <script src="../../lib/js/vue.min.2.6.10.js"></script>
     <script src="../../lib/js/axios.min.js"></script>
@@ -71,7 +71,7 @@
             <div :class="['iphone-tag', {active: selectedNames.includes(item.name)}]"
                  v-for="item in allIpads" :key="item.name_short"
                  @click="filterTagToggle(item.name)"
-            ><span>{{item.name_short}}</span> - <span class="text-narrow light-gray">{{item.screen.size}}</span></div>
+            ><span>{{item.name_short}}</span> - <span class="screen-size">{{item.screen.size}}</span></div>
         </div>
     </div>
 
@@ -270,7 +270,7 @@
 
 </div>
 
-<script src="iPad.js?v=20220904220412"></script>
+<script src="iPad.js?v=20220904225301"></script>
 <script>
     setTimeout(() => {
         if (!/^http:\/\/(a\.kylebing\.cn|localhost|192\.168\.\d{1,3}\.\d{1,3})/i.test(location.href)) {
