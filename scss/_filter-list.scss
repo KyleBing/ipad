@@ -1,6 +1,8 @@
 .filter-list{
   padding: 10px 30px 5px;
   background-color: transparentize(#6a7282, 0.9);
+  display: flex;
+  justify-content: center;
   .iphone-tag-list{
     @include border-radius(10px);
     max-width: 1440px;

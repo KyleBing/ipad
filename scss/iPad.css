@@ -1136,6 +1136,8 @@ td p {
 .filter-list {
   padding: 10px 30px 5px;
   background-color: rgba(106, 114, 130, 0.1);
+  display: flex;
+  justify-content: center;
 }
 .filter-list .iphone-tag-list {
   -webkit-border-radius: 10px;
