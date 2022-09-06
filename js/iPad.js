@@ -2073,7 +2073,18 @@ let app = new Vue({
             {title: "iPad Air", iPads: iPadAir},
             {title: "iPad Mini", iPads: iPadMini},
             {title: "iPad", iPads: iPad},
-        ]
+        ],
+
+        // share info
+        showShare: false,
+        insets: {
+            height: innerHeight,
+            width: innerWidth
+        },
+        shareQrCode: null,
+        shareQrCodeQQ: null,
+        linkAddress: 'https://kylebing.cn/tools/ipad/',
+        linkQQ: 'https://jq.qq.com/?_wv=1027&k=Z8E0HrWA'
     },
     mounted() {
         // 全屏相关
@@ -2086,8 +2097,22 @@ let app = new Vue({
         this.websocketInit()
 
         this.generateDeviceMap()
+
+        // onresize
+        onresize = () => {
+            this.insets = {
+                height: innerHeight,
+                width: innerWidth
+            }
+        }
+        this.shareQrCode = QRCode.generatePNG(this.linkAddress, {margin: 1})
+        this.shareQrCodeQQ = QRCode.generatePNG(this.linkQQ, {margin: 1})
     },
     methods: {
+        toggleShare(){
+            this.showShare = !this.showShare
+        },
+
         generateDeviceMap(){
             this.allIpads.forEach(ipadInfo => {
                 this.deviceMap.set(ipadInfo.name, ipadInfo)
