@@ -1600,6 +1600,14 @@ footer {
     border-color: rgba(255, 255, 255, 0.1);
   }
 
+  .filter-list .iphone-tag-list .iphone-tag {
+    border-color: #4d4d4d;
+    color: #bfbfbf;
+    background-color: #2e2e2e;
+  }
+  .filter-list .iphone-tag-list .iphone-tag:hover {
+    background-color: #474747;
+  }
   ::-webkit-scrollbar {
     z-index: 50;
     width: 8px;

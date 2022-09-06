@@ -149,6 +149,22 @@ $dark-border: lighten(black, 30%);
     border-color: transparentize(white, 0.90);
   }
 
+
+  .filter-list{
+    .iphone-tag-list{
+      .iphone-tag{
+        border-color: $dark-border;
+        color: $dark-text;
+        background-color: $dark-bg;
+        &:hover{
+          background-color: $dark-bg-highlight;
+        }
+        &.active{
+        }
+      }
+    }
+  }
+
   // SCROLL BAR
   ::-webkit-scrollbar {
     z-index: 50;
