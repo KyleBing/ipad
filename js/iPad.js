@@ -751,7 +751,7 @@ const iPadAir = [
         thickness: 7.5,
         os: {
             init: "iOS 7.0.3",
-            last: "iOS 12.4.5"
+            last: "iOS 12.5.5"
         },
         geekbenchScore: 530,
         cpu: {
@@ -815,7 +815,7 @@ const iPadAir = [
         thickness: 6.1,
         os: {
             init: "iOS 8.1",
-            last: lastOS
+            last: "iPadOS 15"
         },
         geekbenchScore: 1055,
         cpu: {
@@ -1220,7 +1220,7 @@ const iPadMini = [
         thickness: 7.4,
         os: {
             init: "iOS 8.1",
-            last: "iOS 12.4.5"
+            last: "iOS 12.5.5"
         },
         geekbenchScore: 489,
         cpu: {
@@ -1287,7 +1287,7 @@ const iPadMini = [
         thickness: 6.1,
         os: {
             init: "iOS 9.0",
-            last: lastOS
+            last: "iPadOS 15"
         },
         geekbenchScore: 664,
         cpu: {
@@ -2043,7 +2043,7 @@ let app = new Vue({
     el: "#app",
     data: {
         // date
-        dateEnd: '2022.09.22',
+        dateEnd: '2022.09.28',
         // thumb up
         pingPongInterval: null,
         thumbsUpKey: 'ipad',
