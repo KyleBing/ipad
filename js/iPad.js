@@ -1439,7 +1439,7 @@ const iPadMini = [
         battery: "19.3 WH",
         mechanicalKeys: ['开关机键','音量增减键'],
         connector: ['USB-C'],
-        pencil: ['Apple Pencil 1', 'Apple Pencil 2'],
+        pencil: ['Apple Pencil 2'],
         models: [
             {id: 1, name: "iPad", model: "A2568  (WiFi)", weight: 290},
             {id: 2, name: "iPad", model: "-- (WiFi + 蜂窝)", weight: 300},
@@ -2043,7 +2043,7 @@ let app = new Vue({
     el: "#app",
     data: {
         // date
-        dateEnd: '2022.09.28',
+        dateEnd: '2022.10.10',
         // thumb up
         pingPongInterval: null,
         thumbsUpKey: 'ipad',
