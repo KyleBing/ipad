@@ -304,7 +304,7 @@ const iPadPro = [
         battery: "7812",
         connector: ['USB-C', '智能接点', '磁力接点'],
         mechanicalKeys: ['开关机键','音量增减键'],
-        pencil: ['Apple Pencil 1', 'Apple Pencil 2'],
+        pencil: ['Apple Pencil 2'],
         models: [
             {id: 1, name: "iPad8,1 (<1T) iPad8,2 (=1T)", model: "A1980 (WiFi)", weight: 468},
             {id: 2, name: "iPad8,3 (<1T)", model: "A1934, A2013 (WiFi + 蜂窝)", weight: 468},
@@ -374,7 +374,7 @@ const iPadPro = [
         battery: "9720",
         connector: ['USB-C', '智能接点', '磁力接点'],
         mechanicalKeys: ['开关机键','音量增减键'],
-        pencil: ['Apple Pencil 1', 'Apple Pencil 2'],
+        pencil: ['Apple Pencil 2'],
         models: [
             {id: 1, name: "iPad8,5 (<1T) iPad8,6 (=1T)", model: "A1876 (WiFi)", weight: 631},
             {id: 2, name: "iPad8,7 (<1T)", model: "A1895, A2014 (WiFi + 蜂窝)", weight: 633},
@@ -444,7 +444,7 @@ const iPadPro = [
         battery: "7600",
         connector: ['USB-C', '智能接点', '磁力接点'],
         mechanicalKeys: ['开关机键','音量增减键'],
-        pencil: ['Apple Pencil 1', 'Apple Pencil 2'],
+        pencil: ['Apple Pencil 2'],
         models: [
             {id: 1, name: "iPad", model: "A2228 (WiFi)", weight: 471},
             {id: 2, name: "iPad", model: "A2068, A2230 (WiFi + 蜂窝)", weight: 473},
@@ -524,7 +524,7 @@ const iPadPro = [
         battery: "9737",
         connector: ['USB-C', '智能接点', '磁力接点'],
         mechanicalKeys: ['开关机键','音量增减键'],
-        pencil: ['Apple Pencil 1', 'Apple Pencil 2'],
+        pencil: ['Apple Pencil 2'],
         models: [
             {id: 1, name: "iPad", model: "A2229 (WiFi)", weight: 641},
             {id: 2, name: "iPad", model: "A2069, A2232 (WiFi + 蜂窝)", weight: 643},
@@ -606,7 +606,7 @@ const iPadPro = [
         battery: "28.65wh",
         connector: ['USB-C(Thunderbolt3)', '智能接点', '磁力接点'],
         mechanicalKeys: ['开关机键','音量增减键'],
-        pencil: ['Apple Pencil 1', 'Apple Pencil 2'],
+        pencil: ['Apple Pencil 2'],
         models: [
             {id: 1, name: "iPad", model: "A2377 WiFi", weight: 466},
             {id: 2, name: "iPad", model: "A2459 WiFi + 蜂窝", weight: 470},
@@ -688,7 +688,7 @@ const iPadPro = [
         battery: "40.88wh",
         connector: ['USB-C(Thunderbolt3)', '智能接点', '磁力接点'],
         mechanicalKeys: ['开关机键','音量增减键'],
-        pencil: ['Apple Pencil 1', 'Apple Pencil 2'],
+        pencil: ['Apple Pencil 2'],
         models: [
             {id: 1, name: "iPad", model: "A2378 WiFi", weight: 682},
             {id: 2, name: "iPad", model: "A2461 WiFi + 蜂窝", weight: 685},
@@ -966,7 +966,7 @@ const iPadAir = [
         battery: "28.6 WH",
         mechanicalKeys: ['开关机键','音量增减键'],
         connector: ['USB-C'],
-        pencil: ['Apple Pencil 1', 'Apple Pencil 2'],
+        pencil: ['Apple Pencil 2'],
         models: [
             {id: 1, name: "iPad", model: "A2316 (WiFi)", weight: 458},
             {id: 2, name: "iPad", model: "A2324, A2072(WiFi + 蜂窝)", weight: 460},
@@ -1036,7 +1036,7 @@ const iPadAir = [
         battery: "28.6 WH",
         mechanicalKeys: ['开关机键','音量增减键'],
         connector: ['USB-C', '智能接点', '磁力接点'],
-        pencil: ['Apple Pencil 1', 'Apple Pencil 2'],
+        pencil: ['Apple Pencil 2'],
         models: [
             // {id: 1, name: "iPad", model: "A2316 (WiFi)", weight: 458},
             // {id: 2, name: "iPad", model: "A2324, A2072(WiFi + 蜂窝)", weight: 460},
