@@ -135,5 +135,14 @@ footer{
   //background-image: linear-gradient(to bottom right, #4D4D4D, #616161);
 }
 
+.is-new{
+  font-weight: bold;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  //background-image: linear-gradient(to top right, #ff31d1, #00ceff);
+  background-image: linear-gradient(90deg,#2ca2b4,#5598de 24%,#7f87ff 45%,#f65aad 76%,#ec3d43);
+}
+
 
 @import "dark";

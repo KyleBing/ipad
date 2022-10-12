@@ -731,6 +731,35 @@ const iPadPro = [
         },
         release: "2021-04-21"
     },
+    // iPad pro 6 th
+    {
+        name: "iPad Pro 6 11",
+        name_short: "Pro 6",
+        isNew: true,
+        screen:
+            {
+                size: "11",
+                width: 0,
+                height: 0,
+                density: 0,
+                refreshRate: 0,
+            },
+        release: "2022-10-24"
+    },
+    {
+        name: "iPad Pro 6 12.9",
+        name_short: "Pro 6",
+        isNew: true,
+        screen:
+            {
+                size: "12.9",
+                width: 0,
+                height: 0,
+                density: 0,
+                refreshRate: 0,
+            },
+        release: "2022-10-24"
+    },
 ]
 const iPadAir = [
     {
@@ -1001,7 +1030,7 @@ const iPadAir = [
         name: "iPad Air 5",
         name_short: "Air 5",
         active: false,
-        isNew: true,
+        isNew: false,
         screen:
             {
                 size: "10.9",
@@ -2037,13 +2066,28 @@ const iPad = [
         },
         release: "2021-09-15"
     },
+    {
+        name: "iPad 10",
+        name_short: "iPad 10",
+        isNew: true,
+        screen:
+            {
+                size: "10.2",
+                width: 0,
+                height: 0,
+                density: 0,
+                refreshRate: 0,
+            },
+        release: "2022-10-24"
+    },
+
 ]
 
 let app = new Vue({
     el: "#app",
     data: {
         // date
-        dateEnd: '2022.10.10',
+        dateEnd: '2022.10.12',
         // thumb up
         pingPongInterval: null,
         thumbsUpKey: 'ipad',

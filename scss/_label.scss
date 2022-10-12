@@ -10,10 +10,6 @@ $dot-width: 20px; // 新机型标记的大小
   .model{
     font-family: "Galvji";
     margin-right: 10px;
-    &.is-new{
-      text-decoration: underline;
-      color: $green;
-    }
   }
 
 
