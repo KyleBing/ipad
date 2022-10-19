@@ -821,7 +821,7 @@ const iPadPro = [
                 },
             ]
         },
-        release: "2022-11-19"
+        release: "2022-10-19"
     },
     {
         name: "iPad Pro 6 12.9",
@@ -902,7 +902,7 @@ const iPadPro = [
                 },
             ]
         },
-        release: "2022-11-19"
+        release: "2022-10-19"
     },
 ]
 const iPadAir = [
@@ -2296,7 +2296,7 @@ const iPad = [
                     hdr: false},
             ]
         },
-        release: "2022-11-19"
+        release: "2022-10-19"
     },
 ]
 
@@ -2304,7 +2304,7 @@ let app = new Vue({
     el: "#app",
     data: {
         // date
-        dateEnd: '2022.11.19',
+        dateEnd: '2022.10.19',
         // thumb up
         pingPongInterval: null,
         thumbsUpKey: 'ipad',
