@@ -2069,18 +2069,68 @@ const iPad = [
     {
         name: "iPad 10",
         name_short: "iPad 10",
+        active: false,
         isNew: true,
         screen:
             {
-                size: "10.2",
-                width: 0,
-                height: 0,
-                density: 0,
-                refreshRate: 0,
+                size: "10.9",
+                width: 2360,
+                height: 1640,
+                density: 264,
+                refreshRate: 60,
             },
-        release: "2022-10-24"
+        width: 248.6,
+        height: 179.5,
+        thickness: 7,
+        os: {
+            init: "iPadOS 16",
+            last: lastOS
+        },
+        geekbenchScore: 0,
+        cpu: {
+            model: 'A14',
+            rate: '3.09',
+            core: 6
+        },
+        gpu: {
+            model: "Apple",
+            core: 4
+        },
+        memory: [
+            {name: "", size: "", type: ''},
+        ],
+        storage: [64, 256],
+        price: "",
+        battery: "28.6 WH",
+        mechanicalKeys: ['Home键','开关机键','音量增减键'],
+        connector: ['USB-C'],
+        pencil: ['Apple Pencil 2'],
+        models: [
+            {id: 1, name: "--", model: "-- (WiFi)", weight: 477},
+            {id: 2, name: "--", model: "-- (WiFi + 蜂窝)", weight: 481},
+        ],
+        cameras: {
+            front: {
+                pixelCount: '1200万, ƒ/2.4 ',
+                dimension: [
+                    {size: '1080p', fps: []},
+                ],
+                zoomRate: '',
+                hdr: false
+            },
+            back: [
+                {
+                    name: '默认',
+                    pixelCount: '800万, ƒ/2.4',
+                    dimension: [
+                        {size: '1080p', fps: [30]},
+                    ],
+                    zoomRate: '5',
+                    hdr: false},
+            ]
+        },
+        release: "2022-11-19"
     },
-
 ]
 
 let app = new Vue({
