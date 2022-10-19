@@ -8,7 +8,7 @@
     <title>iPad 所有机型参数大全</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/ipad_favicon256w.png" type="image/png">
-    <link rel="stylesheet" href="scss/iPad.css?v=20221012113636">
+    <link rel="stylesheet" href="scss/iPad.css?v=20221019092321">
     <link rel="apple-touch-icon" href="img/links/ipad_white@2x.png">
     <script src="../../lib/js/vue.min.2.6.10.js"></script>
     <script src="../../lib/js/axios.min.js"></script>
@@ -83,7 +83,6 @@
         <div class="series" v-for="(series, index) in iPadsSeries" :key="index">
             <div class="header">
                 <h3>{{series.title}}</h3>
-
             </div>
             <div class="table-wrapper">
                 <table>
@@ -118,7 +117,7 @@
                         :data-series="iPad.title"
                         :data-index="index">
                         <!-- 新机型预览 -->
-                        <template v-if="iPad.isNew">
+                        <template v-if="iPad.isPreview">
                             <td>
                                 <div class="model-title">
                                     <div :class="['model', {'is-new': iPad.isNew}]">{{iPad.name_short}}</div>
@@ -316,7 +315,7 @@
 
 </div>
 
-<script src="./js/iPad.js?v=20221012113636"></script>
+<script src="./js/iPad.js?v=20221019092321"></script>
 <script>
     setTimeout(() => {
         if (!/^http:\/\/(a\.kylebing\.cn|localhost|192\.168\.\d{1,3}\.\d{1,3})/i.test(location.href)) {

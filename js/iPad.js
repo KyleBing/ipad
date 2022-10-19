@@ -11,6 +11,7 @@ const iPadPro = [
         name: "iPad Pro 1 9.7",
         name_short: "Pro 1",
         active: false,
+        isPreview: false,
         isNew: false,
         screen:
             {
@@ -75,6 +76,7 @@ const iPadPro = [
         name: "iPad Pro 1 12.9",
         name_short: "Pro 1",
         active: false,
+        isPreview: false,
         isNew: false,
         screen:
             {
@@ -138,6 +140,7 @@ const iPadPro = [
         name: "iPad Pro 2 10.5",
         name_short: "Pro 2",
         active: false,
+        isPreview: false,
         isNew: false,
         screen:
             {
@@ -202,6 +205,7 @@ const iPadPro = [
         name: "iPad Pro 2 12.9",
         name_short: "Pro 2",
         active: false,
+        isPreview: false,
         isNew: false,
         screen:
             {
@@ -269,6 +273,7 @@ const iPadPro = [
         name: "iPad Pro 3 11",
         name_short: "Pro 3",
         active: false,
+        isPreview: false,
         isNew: false,
         screen:
             {
@@ -339,6 +344,7 @@ const iPadPro = [
         name: "iPad Pro 3 12.9",
         name_short: "Pro 3",
         active: false,
+        isPreview: false,
         isNew: false,
         screen:
             {
@@ -410,6 +416,7 @@ const iPadPro = [
         name: "iPad Pro 4 11",
         name_short: "Pro 4",
         active: false,
+        isPreview: false,
         isNew: false,
         screen:
             {
@@ -490,6 +497,7 @@ const iPadPro = [
         name: "iPad Pro 4 12.9",
         name_short: "Pro 4",
         active: false,
+        isPreview: false,
         isNew: false,
         screen:
             {
@@ -571,6 +579,7 @@ const iPadPro = [
         name: "iPad Pro 5 11",
         name_short: "Pro 5",
         active: false,
+        isPreview: false,
         isNew: false,
         screen:
             {
@@ -653,6 +662,7 @@ const iPadPro = [
         name: "iPad Pro 5 12.9",
         name_short: "Pro 5",
         active: false,
+        isPreview: false,
         isNew: false,
         screen:
             {
@@ -735,30 +745,164 @@ const iPadPro = [
     {
         name: "iPad Pro 6 11",
         name_short: "Pro 6",
+        active: false,
+        isPreview: false,
         isNew: true,
         screen:
             {
                 size: "11",
-                width: 0,
-                height: 0,
-                density: 0,
-                refreshRate: 0,
+                width: 2388,
+                height: 1668,
+                density: 264,
+                refreshRate: 120,
             },
-        release: "2022-10-24"
+        width: '247.6',
+        height: '178.5',
+        thickness: '5.9',
+        os: {
+            init: "iPadOS 16",
+            last: lastOS
+        },
+        geekbenchScore: 0,
+        cpu: {
+            model: 'M2',
+            rate: '3.49',
+            core: '8'
+        },
+        gpu: {
+            model: "Apple",
+            core: '10'
+        },
+        memory: [
+            {name: "", size: "8", type: ""},
+            {name: "≥ 1T", size: "16", type: ""},
+        ],
+        storage: ['128', '256', '512', '1024', '2048'],
+        price: "",
+        battery: "28.65wh",
+        connector: ['USB-C(Thunderbolt3)', '智能接点', '磁力接点'],
+        mechanicalKeys: ['开关机键','音量增减键'],
+        pencil: ['Apple Pencil 2'],
+        models: [
+            {id: 1, name: "iPad", model: "WiFi", weight: 466},
+            {id: 2, name: "iPad", model: "WiFi + 蜂窝", weight: 468},
+        ],
+        cameras: {
+            front: {
+                pixelCount: '1200万, ƒ/2.4',
+                dimension: [
+                    {size: '1080p', fps: [30, 60]},
+                ],
+                zoomRate: '',
+                hdr: true
+            },
+            back: [
+                {
+                    name: '默认',
+                    pixelCount: '1200万, ƒ/1.8',
+                    dimension: [
+                        {size: '4k', fps: [30,60]},
+                        {size: '1080p', fps: [30, 60, 120]},
+                        {size: '720p', fps: [240]},
+                    ],
+                    zoomRate: '5',
+                    hdr: true
+                },
+                {
+                    name: '广角',
+                    pixelCount: '1000万, ƒ/2.4， 125˚',
+                    dimension: [
+                        {size: '4k', fps: [30,60]},
+                        {size: '1080p', fps: [30, 60, 120]},
+                        {size: '720p', fps: [240]},
+                    ],
+                    zoomRate: '5',
+                    hdr: true
+                },
+            ]
+        },
+        release: "2022-11-19"
     },
     {
         name: "iPad Pro 6 12.9",
         name_short: "Pro 6",
+        active: false,
+        isPreview: false,
         isNew: true,
         screen:
             {
                 size: "12.9",
-                width: 0,
-                height: 0,
-                density: 0,
-                refreshRate: 0,
+                width: 2732,
+                height: 2048,
+                density: 264,
+                refreshRate: 120,
             },
-        release: "2022-10-24"
+        width: '280.6',
+        height: '214.9',
+        thickness: '6.4',
+        os: {
+            init: "iPadOS 16",
+            last: lastOS
+        },
+        geekbenchScore: 0,
+        cpu: {
+            model: 'M2',
+            rate: '3.49',
+            core: '8'
+        },
+        gpu: {
+            model: "Apple",
+            core: '10'
+        },
+        memory: [
+            {name: "", size: "8", type: ""},
+            {name: "≥ 1T", size: "16", type: ""},
+        ],
+        storage: ['128', '256', '512', '1024', '2048'],
+        price: "",
+        battery: "40.88wh",
+        connector: ['USB-C(Thunderbolt3)', '智能接点', '磁力接点'],
+        mechanicalKeys: ['开关机键','音量增减键'],
+        pencil: ['Apple Pencil 2'],
+        models: [
+            {id: 1, name: "iPad", model: "WiFi", weight: 682},
+            {id: 2, name: "iPad", model: "WiFi + 蜂窝", weight: 684},
+        ],
+        cameras: {
+            front: {
+                pixelCount: '1200万, ƒ/2.4',
+                dimension: [
+                    {size: '1080p', fps: [30, 60,]},
+                ],
+                zoomRate: '',
+                hdr: true
+            },
+            back: [
+                {
+                    name: '默认',
+                    pixelCount: '1200万, ƒ/1.8',
+                    dimension: [
+                        {size: '4k', fps: [30,60]},
+                        {size: '1080p', fps: [30, 60, 120]},
+                        {size: '720p', fps: [240]},
+                    ],
+                    zoomRate: '5',
+                    hdr: true
+                },
+                {
+                    name: '广角',
+                    pixelCount: '1000万, ƒ/2.4， 125˚',
+                    dimension: [
+                        {size: '4k', fps: [30,60]},
+                        {size: '1080p', fps: [30, 60, 120]},
+                        {size: '720p', fps: [240]},
+                    ],
+                    zoomRate: '5',
+                    hdr: true
+                },
+            ]
+        },
+        release: "2022-11-19"
     },
 ]
 const iPadAir = [
@@ -766,6 +910,7 @@ const iPadAir = [
         name: "iPad Air 1",
         name_short: "Air 1",
         active: false,
+        isPreview: false,
         isNew: false,
         screen:
             {
@@ -830,6 +975,7 @@ const iPadAir = [
         name: "iPad Air 2",
         name_short: "Air 2",
         active: false,
+        isPreview: false,
         isNew: false,
         screen:
             {
@@ -894,6 +1040,7 @@ const iPadAir = [
         name: "iPad Air 3 2019",
         name_short: "Air 3",
         active: false,
+        isPreview: false,
         isNew: false,
         screen:
             {
@@ -961,6 +1108,7 @@ const iPadAir = [
         name: "iPad Air 4",
         name_short: "Air 4",
         active: false,
+        isPreview: false,
         isNew: false,
         screen:
             {
@@ -1030,6 +1178,7 @@ const iPadAir = [
         name: "iPad Air 5",
         name_short: "Air 5",
         active: false,
+        isPreview: false,
         isNew: false,
         screen:
             {
@@ -1102,6 +1251,7 @@ const iPadMini = [
         name_short: "Mini 1",
         colors: ['Silver', 'Slate'],
         active: false,
+        isPreview: false,
         isNew: false,
         screen:
             {
@@ -1168,6 +1318,7 @@ const iPadMini = [
         name_short: "Mini 2",
         colors: ['Silver', 'Space Gray'],
         active: false,
+        isPreview: false,
         isNew: false,
         screen:
             {
@@ -1235,6 +1386,7 @@ const iPadMini = [
         name_short: "Mini 3",
         colors: ['Silver', 'Gold', 'Space Gray'],
         active: false,
+        isPreview: false,
         isNew: false,
         screen:
             {
@@ -1302,6 +1454,7 @@ const iPadMini = [
         name_short: "Mini 4",
         colors: ['Silver', 'Gold', 'Space Gray'],
         active: false,
+        isPreview: false,
         isNew: false,
         screen:
             {
@@ -1367,6 +1520,7 @@ const iPadMini = [
         name_short: "Mini 5",
         colors: ['Silver', 'Gold', 'Space Gray'],
         active: false,
+        isPreview: false,
         isNew: false,
         screen:
             {
@@ -1434,6 +1588,7 @@ const iPadMini = [
         name_short: "Mini 6",
         colors: ['Space Gray', 'Pink', 'Purple', 'Starlight'],
         active: false,
+        isPreview: false,
         isNew: false,
         screen:
             {
@@ -1501,6 +1656,7 @@ const iPad = [
         name: "iPad 1",
         name_short: "iPad 1",
         active: false,
+        isPreview: false,
         isNew: false,
         screen:
             {
@@ -1550,6 +1706,7 @@ const iPad = [
         name: "iPad 2",
         name_short: "iPad 2",
         active: false,
+        isPreview: false,
         isNew: false,
         screen:
             {
@@ -1614,6 +1771,7 @@ const iPad = [
         name: "iPad 3",
         name_short: "iPad 3",
         active: false,
+        isPreview: false,
         isNew: false,
         screen:
             {
@@ -1678,6 +1836,7 @@ const iPad = [
         name: "iPad 4",
         name_short: "iPad 4",
         active: false,
+        isPreview: false,
         isNew: false,
         screen:
             {
@@ -1744,6 +1903,7 @@ const iPad = [
         name: "iPad 5",
         name_short: "iPad 5",
         active: false,
+        isPreview: false,
         isNew: false,
         screen:
             {
@@ -1809,6 +1969,7 @@ const iPad = [
         name: "iPad 6",
         name_short: "iPad 6",
         active: false,
+        isPreview: false,
         isNew: false,
         screen:
             {
@@ -1874,6 +2035,7 @@ const iPad = [
         name: "iPad 7",
         name_short: "iPad 7",
         active: false,
+        isPreview: false,
         isNew: false,
         screen:
             {
@@ -1940,6 +2102,7 @@ const iPad = [
         name: "iPad 8",
         name_short: "iPad 8",
         active: false,
+        isPreview: false,
         isNew: false,
         screen:
             {
@@ -2005,6 +2168,7 @@ const iPad = [
         name: "iPad 9",
         name_short: "iPad 9",
         active: false,
+        isPreview: false,
         isNew: false,
         screen:
             {
@@ -2070,6 +2234,7 @@ const iPad = [
         name: "iPad 10",
         name_short: "iPad 10",
         active: false,
+        isPreview: false,
         isNew: true,
         screen:
             {
@@ -2137,7 +2302,7 @@ let app = new Vue({
     el: "#app",
     data: {
         // date
-        dateEnd: '2022.10.12',
+        dateEnd: '2022.11.19',
         // thumb up
         pingPongInterval: null,
         thumbsUpKey: 'ipad',
