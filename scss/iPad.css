@@ -1300,8 +1300,8 @@ footer {
   color: #000;
 }
 .header h3 {
-  font-family: "Galvji";
   line-height: 1.5;
+  font-weight: bold;
   text-align: left;
   font-size: 40px;
 }
