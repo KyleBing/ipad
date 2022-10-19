@@ -453,8 +453,8 @@ const iPadPro = [
         mechanicalKeys: ['开关机键','音量增减键'],
         pencil: ['Apple Pencil 2'],
         models: [
-            {id: 1, name: "iPad", model: "A2228 (WiFi)", weight: 471},
-            {id: 2, name: "iPad", model: "A2068, A2230 (WiFi + 蜂窝)", weight: 473},
+            {id: 1, name: "iPad8,9", model: "A2228 (WiFi)", weight: 471},
+            {id: 2, name: "iPad8,10", model: "A2068, A2230 (WiFi + 蜂窝)", weight: 473},
             {id: 3, name: "iPad", model: "A2231 (WiFi + 蜂窝, 国行)", weight: 473}
         ],
         cameras: {
@@ -534,8 +534,8 @@ const iPadPro = [
         mechanicalKeys: ['开关机键','音量增减键'],
         pencil: ['Apple Pencil 2'],
         models: [
-            {id: 1, name: "iPad", model: "A2229 (WiFi)", weight: 641},
-            {id: 2, name: "iPad", model: "A2069, A2232 (WiFi + 蜂窝)", weight: 643},
+            {id: 1, name: "iPad8,11", model: "A2229 (WiFi)", weight: 641},
+            {id: 2, name: "iPad,12", model: "A2069, A2232 (WiFi + 蜂窝)", weight: 643},
             {id: 3, name: "iPad", model: "A2233 (WiFi + 蜂窝, 国行)", weight: 643},
         ],
         cameras: {
@@ -617,10 +617,10 @@ const iPadPro = [
         mechanicalKeys: ['开关机键','音量增减键'],
         pencil: ['Apple Pencil 2'],
         models: [
-            {id: 1, name: "iPad", model: "A2377 WiFi", weight: 466},
-            {id: 2, name: "iPad", model: "A2459 WiFi + 蜂窝", weight: 470},
-            {id: 3, name: "iPad", model: "A2301 WiFi + 蜂窝 + mmWave", weight: 470},
-            {id: 4, name: "iPad", model: "A2460 WiFi + 蜂窝,国行", weight: 470},
+            {id: 1, name: "iPad13,4", model: "A2377 WiFi", weight: 466},
+            {id: 2, name: "iPad13,5", model: "A2459 WiFi + 蜂窝", weight: 470},
+            {id: 3, name: "iPad13,6", model: "A2301 WiFi + 蜂窝 + mmWave", weight: 470},
+            {id: 4, name: "iPad13,7", model: "A2460 WiFi + 蜂窝,国行", weight: 470},
         ],
         cameras: {
             front: {
@@ -700,10 +700,10 @@ const iPadPro = [
         mechanicalKeys: ['开关机键','音量增减键'],
         pencil: ['Apple Pencil 2'],
         models: [
-            {id: 1, name: "iPad", model: "A2378 WiFi", weight: 682},
-            {id: 2, name: "iPad", model: "A2461 WiFi + 蜂窝", weight: 685},
-            {id: 3, name: "iPad", model: "A2379 WiFi + 蜂窝 + mmWave", weight: 685},
-            {id: 4, name: "iPad", model: "A2462 WiFi + 蜂窝,国行", weight: 685},
+            {id: 1, name: "iPad13,8", model: "A2378 WiFi", weight: 682},
+            {id: 2, name: "iPad13,9", model: "A2461 WiFi + 蜂窝", weight: 685},
+            {id: 3, name: "iPad13,10", model: "A2379 WiFi + 蜂窝 + mmWave", weight: 685},
+            {id: 4, name: "iPad13,11", model: "A2462 WiFi + 蜂窝,国行", weight: 685},
         ],
         cameras: {
             front: {
@@ -1145,8 +1145,8 @@ const iPadAir = [
         connector: ['USB-C'],
         pencil: ['Apple Pencil 2'],
         models: [
-            {id: 1, name: "iPad", model: "A2316 (WiFi)", weight: 458},
-            {id: 2, name: "iPad", model: "A2324, A2072(WiFi + 蜂窝)", weight: 460},
+            {id: 1, name: "iPad13,1", model: "A2316 (WiFi)", weight: 458},
+            {id: 2, name: "iPad13,2", model: "A2324, A2072(WiFi + 蜂窝)", weight: 460},
             {id: 2, name: "iPad", model: "A2325 (WiFi + 蜂窝，国行)", weight: 460},
         ],
         cameras: {
@@ -1216,9 +1216,9 @@ const iPadAir = [
         connector: ['USB-C', '智能接点', '磁力接点'],
         pencil: ['Apple Pencil 2'],
         models: [
-            // {id: 1, name: "iPad", model: "A2316 (WiFi)", weight: 458},
-            // {id: 2, name: "iPad", model: "A2324, A2072(WiFi + 蜂窝)", weight: 460},
-            // {id: 2, name: "iPad", model: "A2325 (WiFi + 蜂窝，国行)", weight: 460},
+            {id: 1, name: "iPad13,16", model: "A2588 (WiFi)", weight: 458},
+            {id: 2, name: "iPad13,17", model: "A2589, A2072(WiFi + 蜂窝)", weight: 460},
+            {id: 2, name: "iPad13", model: "A2591 (WiFi + 蜂窝，国行)", weight: 460},
         ],
         cameras: {
             front: {
@@ -1625,8 +1625,8 @@ const iPadMini = [
         connector: ['USB-C'],
         pencil: ['Apple Pencil 2'],
         models: [
-            {id: 1, name: "iPad", model: "A2568  (WiFi)", weight: 290},
-            {id: 2, name: "iPad", model: "-- (WiFi + 蜂窝)", weight: 300},
+            {id: 1, name: "iPad14,1", model: "A2568  (WiFi)", weight: 290},
+            {id: 2, name: "iPad14,2", model: "A2569 (WiFi + 蜂窝)", weight: 300},
         ],
         cameras: {
             front: {
@@ -2205,8 +2205,10 @@ const iPad = [
         connector: ['闪电'],
         pencil: ['Apple Pencil 1'],
         models: [
-            {id: 1, name: "--", model: "-- (WiFi)", weight: 487},
-            {id: 2, name: "--", model: "-- (WiFi + 蜂窝)", weight: 498},
+            {id: 1, name: "iPad12,1", model: "A2602 (WiFi)", weight: 487},
+            {id: 2, name: "iPad12,2", model: "A2603 (WiFi + 蜂窝)", weight: 498},
+            {id: 3, name: "iPad12", model: "A2604", weight: 0},
+            {id: 4, name: "iPad12", model: "A2605", weight: 0},
         ],
         cameras: {
             front: {
