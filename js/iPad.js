@@ -2269,7 +2269,7 @@ const iPad = [
         battery: "28.6 WH",
         mechanicalKeys: ['Home键','开关机键','音量增减键'],
         connector: ['USB-C'],
-        pencil: ['Apple Pencil 2'],
+        pencil: ['Apple Pencil 1(购买配件)', 'Apple Pencil 2'],
         models: [
             {id: 1, name: "--", model: "-- (WiFi)", weight: 477},
             {id: 2, name: "--", model: "-- (WiFi + 蜂窝)", weight: 481},
