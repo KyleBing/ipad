@@ -2267,7 +2267,7 @@ const iPad = [
         storage: [64, 256],
         price: "",
         battery: "28.6 WH",
-        mechanicalKeys: ['Home键','开关机键','音量增减键'],
+        mechanicalKeys: ['开关机键','音量增减键'],
         connector: ['USB-C'],
         pencil: ['Apple Pencil 1(购买配件)', 'Apple Pencil 2'],
         models: [
