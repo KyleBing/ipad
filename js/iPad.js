@@ -596,7 +596,7 @@ const iPadPro = [
             init: "iPadOS 14.5",
             last: lastOS
         },
-        geekbenchScore: 7211,
+        geekbenchScore: 7203,
         cpu: {
             model: 'M1',
             rate: '3.2',
@@ -679,7 +679,7 @@ const iPadPro = [
             init: "iPadOS 14.5",
             last: lastOS
         },
-        geekbenchScore: 7214,
+        geekbenchScore: 7206,
         cpu: {
             model: 'M1',
             rate: '3.2',
@@ -763,7 +763,7 @@ const iPadPro = [
             init: "iPadOS 16",
             last: lastOS
         },
-        geekbenchScore: 0,
+        geekbenchScore: 8396,
         cpu: {
             model: 'M2',
             rate: '3.49',
@@ -844,7 +844,7 @@ const iPadPro = [
             init: "iPadOS 16",
             last: lastOS
         },
-        geekbenchScore: 0,
+        geekbenchScore: 8416,
         cpu: {
             model: 'M2',
             rate: '3.49',
@@ -2304,7 +2304,7 @@ let app = new Vue({
     el: "#app",
     data: {
         // date
-        dateEnd: '2022.10.19',
+        dateEnd: '2022.12.02',
         // thumb up
         pingPongInterval: null,
         thumbsUpKey: 'ipad',
