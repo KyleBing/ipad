@@ -8,7 +8,7 @@
     <title>iPad 所有机型参数大全</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/ipad_favicon256w.png" type="image/png">
-    <link rel="stylesheet" href="scss/iPad.css?v=20221202235041">
+    <link rel="stylesheet" href="scss/iPad.css?v=20221227160516">
     <link rel="apple-touch-icon" href="img/links/ipad_white@2x.png">
     <script src="../../lib/js/vue.min.2.6.10.js"></script>
     <script src="../../lib/js/axios.min.js"></script>
@@ -103,6 +103,7 @@
                         <th>接口</th>
                         <th>笔</th>
                         <th>按键</th>
+                        <th>解锁方式</th>
                         <th>颜色</th>
                         <th>前 - 摄像头</th>
                         <th>后 - 摄像头</th>
@@ -193,9 +194,18 @@
                             </td>
                             <!--connector-->
                             <td class="text-small">
-                                <p v-for="connector in iPad.connector" :key="connector">
-                                    <span>{{connector}}</span>
-                                </p>
+                                <div class="key-list">
+                                    <div class="key-item" v-for="connector in iPad.connector" :key="connector">
+                                        <div class="icon" v-if="connector === '闪电'"><img src="./img/icons/port_lightning.png" alt="lightning"></div>
+                                        <div class="icon" v-if="connector === '智能接点'"><img src="./img/icons/port_connector.png" alt="connector"></div>
+                                        <div class="icon" v-if="connector === '3.5mm音频接口'"><img src="./img/icons/port_3.5mm.png" alt="3.5mm"></div>
+                                        <div class="icon" v-if="connector === 'USB-C'"><img src="./img/icons/port_usbc.png" alt="usbc"></div>
+                                        <div class="icon" v-if="connector === 'USB-C(雷雳3)'"><img src="./img/icons/port_usbc_thunderbolt.png" alt="usbc"></div>
+                                        <div class="icon" v-if="connector === '磁力接点'"><img src="./img/icons/port_meg.png" alt="meg"></div>
+                                        <div class="icon" v-if="connector === '30针'"><img src="./img/icons/port_30pin.png" alt="meg"></div>
+                                        <div class="key-name">{{connector}}</div>
+                                    </div>
+                                </div>
                             </td>
                             <!--pencil-->
                             <td class="text-small text-narrow">
@@ -205,9 +215,24 @@
                             </td>
                             <!--按键-->
                             <td class="text-small">
-                                <p v-for="key in iPad.mechanicalKeys" :key="key">
-                                    <span>{{key}}</span>
-                                </p>
+                                <div class="key-list">
+                                    <div class="key-item" v-for="key in iPad.mechanicalKeys" :key="key">
+                                        <div class="icon" v-if="key === '开关机键'"><img src="./img/icons/key_power.png" alt="power"></div>
+                                        <div class="icon" v-if="key === '音量增减键'"><img src="./img/icons/key_volume.png" alt="volume"></div>
+                                        <div class="icon" v-if="key === 'Home键'"><img src="./img/icons/key_home.png" alt="home"></div>
+                                        <div class="key-name">{{key}}</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <!--解锁方式-->
+                            <td class="text-small">
+                                <div class="key-list">
+                                    <div class="key-item" v-for="key in iPad.unlockMethods" :key="key">
+                                        <div class="icon" v-if="key === '面容解锁'"><img src="./img/icons/verify_face.png" alt="face"></div>
+                                        <div class="icon" v-if="key === '指纹解锁'"><img src="./img/icons/verify_fingerprint.png" alt="fingerprint"></div>
+                                        <div class="key-name">{{key}}</div>
+                                    </div>
+                                </div>
                             </td>
                             <!--颜色-->
                             <td class="text-small text-narrow">
@@ -315,7 +340,7 @@
 
 </div>
 
-<script src="./js/iPad.js?v=20221202235041"></script>
+<script src="./js/iPad.js?v=20221227160516"></script>
 <script>
     setTimeout(() => {
         if (!/^http:\/\/(a\.kylebing\.cn|localhost|192\.168\.\d{1,3}\.\d{1,3})/i.test(location.href)) {

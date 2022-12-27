@@ -145,4 +145,34 @@ footer{
 }
 
 
+
+
+.key-list{
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row nowrap;
+  .key-item{
+    margin-right: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    .icon{
+      width: 40px;
+      height: 40px;
+      img{
+        width: 100%;
+        display: block;
+      }
+    }
+    .key-name{
+      margin-top: 3px;
+      text-align: center;
+      white-space: nowrap;
+      font-size: 9px;
+    }
+  }
+}
+
+
 @import "dark";

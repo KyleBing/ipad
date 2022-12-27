@@ -45,8 +45,9 @@ const iPadPro = [
         price: "",
         battery: "7306",
         connector: ['闪电', '智能接点', '3.5mm音频接口'],
-        mechanicalKeys: ['Home键','开关机键','音量增减键'],
+        mechanicalKeys: ['开关机键','音量增减键','Home键'],
         pencil: ['Apple Pencil 1'],
+        unlockMethods: ['指纹解锁'],
         models: [
             {id: 1, name: "iPad6,3", model: "A1673 (WiFi)", weight: 437},
             {id: 2, name: "iPad6,4", model: "A1674 or A1675 (WiFi + 蜂窝)", weight: 444}
@@ -110,8 +111,9 @@ const iPadPro = [
         price: "",
         battery: "10307",
         connector: ['闪电', '智能接点', '3.5mm音频接口'],
-        mechanicalKeys: ['Home键','开关机键','音量增减键'],
+        mechanicalKeys: ['开关机键','音量增减键','Home键'],
         pencil: ['Apple Pencil 1'],
+        unlockMethods: ['指纹解锁'],
         models: [
             {id: 1, name: "iPad6,7", model: "A1584 (WiFi)", weight: 710},
             {id: 2, name: "iPad6,8", model: "A1652 (蜂窝)", weight: 720}
@@ -174,8 +176,9 @@ const iPadPro = [
         price: "",
         battery: "8134",
         connector: ['闪电', '智能接点', '3.5mm音频接口'],
-        mechanicalKeys: ['Home键','开关机键','音量增减键'],
+        mechanicalKeys: ['开关机键','音量增减键','Home键'],
         pencil: ['Apple Pencil 1'],
+        unlockMethods: ['指纹解锁'],
         models: [
             {id: 1, name: "iPad7,3", model: "A1701 (WiFi)", weight: 469},
             {id: 2, name: "iPad7,4", model: "A1709 (WiFi + 蜂窝)", weight: 477}
@@ -239,8 +242,9 @@ const iPadPro = [
         price: "",
         battery: "10875",
         connector: ['闪电', '智能接点', '3.5mm音频接口'],
-        mechanicalKeys: ['Home键','开关机键','音量增减键'],
+        mechanicalKeys: ['开关机键','音量增减键','Home键'],
         pencil: ['Apple Pencil 1'],
+        unlockMethods: ['指纹解锁'],
         models: [
             {id: 1, name: "iPad7,1", model: "A1670 (WiFi)", weight: 677},
             {id: 2, name: "iPad7,2", model: "A1671 (WiFi + 蜂窝)", weight: 692}
@@ -310,6 +314,7 @@ const iPadPro = [
         connector: ['USB-C', '智能接点', '磁力接点'],
         mechanicalKeys: ['开关机键','音量增减键'],
         pencil: ['Apple Pencil 2'],
+        unlockMethods: ['面容解锁'],
         models: [
             {id: 1, name: "iPad8,1 (<1T) iPad8,2 (=1T)", model: "A1980 (WiFi)", weight: 468},
             {id: 2, name: "iPad8,3 (<1T)", model: "A1934, A2013 (WiFi + 蜂窝)", weight: 468},
@@ -381,6 +386,7 @@ const iPadPro = [
         connector: ['USB-C', '智能接点', '磁力接点'],
         mechanicalKeys: ['开关机键','音量增减键'],
         pencil: ['Apple Pencil 2'],
+        unlockMethods: ['面容解锁'],
         models: [
             {id: 1, name: "iPad8,5 (<1T) iPad8,6 (=1T)", model: "A1876 (WiFi)", weight: 631},
             {id: 2, name: "iPad8,7 (<1T)", model: "A1895, A2014 (WiFi + 蜂窝)", weight: 633},
@@ -452,6 +458,7 @@ const iPadPro = [
         connector: ['USB-C', '智能接点', '磁力接点'],
         mechanicalKeys: ['开关机键','音量增减键'],
         pencil: ['Apple Pencil 2'],
+        unlockMethods: ['面容解锁'],
         models: [
             {id: 1, name: "iPad8,9", model: "A2228 (WiFi)", weight: 471},
             {id: 2, name: "iPad8,10", model: "A2068, A2230 (WiFi + 蜂窝)", weight: 473},
@@ -533,6 +540,7 @@ const iPadPro = [
         connector: ['USB-C', '智能接点', '磁力接点'],
         mechanicalKeys: ['开关机键','音量增减键'],
         pencil: ['Apple Pencil 2'],
+        unlockMethods: ['面容解锁'],
         models: [
             {id: 1, name: "iPad8,11", model: "A2229 (WiFi)", weight: 641},
             {id: 2, name: "iPad,12", model: "A2069, A2232 (WiFi + 蜂窝)", weight: 643},
@@ -613,9 +621,10 @@ const iPadPro = [
         storage: ['128', '256', '512', '1024', '2048'],
         price: "",
         battery: "28.65wh",
-        connector: ['USB-C(Thunderbolt3)', '智能接点', '磁力接点'],
+        connector: ['USB-C(雷雳3)', '智能接点', '磁力接点'],
         mechanicalKeys: ['开关机键','音量增减键'],
         pencil: ['Apple Pencil 2'],
+        unlockMethods: ['面容解锁'],
         models: [
             {id: 1, name: "iPad13,4", model: "A2377 WiFi", weight: 466},
             {id: 2, name: "iPad13,5", model: "A2459 WiFi + 蜂窝", weight: 470},
@@ -696,9 +705,10 @@ const iPadPro = [
         storage: ['128', '256', '512', '1024', '2048'],
         price: "",
         battery: "40.88wh",
-        connector: ['USB-C(Thunderbolt3)', '智能接点', '磁力接点'],
+        connector: ['USB-C(雷雳3)', '智能接点', '磁力接点'],
         mechanicalKeys: ['开关机键','音量增减键'],
         pencil: ['Apple Pencil 2'],
+        unlockMethods: ['面容解锁'],
         models: [
             {id: 1, name: "iPad13,8", model: "A2378 WiFi", weight: 682},
             {id: 2, name: "iPad13,9", model: "A2461 WiFi + 蜂窝", weight: 685},
@@ -780,9 +790,10 @@ const iPadPro = [
         storage: ['128', '256', '512', '1024', '2048'],
         price: "",
         battery: "28.65wh",
-        connector: ['USB-C(Thunderbolt3)', '智能接点', '磁力接点'],
+        connector: ['USB-C(雷雳3)', '智能接点', '磁力接点'],
         mechanicalKeys: ['开关机键','音量增减键'],
         pencil: ['Apple Pencil 2'],
+        unlockMethods: ['面容解锁'],
         models: [
             {id: 1, name: "iPad", model: "WiFi", weight: 466},
             {id: 2, name: "iPad", model: "WiFi + 蜂窝", weight: 468},
@@ -861,9 +872,10 @@ const iPadPro = [
         storage: ['128', '256', '512', '1024', '2048'],
         price: "",
         battery: "40.88wh",
-        connector: ['USB-C(Thunderbolt3)', '智能接点', '磁力接点'],
+        connector: ['USB-C(雷雳3)', '智能接点', '磁力接点'],
         mechanicalKeys: ['开关机键','音量增减键'],
         pencil: ['Apple Pencil 2'],
+        unlockMethods: ['面容解锁'],
         models: [
             {id: 1, name: "iPad", model: "WiFi", weight: 682},
             {id: 2, name: "iPad", model: "WiFi + 蜂窝", weight: 684},
@@ -943,8 +955,9 @@ const iPadAir = [
         storage: [16, 32, 64, 128],
         price: "",
         battery: "8820",
-        mechanicalKeys: ['Home键','开关机键','音量增减键'],
+        mechanicalKeys: ['开关机键','音量增减键','Home键'],
         connector: ['闪电'],
+        unlockMethods: ['指纹解锁'],
         models: [
             {id: 1, name: "iPad4,1", model: "A1474 (WiFi)", weight: 469},
             {id: 2, name: "iPad4,2", model: "A1475 (WiFi + 蜂窝)", weight: 478},
@@ -1008,8 +1021,9 @@ const iPadAir = [
         storage: [16, 64, 128],
         price: "",
         battery: "7340",
-        mechanicalKeys: ['Home键','开关机键','音量增减键'],
+        mechanicalKeys: ['开关机键','音量增减键','Home键'],
         connector: ['闪电'],
+        unlockMethods: ['指纹解锁'],
         models: [
             {id: 1, name: "iPad5,3 (WiFi)", model: "A1566 (WiFi)", weight: 437},
             {id: 2, name: "iPad5,4 (WiFi + 蜂窝)", model: "A1567 (WiFi + 蜂窝)", weight: 444},
@@ -1073,9 +1087,10 @@ const iPadAir = [
         storage: [64, 256],
         price: "",
         battery: "8134",
-        mechanicalKeys: ['Home键','开关机键','音量增减键'],
+        mechanicalKeys: ['开关机键','音量增减键','Home键'],
         connector: ['闪电'],
         pencil: ['Apple Pencil 1'],
+        unlockMethods: ['指纹解锁'],
         models: [
             {id: 1, name: "iPad11,3", model: "A2152 (WiFi)", weight: 456},
             {id: 2, name: "iPad11,4", model: "A2123, A2153 (WiFi + 蜂窝)", weight: 464},
@@ -1144,6 +1159,7 @@ const iPadAir = [
         mechanicalKeys: ['开关机键','音量增减键'],
         connector: ['USB-C'],
         pencil: ['Apple Pencil 2'],
+        unlockMethods: ['面容解锁'],
         models: [
             {id: 1, name: "iPad13,1", model: "A2316 (WiFi)", weight: 458},
             {id: 2, name: "iPad13,2", model: "A2324, A2072(WiFi + 蜂窝)", weight: 460},
@@ -1215,6 +1231,7 @@ const iPadAir = [
         mechanicalKeys: ['开关机键','音量增减键'],
         connector: ['USB-C', '智能接点', '磁力接点'],
         pencil: ['Apple Pencil 2'],
+        unlockMethods: ['面容解锁'],
         models: [
             {id: 1, name: "iPad13,16", model: "A2588 (WiFi)", weight: 458},
             {id: 2, name: "iPad13,17", model: "A2589, A2072(WiFi + 蜂窝)", weight: 460},
@@ -1284,8 +1301,9 @@ const iPadMini = [
         storage: [16, 32, 64],
         price: "",
         battery: "4440",
-        mechanicalKeys: ['Home键','开关机键','音量增减键'],
+        mechanicalKeys: ['开关机键','音量增减键','Home键'],
         connector: ['闪电'],
+        unlockMethods: ['指纹解锁'],
         models: [
             {id: 1, name: "iPad2,5", model: "A1432 (WiFi)", weight: 310},
             {id: 2, name: "iPad2,6", model: "A1454 (WiFi + 蜂窝)", weight: 310},
@@ -1351,8 +1369,9 @@ const iPadMini = [
         storage: [16, 32, 64, 128],
         price: "",
         battery: "6471",
-        mechanicalKeys: ['Home键','开关机键','音量增减键'],
+        mechanicalKeys: ['开关机键','音量增减键','Home键'],
         connector: ['闪电'],
+        unlockMethods: ['指纹解锁'],
         models: [
             {id: 1, name: "iPad4,4", model: "A1489 (WiFi)", weight: 330},
             {id: 2, name: "iPad4,5", model: "A1490 (WiFi + 蜂窝)", weight: 340},
@@ -1419,8 +1438,9 @@ const iPadMini = [
         storage: [16, 32, 64],
         price: "",
         battery: "6471",
-        mechanicalKeys: ['Home键','开关机键','音量增减键'],
+        mechanicalKeys: ['开关机键','音量增减键','Home键'],
         connector: ['闪电'],
+        unlockMethods: ['指纹解锁'],
         models: [
             {id: 1, name: "iPad4,7", model: "A1599 (WiFi)", weight: 310},
             {id: 2, name: "iPad4,8", model: "A1600 (WiFi + 蜂窝)", weight: 310},
@@ -1487,8 +1507,9 @@ const iPadMini = [
         storage: [16, 64, 128],
         price: "",
         battery: "5124",
-        mechanicalKeys: ['Home键','开关机键','音量增减键'],
+        mechanicalKeys: ['开关机键','音量增减键','Home键'],
         connector: ['闪电'],
+        unlockMethods: ['指纹解锁'],
         models: [
             {id: 1, name: "iPad5,1", model: "A1538 (WiFi)", weight: 290},
             {id: 2, name: "iPad5,1", model: "A1550 (WiFi + 蜂窝)", weight: 300},
@@ -1553,9 +1574,10 @@ const iPadMini = [
         storage: [64, 256],
         price: "",
         battery: "5124",
-        mechanicalKeys: ['Home键','开关机键','音量增减键'],
+        mechanicalKeys: ['开关机键','音量增减键','Home键'],
         connector: ['闪电'],
         pencil: ['Apple Pencil 1'],
+        unlockMethods: ['指纹解锁'],
         models: [
             {id: 1, name: "iPad11,1", model: "A2133 (WiFi)", weight: 300},
             {id: 2, name: "iPad11,2", model: "A2124, A2126 (WiFi + 蜂窝)", weight: 310},
@@ -1624,6 +1646,7 @@ const iPadMini = [
         mechanicalKeys: ['开关机键','音量增减键'],
         connector: ['USB-C'],
         pencil: ['Apple Pencil 2'],
+        unlockMethods: ['面容解锁'],
         models: [
             {id: 1, name: "iPad14,1", model: "A2568  (WiFi)", weight: 290},
             {id: 2, name: "iPad14,2", model: "A2569 (WiFi + 蜂窝)", weight: 300},
@@ -1689,9 +1712,10 @@ const iPad = [
         storage: [16, 32, 64],
         price: "",
         battery: "6613",
-        mechanicalKeys: ['Home键','开关机键','音量增减键'],
+        mechanicalKeys: ['开关机键','音量增减键','Home键'],
         connector: ['30针'],
         pencil: [],
+        unlockMethods: ['指纹解锁'],
         models: [
             {id: 1, name: "iPad1,1", model: "A1219 (WiFi)", weight: 680},
             {id: 2, name: "iPad1,1", model: "A1337 (WiFi + 3G)", weight: 730},
@@ -1739,9 +1763,10 @@ const iPad = [
         storage: [16, 32, 64],
         price: "",
         battery: "6944",
-        mechanicalKeys: ['Home键','开关机键','音量增减键'],
+        mechanicalKeys: ['开关机键','音量增减键','Home键'],
         connector: ['30针'],
         pencil: [],
+        unlockMethods: ['指纹解锁'],
         models: [
             {id: 1, name: "iPad2,1", model: "A1395 (WiFi)", weight: 601},
             {id: 2, name: "iPad2,2", model: "A1397 (WiFi + 3G CDMA)", weight: 613},
@@ -1804,9 +1829,10 @@ const iPad = [
         storage: [16, 32, 64],
         price: "",
         battery: "11560",
-        mechanicalKeys: ['Home键','开关机键','音量增减键'],
+        mechanicalKeys: ['开关机键','音量增减键','Home键'],
         connector: ['30针'],
         pencil: [],
+        unlockMethods: ['指纹解锁'],
         models: [
             {id: 1, name: "iPad3,1", model: "A1416 (WiFi)", weight: 650},
             {id: 2, name: "iPad3,2", model: "A1403 (WiFi + 蜂窝 VZ)", weight: 660},
@@ -1869,9 +1895,10 @@ const iPad = [
         storage: [16, 32, 64, 128],
         price: "",
         battery: "11560",
-        mechanicalKeys: ['Home键','开关机键','音量增减键'],
+        mechanicalKeys: ['开关机键','音量增减键','Home键'],
         connector: ['闪电'],
         pencil: [],
+        unlockMethods: ['指纹解锁'],
         models: [
             {id: 1, name: "iPad5,3", model: "A1458 (WiFi)", weight: 650},
             {id: 2, name: "iPad5,4", model: "A1459 (WiFi + 蜂窝)", weight: 660},
@@ -1936,9 +1963,10 @@ const iPad = [
         storage: [32, 128],
         price: "",
         battery: "8594",
-        mechanicalKeys: ['Home键','开关机键','音量增减键'],
+        mechanicalKeys: ['开关机键','音量增减键','Home键'],
         connector: ['闪电'],
         pencil: [],
+        unlockMethods: ['指纹解锁'],
         models: [
             {id: 1, name: "iPad6,11", model: "A1822 (WiFi)", weight: 469},
             {id: 2, name: "iPad6,12", model: "A1823 (WiFi + 蜂窝)", weight: 478},
@@ -2002,9 +2030,10 @@ const iPad = [
         storage: [32, 128],
         price: "",
         battery: "8594",
-        mechanicalKeys: ['Home键','开关机键','音量增减键'],
+        mechanicalKeys: ['开关机键','音量增减键','Home键'],
         connector: ['闪电'],
         pencil: ['Apple Pencil 1'],
+        unlockMethods: ['指纹解锁'],
         models: [
             {id: 1, name: "iPad7,5", model: "A1893 (WiFi)", weight: 469},
             {id: 2, name: "iPad7,6", model: "A1954 (WiFi + 蜂窝)", weight: 478},
@@ -2068,9 +2097,10 @@ const iPad = [
         storage: [32, 128],
         price: "",
         battery: "8594",
-        mechanicalKeys: ['Home键','开关机键','音量增减键'],
+        mechanicalKeys: ['开关机键','音量增减键','Home键'],
         connector: ['闪电'],
         pencil: ['Apple Pencil 1'],
+        unlockMethods: ['指纹解锁'],
         models: [
             {id: 1, name: "iPad7,11", model: "A2197 (WiFi)", weight: 483},
             {id: 2, name: "iPad7,12", model: "A2200 (WiFi + 蜂窝)", weight: 493},
@@ -2135,9 +2165,10 @@ const iPad = [
         storage: [32, 128],
         price: "",
         battery: "32.4 WH",
-        mechanicalKeys: ['Home键','开关机键','音量增减键'],
+        mechanicalKeys: ['开关机键','音量增减键','Home键'],
         connector: ['闪电'],
         pencil: ['Apple Pencil 1'],
+        unlockMethods: ['指纹解锁'],
         models: [
             {id: 1, name: "iPad11,6", model: "iPad11,6 (WiFi)", weight: 490},
             {id: 2, name: "iPad11,7", model: "iPad11,7 (WiFi + 蜂窝)", weight: 495},
@@ -2201,9 +2232,10 @@ const iPad = [
         storage: [64, 256],
         price: "",
         battery: "32.4 WH",
-        mechanicalKeys: ['Home键','开关机键','音量增减键'],
+        mechanicalKeys: ['开关机键','音量增减键','Home键'],
         connector: ['闪电'],
         pencil: ['Apple Pencil 1'],
+        unlockMethods: ['指纹解锁'],
         models: [
             {id: 1, name: "iPad12,1", model: "A2602 (WiFi)", weight: 487},
             {id: 2, name: "iPad12,2", model: "A2603 (WiFi + 蜂窝)", weight: 498},
@@ -2272,6 +2304,7 @@ const iPad = [
         mechanicalKeys: ['开关机键','音量增减键'],
         connector: ['USB-C'],
         pencil: ['Apple Pencil 1(购买配件)', 'Apple Pencil 2'],
+        unlockMethods: ['面容解锁'],
         models: [
             {id: 1, name: "--", model: "-- (WiFi)", weight: 477},
             {id: 2, name: "--", model: "-- (WiFi + 蜂窝)", weight: 481},
@@ -2304,7 +2337,7 @@ let app = new Vue({
     el: "#app",
     data: {
         // date
-        dateEnd: '2022.12.02',
+        dateEnd: '2022.12.27',
         // thumb up
         pingPongInterval: null,
         thumbsUpKey: 'ipad',
