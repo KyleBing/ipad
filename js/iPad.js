@@ -2296,7 +2296,7 @@ const iPad = [
             core: 4
         },
         memory: [
-            {name: "", size: "", type: ''},
+            {name: "", size: "4", type: 'LPDDR4X SDRAM'},
         ],
         storage: [64, 256],
         price: "",
@@ -2321,12 +2321,12 @@ const iPad = [
             back: [
                 {
                     name: '默认',
-                    pixelCount: '800万, ƒ/2.4',
+                    pixelCount: '1200万, ƒ/1.8',
                     dimension: [
                         {size: '1080p', fps: [30]},
                     ],
                     zoomRate: '5',
-                    hdr: false},
+                    hdr: true},
             ]
         },
         release: "2022-10-19"
