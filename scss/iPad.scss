@@ -145,8 +145,6 @@ footer{
 }
 
 
-
-
 .key-list{
   display: flex;
   justify-content: flex-start;
@@ -172,6 +170,22 @@ footer{
       font-size: 9px;
     }
   }
+}
+
+.tip{
+  padding: 20px;
+  color: $text-comment;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+kbd {
+  font-family: "Consolas";
+  background-color: white;
+  padding: 3px 5px;
+  @include border-radius(3px);
+  border: 1px solid $color-border;
 }
 
 
