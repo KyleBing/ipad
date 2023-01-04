@@ -2333,6 +2333,10 @@ const iPad = [
     },
 ]
 
+const contributors = [
+    '许璐','黄朋','微雨中郎', '陈飞虎', 'nvfei'
+]
+
 let app = new Vue({
     el: "#app",
     data: {
