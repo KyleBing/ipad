@@ -1159,7 +1159,7 @@ const iPadAir = [
         mechanicalKeys: ['开关机键','音量增减键'],
         connector: ['USB-C'],
         pencil: ['Apple Pencil 2'],
-        unlockMethods: ['面容解锁'],
+        unlockMethods: ['指纹解锁'],
         models: [
             {id: 1, name: "iPad13,1", model: "A2316 (WiFi)", weight: 458},
             {id: 2, name: "iPad13,2", model: "A2324, A2072(WiFi + 蜂窝)", weight: 460},
@@ -1231,7 +1231,7 @@ const iPadAir = [
         mechanicalKeys: ['开关机键','音量增减键'],
         connector: ['USB-C', '智能接点', '磁力接点'],
         pencil: ['Apple Pencil 2'],
-        unlockMethods: ['面容解锁'],
+        unlockMethods: ['指纹解锁'],
         models: [
             {id: 1, name: "iPad13,16", model: "A2588 (WiFi)", weight: 458},
             {id: 2, name: "iPad13,17", model: "A2589, A2072(WiFi + 蜂窝)", weight: 460},
@@ -2334,14 +2334,14 @@ const iPad = [
 ]
 
 const contributors = [
-    '许璐','黄朋','微雨中郎', '陈飞虎', 'nvfei'
+    '许璐','黄朋','微雨中郎', '陈飞虎', 'nvfei', 'Dorcoin'
 ]
 
 let app = new Vue({
     el: "#app",
     data: {
         // date
-        dateEnd: '2022.12.27',
+        dateEnd: '2023.01.07',
         // thumb up
         pingPongInterval: null,
         thumbsUpKey: 'ipad',
