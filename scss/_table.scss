@@ -14,7 +14,9 @@ tbody{
   tr{
     height: 70px;
     &:hover{
-      background-color: $bg-highlight !important;
+      td{
+        background-color: $bg-highlight !important;
+      }
       color: #000;
       .camera{
         border-style: solid;
@@ -28,7 +30,10 @@ tbody{
 
 tr td{
   &:first-child{
+    position: sticky;
     padding-left: 10px;
+    left: 0;
+    z-index: 1000;
   }
   &:last-child{
     padding-right: 10px;
@@ -38,10 +43,14 @@ tr td{
 tbody tr{
   border-bottom: 1px solid #eeeeee;
   &:nth-child(odd){
-    background-color: #ffffff;
+    td{
+      background-color: #ffffff;
+    }
   }
   &:nth-child(even){
-    background-color: #fdfcfc;
+    td{
+      background-color: #fdfcfc;
+    }
   }
   &:last-child{
     border-bottom: 0;
@@ -52,13 +61,18 @@ thead{
 }
 
 th{
-  background-color: rgba(0,0,0,0.03);
+  background-color: #f7f7f7;
   white-space: nowrap;
   border-bottom: 1px solid lighten($color-border, 5%);
   border-top: 1px solid lighten($color-border, 5%);
   text-align: left;
   vertical-align: bottom;
   padding: 10px;
+  &:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 1000;
+  }
   sup{
     font-family: "Galvji", Sans-serf;
     color: $gray;

@@ -527,8 +527,10 @@ tbody tr {
   height: 70px;
 }
 tbody tr:hover {
-  background-color: #eeeeee !important;
   color: #000;
+}
+tbody tr:hover td {
+  background-color: #eeeeee !important;
 }
 tbody tr:hover .camera {
   border-style: solid;
@@ -538,7 +540,10 @@ tbody tr.active {
 }
 
 tr td:first-child {
+  position: sticky;
   padding-left: 10px;
+  left: 0;
+  z-index: 1000;
 }
 tr td:last-child {
   padding-right: 10px;
@@ -547,10 +552,10 @@ tr td:last-child {
 tbody tr {
   border-bottom: 1px solid #eeeeee;
 }
-tbody tr:nth-child(odd) {
+tbody tr:nth-child(odd) td {
   background-color: #ffffff;
 }
-tbody tr:nth-child(even) {
+tbody tr:nth-child(even) td {
   background-color: #fdfcfc;
 }
 tbody tr:last-child {
@@ -558,13 +563,18 @@ tbody tr:last-child {
 }
 
 th {
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: #f7f7f7;
   white-space: nowrap;
   border-bottom: 1px solid #e7e7e7;
   border-top: 1px solid #e7e7e7;
   text-align: left;
   vertical-align: bottom;
   padding: 10px;
+}
+th:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 1000;
 }
 th sup {
   font-family: "Galvji", Sans-serf;

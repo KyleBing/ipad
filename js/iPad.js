@@ -2341,7 +2341,7 @@ let app = new Vue({
     el: "#app",
     data: {
         // date
-        dateEnd: '2023.01.10',
+        dateEnd: '2023.01.12',
         // thumb up
         pingPongInterval: null,
         thumbsUpKey: 'ipad',
