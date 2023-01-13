@@ -2304,7 +2304,7 @@ const iPad = [
         mechanicalKeys: ['开关机键','音量增减键'],
         connector: ['USB-C'],
         pencil: ['Apple Pencil 1(购买配件)', 'Apple Pencil 2'],
-        unlockMethods: ['面容解锁'],
+        unlockMethods: ['指纹解锁'],
         models: [
             {id: 1, name: "--", model: "-- (WiFi)", weight: 477},
             {id: 2, name: "--", model: "-- (WiFi + 蜂窝)", weight: 481},
@@ -2341,7 +2341,7 @@ let app = new Vue({
     el: "#app",
     data: {
         // date
-        dateEnd: '2023.01.12',
+        dateEnd: '2023.01.13',
         // thumb up
         pingPongInterval: null,
         thumbsUpKey: 'ipad',
