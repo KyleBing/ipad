@@ -1,4 +1,4 @@
-<img src="https://github.com/KyleBing/ipad/raw/master/imgs/ipad_favicon256w.png" width="100">
+<img src="https://github.com/KyleBing/ipad/raw/master/img/ipad_favicon256w.png" width="100">
 
 # iPad 信息
 
