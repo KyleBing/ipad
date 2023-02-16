@@ -4,11 +4,17 @@
 
 > 数据来源： wikipedia
 
-## 系列参数
+## github 地址
 - iPhone: [https://github.com/KyleBing/iphone](https://github.com/KyleBing/iphone)
 - iPad: [https://github.com/KyleBing/ipad](https://github.com/KyleBing/ipad)
 - Apple Chip: [https://github.com/KyleBing/apple-chip](https://github.com/KyleBing/apple-chip)
 - AirPods: [https://github.com/KyleBing/airpods](https://github.com/KyleBing/airpods)
+
+## 线上可访问地址
+- iPhone: [https://kylebing.cn/tools/iphone](https://kylebing.cn/tools/iphone)
+- iPad: [https://kylebing.cn/tools/ipad](https://kylebing.cn/tools/ipad)
+- Apple Chip: [https://kylebing.cn/tools/apple-chip](https://kylebing.cn/tools/apple-chip)
+- AirPods: [https://kylebing.cn/tools/airpods](https://kylebing.cn/tools/airpods)
 
 
 ## 修改说明
