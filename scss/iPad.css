@@ -1301,6 +1301,12 @@ footer {
   text-align: center;
   color: #5f5f5f;
 }
+footer a {
+  color: #5f5f5f;
+}
+footer a:hover {
+  color: #00A5FF;
+}
 
 .header {
   padding-bottom: 15px;
@@ -1595,13 +1601,13 @@ kbd {
   tbody tr {
     border-color: #383838;
   }
-  tbody tr:hover {
+  tbody tr:hover td {
     background-color: #474747 !important;
   }
-  tbody tr:nth-child(odd) {
+  tbody tr:nth-child(odd) td {
     background-color: #383838;
   }
-  tbody tr:nth-child(even) {
+  tbody tr:nth-child(even) td {
     background-color: #2e2e2e;
   }
   th {
@@ -1657,5 +1663,9 @@ kbd {
   }
   .gradient {
     background-image: linear-gradient(to bottom right, #333333, #404040);
+  }
+  kbd {
+    background-color: #383838;
+    border-color: #4d4d4d;
   }
 }

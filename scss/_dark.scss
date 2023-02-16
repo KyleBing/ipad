@@ -94,20 +94,23 @@ $dark-border: lighten(black, 30%);
     }
   }
 
-
-
-
   // TABLE
   tbody tr{
     border-color: $dark-bg-light;
     &:hover {
-      background-color: $dark-bg-highlight !important;
+      td{
+        background-color: $dark-bg-highlight !important;
+      }
     }
     &:nth-child(odd){
-      background-color: $dark-bg-light;
+      td{
+        background-color: $dark-bg-light;
+      }
     }
     &:nth-child(even){
-      background-color: $dark-bg;
+      td{
+        background-color: $dark-bg;
+      }
     }
   }
 
@@ -192,4 +195,10 @@ $dark-border: lighten(black, 30%);
   .gradient{
     background-image: linear-gradient(to bottom right, lighten(black, 20%), lighten(black, 25%));
   }
+
+  kbd{
+    background-color: $dark-bg-light;
+    border-color: $dark-border;
+  }
+
 }
