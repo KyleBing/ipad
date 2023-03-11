@@ -1195,7 +1195,6 @@ td p {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  padding: 10px;
 }
 .filter-list .iphone-tag-list .iphone-tag {
   border: 1px solid #dadada;
