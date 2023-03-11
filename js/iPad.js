@@ -1803,7 +1803,11 @@ const iPad = [
         ],
         storage: [16, 32, 64],
         price: "",
-        battery: "6613",
+        battery: {
+            capacity: 6600, // 容量 mah
+            capacityWH: 24.8, // wh
+            voltage: 3.75 // 电压 v
+        },
         mechanicalKeys: ['开关机键','音量增减键','Home键'],
         connector: ['30针'],
         pencil: [],
@@ -1854,7 +1858,11 @@ const iPad = [
         ],
         storage: [16, 32, 64],
         price: "",
-        battery: "6944",
+        battery: {
+            capacity: 6944, // 容量 mah
+            capacityWH: 0, // wh
+            voltage: 0 // 电压 v
+        },
         mechanicalKeys: ['开关机键','音量增减键','Home键'],
         connector: ['30针'],
         pencil: [],
@@ -1920,7 +1928,11 @@ const iPad = [
         ],
         storage: [16, 32, 64],
         price: "",
-        battery: "11560",
+        battery: {
+            capacity: 11560, // 容量 mah
+            capacityWH: 43, // wh
+            voltage: 3.7 // 电压 v
+        },
         mechanicalKeys: ['开关机键','音量增减键','Home键'],
         connector: ['30针'],
         pencil: [],
@@ -1986,7 +1998,11 @@ const iPad = [
         ],
         storage: [16, 32, 64, 128],
         price: "",
-        battery: "11560",
+        battery: {
+            capacity: 11560, // 容量 mah
+            capacityWH: 42.5, // wh
+            voltage: 3.7 // 电压 v
+        },
         mechanicalKeys: ['开关机键','音量增减键','Home键'],
         connector: ['闪电'],
         pencil: [],
@@ -2054,7 +2070,11 @@ const iPad = [
         ],
         storage: [32, 128],
         price: "",
-        battery: "8594",
+        battery: {
+            capacity: 8827, // 容量 mah
+            capacityWH: 32.9, // wh
+            voltage: 3.7 // 电压 v
+        },
         mechanicalKeys: ['开关机键','音量增减键','Home键'],
         connector: ['闪电'],
         pencil: [],
@@ -2121,7 +2141,11 @@ const iPad = [
         ],
         storage: [32, 128],
         price: "",
-        battery: "8594",
+        battery: {
+            capacity: 8594, // 容量 mah
+            capacityWH: 32.4, // wh
+            voltage: 0 // 电压 v
+        },
         mechanicalKeys: ['开关机键','音量增减键','Home键'],
         connector: ['闪电'],
         pencil: ['Apple Pencil 1'],
@@ -2188,7 +2212,11 @@ const iPad = [
         ],
         storage: [32, 128],
         price: "",
-        battery: "8594",
+        battery: {
+            capacity: 8594, // 容量 mah
+            capacityWH: 32.4, // wh
+            voltage: 0 // 电压 v
+        },
         mechanicalKeys: ['开关机键','音量增减键','Home键'],
         connector: ['闪电'],
         pencil: ['Apple Pencil 1'],
@@ -2256,7 +2284,11 @@ const iPad = [
         ],
         storage: [32, 128],
         price: "",
-        battery: "32.4 WH",
+        battery: {
+            capacity: 0, // 容量 mah
+            capacityWH: 32.4, // wh
+            voltage: 0 // 电压 v
+        },
         mechanicalKeys: ['开关机键','音量增减键','Home键'],
         connector: ['闪电'],
         pencil: ['Apple Pencil 1'],
@@ -2323,7 +2355,11 @@ const iPad = [
         ],
         storage: [64, 256],
         price: "",
-        battery: "32.4 WH",
+        battery: {
+            capacity: 0, // 容量 mah
+            capacityWH: 32.4, // wh
+            voltage: 0 // 电压 v
+        },
         mechanicalKeys: ['开关机键','音量增减键','Home键'],
         connector: ['闪电'],
         pencil: ['Apple Pencil 1'],
@@ -2392,7 +2428,11 @@ const iPad = [
         ],
         storage: [64, 256],
         price: "",
-        battery: "28.6 WH",
+        battery: {
+            capacity: 0, // 容量 mah
+            capacityWH: 28.6, // wh
+            voltage: 0 // 电压 v
+        },
         mechanicalKeys: ['开关机键','音量增减键'],
         connector: ['USB-C'],
         pencil: ['Apple Pencil 1(购买配件)', 'Apple Pencil 2'],
