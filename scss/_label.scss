@@ -2,17 +2,20 @@ $dot-width: 20px; // 新机型标记的大小
 
 .model-title{ // 模型字体大小
   position: relative;
-  font-size:$fz-big;
+  font-size: $fz-big;
   font-weight: bold;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  .model{
+  .model {
     font-family: "Galvji";
+    font-weight: bold;
     margin-right: 10px;
   }
-
-
+  .size{
+    //font-family: "Galvji";
+    color: $magenta;
+  }
 }
 $dual-label-types: (
         "cpu": $magenta,
@@ -199,7 +202,7 @@ tbody tr.active {
 $height-score-bar: 3px;
 $height-score-bar-wrapper: 15px;
 
-.score-bar-green{
+.score-bar{
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -207,39 +210,32 @@ $height-score-bar-wrapper: 15px;
   .bar{
     @include border-radius(2px);
     height: $height-score-bar;
-    background: $gradient-bg-green
   }
   .score{
-    margin-left: 3px;
+    font-family: "JetBrainsMonoPureNumber";
+    margin-left: 5px;
     font-size: $fz-sm;
   }
-}
-.score-bar-blue{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  height: $height-score-bar-wrapper;
-  .bar{
-    @include border-radius(2px);
-    height: $height-score-bar;
-    background: $gradient-bg-blue
-  }
-  .score{
-    margin-left: 3px;
-    font-size: $fz-sm;
-  }
+  &.blue{ .bar{background: $gradient-bg-blue} }
+  &.green{ .bar{background: $gradient-bg-green} }
 }
 
 
 .battery-item{
+  font-family: "JetBrainsMonoPureNumber";
   position: relative;
-  font-family: "JetBrains Mono";
   display: flex;
   align-items: center;
   .battery-voltage{
     position: absolute;
-    left: 10px;
-    top: 9px;
-    font-size: $fz-tiny;
+    left: 0;
+    top: -9px;
+    font-size: $fz-mini;
   }
+}
+
+.date{
+  font-weight: bold;
+  padding: 0 20px;
+  @extend .text-blue;
 }

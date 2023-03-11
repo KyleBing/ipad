@@ -38,7 +38,11 @@ $text-colors: (
 );
 
 @each $name, $color in $text-colors {
-  .#{$name}{
+  .text-#{$name}{
     color: $color;
   }
+}
+
+.text-mono{
+  font-family: "JetBrainsMonoPureNumber";
 }

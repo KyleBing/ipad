@@ -96,44 +96,48 @@ tt {
   font-weight: bold;
 }
 
-.purple {
+.text-purple {
   color: #5856D6;
 }
 
-.blue {
+.text-blue, .date {
   color: #007AFF;
 }
 
-.cyan {
+.text-cyan {
   color: #5AC8FA;
 }
 
-.green {
+.text-green {
   color: #00b56b;
 }
 
-.yellow {
+.text-yellow {
   color: #FFCC00;
 }
 
-.orange {
+.text-orange {
   color: #FF9500;
 }
 
-.red {
+.text-red {
   color: #FF3B30;
 }
 
-.magenta {
+.text-magenta {
   color: #FF2D70;
 }
 
-.gray {
+.text-gray {
   color: #5f5f5f;
 }
 
-.light-gray, .filter-list .iphone-tag-list .iphone-tag .screen-size {
+.text-light-gray {
   color: #797979;
+}
+
+.text-mono {
+  font-family: "JetBrainsMonoPureNumber";
 }
 
 .model-title {
@@ -146,7 +150,11 @@ tt {
 }
 .model-title .model {
   font-family: "Galvji";
+  font-weight: bold;
   margin-right: 10px;
+}
+.model-title .size {
+  color: #FF2D70;
 }
 
 .dual-label-cpu {
@@ -492,53 +500,46 @@ tbody tr.active .gpu .model {
   border: 1px solid #00b56b;
 }
 
-.score-bar-green {
+.score-bar {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   height: 15px;
 }
-.score-bar-green .bar {
+.score-bar .bar {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
   height: 3px;
-  background: linear-gradient(135deg, #049cb7, #3dd9bd);
 }
-.score-bar-green .score {
-  margin-left: 3px;
+.score-bar .score {
+  font-family: "JetBrainsMonoPureNumber";
+  margin-left: 5px;
   font-size: 12px;
 }
-
-.score-bar-blue {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  height: 15px;
-}
-.score-bar-blue .bar {
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  height: 3px;
+.score-bar.blue .bar {
   background: linear-gradient(135deg, #1c7df3, #1abcfa);
 }
-.score-bar-blue .score {
-  margin-left: 3px;
-  font-size: 12px;
+.score-bar.green .bar {
+  background: linear-gradient(135deg, #049cb7, #3dd9bd);
 }
 
 .battery-item {
+  font-family: "JetBrainsMonoPureNumber";
   position: relative;
-  font-family: "JetBrains Mono";
   display: flex;
   align-items: center;
 }
 .battery-item .battery-voltage {
   position: absolute;
-  left: 10px;
-  top: 9px;
-  font-size: 11px;
+  left: 0;
+  top: -9px;
+  font-size: 10px;
+}
+
+.date {
+  font-weight: bold;
+  padding: 0 20px;
 }
 
 /* Table */
@@ -845,11 +846,15 @@ td p {
   font-family: "Galvji";
   src: url("../fonts/Galvji.ttf");
 }
+@font-face {
+  font-family: "JetBrainsMonoPureNumber";
+  src: url("../fonts/JetBrainsMono-Regular.otf");
+}
 .font-galvji {
   font-family: "Galvji";
 }
 
-.impact, .camera .base-info .hdr {
+.impact {
   font-family: "Impact", sans-serif;
 }
 

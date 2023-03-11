@@ -657,7 +657,7 @@ const iPadPro = [
             capacityWH: 28.65, // wh
             voltage: 3.77 // 电压 v
         },
-        connector: ['USB-C(雷雳3)', '智能接点', '磁力接点'],
+        connector: ['雷雳3', '智能接点', '磁力接点'],
         mechanicalKeys: ['开关机键','音量增减键'],
         pencil: ['Apple Pencil 2'],
         unlockMethods: ['面容解锁'],
@@ -745,7 +745,7 @@ const iPadPro = [
             capacityWH: 40.88, // wh
             voltage: 3.76 // 电压 v
         },
-        connector: ['USB-C(雷雳3)', '智能接点', '磁力接点'],
+        connector: ['雷雳3', '智能接点', '磁力接点'],
         mechanicalKeys: ['开关机键','音量增减键'],
         pencil: ['Apple Pencil 2'],
         unlockMethods: ['面容解锁'],
@@ -834,7 +834,7 @@ const iPadPro = [
             capacityWH: 28.65, // wh
             voltage: 0 // 电压 v
         },
-        connector: ['USB-C(雷雳3)', '智能接点', '磁力接点'],
+        connector: ['雷雳3', '智能接点', '磁力接点'],
         mechanicalKeys: ['开关机键','音量增减键'],
         pencil: ['Apple Pencil 2'],
         unlockMethods: ['面容解锁'],
@@ -920,7 +920,7 @@ const iPadPro = [
             capacityWH: 40.88, // wh
             voltage: 0 // 电压 v
         },
-        connector: ['USB-C(雷雳3)', '智能接点', '磁力接点'],
+        connector: ['雷雳3', '智能接点', '磁力接点'],
         mechanicalKeys: ['开关机键','音量增减键'],
         pencil: ['Apple Pencil 2'],
         unlockMethods: ['面容解锁'],
@@ -2473,7 +2473,7 @@ let app = new Vue({
     el: "#app",
     data: {
         // date
-        dateEnd: '2023.01.13',
+        dateEnd: '2023-03-12',
         // thumb up
         pingPongInterval: null,
         thumbsUpKey: 'ipad',
