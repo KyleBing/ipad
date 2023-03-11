@@ -2473,7 +2473,7 @@ let app = new Vue({
     el: "#app",
     data: {
         // date
-        dateEnd: '2023-03-12',
+        dateEnd: '2023.03.12', // 格式： 2023.03.12
         // thumb up
         pingPongInterval: null,
         thumbsUpKey: 'ipad',

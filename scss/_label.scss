@@ -236,6 +236,7 @@ $height-score-bar-wrapper: 15px;
 
 .date{
   font-weight: bold;
-  padding: 0 20px;
+  padding: 0 10px;
+  font-size: $fz-big;
   @extend .text-blue;
 }

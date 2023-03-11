@@ -539,7 +539,8 @@ tbody tr.active .gpu .model {
 
 .date {
   font-weight: bold;
-  padding: 0 20px;
+  padding: 0 10px;
+  font-size: 18px;
 }
 
 /* Table */
