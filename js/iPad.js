@@ -43,7 +43,11 @@ const iPadPro = [
         ],
         storage: ["32", "128", "256"],
         price: "",
-        battery: "7306",
+        battery: {
+            capacity: 7306, // 容量 mah
+            capacityWH: 27.91, // wh
+            voltage: 3.82 // 电压 v
+        },
         connector: ['闪电', '智能接点', '3.5mm音频接口'],
         mechanicalKeys: ['开关机键','音量增减键','Home键'],
         pencil: ['Apple Pencil 1'],
@@ -109,7 +113,11 @@ const iPadPro = [
         ],
         storage: ["32", "128", "256"],
         price: "",
-        battery: "10307",
+        battery: {
+            capacity: 10307, // 容量 mah
+            capacityWH: 38.8, // wh
+            voltage: 3.77 // 电压 v
+        },
         connector: ['闪电', '智能接点', '3.5mm音频接口'],
         mechanicalKeys: ['开关机键','音量增减键','Home键'],
         pencil: ['Apple Pencil 1'],
@@ -174,7 +182,11 @@ const iPadPro = [
         ],
         storage: ["64", "256", "512"],
         price: "",
-        battery: "8134",
+        battery: {
+            capacity: 8134, // 容量 mah
+            capacityWH: 30.8, // wh
+            voltage: 3.77 // 电压 v
+        },
         connector: ['闪电', '智能接点', '3.5mm音频接口'],
         mechanicalKeys: ['开关机键','音量增减键','Home键'],
         pencil: ['Apple Pencil 1'],
@@ -240,7 +252,11 @@ const iPadPro = [
         ],
         storage: ["64", "256", "512"],
         price: "",
-        battery: "10875",
+        battery: {
+            capacity: 10875, // 容量 mah
+            capacityWH: 41, // wh
+            voltage: 3.77 // 电压 v
+        },
         connector: ['闪电', '智能接点', '3.5mm音频接口'],
         mechanicalKeys: ['开关机键','音量增减键','Home键'],
         pencil: ['Apple Pencil 1'],
@@ -310,7 +326,11 @@ const iPadPro = [
         ],
         storage: ["64", "256", "512", "1024"],
         price: "",
-        battery: "7812",
+        battery: {
+            capacity: 7812, // 容量 mah
+            capacityWH: 29.45, // wh
+            voltage: 3.77 // 电压 v
+        },
         connector: ['USB-C', '智能接点', '磁力接点'],
         mechanicalKeys: ['开关机键','音量增减键'],
         pencil: ['Apple Pencil 2'],
@@ -382,7 +402,11 @@ const iPadPro = [
         ],
         storage: ["64", "256", "512", "1024"],
         price: "",
-        battery: "9720",
+        battery: {
+            capacity: 9720, // 容量 mah
+            capacityWH: 36.55, // wh
+            voltage: 3.76 // 电压 v
+        },
         connector: ['USB-C', '智能接点', '磁力接点'],
         mechanicalKeys: ['开关机键','音量增减键'],
         pencil: ['Apple Pencil 2'],
@@ -454,7 +478,11 @@ const iPadPro = [
         ],
         storage: ["128", "256", "512", "1024"],
         price: "",
-        battery: "7600",
+        battery: {
+            capacity: 7812, // 容量 mah
+            capacityWH: 29.45, // wh
+            voltage: 3.77 // 电压 v
+        },
         connector: ['USB-C', '智能接点', '磁力接点'],
         mechanicalKeys: ['开关机键','音量增减键'],
         pencil: ['Apple Pencil 2'],
@@ -536,7 +564,11 @@ const iPadPro = [
         ],
         storage: ["128", "256", "512", "1024"],
         price: "",
-        battery: "9737",
+        battery: {
+            capacity: 9720, // 容量 mah
+            capacityWH: 36.55, // wh
+            voltage: 3.76 // 电压 v
+        },
         connector: ['USB-C', '智能接点', '磁力接点'],
         mechanicalKeys: ['开关机键','音量增减键'],
         pencil: ['Apple Pencil 2'],
@@ -620,7 +652,11 @@ const iPadPro = [
         ],
         storage: ['128', '256', '512', '1024', '2048'],
         price: "",
-        battery: "28.65wh",
+        battery: {
+            capacity: 7599, // 容量 mah
+            capacityWH: 28.65, // wh
+            voltage: 3.77 // 电压 v
+        },
         connector: ['USB-C(雷雳3)', '智能接点', '磁力接点'],
         mechanicalKeys: ['开关机键','音量增减键'],
         pencil: ['Apple Pencil 2'],
@@ -704,7 +740,11 @@ const iPadPro = [
         ],
         storage: ['128', '256', '512', '1024', '2048'],
         price: "",
-        battery: "40.88wh",
+        battery: {
+            capacity: 10872, // 容量 mah
+            capacityWH: 40.88, // wh
+            voltage: 3.76 // 电压 v
+        },
         connector: ['USB-C(雷雳3)', '智能接点', '磁力接点'],
         mechanicalKeys: ['开关机键','音量增减键'],
         pencil: ['Apple Pencil 2'],
@@ -789,7 +829,11 @@ const iPadPro = [
         ],
         storage: ['128', '256', '512', '1024', '2048'],
         price: "",
-        battery: "28.65wh",
+        battery: {
+            capacity: 0, // 容量 mah
+            capacityWH: 28.65, // wh
+            voltage: 0 // 电压 v
+        },
         connector: ['USB-C(雷雳3)', '智能接点', '磁力接点'],
         mechanicalKeys: ['开关机键','音量增减键'],
         pencil: ['Apple Pencil 2'],
@@ -871,7 +915,11 @@ const iPadPro = [
         ],
         storage: ['128', '256', '512', '1024', '2048'],
         price: "",
-        battery: "40.88wh",
+        battery: {
+            capacity: 0, // 容量 mah
+            capacityWH: 40.88, // wh
+            voltage: 0 // 电压 v
+        },
         connector: ['USB-C(雷雳3)', '智能接点', '磁力接点'],
         mechanicalKeys: ['开关机键','音量增减键'],
         pencil: ['Apple Pencil 2'],
@@ -2451,7 +2499,19 @@ let app = new Vue({
                 }
             ]
         },
+        sortWithBatteryCapacity(){
+            this.iPadsSeries = [
+                {
+                    title: '电量排行',
+                    iPads: [].concat(iPadAir, iPadMini, iPad, iPadPro)
+                        .sort((a,b) => a.battery.capacity < b.battery.capacity? 1 : -1)
+                }
+            ]
+        },
 
+        sortReset(){
+            this.iPadsSeries = this.originiPadsSeries
+        },
 
         // 全屏显示
         enterFullScreen() {
@@ -2539,7 +2599,25 @@ let app = new Vue({
                 }
             })
             return max
-        }
+        },
+        maxBatteryCapacity(){
+            let max = 0
+            iPad.concat(iPadPro, iPadAir, iPadMini).forEach(item => {
+                if (max < item.battery.capacity) {
+                    max = item.battery.capacity
+                }
+            })
+            return max
+        },
+        maxBatteryCapacityWH(){
+            let max = 0
+            iPad.concat(iPadPro, iPadAir, iPadMini).forEach(item => {
+                if (max < item.battery.capacityWH) {
+                    max = item.battery.capacityWH
+                }
+            })
+            return max
+        },
     }
 })
 

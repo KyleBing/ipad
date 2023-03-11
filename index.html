@@ -73,8 +73,12 @@
                  v-for="item in allIpads" :key="item.name_short"
                  @click="filterTagToggle(item.name)"
             ><span>{{item.name_short}}</span> - <span class="screen-size">{{item.screen.size}}</span></div>
-            <div @click="sortWithGeekbenchScore" class="iphone-tag">GeekBench 排序</div>
 
+        </div>
+        <div class="iphone-tag-list">
+            <div @click="sortWithGeekbenchScore" class="iphone-tag">GeekBench 排序</div>
+            <div @click="sortWithBatteryCapacity" class="iphone-tag">电量 排序</div>
+            <div @click="sortReset" class="iphone-tag">复位</div>
         </div>
     </div>
     <div class="tip">
@@ -162,7 +166,7 @@
                                     <div class="model">{{iPad.cpu.model}}</div>
                                     <div class="rate">{{iPad.cpu.rate + ' x ' + iPad.cpu.core}}</div>
                                 </div>
-                                <div class="score-bar" v-if="iPad.geekbenchScore">
+                                <div class="score-bar-green" v-if="iPad.geekbenchScore">
                                     <div class="bar" :style="`width: ${iPad.geekbenchScore / maxScore * 100}px`"></div>
                                     <div class="score">{{iPad.geekbenchScore}}</div>
                                 </div>
@@ -191,7 +195,21 @@
                             </td>
                             <!--电池-->
                             <td>
-                                <div v-if="iPad.battery" class="battery">{{iPad.battery}}</div>
+                                <div class="battery-item">
+                                    <div class="battery-voltage" v-if="iPad.battery.voltage">{{iPad.battery.voltage}} v</div>
+                                    <div>
+                                        <div class="score-bar-green" v-if="iPad.battery.capacity">
+                                            <div class="bar" :style="`width: ${iPad.battery.capacity / maxBatteryCapacity * 100}px`"></div>
+                                            <div class="score">{{iPad.battery.capacity}} mah</div>
+                                        </div>
+                                        <div class="score-bar-blue" v-if="iPad.battery.capacityWH">
+                                            <div class="bar" :style="`width: ${iPad.battery.capacityWH / maxBatteryCapacityWH * 100}px`"></div>
+                                            <div class="score">{{iPad.battery.capacityWH}} wh</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
                             </td>
                             <!--connector-->
                             <td class="text-small">

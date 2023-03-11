@@ -196,19 +196,50 @@ tbody tr.active {
 }
 
 
+$height-score-bar: 3px;
+$height-score-bar-wrapper: 15px;
 
-.score-bar{
+.score-bar-green{
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 20px;
+  height: $height-score-bar-wrapper;
   .bar{
     @include border-radius(2px);
-    height: 5px;
+    height: $height-score-bar;
     background: $gradient-bg-green
   }
   .score{
     margin-left: 3px;
     font-size: $fz-sm;
+  }
+}
+.score-bar-blue{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: $height-score-bar-wrapper;
+  .bar{
+    @include border-radius(2px);
+    height: $height-score-bar;
+    background: $gradient-bg-blue
+  }
+  .score{
+    margin-left: 3px;
+    font-size: $fz-sm;
+  }
+}
+
+
+.battery-item{
+  position: relative;
+  font-family: "JetBrains Mono";
+  display: flex;
+  align-items: center;
+  .battery-voltage{
+    position: absolute;
+    left: 10px;
+    top: 9px;
+    font-size: $fz-tiny;
   }
 }
