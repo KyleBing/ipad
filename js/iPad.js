@@ -1002,7 +1002,11 @@ const iPadAir = [
         ],
         storage: [16, 32, 64, 128],
         price: "",
-        battery: "8820",
+        battery: {
+            capacity: 8820, // 容量 mah
+            capacityWH: 32.9, // wh
+            voltage: 3.73 // 电压 v
+        },
         mechanicalKeys: ['开关机键','音量增减键','Home键'],
         connector: ['闪电'],
         unlockMethods: ['指纹解锁'],
@@ -1068,7 +1072,11 @@ const iPadAir = [
         ],
         storage: [16, 64, 128],
         price: "",
-        battery: "7340",
+        battery: {
+            capacity: 7340, // 容量 mah
+            capacityWH: 27.62, // wh
+            voltage: 3.76 // 电压 v
+        },
         mechanicalKeys: ['开关机键','音量增减键','Home键'],
         connector: ['闪电'],
         unlockMethods: ['指纹解锁'],
@@ -1134,7 +1142,11 @@ const iPadAir = [
         ],
         storage: [64, 256],
         price: "",
-        battery: "8134",
+        battery: {
+            capacity: 8134, // 容量 mah
+            capacityWH: 30.2, // wh
+            voltage: 0 // 电压 v
+        },
         mechanicalKeys: ['开关机键','音量增减键','Home键'],
         connector: ['闪电'],
         pencil: ['Apple Pencil 1'],
@@ -1203,7 +1215,11 @@ const iPadAir = [
         ],
         storage: [64, 256],
         price: "",
-        battery: "28.6 WH",
+        battery: {
+            capacity: 0, // 容量 mah
+            capacityWH: 28.6, // wh
+            voltage: 0 // 电压 v
+        },
         mechanicalKeys: ['开关机键','音量增减键'],
         connector: ['USB-C'],
         pencil: ['Apple Pencil 2'],
@@ -1275,7 +1291,11 @@ const iPadAir = [
         ],
         storage: [64, 256],
         price: "",
-        battery: "28.6 WH",
+        battery: {
+            capacity: 0, // 容量 mah
+            capacityWH: 28.6, // wh
+            voltage: 0 // 电压 v
+        },
         mechanicalKeys: ['开关机键','音量增减键'],
         connector: ['USB-C', '智能接点', '磁力接点'],
         pencil: ['Apple Pencil 2'],
@@ -1348,7 +1368,11 @@ const iPadMini = [
         ],
         storage: [16, 32, 64],
         price: "",
-        battery: "4440",
+        battery: {
+            capacity: 4440, // 容量 mah
+            capacityWH: 0, // wh
+            voltage: 0 // 电压 v
+        },
         mechanicalKeys: ['开关机键','音量增减键','Home键'],
         connector: ['闪电'],
         unlockMethods: ['指纹解锁'],
@@ -1416,7 +1440,11 @@ const iPadMini = [
         ],
         storage: [16, 32, 64, 128],
         price: "",
-        battery: "6471",
+        battery: {
+            capacity: 6471, // 容量 mah
+            capacityWH: 0, // wh
+            voltage: 0 // 电压 v
+        },
         mechanicalKeys: ['开关机键','音量增减键','Home键'],
         connector: ['闪电'],
         unlockMethods: ['指纹解锁'],
@@ -1485,7 +1513,11 @@ const iPadMini = [
         ],
         storage: [16, 32, 64],
         price: "",
-        battery: "6471",
+        battery: {
+            capacity: 6471, // 容量 mah
+            capacityWH: 0, // wh
+            voltage: 0 // 电压 v
+        },
         mechanicalKeys: ['开关机键','音量增减键','Home键'],
         connector: ['闪电'],
         unlockMethods: ['指纹解锁'],
@@ -1554,7 +1586,11 @@ const iPadMini = [
         ],
         storage: [16, 64, 128],
         price: "",
-        battery: "5124",
+        battery: {
+            capacity: 5124, // 容量 mah
+            capacityWH: 0, // wh
+            voltage: 0 // 电压 v
+        },
         mechanicalKeys: ['开关机键','音量增减键','Home键'],
         connector: ['闪电'],
         unlockMethods: ['指纹解锁'],
@@ -1621,7 +1657,11 @@ const iPadMini = [
         ],
         storage: [64, 256],
         price: "",
-        battery: "5124",
+        battery: {
+            capacity: 5124, // 容量 mah
+            capacityWH: 0, // wh
+            voltage: 0 // 电压 v
+        },
         mechanicalKeys: ['开关机键','音量增减键','Home键'],
         connector: ['闪电'],
         pencil: ['Apple Pencil 1'],
@@ -1690,7 +1730,11 @@ const iPadMini = [
         ],
         storage: [64, 256],
         price: "",
-        battery: "19.3 WH",
+        battery: {
+            capacity: 5124, // 容量 mah
+            capacityWH: 19.3, // wh
+            voltage: 0 // 电压 v
+        },
         mechanicalKeys: ['开关机键','音量增减键'],
         connector: ['USB-C'],
         pencil: ['Apple Pencil 2'],
