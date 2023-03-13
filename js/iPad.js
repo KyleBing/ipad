@@ -824,8 +824,8 @@ const iPadPro = [
             core: '10'
         },
         memory: [
-            {name: "", size: "8", type: ""},
-            {name: "≥ 1T", size: "16", type: ""},
+            {name: "", size: "8", type: "LPDDR5"},
+            {name: "≥ 1T", size: "16", type: "LPDDR5"},
         ],
         storage: ['128', '256', '512', '1024', '2048'],
         price: "",
@@ -839,8 +839,8 @@ const iPadPro = [
         pencil: ['Apple Pencil 2'],
         unlockMethods: ['面容解锁'],
         models: [
-            {id: 1, name: "iPad", model: "WiFi", weight: 466},
-            {id: 2, name: "iPad", model: "WiFi + 蜂窝", weight: 468},
+            {id: 1, name: "iPad14,3", model: "WiFi", weight: 466},
+            {id: 2, name: "iPad14,4", model: "WiFi + 蜂窝", weight: 468},
         ],
         cameras: {
             front: {
@@ -910,8 +910,8 @@ const iPadPro = [
             core: '10'
         },
         memory: [
-            {name: "", size: "8", type: ""},
-            {name: "≥ 1T", size: "16", type: ""},
+            {name: "", size: "8", type: "LPDDR5"},
+            {name: "≥ 1T", size: "16", type: "LPDDR5"},
         ],
         storage: ['128', '256', '512', '1024', '2048'],
         price: "",
@@ -925,8 +925,8 @@ const iPadPro = [
         pencil: ['Apple Pencil 2'],
         unlockMethods: ['面容解锁'],
         models: [
-            {id: 1, name: "iPad", model: "WiFi", weight: 682},
-            {id: 2, name: "iPad", model: "WiFi + 蜂窝", weight: 684},
+            {id: 1, name: "iPad14,5", model: "WiFi", weight: 682},
+            {id: 2, name: "iPad14,6", model: "WiFi + 蜂窝", weight: 684},
         ],
         cameras: {
             front: {
@@ -2473,7 +2473,7 @@ let app = new Vue({
     el: "#app",
     data: {
         // date
-        dateEnd: '2023.03.12', // 格式： 2023.03.12
+        dateEnd: '2023.03.13', // 格式： 2023.03.12
         // thumb up
         pingPongInterval: null,
         thumbsUpKey: 'ipad',
