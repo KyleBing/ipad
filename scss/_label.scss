@@ -5,7 +5,7 @@ $dot-width: 20px; // 新机型标记的大小
   font-size: $fz-big;
   font-weight: bold;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
   .model {
     font-family: "Galvji";
@@ -13,10 +13,31 @@ $dot-width: 20px; // 新机型标记的大小
     margin-right: 10px;
   }
   .size{
-    //font-family: "Galvji";
-    color: $magenta;
+    font-family: "Galvji";
+    color: $purple;
   }
 }
+
+
+.date{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "Galvji";
+  font-weight: bold;
+  padding: 0 10px;
+  .year{
+    font-size: $fz-big;
+  }
+  .month{
+    margin-left: 2px;
+    font-size: $fz-sm;
+  }
+}
+
+
+
+
 $dual-label-types: (
         "cpu": $magenta,
         "gpu": $orange,
@@ -234,9 +255,3 @@ $height-score-bar-wrapper: 15px;
   }
 }
 
-.date{
-  font-weight: bold;
-  padding: 0 10px;
-  font-size: $fz-big;
-  @extend .text-blue;
-}

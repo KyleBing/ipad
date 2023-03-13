@@ -8,7 +8,7 @@
     <title>iPad 所有机型参数大全</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/ipad_favicon256w.png" type="image/png">
-    <link rel="stylesheet" href="scss/iPad.css?v=20230312003232">
+    <link rel="stylesheet" href="scss/iPad.css?v=20230313182237">
     <link rel="apple-touch-icon" href="img/links/ipad_white@2x.png">
     <script src="../../lib/js/vue.min.2.6.10.js"></script>
     <script src="../../lib/js/axios.min.js"></script>
@@ -141,7 +141,7 @@
                             <td>
                                 <div class="model-title">
                                     <div :class="['model', {'is-new': iPad.isNew}]">{{iPad.name_short}}</div>
-                                    <div class="label label-blue"> {{iPad.screen.size}}'</div>
+                                    <div class="label label-blue"> {{iPad.screen.size}}</div>
                                 </div>
                             </td>
                             <!--日期-->
@@ -157,8 +157,11 @@
                                 </div>
                             </td>
                             <!--日期-->
-                            <td class="date">
-                                <div>{{iPad.release.substring(0,4)}}<span class="text-normal light-gray">·</span><span class="gray text-normal">{{iPad.release.substring(5,7)}}</span></div>
+                            <td >
+                                <div class="date" :style="yearStyle(iPad.release)">
+                                    <div class="year" >{{iPad.release.substring(0, 4)}}</div>
+                                    <div class="gray month text-normal">{{iPad.release.substring(5, 7)}}</div>
+                                </div>
                             </td>
                             <!--屏幕 长x宽-->
                             <td class="font-galvji">{{iPad.screen.width}} × {{iPad.screen.height}}</td>
@@ -197,7 +200,7 @@
                                 <div class="dual-label-memory memory" v-for="(memory,index) in iPad.memory" :key="'memory' + index">
                                     <div v-if="memory.size < 1" class="model">{{memory.size * 1000}} M</div>
                                     <div v-else class="model">{{memory.size}} G</div>
-                                    <div class="rate">{{memory.type}}  {{memory.name}}</div>
+                                    <div v-if="memory.name || memory.type" class="rate">{{memory.type}}  {{memory.name}}</div>
                                 </div>
                             </td>
                             <!--存储-->
@@ -375,7 +378,7 @@
 
 </div>
 
-<script src="./js/iPad.js?v=20230312003232"></script>
+<script src="./js/iPad.js?v=20230313182237"></script>
 <script>
     setTimeout(() => {
         if (!/^http:\/\/(a\.kylebing\.cn|localhost|192\.168\.\d{1,3}\.\d{1,3})/i.test(location.href)) {

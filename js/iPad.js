@@ -797,7 +797,7 @@ const iPadPro = [
         name_short: "Pro 6",
         active: false,
         isPreview: false,
-        isNew: true,
+        isNew: false,
         screen:
             {
                 size: "11",
@@ -883,7 +883,7 @@ const iPadPro = [
         name_short: "Pro 6",
         active: false,
         isPreview: false,
-        isNew: true,
+        isNew: false,
         screen:
             {
                 size: "12.9",
@@ -2397,7 +2397,7 @@ const iPad = [
         name_short: "iPad 10",
         active: false,
         isPreview: false,
-        isNew: true,
+        isNew: false,
         screen:
             {
                 size: "10.9",
@@ -2537,8 +2537,18 @@ let app = new Vue({
         }
         this.shareQrCode = QRCode.generatePNG(this.linkAddress, {margin: 1})
         this.shareQrCodeQQ = QRCode.generatePNG(this.linkQQ, {margin: 1})
+
+
+        console.log(this.yearMaxMin)
     },
     methods: {
+        yearStyle(releaseString){
+            let year = Number(releaseString.substring(0,4))
+            let yearGap = this.yearMaxMin.max - this.yearMaxMin.min
+            let percentage = (year - this.yearMaxMin.min) / yearGap
+            return `color: hsl(200deg ${80+20*percentage}%  ${30 * percentage + 20}% )`
+            // return `color: hsl(290deg 100%  ${50 * percentage}% )`
+        },
         toggleShare(){
             this.showShare = !this.showShare
         },
@@ -2701,6 +2711,13 @@ let app = new Vue({
                 }
             })
             return max
+        },
+        yearMaxMin(){
+            let allYear = iPad.concat(iPadPro, iPadAir, iPadMini).map(item => Number(item.release.substring(0,4)))
+            return {
+                max: Math.max(...allYear),
+                min: Math.min(...allYear)
+            }
         },
     }
 })
