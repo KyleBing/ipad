@@ -24,3 +24,7 @@
     <link rel="stylesheet" href="scss/iPad.css?v=20230216144902">
     <script src="./js/iPad.js?v=20230216144902"></script>
 ```
+
+
+## wikipedia 信息
+> [List_of_iPad_models](https://en.wikipedia.org/wiki/List_of_iPad_models)
