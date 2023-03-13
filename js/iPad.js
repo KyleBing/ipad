@@ -2546,8 +2546,7 @@ let app = new Vue({
             let year = Number(releaseString.substring(0,4))
             let yearGap = this.yearMaxMin.max - this.yearMaxMin.min
             let percentage = (year - this.yearMaxMin.min) / yearGap
-            return `color: hsl(200deg ${80+20*percentage}%  ${30 * percentage + 20}% )`
-            // return `color: hsl(290deg 100%  ${50 * percentage}% )`
+            return `color: hsl(211deg ${80+20*percentage}%  ${30 * percentage + 20}% )`
         },
         toggleShare(){
             this.showShare = !this.showShare
