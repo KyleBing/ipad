@@ -111,6 +111,10 @@
                         <th class="pl-1 pr-1">发布年月</th>
                         <th>分辨率<sup>px</sup></th>
                         <th>密度<sup>ppi</sup></th>
+                        <th>P3</th>
+                        <th>TrueTone</th>
+                        <th>亮度<sup>nit</sup></th>
+                        <th>XDR</th>
                         <th>刷新率</th>
                         <th>长 × 宽<sup>mm</sup></th>
                         <th>厚度<sup>mm</sup></th>
@@ -118,7 +122,7 @@
                         <th>GPU<sup>核</sup></th>
                         <th>内存</th>
                         <th>存储<sup>GB</sup></th>
-                        <th>电池<sup>mAh</sup></th>
+                        <th>电池</th>
                         <th>解锁方式</th>
                         <th>接口</th>
                         <th>按键</th>
@@ -170,6 +174,25 @@
                             <!--屏幕密度-->
                             <td>
                                 <span v-if="iPad.screen.density" class="label-magenta label">{{iPad.screen.density}}</span>
+                            </td>
+                            <!--屏幕P3-->
+                            <td>
+                                <span v-if="iPad.screen.colorP3" class="label-magenta label">P3</span>
+                            </td>
+                            <!--屏幕TrueTone-->
+                            <td>
+                                <span v-if="iPad.screen.trueTone" class="label-magenta label">TrueTone</span>
+                            </td>
+                            <!--亮度-->
+                            <td>
+                                <span v-if="iPad.screen.brightness" class="label-magenta label">{{iPad.screen.brightness}}nit</span>
+                            </td>
+                            <!--XDR-->
+                            <td>
+                                <span v-if="iPad.screen.xdr" class="label-magenta label">XDR</span>
+                                <span v-if="iPad.screen.xdrRange && iPad.screen.xdrRange.length> 0">
+                                    {{iPad.screen.xdrRange[0]}} ~ {{iPad.screen.xdrRange[1]}}
+                                </span>
                             </td>
                             <!--屏幕刷新率-->
                             <td>
