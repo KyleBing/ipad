@@ -67,7 +67,6 @@ footer{
   text-shadow: 0 0.5px 0 rgba(0,0,0,0.2);
 }
 
-
 .text-right{
   text-align: right;
 }
@@ -77,6 +76,27 @@ footer{
   width: 100%;
 }
 
+.screen{
+  font-family: "Galvji";
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: $fz-default;
+  dl{
+    display: flex;
+    justify-content: flex-start;
+  }
+  dd{
+    margin-left: 10px;
+    &:first-child{
+      margin-left: 0;
+    }
+    .unit{
+      margin-left: 1px;
+      font-size: $fz-tiny;
+      //color: $gray;
+    }
+  }
+}
 
 // 全屏
 .full-screen{

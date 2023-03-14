@@ -8,7 +8,7 @@
     <title>iPad 所有机型参数大全</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/ipad_favicon256w.png" type="image/png">
-    <link rel="stylesheet" href="scss/iPad.css?v=20230313234741">
+    <link rel="stylesheet" href="scss/iPad.css?v=20230314160404">
     <link rel="apple-touch-icon" href="img/links/ipad_white@2x.png">
     <script src="../../lib/js/vue.min.2.6.10.js"></script>
     <script src="../../lib/js/axios.min.js"></script>
@@ -110,12 +110,7 @@
                         <th class="pl-2">型号</th>
                         <th class="pl-1 pr-1">发布年月</th>
                         <th>分辨率<sup>px</sup></th>
-                        <th>密度<sup>ppi</sup></th>
-                        <th>P3</th>
-                        <th>TrueTone</th>
-                        <th>亮度<sup>nit</sup></th>
-                        <th>XDR</th>
-                        <th>刷新率</th>
+                        <th>屏幕信息</th>
                         <th>长 × 宽<sup>mm</sup></th>
                         <th>厚度<sup>mm</sup></th>
                         <th>CPU<sup>GHz x 核</sup></th>
@@ -170,33 +165,29 @@
                                 </div>
                             </td>
                             <!--屏幕 长x宽-->
-                            <td class="font-galvji">{{iPad.screen.width}} × {{iPad.screen.height}}</td>
-                            <!--屏幕密度-->
                             <td>
-                                <span v-if="iPad.screen.density" class="label-magenta label">{{iPad.screen.density}}</span>
+                                <div class="active">{{iPad.screen.width}} × {{iPad.screen.height}}<span class="unit"></span></div>
                             </td>
-                            <!--屏幕P3-->
+                            <!--屏幕 长x宽-->
                             <td>
-                                <span v-if="iPad.screen.colorP3" class="label-magenta label">P3</span>
-                            </td>
-                            <!--屏幕TrueTone-->
-                            <td>
-                                <span v-if="iPad.screen.trueTone" class="label-magenta label">TrueTone</span>
-                            </td>
-                            <!--亮度-->
-                            <td>
-                                <span v-if="iPad.screen.brightness" class="label-magenta label">{{iPad.screen.brightness}}nit</span>
-                            </td>
-                            <!--XDR-->
-                            <td>
-                                <span v-if="iPad.screen.xdr" class="label-magenta label">XDR</span>
-                                <span v-if="iPad.screen.xdrRange && iPad.screen.xdrRange.length> 0">
-                                    {{iPad.screen.xdrRange[0]}} ~ {{iPad.screen.xdrRange[1]}}
-                                </span>
-                            </td>
-                            <!--屏幕刷新率-->
-                            <td>
-                                <span v-if="iPad.screen.density" class="label-magenta label">{{iPad.screen.refreshRate}} hz</span>
+                                <div class="screen">
+                                    <dl>
+                                        <dd>{{iPad.screen.density}}<span class="unit">ppi</span></dd>
+                                        <dd class="label label-green" v-if="iPad.screen.refreshRate" >{{iPad.screen.refreshRate}}<span class="unit">hz</span></dd>
+                                    </dl>
+                                    <dl>
+                                        <dd v-if="iPad.screen.xdr">
+                                            XDR<span v-if="iPad.screen.xdrRange" class="unit">{{iPad.screen.xdrRange[0]}} ~ {{iPad.screen.xdrRange[1]}}nit</span>
+                                        </dd>
+                                        <dd v-if="iPad.screen.material">{{iPad.screen.material}}<span class="unit"></span>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dd v-if="iPad.screen.brightness" >{{iPad.screen.brightness}}<span class="unit">nit</span></dd>
+                                        <dd v-if="iPad.screen.colorP3">P3</dd>
+                                        <dd v-if="iPad.screen.trueTone">TrueTone</dd>
+                                    </dl>
+                                </div>
                             </td>
                             <!--长x宽-->
                             <td class="font-galvji">{{iPad.width}} × {{iPad.height}}</td>
@@ -403,7 +394,7 @@
 
 </div>
 
-<script src="./js/iPad.js?v=20230313234741"></script>
+<script src="./js/iPad.js?v=20230314160404"></script>
 <script>
     setTimeout(() => {
         if (!/^http:\/\/(a\.kylebing\.cn|localhost|192\.168\.\d{1,3}\.\d{1,3})/i.test(location.href)) {

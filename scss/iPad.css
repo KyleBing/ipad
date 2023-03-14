@@ -1401,6 +1401,27 @@ footer a:hover {
   width: 100%;
 }
 
+.screen {
+  font-family: "Galvji";
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 14px;
+}
+.screen dl {
+  display: flex;
+  justify-content: flex-start;
+}
+.screen dd {
+  margin-left: 10px;
+}
+.screen dd:first-child {
+  margin-left: 0;
+}
+.screen dd .unit {
+  margin-left: 1px;
+  font-size: 11px;
+}
+
 .full-screen {
   cursor: pointer;
   position: fixed;
