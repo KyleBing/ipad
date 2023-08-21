@@ -2528,7 +2528,7 @@ const iPad = [
 ]
 
 const contributors = [
-    '许璐','黄朋','微雨中郎', '陈飞虎', 'nvfei', 'Dorcoin'
+    '许璐(cuzxulu-163)','黄朋(15972083562-qq)','微雨中郎', '陈飞虎(c867856831-me)', 'nvfei', 'Dorcoin', ''
 ]
 
 let app = new Vue({
