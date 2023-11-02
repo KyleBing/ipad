@@ -1424,7 +1424,7 @@ const iPadMini = [
         },
         mechanicalKeys: ['开关机键','音量增减键','Home键'],
         connector: ['闪电'],
-        unlockMethods: ['指纹解锁'],
+        unlockMethods: [''],
         models: [
             {id: 1, name: "iPad2,5", model: "A1432 (WiFi)", weight: 310},
             {id: 2, name: "iPad2,6", model: "A1454 (WiFi + 蜂窝)", weight: 310},
@@ -1497,7 +1497,7 @@ const iPadMini = [
         },
         mechanicalKeys: ['开关机键','音量增减键','Home键'],
         connector: ['闪电'],
-        unlockMethods: ['指纹解锁'],
+        unlockMethods: [''],
         models: [
             {id: 1, name: "iPad4,4", model: "A1489 (WiFi)", weight: 330},
             {id: 2, name: "iPad4,5", model: "A1490 (WiFi + 蜂窝)", weight: 340},
