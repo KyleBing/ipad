@@ -1870,7 +1870,7 @@ const iPad = [
         mechanicalKeys: ['开关机键','音量增减键','Home键'],
         connector: ['30针'],
         pencil: [],
-        unlockMethods: ['指纹解锁'],
+        unlockMethods: [''],
         models: [
             {id: 1, name: "iPad1,1", model: "A1219 (WiFi)", weight: 680},
             {id: 2, name: "iPad1,1", model: "A1337 (WiFi + 3G)", weight: 730},
@@ -1925,7 +1925,7 @@ const iPad = [
         mechanicalKeys: ['开关机键','音量增减键','Home键'],
         connector: ['30针'],
         pencil: [],
-        unlockMethods: ['指纹解锁'],
+        unlockMethods: [''],
         models: [
             {id: 1, name: "iPad2,1", model: "A1395 (WiFi)", weight: 601},
             {id: 2, name: "iPad2,2", model: "A1397 (WiFi + 3G CDMA)", weight: 613},
@@ -1995,7 +1995,7 @@ const iPad = [
         mechanicalKeys: ['开关机键','音量增减键','Home键'],
         connector: ['30针'],
         pencil: [],
-        unlockMethods: ['指纹解锁'],
+        unlockMethods: [''],
         models: [
             {id: 1, name: "iPad3,1", model: "A1416 (WiFi)", weight: 650},
             {id: 2, name: "iPad3,2", model: "A1403 (WiFi + 蜂窝 VZ)", weight: 660},
@@ -2065,7 +2065,7 @@ const iPad = [
         mechanicalKeys: ['开关机键','音量增减键','Home键'],
         connector: ['闪电'],
         pencil: [],
-        unlockMethods: ['指纹解锁'],
+        unlockMethods: [''],
         models: [
             {id: 1, name: "iPad5,3", model: "A1458 (WiFi)", weight: 650},
             {id: 2, name: "iPad5,4", model: "A1459 (WiFi + 蜂窝)", weight: 660},
@@ -2535,7 +2535,7 @@ let app = new Vue({
     el: "#app",
     data: {
         // date
-        dateEnd: '2023.03.14', // 格式： 2023.03.12
+        dateEnd: '2023.11.02', // 格式： 2023.03.12
         // thumb up
         pingPongInterval: null,
         thumbsUpKey: 'ipad',
