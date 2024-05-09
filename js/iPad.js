@@ -1,9 +1,10 @@
 /*****************************
  Create Date: 20200414122339
- Update Date: 20210831230046
+ Update Date: 20240509145853
  *****************************/
 
 const lastOS = "最新"
+const lastModifyDate = '2024.05.09' // 格式： 2023.03.12
 
 const iPadPro = [
     // iPad pro 1 generation
@@ -659,6 +660,8 @@ const iPadPro = [
                 brightness: 600, // nit
                 colorP3: true,
                 trueTone: true,
+                xdr: true,
+                xdrRange: [1000, 1600], // nit
             },
         width: '247.6',
         height: '178.5',
@@ -750,6 +753,8 @@ const iPadPro = [
                 brightness: 600, // nit
                 colorP3: true,
                 trueTone: true,
+                xdr: true,
+                xdrRange: [1000, 1600], // nit
             },
         width: '280.6',
         height: '214.9',
@@ -842,6 +847,8 @@ const iPadPro = [
                 brightness: 600, // nit
                 colorP3: true,
                 trueTone: true,
+                xdr: true,
+                xdrRange: [1000, 1600], // nit
             },
         width: '247.6',
         height: '178.5',
@@ -1005,6 +1012,189 @@ const iPadPro = [
             ]
         },
         release: "2022-10-19"
+    },
+    // iPad pro 7 th
+    {
+        name: "iPad Pro 7 11",
+        name_short: "Pro 7",
+        active: false,
+        isPreview: false,
+        isNew: true,
+        screen:
+            {
+                size: "11",
+                width: 2420,
+                height: 1668,
+                density: 264,
+                refreshRate: 120,
+                brightness: 1000, // nit
+                colorP3: true,
+                trueTone: true,
+                xdr: true,
+                xdrRange: [1000, 1600], // nit
+            },
+        width: '249.7',
+        height: '177.5',
+        thickness: '5.3',
+        os: {
+            init: "iPadOS 17",
+            last: lastOS
+        },
+        geekbenchScore: 0,
+        cpu: {
+            model: 'M4',
+            rate: '',
+            core: '9'
+        },
+        gpu: {
+            model: "Apple",
+            core: '10'
+        },
+        memory: [
+            {name: "", size: "8", type: "LPDDR5"},
+            {name: "≥ 1T", size: "16", type: "LPDDR5"},
+        ],
+        storage: ['256', '512', '1024', '2048'],
+        price: "",
+        battery: {
+            capacity: 0, // 容量 mah
+            capacityWH: 31.29, // wh
+            voltage: 0 // 电压 v
+        },
+        connector: ['雷雳3','USB4', '智能接点', '磁力接点'],
+        mechanicalKeys: ['开关机键','音量增减键'],
+        pencil: ['Apple Pencil 2', 'Apple Pencil Pro'],
+        unlockMethods: ['面容解锁'],
+        models: [
+            {id: 1, name: "", model: "WiFi", weight: 444},
+            {id: 2, name: "", model: "WiFi + 蜂窝", weight: 446},
+        ],
+        cameras: {
+            front: {
+                pixelCount: '1200万, ƒ/2.4',
+                dimension: [
+                    {size: '1080p', fps: [30, 60]},
+                ],
+                zoomRate: '',
+                hdr: true
+            },
+            back: [
+                {
+                    name: '默认',
+                    pixelCount: '1200万, ƒ/1.8',
+                    dimension: [
+                        {size: '4k', fps: [30,60]},
+                        {size: '1080p', fps: [30, 60, 120]},
+                        {size: '720p', fps: [240]},
+                    ],
+                    zoomRate: '5',
+                    hdr: true
+                },
+                {
+                    name: '广角',
+                    pixelCount: '1000万, ƒ/2.4， 125˚',
+                    dimension: [
+                        {size: '4k', fps: [30,60]},
+                        {size: '1080p', fps: [30, 60, 120]},
+                        {size: '720p', fps: [240]},
+                    ],
+                    zoomRate: '5',
+                    hdr: true
+                },
+            ]
+        },
+        release: "2024-05-07"
+    },
+    {
+        name: "iPad Pro 7 13",
+        name_short: "Pro 7",
+        active: false,
+        isPreview: false,
+        isNew: true,
+        screen:
+            {
+                size: "13",
+                width: 2752,
+                height: 2064,
+                density: 264,
+                refreshRate: 120,
+                brightness: 1000, // nit
+                colorP3: true,
+                trueTone: true,
+                xdr: true,
+                xdrRange: [1000, 1600], // nit
+            },
+        width: '281.6',
+        height: '215.5',
+        thickness: '5.1',
+        os: {
+            init: "iPadOS 17",
+            last: lastOS
+        },
+        geekbenchScore: 0,
+        cpu: {
+            model: 'M4',
+            rate: '',
+            core: '10'
+        },
+        gpu: {
+            model: "Apple",
+            core: '10'
+        },
+        memory: [
+            {name: "", size: "8", type: "LPDDR5"},
+            {name: "≥ 1T", size: "16", type: "LPDDR5"},
+        ],
+        storage: ['256', '512', '1024', '2048'],
+        price: "",
+        battery: {
+            capacity: 0, // 容量 mah
+            capacityWH: 38.99, // wh
+            voltage: 0 // 电压 v
+        },
+        connector: ['雷雳3','USB4', '智能接点', '磁力接点'],
+        mechanicalKeys: ['开关机键','音量增减键'],
+        pencil: ['Apple Pencil 2', 'Apple Pencil Pro'],
+        unlockMethods: ['面容解锁'],
+        models: [
+            {id: 1, name: "", model: "WiFi", weight: 579},
+            {id: 2, name: "", model: "WiFi + 蜂窝", weight: 582},
+        ],
+        cameras: {
+            front: {
+                pixelCount: '1200万, ƒ/2.4',
+                dimension: [
+                    {size: '1080p', fps: [30, 60,]},
+                ],
+                zoomRate: '',
+                hdr: true
+            },
+            back: [
+                {
+                    name: '默认',
+                    pixelCount: '1200万, ƒ/1.8',
+                    dimension: [
+                        {size: '4k', fps: [30,60]},
+                        {size: '1080p', fps: [30, 60, 120]},
+                        {size: '720p', fps: [240]},
+                    ],
+                    zoomRate: '5',
+                    hdr: true
+                },
+                {
+                    name: '广角',
+                    pixelCount: '1000万, ƒ/2.4， 125˚',
+                    dimension: [
+                        {size: '4k', fps: [30,60]},
+                        {size: '1080p', fps: [30, 60, 120]},
+                        {size: '720p', fps: [240]},
+                    ],
+                    zoomRate: '5',
+                    hdr: true
+                },
+            ]
+        },
+        release: "2024-05-07"
     },
 ]
 const iPadAir = [
@@ -2535,7 +2725,7 @@ let app = new Vue({
     el: "#app",
     data: {
         // date
-        dateEnd: '2024.03.04', // 格式： 2023.03.12
+        dateEnd: lastModifyDate,
         // thumb up
         pingPongInterval: null,
         thumbsUpKey: 'ipad',
