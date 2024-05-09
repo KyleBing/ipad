@@ -16,7 +16,7 @@ const iPadPro = [
         isNew: false,
         screen:
             {
-                size: "9.7",
+                size: "9.7\"",
                 width: 2048,
                 height: 1536,
                 density: 264,
@@ -90,7 +90,7 @@ const iPadPro = [
         isNew: false,
         screen:
             {
-                size: "12.9",
+                size: "12.9\"",
                 width: 2732,
                 height: 2048,
                 density: 264,
@@ -163,7 +163,7 @@ const iPadPro = [
         isNew: false,
         screen:
             {
-                size: "10.5",
+                size: "10.5\"",
                 width: 2224,
                 height: 1668,
                 density: 264,
@@ -237,7 +237,7 @@ const iPadPro = [
         isNew: false,
         screen:
             {
-                size: "12.9",
+                size: "12.9\"",
                 width: 2732,
                 height: 2048,
                 density: 264,
@@ -314,7 +314,7 @@ const iPadPro = [
         isNew: false,
         screen:
             {
-                size: "11",
+                size: "11\"",
                 width: 2388,
                 height: 1668,
                 density: 264,
@@ -393,7 +393,7 @@ const iPadPro = [
         isNew: false,
         screen:
             {
-                size: "12.9",
+                size: "12.9\"",
                 width: 2732,
                 height: 2048,
                 density: 264,
@@ -473,7 +473,7 @@ const iPadPro = [
         isNew: false,
         screen:
             {
-                size: "11",
+                size: "11\"",
                 width: 2388,
                 height: 1688,
                 density: 264,
@@ -562,7 +562,7 @@ const iPadPro = [
         isNew: false,
         screen:
             {
-                size: "12.9",
+                size: "12.9\"",
                 width: 2732,
                 height: 2048,
                 density: 264,
@@ -652,7 +652,7 @@ const iPadPro = [
         isNew: false,
         screen:
             {
-                size: "11",
+                size: "11\"",
                 width: 2388,
                 height: 1668,
                 density: 264,
@@ -745,7 +745,7 @@ const iPadPro = [
         isNew: false,
         screen:
             {
-                size: "12.9",
+                size: "12.9\"",
                 width: 2732,
                 height: 2048,
                 density: 264,
@@ -839,7 +839,7 @@ const iPadPro = [
         isNew: false,
         screen:
             {
-                size: "11",
+                size: "11\"",
                 width: 2388,
                 height: 1668,
                 density: 264,
@@ -930,7 +930,7 @@ const iPadPro = [
         isNew: false,
         screen:
             {
-                size: "12.9",
+                size: "12.9\"",
                 width: 2732,
                 height: 2048,
                 density: 264,
@@ -1022,7 +1022,7 @@ const iPadPro = [
         isNew: true,
         screen:
             {
-                size: "11",
+                size: "11\"",
                 width: 2420,
                 height: 1668,
                 density: 264,
@@ -1113,7 +1113,7 @@ const iPadPro = [
         isNew: true,
         screen:
             {
-                size: "13",
+                size: "13\"",
                 width: 2752,
                 height: 2064,
                 density: 264,
@@ -1206,7 +1206,7 @@ const iPadAir = [
         isNew: false,
         screen:
             {
-                size: "9.7",
+                size: "9.7\"",
                 width: 2048,
                 height: 1536,
                 density: 264,
@@ -1276,7 +1276,7 @@ const iPadAir = [
         isNew: false,
         screen:
             {
-                size: "9.7",
+                size: "9.7\"",
                 width: 2048,
                 height: 1536,
                 density: 264,
@@ -1346,7 +1346,7 @@ const iPadAir = [
         isNew: false,
         screen:
             {
-                size: "10.5",
+                size: "10.5\"",
                 width: 2224,
                 height: 1668,
                 density: 264,
@@ -1421,7 +1421,7 @@ const iPadAir = [
         isNew: false,
         screen:
             {
-                size: "10.9",
+                size: "10.9\"",
                 width: 2360,
                 height: 1640,
                 density: 264,
@@ -1498,7 +1498,7 @@ const iPadAir = [
         isNew: false,
         screen:
             {
-                size: "10.9",
+                size: "10.9\"",
                 width: 2360,
                 height: 1640,
                 density: 264,
@@ -1578,7 +1578,7 @@ const iPadMini = [
         isNew: false,
         screen:
             {
-                size: "7.9",
+                size: "7.9\"",
                 width: 1024,
                 height: 768,
                 density: 163,
@@ -1651,7 +1651,7 @@ const iPadMini = [
         isNew: false,
         screen:
             {
-                size: "7.9",
+                size: "7.9\"",
                 width: 2048,
                 height: 1536,
                 density: 326,
@@ -1725,7 +1725,7 @@ const iPadMini = [
         isNew: false,
         screen:
             {
-                size: "7.9",
+                size: "7.9\"",
                 width: 2048,
                 height: 1536,
                 density: 326,
@@ -1799,7 +1799,7 @@ const iPadMini = [
         isNew: false,
         screen:
             {
-                size: "7.9",
+                size: "7.9\"",
                 width: 2048,
                 height: 1536,
                 density: 326,
@@ -1871,7 +1871,7 @@ const iPadMini = [
         isNew: false,
         screen:
             {
-                size: "7.9",
+                size: "7.9\"",
                 width: 2048,
                 height: 1536,
                 density: 326,
@@ -1948,7 +1948,7 @@ const iPadMini = [
         isNew: false,
         screen:
             {
-                size: "8.3",
+                size: "8.3\"",
                 width: 2266,
                 height: 1488,
                 density: 326,
@@ -2024,7 +2024,7 @@ const iPad = [
         isNew: false,
         screen:
             {
-                size: "9.7",
+                size: "9.7\"",
                 width: 1024,
                 height: 768,
                 density: 132,
@@ -2079,7 +2079,7 @@ const iPad = [
         isNew: false,
         screen:
             {
-                size: "9.7",
+                size: "9.7\"",
                 width: 1024,
                 height: 768,
                 density: 132,
@@ -2149,7 +2149,7 @@ const iPad = [
         isNew: false,
         screen:
             {
-                size: "9.7",
+                size: "9.7\"",
                 width: 2048,
                 height: 1536,
                 density: 264,
@@ -2219,7 +2219,7 @@ const iPad = [
         isNew: false,
         screen:
             {
-                size: "9.7",
+                size: "9.7\"",
                 width: 2048,
                 height: 1536,
                 density: 264,
@@ -2291,7 +2291,7 @@ const iPad = [
         isNew: false,
         screen:
             {
-                size: "9.7",
+                size: "9.7\"",
                 width: 2048,
                 height: 1536,
                 density: 264,
@@ -2362,7 +2362,7 @@ const iPad = [
         isNew: false,
         screen:
             {
-                size: "9.7",
+                size: "9.7\"",
                 width: 2048,
                 height: 1536,
                 density: 264,
@@ -2433,7 +2433,7 @@ const iPad = [
         isNew: false,
         screen:
             {
-                size: "10.2",
+                size: "10.2\"",
                 width: 2160,
                 height: 1620,
                 density: 264,
@@ -2505,7 +2505,7 @@ const iPad = [
         isNew: false,
         screen:
             {
-                size: "10.2",
+                size: "10.2\"",
                 width: 2160,
                 height: 1620,
                 density: 264,
@@ -2577,7 +2577,7 @@ const iPad = [
         isNew: false,
         screen:
             {
-                size: "10.2",
+                size: "10.2\"",
                 width: 2160,
                 height: 1620,
                 density: 264,
@@ -2651,7 +2651,7 @@ const iPad = [
         isNew: false,
         screen:
             {
-                size: "10.9",
+                size: "10.9\"",
                 width: 2360,
                 height: 1640,
                 density: 264,
