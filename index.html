@@ -72,22 +72,22 @@
     <!-- FILTER LIST-->
     <div class="filter-list">
         <div class="iphone-tag-list">
-            <div :class="['iphone-tag', {active: selectedNames.includes(item.name)}]" v-for="item in iPadPro" :key="item.name_short" @click="filterTagToggle(item.name)">
+            <div :class="['iphone-tag', {active: selectedNames.includes(item.name)}, {'is-new': item.isNew}]" v-for="item in iPadPro" :key="item.name_short" @click="filterTagToggle(item.name)">
                 <span>{{item.name_short}}</span> - <span class="screen-size">{{item.screen.size}}</span>
             </div>
         </div>
         <div class="iphone-tag-list">
-            <div :class="['iphone-tag', {active: selectedNames.includes(item.name)}]" v-for="item in iPadAir" :key="item.name_short" @click="filterTagToggle(item.name)">
+            <div :class="['iphone-tag', {active: selectedNames.includes(item.name)}, {'is-new': item.isNew}]" v-for="item in iPadAir" :key="item.name_short" @click="filterTagToggle(item.name)">
                 <span>{{item.name_short}}</span> - <span class="screen-size">{{item.screen.size}}</span>
             </div>
         </div>
         <div class="iphone-tag-list">
-            <div :class="['iphone-tag', {active: selectedNames.includes(item.name)}]" v-for="item in iPadMini" :key="item.name_short" @click="filterTagToggle(item.name)">
+            <div :class="['iphone-tag', {active: selectedNames.includes(item.name)}, {'is-new': item.isNew}]" v-for="item in iPadMini" :key="item.name_short" @click="filterTagToggle(item.name)">
                 <span>{{item.name_short}}</span> - <span class="screen-size">{{item.screen.size}}</span>
             </div>
         </div>
         <div class="iphone-tag-list">
-            <div :class="['iphone-tag', {active: selectedNames.includes(item.name)}]" v-for="item in iPad" :key="item.name_short" @click="filterTagToggle(item.name)">
+            <div :class="['iphone-tag', {active: selectedNames.includes(item.name)}, {'is-new': item.isNew}]" v-for="item in iPad" :key="item.name_short" @click="filterTagToggle(item.name)">
                 <span>{{item.name_short}}</span> - <span class="screen-size">{{item.screen.size}}</span>
             </div>
         </div>
