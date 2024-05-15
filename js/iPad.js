@@ -4,7 +4,7 @@
  *****************************/
 
 const lastOS = "最新"
-const lastModifyDate = '2024.05.09' // 格式： 2023.03.12
+const lastModifyDate = '2024.05.15' // 格式： 2023.03.12
 
 const iPadPro = [
     // iPad pro 1 generation
@@ -1566,7 +1566,159 @@ const iPadAir = [
             ]
         },
         release: "2022-03-18"
-    }
+    },
+    {
+        name: "iPad Air 6 11",
+        name_short: "Air 6 11",
+        active: false,
+        isPreview: false,
+        isNew: true,
+        screen:
+            {
+                size: "11\"",
+                width: 2360,
+                height: 1640,
+                density: 264,
+                refreshRate: 60,
+                brightness: 500, // nit
+                colorP3: true,
+                trueTone: true,
+            },
+        width: 247.6,
+        height: 178.5,
+        thickness: 6.1,
+        os: {
+            init: "iPadOS 17",
+            last: lastOS
+        },
+        geekbenchScore: 0,
+        cpu: {
+            model: 'M2',
+            rate: '3.49',
+            core: 8
+        },
+        gpu: {
+            model: "Apple",
+            core: "10"
+        },
+        memory: [
+            {name: "", size: "8", type: "LPDDR4X SDRAM"},
+        ],
+        storage: [128, 256, 512, 1024],
+        price: "",
+        battery: {
+            capacity: 0, // 容量 mah
+            capacityWH: 28.93, // wh
+            voltage: 0 // 电压 v
+        },
+        mechanicalKeys: ['开关机键','音量增减键'],
+        connector: ['USB-C', '智能接点', '磁力接点'],
+        pencil: ['Apple Pencil 2', 'Apple Pencil 2'],
+        unlockMethods: ['指纹解锁'],
+        models: [
+            {id: 1, name: "", model: "(WiFi)", weight: 462},
+            {id: 2, name: "", model: "(WiFi + 蜂窝)", weight: 462},
+        ],
+        cameras: {
+            front: {
+                pixelCount: '1200万, ƒ/2.4',
+                dimension: [
+                    {size: '1080p', fps: []},
+                ],
+                rate: '',
+                zoomRate: '',
+                hdr: true
+            },
+            back: [
+                {
+                    name: '默认',
+                    pixelCount: '1200万, ƒ/1.8',
+                    dimension: [
+                        {size: '1080p', fps: [30]},
+                    ],
+                    zoomRate: '5',
+                    hdr: true
+                },
+            ]
+        },
+        release: "2024-05-15"
+    },
+    {
+        name: "iPad Air 6 13",
+        name_short: "Air 6 13",
+        active: false,
+        isPreview: false,
+        isNew: true,
+        screen:
+            {
+                size: "13\"",
+                width: 2732,
+                height: 2048,
+                density: 264,
+                refreshRate: 60,
+                brightness: 600, // nit
+                colorP3: true,
+                trueTone: true,
+            },
+        width: 280.6,
+        height: 214.9,
+        thickness: 6.1,
+        os: {
+            init: "iPadOS 17",
+            last: lastOS
+        },
+        geekbenchScore: 0,
+        cpu: {
+            model: 'M2',
+            rate: '3.49',
+            core: 8
+        },
+        gpu: {
+            model: "Apple",
+            core: "10"
+        },
+        memory: [
+            {name: "", size: "8", type: "LPDDR4X SDRAM"},
+        ],
+        storage: [128, 256, 512, 1024],
+        price: "",
+        battery: {
+            capacity: 0, // 容量 mah
+            capacityWH: 36.59, // wh
+            voltage: 0 // 电压 v
+        },
+        mechanicalKeys: ['开关机键','音量增减键'],
+        connector: ['USB-C', '智能接点', '磁力接点'],
+        pencil: ['Apple Pencil 2', 'Apple Pencil 2'],
+        unlockMethods: ['指纹解锁'],
+        models: [
+            {id: 1, name: "", model: "(WiFi)", weight: 617},
+            {id: 2, name: "", model: "(WiFi + 蜂窝)", weight: 618},
+        ],
+        cameras: {
+            front: {
+                pixelCount: '1200万, ƒ/2.4',
+                dimension: [
+                    {size: '1080p', fps: []},
+                ],
+                rate: '',
+                zoomRate: '',
+                hdr: true
+            },
+            back: [
+                {
+                    name: '默认',
+                    pixelCount: '1200万, ƒ/1.8',
+                    dimension: [
+                        {size: '1080p', fps: [30]},
+                    ],
+                    zoomRate: '5',
+                    hdr: true
+                },
+            ]
+        },
+        release: "2024-05-15"
+    },
 ]
 const iPadMini = [
     {
