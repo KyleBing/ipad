@@ -1613,7 +1613,7 @@ const iPadAir = [
         },
         mechanicalKeys: ['开关机键','音量增减键'],
         connector: ['USB-C', '智能接点', '磁力接点'],
-        pencil: ['Apple Pencil 2', 'Apple Pencil 2'],
+        pencil: ['Apple Pencil 2', 'Apple Pencil Pro'],
         unlockMethods: ['指纹解锁'],
         models: [
             {id: 1, name: "", model: "(WiFi)", weight: 462},
@@ -1689,7 +1689,7 @@ const iPadAir = [
         },
         mechanicalKeys: ['开关机键','音量增减键'],
         connector: ['USB-C', '智能接点', '磁力接点'],
-        pencil: ['Apple Pencil 2', 'Apple Pencil 2'],
+        pencil: ['Apple Pencil 2', 'Apple Pencil Pro'],
         unlockMethods: ['指纹解锁'],
         models: [
             {id: 1, name: "", model: "(WiFi)", weight: 617},
