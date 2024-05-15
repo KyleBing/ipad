@@ -38,6 +38,10 @@
         .screen-size{
           color: white;
         }
+        &.is-new{
+          border-color: #6a7282;
+          background-color: white;
+        }
       }
     }
   }

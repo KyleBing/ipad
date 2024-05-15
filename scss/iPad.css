@@ -1236,6 +1236,10 @@ td p {
 .filter-list .iphone-tag-list .iphone-tag.active .screen-size {
   color: white;
 }
+.filter-list .iphone-tag-list .iphone-tag.active.is-new {
+  border-color: #6a7282;
+  background-color: white;
+}
 
 @media (max-width: 768px) {
   .filter-list .iphone-tag-list .iphone-tag {
