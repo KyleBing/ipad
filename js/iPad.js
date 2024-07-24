@@ -4,7 +4,7 @@
  *****************************/
 
 const lastOS = "最新"
-const lastModifyDate = '2024.05.15' // 格式： 2023.03.12
+const lastModifyDate = '2024.07.24' // 格式： 2023.03.12
 
 const iPadPro = [
     // iPad pro 1 generation
@@ -34,11 +34,12 @@ const iPadPro = [
             last: lastOS
         },
         geekbenchScore: 1175,
-        cpu: {
+        cpu: [{
+            name: '',
             model: 'A9X',
             rate: '2.26',
             core: 2
-        },
+        }],
         gpu: {
             model: "PowerVR 7XT",
             core: 12
@@ -108,11 +109,12 @@ const iPadPro = [
             last: lastOS
         },
         geekbenchScore: 1188,
-        cpu: {
+        cpu: [{
+            name: '',
             model: 'A9X',
             rate: '2.26',
             core: 2
-        },
+        }],
         gpu: {
             model: "PowerVR 7XT",
             core: 12
@@ -181,11 +183,12 @@ const iPadPro = [
             last: lastOS
         },
         geekbenchScore: 2263,
-        cpu: {
+        cpu: [{
+            name: '',
             model: 'A10X',
             rate: '2.36',
             core: 6
-        },
+        }],
         gpu: {
             model: "PowerVR 7XT",
             core: 12
@@ -255,11 +258,12 @@ const iPadPro = [
             last: lastOS
         },
         geekbenchScore: 2276,
-        cpu: {
+        cpu: [{
+            name: '',
             model: 'A10X',
             rate: '2.36',
             core: 6
-        },
+        }],
         gpu: {
             model: "PowerVR 7XT",
             core: 12
@@ -331,11 +335,12 @@ const iPadPro = [
             last: lastOS
         },
         geekbenchScore: 4622,
-        cpu: {
+        cpu: [{
+            name: '',
             model: 'A12X',
             rate: '2.36',
             core: 8
-        },
+        }],
         gpu: {
             model: "Apple",
             core: 7
@@ -410,11 +415,12 @@ const iPadPro = [
             last: lastOS
         },
         geekbenchScore: 4768,
-        cpu: {
+        cpu: [{
+            name: '',
             model: 'A12X',
             rate: '2.36',
             core: 8
-        },
+        }],
         gpu: {
             model: "Apple",
             core: 7
@@ -490,11 +496,12 @@ const iPadPro = [
             last: lastOS
         },
         geekbenchScore: 4649,
-        cpu: {
+        cpu: [{
+            name: '',
             model: 'A12Z',
             rate: '2.49',
             core: 8
-        },
+        }],
         gpu: {
             model: "Apple",
             core: 8
@@ -579,11 +586,12 @@ const iPadPro = [
             last: lastOS
         },
         geekbenchScore: 4664,
-        cpu: {
+        cpu: [{
+            name: '',
             model: 'A12Z',
             rate: '2.49',
             core: 8
-        },
+        }],
         gpu: {
             model: "Apple",
             core: 8
@@ -660,8 +668,8 @@ const iPadPro = [
                 brightness: 600, // nit
                 colorP3: true,
                 trueTone: true,
-                xdr: true,
-                xdrRange: [1000, 1600], // nit
+                xdr: false,
+                xdrRange: [], // nit
             },
         width: '247.6',
         height: '178.5',
@@ -671,11 +679,12 @@ const iPadPro = [
             last: lastOS
         },
         geekbenchScore: 7203,
-        cpu: {
+        cpu: [{
+            name: '',
             model: 'M1',
             rate: '3.2',
             core: '8'
-        },
+        }],
         gpu: {
             model: "Apple",
             core: '8'
@@ -764,11 +773,12 @@ const iPadPro = [
             last: lastOS
         },
         geekbenchScore: 7206,
-        cpu: {
+        cpu: [{
+            name: '',
             model: 'M1',
             rate: '3.2',
             core: '8'
-        },
+        }],
         gpu: {
             model: "Apple",
             core: '8'
@@ -847,8 +857,8 @@ const iPadPro = [
                 brightness: 600, // nit
                 colorP3: true,
                 trueTone: true,
-                xdr: true,
-                xdrRange: [1000, 1600], // nit
+                xdr: false,
+                xdrRange: [], // nit
             },
         width: '247.6',
         height: '178.5',
@@ -858,11 +868,12 @@ const iPadPro = [
             last: lastOS
         },
         geekbenchScore: 8396,
-        cpu: {
+        cpu: [{
+            name: '',
             model: 'M2',
             rate: '3.49',
             core: '8'
-        },
+        }],
         gpu: {
             model: "Apple",
             core: '10'
@@ -949,11 +960,12 @@ const iPadPro = [
             last: lastOS
         },
         geekbenchScore: 8416,
-        cpu: {
+        cpu: [{
+            name: '',
             model: 'M2',
             rate: '3.49',
             core: '8'
-        },
+        }],
         gpu: {
             model: "Apple",
             core: '10'
@@ -1041,11 +1053,10 @@ const iPadPro = [
             last: lastOS
         },
         geekbenchScore: 0,
-        cpu: {
-            model: 'M4',
-            rate: '',
-            core: '9'
-        },
+        cpu: [
+            {name: "", model: 'M4', rate: '', core: '9'},
+            {name: "≥ 1T", model: 'M4', rate: '', core: '10'},
+        ],
         gpu: {
             model: "Apple",
             core: '10'
@@ -1063,7 +1074,7 @@ const iPadPro = [
         },
         connector: ['雷雳3','USB4', '智能接点', '磁力接点'],
         mechanicalKeys: ['开关机键','音量增减键'],
-        pencil: ['Apple Pencil 2', 'Apple Pencil Pro'],
+        pencil: ['Apple Pencil(USB-C)', 'Apple Pencil Pro'],
         unlockMethods: ['面容解锁'],
         models: [
             {id: 1, name: "", model: "WiFi", weight: 444},
@@ -1089,18 +1100,7 @@ const iPadPro = [
                     ],
                     zoomRate: '5',
                     hdr: true
-                },
-                {
-                    name: '广角',
-                    pixelCount: '1000万, ƒ/2.4， 125˚',
-                    dimension: [
-                        {size: '4k', fps: [30,60]},
-                        {size: '1080p', fps: [30, 60, 120]},
-                        {size: '720p', fps: [240]},
-                    ],
-                    zoomRate: '5',
-                    hdr: true
-                },
+                }
             ]
         },
         release: "2024-05-07"
@@ -1132,11 +1132,10 @@ const iPadPro = [
             last: lastOS
         },
         geekbenchScore: 0,
-        cpu: {
-            model: 'M4',
-            rate: '',
-            core: '10'
-        },
+        cpu: [
+            {name: "", model: 'M4', rate: '', core: '9'},
+            {name: "≥ 1T", model: 'M4', rate: '', core: '10'},
+        ],
         gpu: {
             model: "Apple",
             core: '10'
@@ -1154,7 +1153,7 @@ const iPadPro = [
         },
         connector: ['雷雳3','USB4', '智能接点', '磁力接点'],
         mechanicalKeys: ['开关机键','音量增减键'],
-        pencil: ['Apple Pencil 2', 'Apple Pencil Pro'],
+        pencil: ['Apple Pencil(USB-C)', 'Apple Pencil Pro'],
         unlockMethods: ['面容解锁'],
         models: [
             {id: 1, name: "", model: "WiFi", weight: 579},
@@ -1173,17 +1172,6 @@ const iPadPro = [
                 {
                     name: '默认',
                     pixelCount: '1200万, ƒ/1.8',
-                    dimension: [
-                        {size: '4k', fps: [30,60]},
-                        {size: '1080p', fps: [30, 60, 120]},
-                        {size: '720p', fps: [240]},
-                    ],
-                    zoomRate: '5',
-                    hdr: true
-                },
-                {
-                    name: '广角',
-                    pixelCount: '1000万, ƒ/2.4， 125˚',
                     dimension: [
                         {size: '4k', fps: [30,60]},
                         {size: '1080p', fps: [30, 60, 120]},
@@ -1220,11 +1208,12 @@ const iPadAir = [
             last: "iOS 12.5.5"
         },
         geekbenchScore: 530,
-        cpu: {
+        cpu: [{
+            name: '',
             model: 'A7',
             rate: '1.4',
             core: 2
-        },
+        }],
         gpu: {
             model: "PowerVR G6430",
             core: 4
@@ -1290,11 +1279,12 @@ const iPadAir = [
             last: "iPadOS 15"
         },
         geekbenchScore: 1055,
-        cpu: {
+        cpu: [{
+            name: '',
             model: 'A8X',
             rate: '1.5',
             core: 3
-        },
+        }],
         gpu: {
             model: "PowerVR GXA6850",
             core: 8
@@ -1362,11 +1352,12 @@ const iPadAir = [
             last: lastOS
         },
         geekbenchScore: 2838,
-        cpu: {
+        cpu: [{
+            name: '',
             model: 'A12',
             rate: '2.49',
             core: 6
-        },
+        }],
         gpu: {
             model: "Apple",
             core: 4
@@ -1437,11 +1428,12 @@ const iPadAir = [
             last: lastOS
         },
         geekbenchScore: 4206,
-        cpu: {
+        cpu: [{
+            name: '',
             model: 'A14',
             rate: '2.99',
             core: 6
-        },
+        }],
         gpu: {
             model: "Apple",
             core: "4"
@@ -1515,11 +1507,12 @@ const iPadAir = [
             last: lastOS
         },
         geekbenchScore: 7128,
-        cpu: {
+        cpu: [{
+            name: '',
             model: 'M1',
             rate: '3.20',
             core: 8
-        },
+        }],
         gpu: {
             model: "Apple",
             core: "8"
@@ -1592,11 +1585,12 @@ const iPadAir = [
             last: lastOS
         },
         geekbenchScore: 0,
-        cpu: {
+        cpu: [{
+            name: '',
             model: 'M2',
             rate: '3.49',
             core: 8
-        },
+        }],
         gpu: {
             model: "Apple",
             core: "10"
@@ -1613,7 +1607,7 @@ const iPadAir = [
         },
         mechanicalKeys: ['开关机键','音量增减键'],
         connector: ['USB-C', '智能接点', '磁力接点'],
-        pencil: ['Apple Pencil 2', 'Apple Pencil Pro'],
+        pencil: ['Apple Pencil(USB-C)', 'Apple Pencil Pro'],
         unlockMethods: ['指纹解锁'],
         models: [
             {id: 1, name: "", model: "(WiFi)", weight: 462},
@@ -1668,11 +1662,12 @@ const iPadAir = [
             last: lastOS
         },
         geekbenchScore: 0,
-        cpu: {
+        cpu: [{
+            name: '',
             model: 'M2',
             rate: '3.49',
             core: 8
-        },
+        }],
         gpu: {
             model: "Apple",
             core: "10"
@@ -1689,7 +1684,7 @@ const iPadAir = [
         },
         mechanicalKeys: ['开关机键','音量增减键'],
         connector: ['USB-C', '智能接点', '磁力接点'],
-        pencil: ['Apple Pencil 2', 'Apple Pencil Pro'],
+        pencil: ['Apple Pencil(USB-C)', 'Apple Pencil Pro'],
         unlockMethods: ['指纹解锁'],
         models: [
             {id: 1, name: "", model: "(WiFi)", weight: 617},
@@ -1745,11 +1740,12 @@ const iPadMini = [
             last: "iOS 9.3.6"
         },
         geekbenchScore: 0,
-        cpu: {
+        cpu: [{
+            name: '',
             model: 'A5',
             rate: '1',
             core: 2
-        },
+        }],
         gpu: {
             model: "PowerVR SGX543MP2",
             core: 4
@@ -1818,11 +1814,12 @@ const iPadMini = [
             last: "iOS 12.4.5"
         },
         geekbenchScore: 490,
-        cpu: {
+        cpu: [{
+            name: '',
             model: 'A7',
             rate: '1.3',
             core: 2
-        },
+        }],
         gpu: {
             model: "PowerVR G6430",
             core: 4
@@ -1892,11 +1889,12 @@ const iPadMini = [
             last: "iOS 12.5.5"
         },
         geekbenchScore: 489,
-        cpu: {
+        cpu: [{
+            name: '',
             model: 'A7',
             rate: '1.3',
             core: 2
-        },
+        }],
         gpu: {
             model: "PowerVR G6430",
             core: 4
@@ -1966,11 +1964,12 @@ const iPadMini = [
             last: "iPadOS 15"
         },
         geekbenchScore: 664,
-        cpu: {
+        cpu: [{
+            name: '',
             model: 'A8',
             rate: '1.5',
             core: 2
-        },
+        }],
         gpu: {
             model: "PowerVR GX6450",
             core: 4
@@ -2041,11 +2040,12 @@ const iPadMini = [
             last: lastOS
         },
         geekbenchScore: 2717,
-        cpu: {
+        cpu: [{
+            name: '',
             model: 'A12',
             rate: '2.49',
             core: 6
-        },
+        }],
         gpu: {
             model: "Apple",
             core: 4
@@ -2117,11 +2117,12 @@ const iPadMini = [
             last: lastOS
         },
         geekbenchScore: 4455,
-        cpu: {
+        cpu: [{
+            name: '',
             model: 'A15',
             rate: '2.93',
             core: 6
-        },
+        }],
         gpu: {
             model: "Apple",
             core: 5
@@ -2190,11 +2191,12 @@ const iPad = [
             last: "iOS 5.1.1"
         },
         geekbenchScore: 0,
-        cpu: {
+        cpu: [{
+            name: '',
             model: 'A4',
             rate: '1',
             core: 1
-        },
+        }],
         gpu: {
             model: "PowerVR SGX535",
             core: 1
@@ -2245,11 +2247,12 @@ const iPad = [
             last: "iOS 9.3.6"
         },
         geekbenchScore: 0,
-        cpu: {
+        cpu: [{
+            name: '',
             model: 'A5',
             rate: '1',
             core: 2
-        },
+        }],
         gpu: {
             model: "PowerVR SGX543MP2",
             core: 2
@@ -2315,11 +2318,12 @@ const iPad = [
             last: "iOS 9.3.6"
         },
         geekbenchScore: 0,
-        cpu: {
+        cpu: [{
+            name: '',
             model: 'A5X',
             rate: '1',
             core: 2
-        },
+        }],
         gpu: {
             model: "PowerVR SGX543MP4",
             core: 4
@@ -2385,11 +2389,12 @@ const iPad = [
             last: "iOS 10.3.4"
         },
         geekbenchScore: 0,
-        cpu: {
+        cpu: [{
+            name: '',
             model: 'A6X',
             rate: '1.4',
             core: 2
-        },
+        }],
         gpu: {
             model: "PowerVR SGX554MP4",
             core: 4
@@ -2457,11 +2462,12 @@ const iPad = [
             last: lastOS
         },
         geekbenchScore: 1020,
-        cpu: {
+        cpu: [{
+            name: '',
             model: 'A9',
             rate: '1.85',
             core: 2
-        },
+        }],
         gpu: {
             model: "PowerVR GT7600",
             core: 6
@@ -2528,11 +2534,12 @@ const iPad = [
             last: lastOS
         },
         geekbenchScore: 1397,
-        cpu: {
+        cpu: [{
+            name: '',
             model: 'A10',
             rate: '2.34',
             core: 4
-        },
+        }],
         gpu: {
             model: "PowerVR GT7600 Plus",
             core: 6
@@ -2599,11 +2606,12 @@ const iPad = [
             last: lastOS
         },
         geekbenchScore: 1384,
-        cpu: {
+        cpu: [{
+            name: '',
             model: 'A10',
             rate: '2.34',
             core: 4
-        },
+        }],
         gpu: {
             model: "PowerVR GT7600 Plus",
             core: 6
@@ -2672,11 +2680,12 @@ const iPad = [
             last: lastOS
         },
         geekbenchScore: 2501,
-        cpu: {
+        cpu: [{
+            name: '',
             model: 'A12',
             rate: '2.49',
             core: 6
-        },
+        }],
         gpu: {
             model: "Apple",
             core: 4
@@ -2744,11 +2753,12 @@ const iPad = [
             last: lastOS
         },
         geekbenchScore: 3310,
-        cpu: {
+        cpu: [{
+            name: '',
             model: 'A13',
             rate: '2.65',
             core: 6
-        },
+        }],
         gpu: {
             model: "Apple",
             core: 4
@@ -2818,11 +2828,12 @@ const iPad = [
             last: lastOS
         },
         geekbenchScore: 0,
-        cpu: {
+        cpu: [{
+            name: '',
             model: 'A14',
             rate: '3.09',
             core: 6
-        },
+        }],
         gpu: {
             model: "Apple",
             core: 4

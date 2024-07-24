@@ -8,7 +8,7 @@
     <title>iPad 所有机型参数大全</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/ipad_favicon256w.png" type="image/png">
-    <link rel="stylesheet" href="scss/iPad.css?v=20240720151844">
+    <link rel="stylesheet" href="scss/iPad.css?v=20240724115615">
     <link rel="apple-touch-icon" href="img/links/ipad_white@2x.png">
     <script src="../../lib/js/vue.min.2.6.10.js"></script>
     <script src="../../lib/js/axios.min.js"></script>
@@ -201,9 +201,11 @@
                             <td class="text-emphasis"><span class="label label-pink">{{iPad.thickness}}</span></td>
                             <!--cpu-->
                             <td>
-                                <div class="dual-label-cpu">
-                                    <div class="model">{{iPad.cpu.model}}</div>
-                                    <div class="rate">{{iPad.cpu.rate + ' x ' + iPad.cpu.core}}</div>
+                                <div>
+                                    <div class="dual-label-cpu" v-for="item in iPad.cpu">
+                                        <div class="model">{{item.model}}</div>
+                                        <div class="rate">{{item.rate + ' x ' + item.core}} {{item.name}}</div>
+                                    </div>
                                 </div>
                                 <div class="score-bar green" v-if="iPad.geekbenchScore">
                                     <div class="bar" :style="`width: ${iPad.geekbenchScore / maxScore * 100}px`"></div>
@@ -400,7 +402,7 @@
 
 </div>
 
-<script src="./js/iPad.js?v=20240720151844"></script>
+<script src="./js/iPad.js?v=20240724115615"></script>
 <script>
     setTimeout(() => {
         if (!/^http:\/\/(a\.kylebing\.cn|localhost|192\.168\.\d{1,3}\.\d{1,3})/i.test(location.href)) {
