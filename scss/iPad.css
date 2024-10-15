@@ -1474,21 +1474,25 @@ footer a:hover {
   .container {
     padding: 0;
   }
+
   .about {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
   }
+
   .header {
     padding: 15px 10px 10px 5px;
   }
   .header h3 {
     font-size: 2rem;
   }
+
   .series-list {
     padding: 0 10px;
     margin-top: 20px;
   }
+
   .series {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -1558,62 +1562,75 @@ kbd {
   body {
     background-color: #2e2e2e;
   }
+
   .header {
     color: #d9d9d9;
   }
+
   .series {
     background-color: #2e2e2e;
   }
+
   .label-green {
     color: rgba(255, 255, 255, 0.7);
     border: 1px solid rgba(0, 105, 62, 0.9);
     background-color: rgba(0, 105, 62, 0.8);
   }
+
   .label-cyan {
     color: rgba(255, 255, 255, 0.7);
     border: 1px solid rgba(16, 175, 248, 0.9);
     background-color: rgba(16, 175, 248, 0.8);
   }
+
   .label-blue {
     color: rgba(255, 255, 255, 0.7);
     border: 1px solid rgba(0, 85, 179, 0.9);
     background-color: rgba(0, 85, 179, 0.8);
   }
+
   .label-purple {
     color: rgba(255, 255, 255, 0.7);
     border: 1px solid rgba(46, 44, 180, 0.9);
     background-color: rgba(46, 44, 180, 0.8);
   }
+
   .label-magenta {
     color: rgba(255, 255, 255, 0.7);
     border: 1px solid rgba(224, 0, 71, 0.9);
     background-color: rgba(224, 0, 71, 0.8);
   }
+
   .label-pink {
     color: rgba(255, 255, 255, 0.7);
     border: 1px solid rgba(255, 23, 197, 0.9);
     background-color: rgba(255, 23, 197, 0.8);
   }
+
   .label-red {
     color: rgba(255, 255, 255, 0.7);
     border: 1px solid rgba(227, 12, 0, 0.9);
     background-color: rgba(227, 12, 0, 0.8);
   }
+
   .label-orange {
     color: rgba(255, 255, 255, 0.7);
     border: 1px solid rgba(179, 104, 0, 0.9);
     background-color: rgba(179, 104, 0, 0.8);
   }
+
   .label-yellow {
     color: rgba(255, 255, 255, 0.7);
     border: 1px solid rgba(179, 143, 0, 0.9);
     background-color: rgba(179, 143, 0, 0.8);
   }
+
   .label-gray {
     color: rgba(255, 255, 255, 0.7);
     border: 1px solid rgba(57, 57, 57, 0.9);
     background-color: rgba(57, 57, 57, 0.8);
   }
+
   .dual-label-cpu .model {
     background-color: rgba(208, 0, 66, 0.8);
     color: rgba(255, 255, 255, 0.7);
@@ -1627,6 +1644,7 @@ kbd {
     color: #f9004f;
     background-color: white;
   }
+
   .dual-label-gpu .model {
     background-color: rgba(163, 95, 0, 0.8);
     color: rgba(255, 255, 255, 0.7);
@@ -1640,6 +1658,7 @@ kbd {
     color: #cc7700;
     background-color: white;
   }
+
   .dual-label-memory .model {
     background-color: rgba(0, 89, 53, 0.8);
     color: rgba(255, 255, 255, 0.7);
@@ -1653,6 +1672,7 @@ kbd {
     color: #00824d;
     background-color: white;
   }
+
   .battery {
     display: inline-block;
     font-size: 13px;
@@ -1679,6 +1699,7 @@ kbd {
     -moz-border-radius: 0 2px 2px 0;
     border-radius: 0 2px 2px 0;
   }
+
   tbody tr {
     border-color: #383838;
   }
@@ -1691,6 +1712,7 @@ kbd {
   tbody tr:nth-child(even) td {
     background-color: #2e2e2e;
   }
+
   th {
     background-color: rgba(0, 0, 0, 0.03);
     border-color: #4d4d4d;
@@ -1699,25 +1721,31 @@ kbd {
   th sup {
     color: #a6a6a6;
   }
+
   td {
     color: #bfbfbf;
   }
   td p {
     color: #bfbfbf;
   }
+
   .text-emphasis {
     color: #d9d9d9;
   }
+
   .gray {
     color: #a6a6a6;
   }
+
   .rate {
     background-color: transparent !important;
   }
+
   .camera {
     background-color: rgba(255, 255, 255, 0.05);
     border-color: rgba(255, 255, 255, 0.1);
   }
+
   .filter-list .iphone-tag-list .iphone-tag {
     border-color: #4d4d4d;
     color: #bfbfbf;
@@ -1731,20 +1759,25 @@ kbd {
     width: 8px;
     height: 10px;
   }
+
   ::-webkit-scrollbar-track {
     background-color: rgba(0, 0, 0, 0);
   }
+
   ::-webkit-scrollbar-thumb {
     border-color: transparent;
     background-color: transparent;
   }
+
   :hover::-webkit-scrollbar-thumb {
     border: 1px solid #4d4d4d;
     background-color: #474747;
   }
+
   .gradient {
     background-image: linear-gradient(to bottom right, #333333, #404040);
   }
+
   kbd {
     background-color: #383838;
     border-color: #4d4d4d;

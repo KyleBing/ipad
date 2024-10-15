@@ -4,7 +4,7 @@
  *****************************/
 
 const lastOS = "最新"
-const lastModifyDate = '2024.07.24' // 格式： 2023.03.12
+const lastModifyDate = '2024.10.15' // 格式： 2023.03.12
 
 const iPadPro = [
     // iPad pro 1 generation
@@ -2166,6 +2166,80 @@ const iPadMini = [
             ]
         },
         release: "2021-09-15"
+    },
+    {
+        name: "iPad Mini 7",
+        name_short: "Mini 7",
+        colors: ['蓝色', '紫色', '星光色', '深空灰色'],
+        active: false,
+        isPreview: false,
+        isNew: true,
+        screen:
+            {
+                size: "8.3\"",
+                width: 2266,
+                height: 1488,
+                density: 326,
+                refreshRate: 60,
+                brightness: 500, // nit
+                colorP3: true,
+                trueTone: true,
+            },
+        width: 195.4,
+        height: 134.8,
+        thickness: 6.3,
+        os: {
+            init: "iPadOS 18",
+            last: lastOS
+        },
+        geekbenchScore: 0,
+        cpu: [{
+            name: '',
+            model: 'A17 Pro',
+            rate: '',
+            core: 6
+        }],
+        gpu: {
+            model: "Apple",
+            core: 5
+        },
+        memory: [
+            {name: "", size: "", type: "LPDDR4X"},
+        ],
+        storage: [128, 256, 512],
+        price: "",
+        battery: {
+            capacity: 5124, // 容量 mah
+            capacityWH: 19.3, // wh
+            voltage: 0 // 电压 v
+        },
+        mechanicalKeys: ['开关机键','音量增减键'],
+        connector: ['USB-C'],
+        pencil: ['Apple Pencil(USB-C)', 'Apple Pencil Pro'],
+        unlockMethods: ['指纹解锁'],
+        models: [
+        ],
+        cameras: {
+            front: {
+                pixelCount: '1200万 ƒ/2.4',
+                dimension: [
+                    {size: '1080p', fps: [60]},
+                ],
+                zoomRate: '',
+                hdr: true
+            },
+            back: [
+                {
+                    name: '默认',
+                    pixelCount: '1200万 ƒ/1.8',
+                    dimension: [
+                        {size: '4k', fps: [60]},
+                    ],
+                    zoomRate: '5',
+                    hdr: true},
+            ]
+        },
+        release: "2024-10-15"
     },
 ]
 const iPad = [
