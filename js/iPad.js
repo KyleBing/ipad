@@ -2196,7 +2196,7 @@ const iPadMini = [
         cpu: [{
             name: '',
             model: 'A17 Pro',
-            rate: '',
+            rate: '3.78',
             core: 6
         }],
         gpu: {
