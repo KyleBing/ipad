@@ -1201,26 +1201,25 @@ td p {
   padding: 10px 30px 5px;
   background-color: rgba(106, 114, 130, 0.1);
   display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
+  flex-flow: row nowrap;
+  align-items: flex-start;
   justify-content: center;
 }
 .filter-list .iphone-tag-list {
+  width: 20%;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
-  max-width: 1440px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-flow: row wrap;
 }
 .filter-list .iphone-tag-list .iphone-tag {
   border: 1px solid #dadada;
-  font-family: "Galvji";
+  font-family: "Galvji", sans-serif;
   background-color: white;
   white-space: nowrap;
   margin-bottom: 5px;
-  font-size: 13px;
   cursor: pointer;
   padding: 3px 8px;
   margin-right: 5px;
@@ -1230,23 +1229,46 @@ td p {
   border-radius: 3px;
   color: #333;
 }
+.filter-list .iphone-tag-list .iphone-tag .name {
+  font-weight: bold;
+  font-size: 14px;
+}
+.filter-list .iphone-tag-list .iphone-tag .screen-size {
+  margin-left: 15px;
+  color: #666;
+}
+.filter-list .iphone-tag-list .iphone-tag .release-date {
+  font-size: 12px;
+  color: #999;
+}
 .filter-list .iphone-tag-list .iphone-tag:hover {
   background-color: #eeeeee;
 }
 .filter-list .iphone-tag-list .iphone-tag.active {
   background-color: #6a7282;
   border-color: transparent;
-  color: white !important;
 }
-.filter-list .iphone-tag-list .iphone-tag.active .screen-size {
+.filter-list .iphone-tag-list .iphone-tag.active .name, .filter-list .iphone-tag-list .iphone-tag.active .screen-size, .filter-list .iphone-tag-list .iphone-tag.active .release-date {
   color: white;
 }
 .filter-list .iphone-tag-list .iphone-tag.active.is-new {
-  border-color: #6a7282;
-  background-color: white;
+  background: #6a7282;
+  font-weight: bold;
+  -webkit-text-fill-color: white;
+  background-clip: border-box;
+}
+.filter-list .iphone-tag-list .iphone-tag.active.is-new .name, .filter-list .iphone-tag-list .iphone-tag.active.is-new .screen-size, .filter-list .iphone-tag-list .iphone-tag.active.is-new .release-date {
+  color: white;
 }
 
 @media (max-width: 768px) {
+  .filter-list {
+    flex-flow: column nowrap;
+  }
+  .filter-list .iphone-tag-list {
+    flex-flow: row wrap;
+    width: 100%;
+  }
   .filter-list .iphone-tag-list .iphone-tag {
     font-size: 14px;
     padding: 5px 10px;
@@ -1474,25 +1496,21 @@ footer a:hover {
   .container {
     padding: 0;
   }
-
   .about {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
   }
-
   .header {
     padding: 15px 10px 10px 5px;
   }
   .header h3 {
     font-size: 2rem;
   }
-
   .series-list {
     padding: 0 10px;
     margin-top: 20px;
   }
-
   .series {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -1562,75 +1580,62 @@ kbd {
   body {
     background-color: #2e2e2e;
   }
-
   .header {
     color: #d9d9d9;
   }
-
   .series {
     background-color: #2e2e2e;
   }
-
   .label-green {
     color: rgba(255, 255, 255, 0.7);
     border: 1px solid rgba(0, 105, 62, 0.9);
     background-color: rgba(0, 105, 62, 0.8);
   }
-
   .label-cyan {
     color: rgba(255, 255, 255, 0.7);
     border: 1px solid rgba(16, 175, 248, 0.9);
     background-color: rgba(16, 175, 248, 0.8);
   }
-
   .label-blue {
     color: rgba(255, 255, 255, 0.7);
     border: 1px solid rgba(0, 85, 179, 0.9);
     background-color: rgba(0, 85, 179, 0.8);
   }
-
   .label-purple {
     color: rgba(255, 255, 255, 0.7);
     border: 1px solid rgba(46, 44, 180, 0.9);
     background-color: rgba(46, 44, 180, 0.8);
   }
-
   .label-magenta {
     color: rgba(255, 255, 255, 0.7);
     border: 1px solid rgba(224, 0, 71, 0.9);
     background-color: rgba(224, 0, 71, 0.8);
   }
-
   .label-pink {
     color: rgba(255, 255, 255, 0.7);
     border: 1px solid rgba(255, 23, 197, 0.9);
     background-color: rgba(255, 23, 197, 0.8);
   }
-
   .label-red {
     color: rgba(255, 255, 255, 0.7);
     border: 1px solid rgba(227, 12, 0, 0.9);
     background-color: rgba(227, 12, 0, 0.8);
   }
-
   .label-orange {
     color: rgba(255, 255, 255, 0.7);
     border: 1px solid rgba(179, 104, 0, 0.9);
     background-color: rgba(179, 104, 0, 0.8);
   }
-
   .label-yellow {
     color: rgba(255, 255, 255, 0.7);
     border: 1px solid rgba(179, 143, 0, 0.9);
     background-color: rgba(179, 143, 0, 0.8);
   }
-
   .label-gray {
     color: rgba(255, 255, 255, 0.7);
     border: 1px solid rgba(57, 57, 57, 0.9);
     background-color: rgba(57, 57, 57, 0.8);
   }
-
   .dual-label-cpu .model {
     background-color: rgba(208, 0, 66, 0.8);
     color: rgba(255, 255, 255, 0.7);
@@ -1644,7 +1649,6 @@ kbd {
     color: #f9004f;
     background-color: white;
   }
-
   .dual-label-gpu .model {
     background-color: rgba(163, 95, 0, 0.8);
     color: rgba(255, 255, 255, 0.7);
@@ -1658,7 +1662,6 @@ kbd {
     color: #cc7700;
     background-color: white;
   }
-
   .dual-label-memory .model {
     background-color: rgba(0, 89, 53, 0.8);
     color: rgba(255, 255, 255, 0.7);
@@ -1672,7 +1675,6 @@ kbd {
     color: #00824d;
     background-color: white;
   }
-
   .battery {
     display: inline-block;
     font-size: 13px;
@@ -1699,7 +1701,6 @@ kbd {
     -moz-border-radius: 0 2px 2px 0;
     border-radius: 0 2px 2px 0;
   }
-
   tbody tr {
     border-color: #383838;
   }
@@ -1712,7 +1713,6 @@ kbd {
   tbody tr:nth-child(even) td {
     background-color: #2e2e2e;
   }
-
   th {
     background-color: rgba(0, 0, 0, 0.03);
     border-color: #4d4d4d;
@@ -1721,31 +1721,25 @@ kbd {
   th sup {
     color: #a6a6a6;
   }
-
   td {
     color: #bfbfbf;
   }
   td p {
     color: #bfbfbf;
   }
-
   .text-emphasis {
     color: #d9d9d9;
   }
-
   .gray {
     color: #a6a6a6;
   }
-
   .rate {
     background-color: transparent !important;
   }
-
   .camera {
     background-color: rgba(255, 255, 255, 0.05);
     border-color: rgba(255, 255, 255, 0.1);
   }
-
   .filter-list .iphone-tag-list .iphone-tag {
     border-color: #4d4d4d;
     color: #bfbfbf;
@@ -1759,25 +1753,20 @@ kbd {
     width: 8px;
     height: 10px;
   }
-
   ::-webkit-scrollbar-track {
     background-color: rgba(0, 0, 0, 0);
   }
-
   ::-webkit-scrollbar-thumb {
     border-color: transparent;
     background-color: transparent;
   }
-
   :hover::-webkit-scrollbar-thumb {
     border: 1px solid #4d4d4d;
     background-color: #474747;
   }
-
   .gradient {
     background-image: linear-gradient(to bottom right, #333333, #404040);
   }
-
   kbd {
     background-color: #383838;
     border-color: #4d4d4d;

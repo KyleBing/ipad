@@ -1031,7 +1031,7 @@ const iPadPro = [
         name_short: "Pro 7",
         active: false,
         isPreview: false,
-        isNew: true,
+        isNew: false,
         screen:
             {
                 size: "11\"",
@@ -1052,7 +1052,7 @@ const iPadPro = [
             init: "iPadOS 17",
             last: lastOS
         },
-        geekbenchScore: 0,
+        geekbenchScore: 13421,
         cpu: [
             {name: "", model: 'M4', rate: '', core: '9'},
             {name: "≥ 1T", model: 'M4', rate: '', core: '10'},
@@ -1110,7 +1110,7 @@ const iPadPro = [
         name_short: "Pro 7",
         active: false,
         isPreview: false,
-        isNew: true,
+        isNew: false,
         screen:
             {
                 size: "13\"",
@@ -1131,7 +1131,7 @@ const iPadPro = [
             init: "iPadOS 17",
             last: lastOS
         },
-        geekbenchScore: 0,
+        geekbenchScore: 13717,
         cpu: [
             {name: "", model: 'M4', rate: '', core: '9'},
             {name: "≥ 1T", model: 'M4', rate: '', core: '10'},
@@ -1562,10 +1562,10 @@ const iPadAir = [
     },
     {
         name: "iPad Air 6 11",
-        name_short: "Air 6 11",
+        name_short: "Air 6",
         active: false,
         isPreview: false,
-        isNew: true,
+        isNew: false,
         screen:
             {
                 size: "11\"",
@@ -1584,7 +1584,7 @@ const iPadAir = [
             init: "iPadOS 17",
             last: lastOS
         },
-        geekbenchScore: 0,
+        geekbenchScore: 9786,
         cpu: [{
             name: '',
             model: 'M2',
@@ -1593,10 +1593,10 @@ const iPadAir = [
         }],
         gpu: {
             model: "Apple",
-            core: "10"
+            core: "8"
         },
         memory: [
-            {name: "", size: "8", type: "LPDDR4X SDRAM"},
+            {name: "", size: "", type: "LPDDR4X SDRAM"},
         ],
         storage: [128, 256, 512, 1024],
         price: "",
@@ -1639,10 +1639,10 @@ const iPadAir = [
     },
     {
         name: "iPad Air 6 13",
-        name_short: "Air 6 13",
+        name_short: "Air 6",
         active: false,
         isPreview: false,
-        isNew: true,
+        isNew: false,
         screen:
             {
                 size: "13\"",
@@ -1661,7 +1661,7 @@ const iPadAir = [
             init: "iPadOS 17",
             last: lastOS
         },
-        geekbenchScore: 0,
+        geekbenchScore: 9815,
         cpu: [{
             name: '',
             model: 'M2',
@@ -1670,7 +1670,7 @@ const iPadAir = [
         }],
         gpu: {
             model: "Apple",
-            core: "10"
+            core: "8"
         },
         memory: [
             {name: "", size: "8", type: "LPDDR4X SDRAM"},
@@ -1713,6 +1713,162 @@ const iPadAir = [
             ]
         },
         release: "2024-05-15"
+    },
+    {
+        name: "iPad Air 7 11",
+        name_short: "Air 7",
+        colors: ['蓝色', '紫色', '星光色', '深空灰色'],
+        active: false,
+        isPreview: false,
+        isNew: true,
+        screen:
+            {
+                size: "11\"",
+                width: 2360,
+                height: 1640,
+                density: 264,
+                refreshRate: 60,
+                brightness: 500, // nit
+                colorP3: true,
+                trueTone: true,
+            },
+        width: 247.6,
+        height: 178.5,
+        thickness: 6.1,
+        os: {
+            init: "iPadOS 18.3.1",
+            last: lastOS
+        },
+        geekbenchScore: 0,
+        cpu: [{
+            name: '',
+            model: 'M3',
+            rate: '4.05',
+            core: 8
+        }],
+        gpu: {
+            model: "Apple",
+            core: "9"
+        },
+        memory: [
+            {name: "", size: "", type: ""},
+        ],
+        storage: [128, 256, 512, 1024],
+        price: "",
+        battery: {
+            capacity: 0, // 容量 mah
+            capacityWH: 28.93, // wh
+            voltage: 0 // 电压 v
+        },
+        mechanicalKeys: ['开关机键','音量增减键'],
+        connector: ['USB-C', '智能接点', '磁力接点'],
+        pencil: ['Apple Pencil(USB-C)', 'Apple Pencil Pro'],
+        unlockMethods: ['指纹解锁'],
+        models: [
+            {id: 1, name: "", model: "(WiFi)", weight: 460},
+            {id: 2, name: "", model: "(WiFi + 蜂窝)", weight: 460},
+        ],
+        cameras: {
+            front: {
+                pixelCount: '1200万, ƒ/2.4',
+                dimension: [
+                    {size: '1080p', fps: []},
+                ],
+                rate: '',
+                zoomRate: '',
+                hdr: true
+            },
+            back: [
+                {
+                    name: '默认',
+                    pixelCount: '1200万, ƒ/1.8',
+                    dimension: [
+                        {size: '1080p', fps: [30]},
+                    ],
+                    zoomRate: '5',
+                    hdr: true
+                },
+            ]
+        },
+        release: "2025-03-04"
+    },
+    {
+        name: "iPad Air 7 13",
+        name_short: "Air 7",
+        colors: ['蓝色', '紫色', '星光色', '深空灰色'],
+        active: false,
+        isPreview: false,
+        isNew: true,
+        screen:
+            {
+                size: "13\"",
+                width: 2732,
+                height: 2048,
+                density: 264,
+                refreshRate: 60,
+                brightness: 600, // nit
+                colorP3: true,
+                trueTone: true,
+            },
+        width: 280.6,
+        height: 214.9,
+        thickness: 6.1,
+        os: {
+            init: "iPadOS 18.3.1",
+            last: lastOS
+        },
+        geekbenchScore: 0,
+        cpu: [{
+            name: '',
+            model: 'M3',
+            rate: '4.05',
+            core: 8
+        }],
+        gpu: {
+            model: "Apple",
+            core: "9"
+        },
+        memory: [
+            {name: "", size: "", type: ""},
+        ],
+        storage: [128, 256, 512, 1024],
+        price: "",
+        battery: {
+            capacity: 0, // 容量 mah
+            capacityWH: 36.59, // wh
+            voltage: 0 // 电压 v
+        },
+        mechanicalKeys: ['开关机键','音量增减键'],
+        connector: ['USB-C', '智能接点', '磁力接点'],
+        pencil: ['Apple Pencil(USB-C)', 'Apple Pencil Pro'],
+        unlockMethods: ['指纹解锁'],
+        models: [
+            {id: 1, name: "", model: "(WiFi)", weight: 616},
+            {id: 2, name: "", model: "(WiFi + 蜂窝)", weight: 617},
+        ],
+        cameras: {
+            front: {
+                pixelCount: '1200万, ƒ/2.4',
+                dimension: [
+                    {size: '1080p', fps: []},
+                ],
+                rate: '',
+                zoomRate: '',
+                hdr: true
+            },
+            back: [
+                {
+                    name: '默认',
+                    pixelCount: '1200万, ƒ/1.8',
+                    dimension: [
+                        {size: '1080p', fps: [30]},
+                    ],
+                    zoomRate: '5',
+                    hdr: true
+                },
+            ]
+        },
+        release: "2025-03-04"
     },
 ]
 const iPadMini = [
@@ -2192,7 +2348,7 @@ const iPadMini = [
             init: "iPadOS 18",
             last: lastOS
         },
-        geekbenchScore: 0,
+        geekbenchScore: 5699,
         cpu: [{
             name: '',
             model: 'A17 Pro',
@@ -2201,10 +2357,10 @@ const iPadMini = [
         }],
         gpu: {
             model: "Apple",
-            core: 5
+            core: 6
         },
         memory: [
-            {name: "", size: "", type: "LPDDR4X"},
+            {name: "", size: "8", type: "LPDDR4X"},
         ],
         storage: [128, 256, 512],
         price: "",
