@@ -3143,7 +3143,7 @@ const iPad = [
             core: 4
         },
         memory: [
-            {name: "", size: "4", type: 'LPDDR4X SDRAM'},
+            {name: "", size: "", type: ''},
         ],
         storage: [128, 256, 512],
         price: "",
