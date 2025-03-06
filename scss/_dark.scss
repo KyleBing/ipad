@@ -159,6 +159,9 @@ $dark-border: lighten(black, 30%);
         border-color: $dark-border;
         color: $dark-text;
         background-color: $dark-bg;
+        .name{
+          color: white;
+        }
         &:hover{
           background-color: $dark-bg-highlight;
         }

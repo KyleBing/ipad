@@ -4,7 +4,7 @@
  *****************************/
 
 const lastOS = "最新"
-const lastModifyDate = '2024.10.15' // 格式： 2023.03.12
+const lastModifyDate = '2025.03.06' // 格式： 2023.03.12
 
 const iPadPro = [
     // iPad pro 1 generation
@@ -1790,7 +1790,7 @@ const iPadAir = [
                 },
             ]
         },
-        release: "2025-03-04"
+        release: "2025-03-12"
     },
     {
         name: "iPad Air 7 13",
@@ -1868,7 +1868,7 @@ const iPadAir = [
                 },
             ]
         },
-        release: "2025-03-04"
+        release: "2025-03-12"
     },
 ]
 const iPadMini = [
@@ -3107,6 +3107,80 @@ const iPad = [
             ]
         },
         release: "2022-10-19"
+    },
+    {
+        name: "iPad 11",
+        name_short: "iPad 11",
+        colors: ['银色', '蓝色', '粉色', '黄色',],
+        active: false,
+        isPreview: false,
+        isNew: true,
+        screen:
+            {
+                size: "10.9\"",
+                width: 2360,
+                height: 1640,
+                density: 264,
+                refreshRate: 60,
+                brightness: 500, // nit
+            },
+        width: 248.6,
+        height: 179.5,
+        thickness: 7,
+        os: {
+            init: "iPadOS 18.3.1",
+            last: lastOS
+        },
+        geekbenchScore: 0,
+        cpu: [{
+            name: '',
+            model: 'A16',
+            rate: '3.46',
+            core: 6
+        }],
+        gpu: {
+            model: "Apple",
+            core: 4
+        },
+        memory: [
+            {name: "", size: "4", type: 'LPDDR4X SDRAM'},
+        ],
+        storage: [128, 256, 512],
+        price: "",
+        battery: {
+            capacity: 0, // 容量 mah
+            capacityWH: 28.6, // wh
+            voltage: 0 // 电压 v
+        },
+        mechanicalKeys: ['开关机键','音量增减键'],
+        connector: ['USB-C'],
+        pencil: ['Apple Pencil 1(购买配件)', 'Apple Pencil(USB-C)'],
+        unlockMethods: ['指纹解锁'],
+        models: [
+            {id: 1, name: "--", model: "-- (WiFi)", weight: 477},
+            {id: 2, name: "--", model: "-- (WiFi + 蜂窝)", weight: 481},
+        ],
+        cameras: {
+            front: {
+                pixelCount: '1200万, ƒ/2.4 ',
+                dimension: [
+                    {size: '1080p', fps: []},
+                ],
+                zoomRate: '',
+                hdr: false
+            },
+            back: [
+                {
+                    name: '默认',
+                    pixelCount: '1200万, ƒ/1.8',
+                    dimension: [
+                        {size: '1080p', fps: [30]},
+                    ],
+                    zoomRate: '5',
+                    hdr: true},
+            ]
+        },
+        release: "2025-03-12"
     },
 ]
 

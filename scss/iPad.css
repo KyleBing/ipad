@@ -1223,15 +1223,16 @@ td p {
   cursor: pointer;
   padding: 3px 8px;
   margin-right: 5px;
-  line-height: 1.3;
+  line-height: 1.1;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
   color: #333;
 }
 .filter-list .iphone-tag-list .iphone-tag .name {
+  color: black;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 12px;
 }
 .filter-list .iphone-tag-list .iphone-tag .screen-size {
   margin-left: 15px;
@@ -1744,6 +1745,9 @@ kbd {
     border-color: #4d4d4d;
     color: #bfbfbf;
     background-color: #2e2e2e;
+  }
+  .filter-list .iphone-tag-list .iphone-tag .name {
+    color: white;
   }
   .filter-list .iphone-tag-list .iphone-tag:hover {
     background-color: #474747;
