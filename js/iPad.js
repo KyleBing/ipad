@@ -3057,7 +3057,7 @@ const iPad = [
             init: "iPadOS 16",
             last: lastOS
         },
-        geekbenchScore: 0,
+        geekbenchScore: 4027,
         cpu: [{
             name: '',
             model: 'A14',
