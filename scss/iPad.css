@@ -1199,11 +1199,12 @@ td p {
 
 .filter-list {
   padding: 10px 30px 5px;
-  background-color: rgba(106, 114, 130, 0.1);
+  background-color: #eee;
   display: flex;
   flex-flow: row nowrap;
   align-items: flex-start;
   justify-content: center;
+  border-bottom: 1px solid #ccc;
 }
 
 .ipad-tag-list {
@@ -1270,10 +1271,11 @@ td p {
 }
 
 .ipad-filter-tag-list {
+  background-color: #fefefe;
   padding: 10px;
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid rgba(106, 114, 130, 0.1);
+  border-bottom: 1px solid rgba(204, 204, 204, 0.5);
 }
 .ipad-filter-tag-list .ipad-tag {
   margin-bottom: 0;

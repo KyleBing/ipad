@@ -1,10 +1,13 @@
+$border-bottom-color: #ccc;
+
 .filter-list {
     padding: 10px 30px 5px;
-    background-color: transparentize(#6a7282, 0.9);
+    background-color: #eee;
     display: flex;
     flex-flow: row nowrap;
     align-items: flex-start;
     justify-content: center;
+    border-bottom: 1px solid $border-bottom-color;
 }
 
 .ipad-tag-list {
@@ -79,10 +82,11 @@
 }
 
 .ipad-filter-tag-list {
+    background-color: #fefefe;
     padding: 10px;
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid transparentize(#6a7282, 0.9);
+    border-bottom: 1px solid transparentize($border-bottom-color, 0.5);
     .ipad-tag{
         margin-bottom: 0;
     }
