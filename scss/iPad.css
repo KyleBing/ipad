@@ -88,7 +88,7 @@ tt {
   font-size: 11.2px !important;
 }
 
-.text-narrow, .filter-list .iphone-tag-list .iphone-tag .screen-size {
+.text-narrow, .ipad-tag-list .ipad-tag .screen-size {
   font-family: "PTSans-Narrow", Sans-serf !important;
 }
 
@@ -1205,16 +1205,23 @@ td p {
   align-items: flex-start;
   justify-content: center;
 }
-.filter-list .iphone-tag-list {
-  width: 20%;
+
+.ipad-tag-list {
+  padding: 0 20px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
   display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
   justify-content: flex-start;
-  flex-flow: row wrap;
+  max-height: 200px;
 }
-.filter-list .iphone-tag-list .iphone-tag {
+.ipad-tag-list.horizontal {
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+.ipad-tag-list .ipad-tag {
   border: 1px solid #dadada;
   font-family: "Galvji", sans-serif;
   background-color: white;
@@ -1229,53 +1236,83 @@ td p {
   border-radius: 3px;
   color: #333;
 }
-.filter-list .iphone-tag-list .iphone-tag .name {
+.ipad-tag-list .ipad-tag .name {
   color: black;
   font-weight: bold;
   font-size: 12px;
 }
-.filter-list .iphone-tag-list .iphone-tag .screen-size {
+.ipad-tag-list .ipad-tag .screen-size {
   margin-left: 15px;
   color: #666;
 }
-.filter-list .iphone-tag-list .iphone-tag .release-date {
+.ipad-tag-list .ipad-tag .release-date {
   font-size: 12px;
   color: #999;
 }
-.filter-list .iphone-tag-list .iphone-tag:hover {
+.ipad-tag-list .ipad-tag:hover {
   background-color: #eeeeee;
 }
-.filter-list .iphone-tag-list .iphone-tag.active {
+.ipad-tag-list .ipad-tag.active {
   background-color: #6a7282;
   border-color: transparent;
 }
-.filter-list .iphone-tag-list .iphone-tag.active .name, .filter-list .iphone-tag-list .iphone-tag.active .screen-size, .filter-list .iphone-tag-list .iphone-tag.active .release-date {
+.ipad-tag-list .ipad-tag.active .name, .ipad-tag-list .ipad-tag.active .screen-size, .ipad-tag-list .ipad-tag.active .release-date {
   color: white;
 }
-.filter-list .iphone-tag-list .iphone-tag.active.is-new {
+.ipad-tag-list .ipad-tag.active.is-new {
   background: #6a7282;
   font-weight: bold;
   -webkit-text-fill-color: white;
   background-clip: border-box;
 }
-.filter-list .iphone-tag-list .iphone-tag.active.is-new .name, .filter-list .iphone-tag-list .iphone-tag.active.is-new .screen-size, .filter-list .iphone-tag-list .iphone-tag.active.is-new .release-date {
+.ipad-tag-list .ipad-tag.active.is-new .name, .ipad-tag-list .ipad-tag.active.is-new .screen-size, .ipad-tag-list .ipad-tag.active.is-new .release-date {
   color: white;
+}
+
+.ipad-filter-tag-list {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgba(106, 114, 130, 0.1);
+}
+.ipad-filter-tag-list .ipad-tag {
+  margin-bottom: 0;
+}
+
+.tip {
+  color: #999;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
 }
 
 @media (max-width: 768px) {
   .filter-list {
     flex-flow: column nowrap;
   }
-  .filter-list .iphone-tag-list {
+  .ipad-tag-list {
+    height: auto;
     flex-flow: row wrap;
     width: 100%;
+    padding: 0;
+    max-height: none;
   }
-  .filter-list .iphone-tag-list .iphone-tag {
+  .ipad-tag-list.horizontal {
+    justify-content: center;
+  }
+  .ipad-tag-list .ipad-tag {
     font-size: 14px;
     padding: 5px 10px;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
+  }
+  .ipad-filter-tag-list .tip {
+    margin-bottom: 0;
+    padding: 5px;
+    margin-left: 0;
   }
 }
 .help-container {
@@ -1557,14 +1594,6 @@ footer a:hover {
   text-align: center;
   white-space: nowrap;
   font-size: 9px;
-}
-
-.tip {
-  padding: 20px;
-  color: #999;
-  display: flex;
-  justify-content: center;
-  text-align: center;
 }
 
 kbd {

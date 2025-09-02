@@ -1,78 +1,130 @@
-.filter-list{
-  padding: 10px 30px 5px;
-  background-color: transparentize(#6a7282, 0.9);
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: flex-start;
-  justify-content: center;
-  .iphone-tag-list{
-    width: 20%;
-    @include border-radius(10px);
+.filter-list {
+    padding: 10px 30px 5px;
+    background-color: transparentize(#6a7282, 0.9);
     display: flex;
-    justify-content: flex-start;
-    flex-flow: row wrap;
-
-    .iphone-tag{
-      border: 1px solid $color-border;
-      font-family: "Galvji", sans-serif;
-      background-color: white;
-      white-space: nowrap;
-      margin-bottom: 5px;
-      cursor: pointer;
-      padding: 3px 8px;
-      margin-right: 5px;
-      line-height: 1.1;
-      @include border-radius(3px);
-      color: $text-main;
-      .name{
-        color: black;
-        font-weight: bold;
-        font-size: $fz-sm;
-      }
-      .screen-size{
-        margin-left: 15px;
-        color: $text-subtitle;
-        @extend .text-narrow;
-        @extend .light-gray;
-      }
-      .release-date{
-        font-size: $fz-sm;
-        color: $text-comment;
-      }
-      &:hover{
-        background-color: $bg-highlight;
-      }
-      &.active{
-        background-color: #6a7282;
-        border-color: transparent;
-        .name,.screen-size,.release-date{
-          color: white;
-        }
-        &.is-new{
-          background: #6a7282;
-          font-weight: bold;
-          -webkit-text-fill-color: white;
-          background-clip: border-box;
-          .name,.screen-size,.release-date{
-            color: white;
-          }
-        }
-      }
-    }
-  }
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: center;
 }
 
-@media (max-width: 768px){
-  .filter-list{
-    flex-flow: column nowrap;
-    .iphone-tag-list{
-      flex-flow: row wrap;
-      width: 100%;
-      .iphone-tag{
-        font-size: 14px;
-        padding: 5px 10px;
-        @include border-radius(6px);
-      }
+.ipad-tag-list {
+    padding: 0 20px;
+    @include border-radius(10px);
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-height: 200px;
+
+    &.horizontal {
+        flex-flow: row wrap;
+        justify-content: flex-start;
     }
-  }
+
+    .ipad-tag {
+        border: 1px solid $color-border;
+        font-family: "Galvji", sans-serif;
+        background-color: white;
+        white-space: nowrap;
+        margin-bottom: 5px;
+        cursor: pointer;
+        padding: 3px 8px;
+        margin-right: 5px;
+        line-height: 1.1;
+        @include border-radius(3px);
+        color: $text-main;
+
+        .name {
+            color: black;
+            font-weight: bold;
+            font-size: $fz-sm;
+        }
+
+        .screen-size {
+            margin-left: 15px;
+            color: $text-subtitle;
+            @extend .text-narrow;
+            @extend .light-gray;
+        }
+
+        .release-date {
+            font-size: $fz-sm;
+            color: $text-comment;
+        }
+
+        &:hover {
+            background-color: $bg-highlight;
+        }
+
+        &.active {
+            background-color: #6a7282;
+            border-color: transparent;
+
+            .name, .screen-size, .release-date {
+                color: white;
+            }
+
+            &.is-new {
+                background: #6a7282;
+                font-weight: bold;
+                -webkit-text-fill-color: white;
+                background-clip: border-box;
+
+                .name, .screen-size, .release-date {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.ipad-filter-tag-list {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid transparentize(#6a7282, 0.9);
+    .ipad-tag{
+        margin-bottom: 0;
+    }
+}
+
+.tip{
+    color: $text-comment;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+
+// mobile
+@media (max-width: 768px) {
+    .filter-list {
+        flex-flow: column nowrap;
+    }
+
+    .ipad-tag-list {
+        height: auto;
+        flex-flow: row wrap;
+        width: 100%;
+        padding: 0;
+        max-height: none;
+        &.horizontal {
+            justify-content: center;
+        }
+        .ipad-tag {
+            font-size: 14px;
+            padding: 5px 10px;
+            @include border-radius(6px);
+        }
+    }
+
+    .ipad-filter-tag-list {
+        .tip{
+            margin-bottom: 0;
+            padding: 5px;
+            margin-left: 0;
+        }
+    }
 }
