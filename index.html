@@ -13,6 +13,24 @@
     <script src="../../lib/js/vue.min.2.6.10.js"></script>
     <script src="../../lib/js/axios.min.js"></script>
     <script src="./js/qr.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script>
+        // Verify libraries are loaded
+        window.addEventListener('load', function() {
+            if (typeof THREE === 'undefined') {
+                console.error('THREE.js failed to load');
+            } else {
+                console.log('THREE.js loaded successfully, version:', THREE.REVISION);
+            }
+            if (typeof OrbitControls === 'undefined') {
+                console.warn('OrbitControls may not be loaded, but will try to use it');
+            } else {
+                console.log('OrbitControls loaded');
+            }
+        });
+    </script>
+    <script src="./js/ModelViewer.js"></script>
 
     <style>
         [v-cloak]{
@@ -110,6 +128,7 @@
             <div @click="sortWithGeekbenchScore" class="ipad-tag">GeekBench 排序</div>
             <div @click="sortWithBatteryCapacity" class="ipad-tag">电量 排序</div>
             <div @click="sortReset" class="ipad-tag">复位</div>
+            <div v-if="selectedNames.length > 0" @click="showModelViewer" class="ipad-tag view-3d-button">3D 尺寸对比</div>
             <p class="tip"><b>tip</b>: <kbd>shift</kbd> + 鼠标滚轮 = 横向滚动</p>
         </div>
     </div>
@@ -146,7 +165,7 @@
                         <th>系统支持</th>
                     </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="ipad">
                     <tr v-for="(iPad,index) in series.iPads"
                         :key="'iPad' + index"
                         :data-series="iPad.title"
@@ -413,6 +432,14 @@
 
     <!--TIPS-->
     <p v-show="didEnteredFullScreen" class="full-screen full-screen-tip">Esc 退出全屏模式</p>
+
+    <!-- 3D Model Viewer -->
+    <model-viewer 
+        v-if="showViewer"
+        :show="showViewer"
+        :models="selectedModels"
+        @close="showViewer = false">
+    </model-viewer>
 
 </div>
 

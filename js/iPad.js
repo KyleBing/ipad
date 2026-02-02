@@ -3208,6 +3208,8 @@ let app = new Vue({
         // 机型信息筛选
         selectedNames: [], // 已选中的名字
         deviceMap: new Map(),
+        // 3D viewer
+        showViewer: false,
 
         latestOS: lastOS,
         allIpads: iPadPro.reverse().concat(iPadAir.reverse(), iPadMini.reverse(), iPad.reverse()),
@@ -3401,6 +3403,11 @@ let app = new Vue({
                 this.websocket.send(JSON.stringify(message))
             }
         },
+        showModelViewer() {
+            console.log('showModelViewer called, selectedNames:', this.selectedNames);
+            console.log('selectedModels:', this.selectedModels);
+            this.showViewer = true;
+        },
     },
     computed: {
         maxScore(){
@@ -3436,6 +3443,11 @@ let app = new Vue({
                 max: Math.max(...allYear),
                 min: Math.min(...allYear)
             }
+        },
+        selectedModels() {
+            return this.selectedNames.map(name => 
+                this.deviceMap.get(name)
+            ).filter(Boolean);
         },
     }
 })
