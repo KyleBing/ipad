@@ -265,35 +265,45 @@ Vue.component('model-viewer', {
             let currentZ = 0;
 
             sortedModels.forEach((model, index) => {
+                // Increase segments for smoother rounded corners
                 const geometry = new THREE.BoxGeometry(
                     model.width || 1,
                     model.height || 1,
                     model.thickness || 0.1,
-                    32,
-                    32,
-                    8
+                    64,  // Increased from 32 for smoother curves
+                    64,  // Increased from 32 for smoother curves
+                    16   // Increased from 8 for better depth
                 );
                 
-                // Add rounded corners
+                // Add rounded corners - improved algorithm for smoother curves
                 const radius = Math.min(model.width || 1, model.height || 1) * 0.1;
                 const position = geometry.attributes.position;
                 const vertex = new THREE.Vector3();
                 
+                const halfWidth = (model.width || 1) / 2;
+                const halfHeight = (model.height || 1) / 2;
+                
                 for (let i = 0; i < position.count; i++) {
                     vertex.fromBufferAttribute(position, i);
                     
-                    if (Math.abs(vertex.x) > (model.width || 1) / 2 - radius && 
-                        Math.abs(vertex.y) > (model.height || 1) / 2 - radius) {
-                        const cornerX = Math.sign(vertex.x) * ((model.width || 1) / 2 - radius);
-                        const cornerY = Math.sign(vertex.y) * ((model.height || 1) / 2 - radius);
+                    // Only round corners in x-y plane (front and back faces)
+                    // Check if vertex is near a corner
+                    const distFromEdgeX = halfWidth - Math.abs(vertex.x);
+                    const distFromEdgeY = halfHeight - Math.abs(vertex.y);
+                    
+                    if (distFromEdgeX < radius && distFromEdgeY < radius) {
+                        // Vertex is in corner region
+                        const cornerX = Math.sign(vertex.x) * (halfWidth - radius);
+                        const cornerY = Math.sign(vertex.y) * (halfHeight - radius);
                         const dx = vertex.x - cornerX;
                         const dy = vertex.y - cornerY;
                         const distance = Math.sqrt(dx * dx + dy * dy);
                         
-                        if (distance > 0) {
-                            const scale = radius / distance;
-                            vertex.x = cornerX + dx * scale;
-                            vertex.y = cornerY + dy * scale;
+                        if (distance > radius) {
+                            // Project vertex onto circle
+                            const angle = Math.atan2(dy, dx);
+                            vertex.x = cornerX + Math.cos(angle) * radius;
+                            vertex.y = cornerY + Math.sin(angle) * radius;
                         }
                     }
                     
@@ -302,6 +312,7 @@ Vue.component('model-viewer', {
                 
                 position.needsUpdate = true;
                 geometry.computeVertexNormals();
+                geometry.computeBoundingSphere();
                 
                 const material = new THREE.MeshPhongMaterial({
                     color: this.colors[index % this.colors.length],
