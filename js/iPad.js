@@ -4,7 +4,7 @@
  *****************************/
 
 const lastOS = "最新"
-const lastModifyDate = '2025.10.15' // 格式： 2023.03.12
+const lastModifyDate = '2026.02.02' // 格式： 2023.03.12
 
 const iPadPro = [
     // iPad pro 1 generation
