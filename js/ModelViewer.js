@@ -112,8 +112,15 @@ Vue.component('model-viewer', {
                     document.body.classList.add('modal-open');
                 });
             } else {
-                document.body.classList.remove('modal-open');
                 this.cleanup();
+                // 确保移除 modal-open 类并恢复滚动
+                document.body.classList.remove('modal-open');
+                // 强制恢复 body 的 overflow 样式
+                document.body.style.overflow = '';
+                // 使用 nextTick 确保 DOM 更新完成
+                this.$nextTick(() => {
+                    document.body.style.overflow = '';
+                });
             }
         },
         modelSpacing() {
@@ -617,5 +624,8 @@ Vue.component('model-viewer', {
     },
     beforeDestroy() {
         this.cleanup();
+        // 确保移除 modal-open 类并恢复滚动
+        document.body.classList.remove('modal-open');
+        document.body.style.overflow = '';
     }
 });

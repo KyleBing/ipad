@@ -4,7 +4,7 @@
  *****************************/
 
 const lastOS = "最新"
-const lastModifyDate = '2026.02.02' // 格式： 2023.03.12
+const lastModifyDate = '2026.02.04' // 格式： 2023.03.12
 
 const iPadPro = [
     // iPad pro 1 generation
@@ -3492,6 +3492,7 @@ let app = new Vue({
         },
 
         sortReset(){
+            this.selectedNames = [] // 清空筛选项
             this.iPadsSeries = this.originiPadsSeries
         },
 
@@ -3613,7 +3614,7 @@ let app = new Vue({
             }
         },
         selectedModels() {
-            return this.selectedNames.map(name => 
+            return this.selectedNames.map(name =>
                 this.deviceMap.get(name)
             ).filter(Boolean);
         },
