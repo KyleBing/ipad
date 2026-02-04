@@ -3,6 +3,7 @@ $border-bottom-color: #ccc;
 .filter-list {
     padding: 10px 30px 5px;
     background-color: #eee;
+    gap: 60px;
     display: flex;
     flex-flow: row nowrap;
     align-items: flex-start;
@@ -10,14 +11,21 @@ $border-bottom-color: #ccc;
     border-bottom: 1px solid $border-bottom-color;
 }
 
+.ipad-tag-wrapper{
+    .ipad-title{
+        font-size: 20px;
+        padding: 3px 5px;
+        font-weight: bold;
+    }
+}
+
 .ipad-tag-list {
-    padding: 0 20px;
     @include border-radius(10px);
     display: flex;
     flex-flow: column wrap;
     align-items: flex-start;
     justify-content: flex-start;
-    max-height: 200px;
+    max-height: 240px;
 
     &.horizontal {
         flex-flow: row wrap;
@@ -29,7 +37,10 @@ $border-bottom-color: #ccc;
         font-family: "Galvji", sans-serif;
         background-color: white;
         white-space: nowrap;
-        margin-bottom: 5px;
+        margin-bottom: 3px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
         cursor: pointer;
         padding: 3px 8px;
         margin-right: 5px;
@@ -38,13 +49,14 @@ $border-bottom-color: #ccc;
         color: $text-main;
 
         .name {
+            width: 50px;
             color: black;
             font-weight: bold;
             font-size: $fz-sm;
         }
 
         .screen-size {
-            margin-left: 15px;
+            width: 35px;
             color: $text-subtitle;
             @extend .text-narrow;
             @extend .light-gray;
@@ -57,6 +69,10 @@ $border-bottom-color: #ccc;
 
         &:hover {
             background-color: $bg-highlight;
+        }
+
+        &.is-new{
+            border-color: $border-bottom-color;
         }
 
         &.active {

@@ -89,38 +89,56 @@
 
     <!-- FILTER LIST-->
     <div class="filter-list">
-        <div class="ipad-tag-list">
-            <div :class="['ipad-tag', {active: selectedNames.includes(item.name)}, {'is-new': item.isNew}]"
-                 v-for="item in iPadPro" :key="item.name_short" @click="filterTagToggle(item.name)">
-                <span class="name">{{item.name_short}}</span>
-                <span class="screen-size">{{item.screen.size}}</span>
-                <div class="release-date">{{item.release.substring(0,4)}}</div>
+
+        <div class="ipad-tag-wrapper">
+            <div class="ipad-title">Pro</div>
+            <div class="ipad-tag-list">
+                <div :class="['ipad-tag', {active: selectedNames.includes(item.name)}, {'is-new': item.isNew}]"
+                     v-for="item in iPadPro" :key="item.name_short" @click="filterTagToggle(item.name)">
+                    <span class="name">{{item.name_short}}</span>
+                    <span class="screen-size">{{item.screen.size}}</span>
+                    <div class="release-date">{{item.release.substring(0,4)}}</div>
+                </div>
             </div>
         </div>
-        <div class="ipad-tag-list">
-            <div :class="['ipad-tag', {active: selectedNames.includes(item.name)}, {'is-new': item.isNew}]"
-                 v-for="item in iPadAir" :key="item.name_short" @click="filterTagToggle(item.name)">
-                <span class="name">{{item.name_short}}</span>
-                <span class="screen-size">{{item.screen.size}}</span>
-                <div class="release-date">{{item.release.substring(0,4)}}</div>
+
+        <div class="ipad-tag-wrapper">
+            <div class="ipad-title">Air</div>
+            <div class="ipad-tag-list">
+                <div :class="['ipad-tag', {active: selectedNames.includes(item.name)}, {'is-new': item.isNew}]"
+                     v-for="item in iPadAir" :key="item.name_short" @click="filterTagToggle(item.name)">
+                    <span class="name">{{item.name_short}}</span>
+                    <span class="screen-size">{{item.screen.size}}</span>
+                    <div class="release-date">{{item.release.substring(0,4)}}</div>
+                </div>
             </div>
         </div>
-        <div class="ipad-tag-list">
-            <div :class="['ipad-tag', {active: selectedNames.includes(item.name)}, {'is-new': item.isNew}]"
-                 v-for="item in iPadMini" :key="item.name_short" @click="filterTagToggle(item.name)">
-                <span class="name">{{item.name_short}}</span>
-                <span class="screen-size">{{item.screen.size}}</span>
-                <div class="release-date">{{item.release.substring(0,4)}}</div>
+
+
+        <div class="ipad-tag-wrapper">
+            <div class="ipad-title">Mini</div>
+            <div class="ipad-tag-list">
+                <div :class="['ipad-tag', {active: selectedNames.includes(item.name)}, {'is-new': item.isNew}]"
+                     v-for="item in iPadMini" :key="item.name_short" @click="filterTagToggle(item.name)">
+                    <span class="name">{{item.name_short}}</span>
+                    <span class="screen-size">{{item.screen.size}}</span>
+                    <div class="release-date">{{item.release.substring(0,4)}}</div>
+                </div>
             </div>
         </div>
-        <div class="ipad-tag-list">
-            <div :class="['ipad-tag', {active: selectedNames.includes(item.name)}, {'is-new': item.isNew}]"
-                 v-for="item in iPad" :key="item.name_short" @click="filterTagToggle(item.name)">
-                <span class="name">{{item.name_short}}</span>
-                <span class="screen-size">{{item.screen.size}}</span>
-                <div class="release-date">{{item.release.substring(0,4)}}</div>
+
+        <div class="ipad-tag-wrapper">
+            <div class="ipad-title">iPad</div>
+            <div class="ipad-tag-list">
+                <div :class="['ipad-tag', {active: selectedNames.includes(item.name)}, {'is-new': item.isNew}]"
+                     v-for="item in iPad" :key="item.name_short" @click="filterTagToggle(item.name)">
+                    <span class="name">{{item.name_short}}</span>
+                    <span class="screen-size">{{item.screen.size}}</span>
+                    <div class="release-date">{{item.release.substring(0,4)}}</div>
+                </div>
             </div>
         </div>
+
     </div>
 
     <div class="ipad-filter-tag-list">
