@@ -3248,7 +3248,7 @@ const iPad = [
         },
         mechanicalKeys: ['开关机键','音量增减键'],
         connector: ['USB-C'],
-        pencil: ['Apple Pencil 1(购买配件)'],
+        pencil: ['Apple Pencil 1(购买配件)', 'Apple Pencil(USB-C)'],
         unlockMethods: ['指纹解锁'],
         models: [
             {id: 1, name: "--", model: "-- (WiFi)", weight: 477},
