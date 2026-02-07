@@ -4,7 +4,7 @@
  *****************************/
 
 const lastOS = "最新"
-const lastModifyDate = '2026.02.04' // 格式： 2023.03.12
+const lastModifyDate = '2026.02.07' // 格式： 2023.03.12
 
 const iPadPro = [
     // iPad pro 1 generation
@@ -3248,7 +3248,7 @@ const iPad = [
         },
         mechanicalKeys: ['开关机键','音量增减键'],
         connector: ['USB-C'],
-        pencil: ['Apple Pencil 1(购买配件)', 'Apple Pencil 2'],
+        pencil: ['Apple Pencil 1(购买配件)'],
         unlockMethods: ['指纹解锁'],
         models: [
             {id: 1, name: "--", model: "-- (WiFi)", weight: 477},
