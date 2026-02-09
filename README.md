@@ -24,13 +24,35 @@
 <img width="1920" alt="Screenshot 2023-03-30 at 20 08 10" src="https://user-images.githubusercontent.com/12215982/228832503-a1503fa9-4349-452f-a1a1-c3687ad003b1.png">
 
 
-## 修改说明
-在每次修改 `css` 和 `js` 文件之后，很更新 `index.html` 中引入文件位置的后缀，以实现消除浏览器缓存的目的。
+## 开发说明
 
-```html
-    <link rel="stylesheet" href="scss/iPad.css?v=20230216144902">
-    <script src="./js/iPad.js?v=20230216144902"></script>
+项目已迁移至 Vue 3 + Vite + Vue Router + Pinia + TypeScript 技术栈。
+
+### 开发
+```bash
+# 从 npm 迁移到 yarn 时，可先删除 package-lock.json
+yarn install
+yarn dev
 ```
+
+### 构建
+```bash
+yarn build
+```
+
+### 类型检查
+```bash
+yarn typecheck
+```
+
+### 项目结构
+- `src/main.ts` - 应用入口
+- `src/App.vue` - 根组件
+- `src/views/HomeView.vue` - 主页
+- `src/components/` - 组件（AboutHeader, FilterList, FilterActions, SeriesList, IpadTableRow, ShareModal, ModelViewer）
+- `src/stores/ipad.ts` - Pinia 状态管理
+- `src/data/ipadData.ts` - 数据导出
+- `js/ipadData.js` - iPad 机型数据
 
 
 ## wikipedia 信息
