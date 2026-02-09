@@ -1,13 +1,16 @@
-$dark-bg: lighten(black, 18%);
-$dark-bg-highlight: lighten(black, 28%);
-$dark-bg-light: lighten(black, 22%);
+@use "sass:math";
+@use "sass:color";
+
+$dark-bg: color.adjust(black, $lightness: 18%, $space: hsl);
+$dark-bg-highlight: color.adjust(black, $lightness: 28%, $space: hsl);
+$dark-bg-light: color.adjust(black, $lightness: 22%, $space: hsl);
 
 
-$dark-text: lighten(black, 75%);
-$dark-text-title: lighten(black, 85%);
-$dark-text-subtitle: lighten(black, 65%);
+$dark-text: color.adjust(black, $lightness: 75%, $space: hsl);
+$dark-text-title: color.adjust(black, $lightness: 85%, $space: hsl);
+$dark-text-subtitle: color.adjust(black, $lightness: 65%, $space: hsl);
 
-$dark-border: lighten(black, 30%);
+$dark-border: color.adjust(black, $lightness: 30%, $space: hsl);
 
 
 @media (prefers-color-scheme: dark) {
@@ -24,7 +27,7 @@ $dark-border: lighten(black, 30%);
   }
 
   // LABEL
-  $dark-text-label: transparentize(white, 0.3);
+  $dark-text-label: color.adjust(white, $alpha: -0.3);
 
   $label-styles: (
           "green": $green,
@@ -42,8 +45,8 @@ $dark-border: lighten(black, 30%);
   @each $name, $color in $label-styles {
     .label-#{$name}{
       color: $dark-text-label;
-      border: 1px solid transparentize(darken($color, 15%), $label-transparent-rate / 2);
-      background-color: transparentize(darken($color, 15%), $label-transparent-rate);
+      border: 1px solid color.adjust(color.adjust($color, $lightness: -15%, $space: hsl), $alpha: (- math.div($label-transparent-rate, 2)));
+      background-color: color.adjust(color.adjust($color, $lightness: -15%, $space: hsl), $alpha: -$label-transparent-rate);
     }
   }
 
@@ -56,20 +59,20 @@ $dark-border: lighten(black, 30%);
   @each $name, $color in $dual-label-types{
     .dual-label-#{$name}{
       .model{
-        background-color: transparentize(darken($color, 18%), $label-transparent-rate);
+        background-color: color.adjust(color.adjust($color, $lightness: -18%, $space: hsl), $alpha: -$label-transparent-rate);
         color: $dark-text-label;
-        border-color: transparentize(darken($color, 18%), $label-transparent-rate);
+        border-color: color.adjust(color.adjust($color, $lightness: -18%, $space: hsl), $alpha: -$label-transparent-rate);
         @include box-shadow(0 1px 2px rgba(0,0,0,0.1))
       }
       .rate{
-        border-color: transparentize(darken($color, 12%), $label-transparent-rate);
-        color: darken($color, 10%);
+        border-color: color.adjust(color.adjust($color, $lightness: -12%, $space: hsl), $alpha: -$label-transparent-rate);
+        color: color.adjust($color, $lightness: -10%, $space: hsl);
         background-color: white;
       }
     }
   }
 
-  $color-battery: transparentize(darken($green, 18%), $label-transparent-rate);
+  $color-battery: color.adjust(color.adjust($green, $lightness: -18%, $space: hsl), $alpha: -$label-transparent-rate);
   .battery{
     @extend .text-shadow-light;
     display: inline-block;
@@ -86,7 +89,7 @@ $dark-border: lighten(black, 30%);
       content: "";
       position: absolute;
       right: -3px - 1px - 1px;
-      top: ($height-battery - 10px)/2 - 1px;
+      top: math.div($height-battery - 10px, 2) - 1px;
       height: 10px;
       width: 3px;
       background-color: $color-battery;
@@ -148,8 +151,8 @@ $dark-border: lighten(black, 30%);
 
   // CAMERA
   .camera{
-    background-color: transparentize(white, 0.95);
-    border-color: transparentize(white, 0.90);
+    background-color: color.adjust(white, $alpha: -0.95);
+    border-color: color.adjust(white, $alpha: -0.90);
   }
 
 
@@ -196,7 +199,7 @@ $dark-border: lighten(black, 30%);
 
   // ABOUT
   .gradient{
-    background-image: linear-gradient(to bottom right, lighten(black, 20%), lighten(black, 25%));
+    background-image: linear-gradient(to bottom right, color.adjust(black, $lightness: 20%, $space: hsl), color.adjust(black, $lightness: 25%, $space: hsl));
   }
 
   kbd{

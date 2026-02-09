@@ -1,3 +1,4 @@
+@use "sass:color";
 
 // 关于
 .about{
@@ -122,7 +123,7 @@
       height: 40px;
     }
     &[href]:hover{
-      background-color: transparentize(black, 0.8);
+      background-color: color.adjust(black, $alpha: -0.8);
     }
   }
   @media (max-width: 768px){

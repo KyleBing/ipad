@@ -8,10 +8,14 @@ declare module 'vue-router' {
 
 const routes = [
   {
-    path: '/',
+    path: '/list',
     name: 'Home',
     component: () => import('@/views/HomeView.vue'),
     meta: { title: 'iPad 所有机型参数大全' },
+  },
+  {
+    path: '/',
+    redirect: '/list',
   },
 ]
 

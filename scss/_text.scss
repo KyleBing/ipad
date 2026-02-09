@@ -1,3 +1,4 @@
+@use "sass:color";
 
 .text-emphasis{
   @extend .text-bold;
@@ -34,7 +35,7 @@ $text-colors: (
         "red": $red,
         "magenta": $magenta,
         "gray": $gray,
-        "light-gray": lighten($gray, 10%),
+        "light-gray": color.adjust($gray, $lightness: 10%, $space: hsl),
 );
 
 @each $name, $color in $text-colors {

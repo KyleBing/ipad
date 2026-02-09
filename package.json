@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:zip": "vite build && node scripts/zip-build.cjs",
     "typecheck": "vue-tsc --noEmit",
     "preview": "vite preview"
   },
@@ -19,6 +20,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.0",
+    "archiver": "^7.0.1",
     "sass": "^1.69.0",
     "typescript": "^5.9.3",
     "vite": "^5.0.0",

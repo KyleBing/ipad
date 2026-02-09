@@ -1,3 +1,6 @@
+@use "sass:math";
+@use "sass:color";
+
 $dot-width: 20px; // 新机型标记的大小
 
 .model-title{ // 模型字体大小
@@ -75,9 +78,9 @@ $dual-label-types: (
       min-width: 50px;
       padding-right: $label-padding-lr + 2px;
       @include border-radius($label-corner );
-      background-color: transparentize($color, $label-transparent-rate);
+      background-color: color.adjust($color, $alpha: -$label-transparent-rate);
       color: white;
-      border-color: transparentize($color, $label-transparent-rate);
+      border-color: color.adjust($color, $alpha: -$label-transparent-rate);
       border-style: solid;
       border-width: 1px 0 1px 1px;
       z-index: 5;
@@ -88,7 +91,7 @@ $dual-label-types: (
       padding-left: 15px;
       padding-right: 10px;
       @include border-radius(0 $label-corner $label-corner 0);
-      border-color: transparentize($color, $label-transparent-rate);
+      border-color: color.adjust($color, $alpha: -$label-transparent-rate);
       color: $color;
       font-weight: normal;
       background-color: white;
@@ -150,13 +153,13 @@ $label-styles: (
 @each $name, $color in $label-styles {
   .label-#{$name}{
     color: white;
-    border: 1px solid transparentize($color, $label-transparent-rate / 2);
-    background-color: transparentize($color, $label-transparent-rate);
+    border: 1px solid color.adjust($color, $alpha: (- math.div($label-transparent-rate, 2)));
+    background-color: color.adjust($color, $alpha: -$label-transparent-rate);
   }
 }
 
 $height-battery: 20px;
-$color-battery: transparentize($green, $label-transparent-rate);
+$color-battery: color.adjust($green, $alpha: -$label-transparent-rate);
 .battery{
   @extend .text-shadow-light;
   display: inline-block;
@@ -173,7 +176,7 @@ $color-battery: transparentize($green, $label-transparent-rate);
     content: "";
     position: absolute;
     right: -3px - 1px - 1px;
-    top: ($height-battery - 10px)/2 - 1px;
+    top: math.div($height-battery - 10px, 2) - 1px;
     height: 10px;
     width: 3px;
     background-color: $color-battery;

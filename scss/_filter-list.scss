@@ -1,3 +1,5 @@
+@use "sass:color";
+
 $border-bottom-color: #ccc;
 
 .filter-list {
@@ -102,7 +104,7 @@ $border-bottom-color: #ccc;
     padding: 10px;
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid transparentize($border-bottom-color, 0.5);
+    border-bottom: 1px solid color.adjust($border-bottom-color, $alpha: -0.5);
     .ipad-tag{
         margin-bottom: 0;
     }
