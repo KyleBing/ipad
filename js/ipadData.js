@@ -671,9 +671,9 @@ export const iPadPro = [
                 xdr: false,
                 xdrRange: [], // nit
             },
-        width: '247.6',
-        height: '178.5',
-        thickness: '5.9',
+        width: 247.6,
+        height: 178.5,
+        thickness: 5.9,
         os: {
             init: "iPadOS 14.5",
             last: lastOS
@@ -765,9 +765,9 @@ export const iPadPro = [
                 xdr: true,
                 xdrRange: [1000, 1600], // nit
             },
-        width: '280.6',
-        height: '214.9',
-        thickness: '6.4',
+        width: 280.6,
+        height: 214.9,
+        thickness: 6.4,
         os: {
             init: "iPadOS 14.5",
             last: lastOS
@@ -860,9 +860,9 @@ export const iPadPro = [
                 xdr: false,
                 xdrRange: [], // nit
             },
-        width: '247.6',
-        height: '178.5',
-        thickness: '5.9',
+        width: 247.6,
+        height: 178.5,
+        thickness: 5.9,
         os: {
             init: "iPadOS 16",
             last: lastOS
@@ -952,9 +952,9 @@ export const iPadPro = [
                 xdr: true,
                 xdrRange: [1000, 1600], // nit
             },
-        width: '280.6',
-        height: '214.9',
-        thickness: '6.4',
+        width: 280.6,
+        height: 214.9,
+        thickness: 6.4,
         os: {
             init: "iPadOS 16",
             last: lastOS
@@ -1045,9 +1045,9 @@ export const iPadPro = [
                 xdr: true,
                 xdrRange: [1000, 1600], // nit
             },
-        width: '249.7',
-        height: '177.5',
-        thickness: '5.3',
+        width: 249.7,
+        height: 177.5,
+        thickness: 5.3,
         os: {
             init: "iPadOS 17",
             last: lastOS
@@ -1124,9 +1124,9 @@ export const iPadPro = [
                 xdr: true,
                 xdrRange: [1000, 1600], // nit
             },
-        width: '281.6',
-        height: '215.5',
-        thickness: '5.1',
+        width: 281.6,
+        height: 215.5,
+        thickness: 5.1,
         os: {
             init: "iPadOS 17",
             last: lastOS
@@ -1205,9 +1205,9 @@ export const iPadPro = [
                 xdr: true,
                 xdrRange: [1000, 1600], // nit
             },
-        width: '249.7',
-        height: '177.5',
-        thickness: '5.3',
+        width: 249.7,
+        height: 177.5,
+        thickness: 5.3,
         os: {
             init: "iPadOS 26",
             last: lastOS
@@ -1288,9 +1288,9 @@ export const iPadPro = [
                 xdr: true,
                 xdrRange: [1000, 1600], // nit
             },
-        width: '281.6',
-        height: '215.5',
-        thickness: '5.1',
+        width: 281.6,
+        height: 215.5,
+        thickness: 5.1,
         os: {
             init: "iPadOS 26",
             last: lastOS

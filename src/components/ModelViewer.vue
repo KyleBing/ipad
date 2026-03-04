@@ -44,7 +44,7 @@
                 <td>
                   <div class="model-name">
                     <div class="color-box" :style="{ backgroundColor: getColorHex(index) }"></div>
-                    <span>{{ model.name_short || model.name }}</span>
+                    <span>{{ model.name }}</span>
                   </div>
                 </td>
                 <td>{{ model.height }}</td>
@@ -60,7 +60,7 @@
 </template>
 
 <script setup>
-import { ref, watch, onBeforeUnmount, nextTick } from 'vue'
+import { ref, shallowRef, watch, onBeforeUnmount, nextTick } from 'vue'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
 
@@ -73,12 +73,12 @@ defineEmits(['close'])
 
 const canvasContainer = ref(null)
 const _resizeHandlerRef = ref(null)
-const scene = ref(null)
-const camera = ref(null)
-const renderer = ref(null)
-const controls = ref(null)
-const boxes = ref([])
-const labels = ref([])
+const scene = shallowRef(null)
+const camera = shallowRef(null)
+const renderer = shallowRef(null)
+const controls = shallowRef(null)
+const boxes = shallowRef([])
+const labels = shallowRef([])
 const modelSpacing = ref(15)
 const isSideBySide = ref(false)
 const colors = [
@@ -90,6 +90,11 @@ function getColorHex(index) {
   return '#' + colors[index % colors.length].toString(16).padStart(6, '0')
 }
 
+function toNum(v) {
+  const n = Number(v)
+  return Number.isFinite(n) ? n : 0
+}
+
 function createLabel(text, position) {
   const canvas = document.createElement('canvas')
   const context = canvas.getContext('2d')
@@ -97,13 +102,17 @@ function createLabel(text, position) {
   canvas.height = 128
   context.imageSmoothingEnabled = true
   context.imageSmoothingQuality = 'high'
+  const border = 3
   context.fillStyle = '#ffffff'
   context.fillRect(0, 0, canvas.width, canvas.height)
+  context.strokeStyle = '#333333'
+  context.lineWidth = border
+  context.strokeRect(border / 2, border / 2, canvas.width - border, canvas.height - border)
   context.font = 'bold 48px Arial'
   context.fillStyle = '#000000'
   context.textAlign = 'center'
   context.textBaseline = 'middle'
-  context.shadowColor = 'rgba(0, 0, 0, 0.5)'
+  context.shadowColor = 'rgba(0, 0, 0, 0.3)'
   context.shadowBlur = 2
   context.shadowOffsetX = 1
   context.shadowOffsetY = 1
@@ -126,7 +135,7 @@ function createLabel(text, position) {
 function setupThreeJS() {
   if (!canvasContainer.value || props.models.length === 0) return
   const models = props.models
-  const sortedModels = [...models].sort((a, b) => (a.width || 0) - (b.width || 0))
+  const sortedModels = [...models].sort((a, b) => toNum(a.width) - toNum(b.width))
 
   scene.value = new THREE.Scene()
   scene.value.background = new THREE.Color(0xf0f0f0)
@@ -137,28 +146,30 @@ function setupThreeJS() {
     50,
     containerWidth / containerHeight,
     0.1,
-    2000
+    20000
   )
   camera.value.position.set(200, 400, 200)
   camera.value.lookAt(0, 100, 0)
 
   renderer.value = new THREE.WebGLRenderer({
     antialias: true,
-    alpha: true,
+    alpha: false,
     precision: 'highp',
     powerPreference: 'high-performance',
   })
   renderer.value.setPixelRatio(window.devicePixelRatio)
   renderer.value.setSize(containerWidth, containerHeight)
-  renderer.value.shadowMap.enabled = true
-  renderer.value.shadowMap.type = THREE.PCFSoftShadowMap
+  renderer.value.setClearColor(0xf0f0f0, 1)
+  renderer.value.shadowMap.enabled = false
+  while (canvasContainer.value.firstChild) {
+    canvasContainer.value.removeChild(canvasContainer.value.firstChild)
+  }
   canvasContainer.value.appendChild(renderer.value.domElement)
 
-  const ambientLight = new THREE.AmbientLight(0xffffff, 0.6)
+  const ambientLight = new THREE.AmbientLight(0xffffff, 0.7)
   scene.value.add(ambientLight)
-  const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8)
-  directionalLight.position.set(1, 1, 1)
-  directionalLight.castShadow = true
+  const directionalLight = new THREE.DirectionalLight(0xffffff, 0.9)
+  directionalLight.position.set(300, 400, 300)
   scene.value.add(directionalLight)
   const backLight = new THREE.DirectionalLight(0xffffff, 0.5)
   backLight.position.set(-1, -1, -1)
@@ -172,30 +183,26 @@ function setupThreeJS() {
   let currentZ = 0
 
   sortedModels.forEach((model, index) => {
-    const geometry = new THREE.BoxGeometry(
-      model.width || 1,
-      model.height || 1,
-      model.thickness || 0.1,
-      64,
-      64,
-      16
-    )
-    const radius = Math.min(model.width || 1, model.height || 1) * 0.1
+    const w = toNum(model.width) || 1
+    const h = toNum(model.height) || 1
+    const d = toNum(model.thickness) || 0.1
+    const geometry = new THREE.BoxGeometry(w, h, d, 32, 32, 4)
+    const radius = Math.min(w, h) * 0.08
     const position = geometry.attributes.position
     const vertex = new THREE.Vector3()
-    const halfWidth = (model.width || 1) / 2
-    const halfHeight = (model.height || 1) / 2
+    const halfW = w / 2
+    const halfH = h / 2
     for (let i = 0; i < position.count; i++) {
       vertex.fromBufferAttribute(position, i)
-      const distFromEdgeX = halfWidth - Math.abs(vertex.x)
-      const distFromEdgeY = halfHeight - Math.abs(vertex.y)
+      const distFromEdgeX = halfW - Math.abs(vertex.x)
+      const distFromEdgeY = halfH - Math.abs(vertex.y)
       if (distFromEdgeX < radius && distFromEdgeY < radius) {
-        const cornerX = Math.sign(vertex.x) * (halfWidth - radius)
-        const cornerY = Math.sign(vertex.y) * (halfHeight - radius)
+        const cornerX = Math.sign(vertex.x) * (halfW - radius)
+        const cornerY = Math.sign(vertex.y) * (halfH - radius)
         const dx = vertex.x - cornerX
         const dy = vertex.y - cornerY
-        const distance = Math.sqrt(dx * dx + dy * dy)
-        if (distance > radius) {
+        const dist = Math.sqrt(dx * dx + dy * dy)
+        if (dist > radius) {
           const angle = Math.atan2(dy, dx)
           vertex.x = cornerX + Math.cos(angle) * radius
           vertex.y = cornerY + Math.sin(angle) * radius
@@ -206,28 +213,16 @@ function setupThreeJS() {
     position.needsUpdate = true
     geometry.computeVertexNormals()
 
-    const material = new THREE.MeshPhongMaterial({
+    const material = new THREE.MeshBasicMaterial({
       color: colors[index % colors.length],
-      transparent: true,
-      opacity: 0.9,
-      shininess: 100,
-      side: THREE.DoubleSide,
     })
     const box = new THREE.Mesh(geometry, material)
-    box.castShadow = true
-    box.receiveShadow = true
-    box.position.set(
-      -(model.width || 1) / 2,
-      (model.height || 1) / 2,
-      currentZ
-    )
+    box.castShadow = false
+    box.receiveShadow = false
+    box.position.set(-w / 2, h / 2, currentZ)
     const label = createLabel(
       model.name_short || model.name,
-      new THREE.Vector3(
-        box.position.x,
-        box.position.y + (model.height || 1) / 2 + 10,
-        box.position.z
-      )
+      new THREE.Vector3(box.position.x, box.position.y + h / 2 + 10, box.position.z)
     )
     currentZ += modelSpacing.value
     scene.value.add(box)
@@ -236,9 +231,10 @@ function setupThreeJS() {
     labelArr.push(label)
   })
 
-  const gridHelper = new THREE.GridHelper(2000, 100, 0x000000, 0x000000)
-  gridHelper.material.opacity = 0.5
+  const gridHelper = new THREE.GridHelper(4000, 80, 0xcccccc, 0xdddddd)
+  gridHelper.material.opacity = 0.4
   gridHelper.material.transparent = true
+  gridHelper.position.y = -1
   scene.value.add(gridHelper)
 
   controls.value = new OrbitControls(camera.value, renderer.value.domElement)
@@ -264,20 +260,18 @@ function setupThreeJS() {
   controls.value.target.set(centerX, centerY, centerZ)
   controls.value.enableDamping = true
   controls.value.dampingFactor = 0.05
-  controls.value.minDistance = 100
-  controls.value.maxDistance = 1000
+  controls.value.minDistance = 30
+  controls.value.maxDistance = 8000
 
   const sizeX = maxX - minX
   const sizeY = maxY - minY
   const sizeZ = maxZ - minZ
-  const maxSize = Math.max(sizeX, sizeY, sizeZ)
-  const cameraDistance = maxSize * 2
-  camera.value.position.set(
-    centerX + cameraDistance * 0.5,
-    centerY + cameraDistance * 0.5,
-    centerZ + cameraDistance * 0.5
-  )
+  const maxSize = Math.max(sizeX, sizeY, sizeZ, 1)
+  const cameraDistance = Math.max(maxSize * 2.5, 300)
+  // Place camera in front of the tablets (along +Z) so we see the 240×169 face, not the thin edge
+  camera.value.position.set(centerX, centerY, centerZ + cameraDistance)
   camera.value.lookAt(centerX, centerY, centerZ)
+  controls.value.target.set(centerX, centerY, centerZ)
 
   boxes.value = boxArr
   labels.value = labelArr
@@ -305,8 +299,8 @@ function setupThreeJS() {
 }
 
 function updateModelPositions() {
-  if (!boxes.value.length) return
-  const models = [...props.models].sort((a, b) => (a.width || 0) - (b.width || 0))
+  if (!boxes.value.length || !camera.value || !controls.value) return
+  const models = [...props.models].sort((a, b) => toNum(a.width) - toNum(b.width))
   const sortedModels = models
   let currentZ = 0
   let currentX = 0
@@ -314,7 +308,7 @@ function updateModelPositions() {
   let totalDepth = 0
   sortedModels.forEach((model) => {
     if (isSideBySide.value) {
-      totalWidth += (model.width || 1) + modelSpacing.value
+      totalWidth += (toNum(model.width) || 1) + modelSpacing.value
     } else {
       totalDepth += modelSpacing.value
     }
@@ -322,33 +316,28 @@ function updateModelPositions() {
   if (isSideBySide.value) totalWidth -= modelSpacing.value
   else totalDepth -= modelSpacing.value
 
+  if (isSideBySide.value) currentX = -totalWidth / 2
+
   boxes.value.forEach((box, index) => {
     const model = sortedModels[index]
+    if (!model) return
     if (isSideBySide.value) {
-      const x = currentX - totalWidth / 2
-      box.position.set(x, (model.height || 1) / 2, 0)
-      currentX += (model.width || 1) + modelSpacing.value
+      const w = toNum(model.width) || 1
+      const h = toNum(model.height) || 1
+      const x = currentX + w / 2
+      box.position.set(x, h / 2, 0)
+      currentX += w + modelSpacing.value
       if (labels.value[index]) {
-        labels.value[index].position.set(
-          x,
-          box.position.y + (model.height || 1) / 2 + 10,
-          0
-        )
+        labels.value[index].position.set(x, h / 2 + 10, 0)
       }
     } else {
+      const w = toNum(model.width) || 1
+      const h = toNum(model.height) || 1
       const z = currentZ - totalDepth / 2
-      box.position.set(
-        -(model.width || 1) / 2,
-        (model.height || 1) / 2,
-        z
-      )
+      box.position.set(-w / 2, h / 2, z)
       currentZ += modelSpacing.value
       if (labels.value[index]) {
-        labels.value[index].position.set(
-          box.position.x,
-          box.position.y + (model.height || 1) / 2 + 10,
-          z
-        )
+        labels.value[index].position.set(box.position.x, box.position.y + h / 2 + 10, z)
       }
     }
   })
@@ -377,9 +366,38 @@ function updateModelPositions() {
   }
 }
 
+function fitCameraToBounds() {
+  if (!camera.value || !controls.value || !boxes.value.length) return
+  let minX = Infinity, maxX = -Infinity
+  let minY = Infinity, maxY = -Infinity
+  let minZ = Infinity, maxZ = -Infinity
+  boxes.value.forEach((box) => {
+    const boxSize = new THREE.Box3().setFromObject(box)
+    minX = Math.min(minX, boxSize.min.x)
+    maxX = Math.max(maxX, boxSize.max.x)
+    minY = Math.min(minY, boxSize.min.y)
+    maxY = Math.max(maxY, boxSize.max.y)
+    minZ = Math.min(minZ, boxSize.min.z)
+    maxZ = Math.max(maxZ, boxSize.max.z)
+  })
+  const centerX = (minX + maxX) / 2
+  const centerY = (minY + maxY) / 2
+  const centerZ = (minZ + maxZ) / 2
+  const maxSize = Math.max(maxX - minX, maxY - minY, maxZ - minZ, 1)
+  const dist = Math.max(maxSize * 2.5, 400)
+  controls.value.target.set(centerX, centerY, centerZ)
+  camera.value.position.set(centerX, centerY, centerZ + dist)
+  camera.value.lookAt(centerX, centerY, centerZ)
+}
+
 function toggleLayout() {
   isSideBySide.value = !isSideBySide.value
   updateModelPositions()
+  nextTick(() => {
+    requestAnimationFrame(() => {
+      fitCameraToBounds()
+    })
+  })
 }
 
 function setCameraAngle(angle) {
@@ -459,16 +477,28 @@ watch(
   () => props.show,
   (newVal) => {
     if (newVal) {
+      document.body.classList.add('modal-open')
       nextTick(() => {
-        setupThreeJS()
-        document.body.classList.add('modal-open')
+        // Container may have 0 size before layout; retry so canvas gets valid dimensions
+        function trySetup() {
+          if (!canvasContainer.value || props.models.length === 0) return
+          const w = canvasContainer.value.clientWidth
+          const h = canvasContainer.value.clientHeight
+          if (w > 0 && h > 0) {
+            setupThreeJS()
+          } else {
+            requestAnimationFrame(trySetup)
+          }
+        }
+        trySetup()
       })
     } else {
       cleanup()
       document.body.classList.remove('modal-open')
       document.body.style.overflow = ''
     }
-  }
+  },
+  { immediate: true }
 )
 watch(modelSpacing, updateModelPositions)
 watch(isSideBySide, updateModelPositions)

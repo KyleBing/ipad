@@ -5,7 +5,7 @@
       <div class="ipad-tag-list">
         <div
           v-for="item in ipadStore.iPadPro"
-          :key="item.name_short"
+          :key="item.name"
           :class="[
             'ipad-tag',
             { active: ipadStore.selectedNames.includes(item.name) },
@@ -25,7 +25,7 @@
       <div class="ipad-tag-list">
         <div
           v-for="item in ipadStore.iPadAir"
-          :key="item.name_short"
+          :key="item.name"
           :class="[
             'ipad-tag',
             { active: ipadStore.selectedNames.includes(item.name) },
@@ -45,7 +45,7 @@
       <div class="ipad-tag-list">
         <div
           v-for="item in ipadStore.iPadMini"
-          :key="item.name_short"
+          :key="item.name"
           :class="[
             'ipad-tag',
             { active: ipadStore.selectedNames.includes(item.name) },
@@ -65,7 +65,7 @@
       <div class="ipad-tag-list">
         <div
           v-for="item in ipadStore.iPad"
-          :key="item.name_short"
+          :key="item.name"
           :class="[
             'ipad-tag',
             { active: ipadStore.selectedNames.includes(item.name) },
