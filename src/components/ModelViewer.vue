@@ -138,7 +138,7 @@ function setupThreeJS() {
   const sortedModels = [...models].sort((a, b) => toNum(a.width) - toNum(b.width))
 
   scene.value = new THREE.Scene()
-  scene.value.background = new THREE.Color(0xf0f0f0)
+  scene.value.background = new THREE.Color(0xf5f5f5)
 
   const containerWidth = canvasContainer.value.clientWidth
   const containerHeight = canvasContainer.value.clientHeight
@@ -159,24 +159,44 @@ function setupThreeJS() {
   })
   renderer.value.setPixelRatio(window.devicePixelRatio)
   renderer.value.setSize(containerWidth, containerHeight)
-  renderer.value.setClearColor(0xf0f0f0, 1)
-  renderer.value.shadowMap.enabled = false
+  renderer.value.setClearColor(0xf8f8f8, 1)
+  renderer.value.shadowMap.enabled = true
+  renderer.value.shadowMap.type = THREE.PCFSoftShadowMap
   while (canvasContainer.value.firstChild) {
     canvasContainer.value.removeChild(canvasContainer.value.firstChild)
   }
   canvasContainer.value.appendChild(renderer.value.domElement)
 
-  const ambientLight = new THREE.AmbientLight(0xffffff, 0.7)
+  const ambientLight = new THREE.AmbientLight(0xffffff, 0.9)
   scene.value.add(ambientLight)
-  const directionalLight = new THREE.DirectionalLight(0xffffff, 0.9)
-  directionalLight.position.set(300, 400, 300)
+  const directionalLight = new THREE.DirectionalLight(0xffffff, 1.4)
+  directionalLight.position.set(400, 500, 400)
+  directionalLight.castShadow = true
+  const shadowSize = 800
+  directionalLight.shadow.camera.left = -shadowSize
+  directionalLight.shadow.camera.right = shadowSize
+  directionalLight.shadow.camera.top = shadowSize
+  directionalLight.shadow.camera.bottom = -shadowSize
+  directionalLight.shadow.camera.near = 10
+  directionalLight.shadow.camera.far = 3000
+  directionalLight.shadow.mapSize.width = 2048
+  directionalLight.shadow.mapSize.height = 2048
+  directionalLight.shadow.bias = -0.0001
   scene.value.add(directionalLight)
-  const backLight = new THREE.DirectionalLight(0xffffff, 0.5)
+  const backLight = new THREE.DirectionalLight(0xffffff, 0.8)
   backLight.position.set(-1, -1, -1)
   scene.value.add(backLight)
-  const topLight = new THREE.DirectionalLight(0xffffff, 0.4)
+  const topLight = new THREE.DirectionalLight(0xffffff, 0.7)
   topLight.position.set(0, 1, 0)
   scene.value.add(topLight)
+
+  const groundGeometry = new THREE.PlaneGeometry(4000, 4000)
+  const groundMaterial = new THREE.MeshPhongMaterial({ color: 0xeeeeee })
+  const ground = new THREE.Mesh(groundGeometry, groundMaterial)
+  ground.rotation.x = -Math.PI / 2
+  ground.position.y = -0.5
+  ground.receiveShadow = true
+  scene.value.add(ground)
 
   const boxArr = []
   const labelArr = []
@@ -186,7 +206,7 @@ function setupThreeJS() {
     const w = toNum(model.width) || 1
     const h = toNum(model.height) || 1
     const d = toNum(model.thickness) || 0.1
-    const geometry = new THREE.BoxGeometry(w, h, d, 32, 32, 4)
+    const geometry = new THREE.BoxGeometry(w, h, d, 64, 64, 8)
     const radius = Math.min(w, h) * 0.08
     const position = geometry.attributes.position
     const vertex = new THREE.Vector3()
@@ -213,12 +233,14 @@ function setupThreeJS() {
     position.needsUpdate = true
     geometry.computeVertexNormals()
 
-    const material = new THREE.MeshBasicMaterial({
+    const material = new THREE.MeshPhongMaterial({
       color: colors[index % colors.length],
+      shininess: 60,
+      specular: 0x222222,
     })
     const box = new THREE.Mesh(geometry, material)
-    box.castShadow = false
-    box.receiveShadow = false
+    box.castShadow = true
+    box.receiveShadow = true
     box.position.set(-w / 2, h / 2, currentZ)
     const label = createLabel(
       model.name_short || model.name,
@@ -231,7 +253,7 @@ function setupThreeJS() {
     labelArr.push(label)
   })
 
-  const gridHelper = new THREE.GridHelper(4000, 80, 0xcccccc, 0xdddddd)
+  const gridHelper = new THREE.GridHelper(4000, 80, 0x999999, 0xaaaaaa)
   gridHelper.material.opacity = 0.4
   gridHelper.material.transparent = true
   gridHelper.position.y = -1
@@ -329,6 +351,7 @@ function updateModelPositions() {
       currentX += w + modelSpacing.value
       if (labels.value[index]) {
         labels.value[index].position.set(x, h / 2 + 10, 0)
+        labels.value[index].scale.set(120, 30, 1)
       }
     } else {
       const w = toNum(model.width) || 1
@@ -338,6 +361,7 @@ function updateModelPositions() {
       currentZ += modelSpacing.value
       if (labels.value[index]) {
         labels.value[index].position.set(box.position.x, box.position.y + h / 2 + 10, z)
+        labels.value[index].scale.set(50, 12.5, 1)
       }
     }
   })
