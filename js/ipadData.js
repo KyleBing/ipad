@@ -4,7 +4,7 @@
  *****************************/
 
 export const lastOS = "最新"
-export const lastModifyDate = '2026.02.07' // 格式： 2023.03.12
+export const lastModifyDate = '2026.03.04' // 格式： 2023.03.12
 
 export const iPadPro = [
     // iPad pro 1 generation
@@ -361,9 +361,10 @@ export const iPadPro = [
         pencil: ['Apple Pencil 2'],
         unlockMethods: ['面容解锁'],
         models: [
-            {id: 1, name: "iPad8,1 (<1T) iPad8,2 (=1T)", model: "A1980 (WiFi)", weight: 468},
-            {id: 2, name: "iPad8,3 (<1T)", model: "A1934, A2013 (WiFi + 蜂窝)", weight: 468},
-            {id: 3, name: "iPad8,4 (=1T)", model: "A1979 (WiFi + 蜂窝, 国行)", weight: 468},
+            {id: 1, name: "iPad8,1", model: "A1980 (WiFi)", weight: 468},
+            {id: 2, name: "iPad8,2", model: "A2013 (WiFi + 蜂窝)", weight: 468},
+            {id: 3, name: "iPad8,3", model: "A1934 (WiFi + 蜂窝)", weight: 468},
+            {id: 4, name: "iPad8,4", model: "A1979 (WiFi + 蜂窝, 国行)", weight: 468},
         ],
         cameras: {
             front: {
@@ -441,9 +442,10 @@ export const iPadPro = [
         pencil: ['Apple Pencil 2'],
         unlockMethods: ['面容解锁'],
         models: [
-            {id: 1, name: "iPad8,5 (<1T) iPad8,6 (=1T)", model: "A1876 (WiFi)", weight: 631},
-            {id: 2, name: "iPad8,7 (<1T)", model: "A1895, A2014 (WiFi + 蜂窝)", weight: 633},
-            {id: 3, name: "iPad8,8 (=1T)", model: "A1983 (WiFi + 蜂窝, 国行)", weight: 633}
+            {id: 1, name: "iPad8,5", model: "A1876 (WiFi)", weight: 631},
+            {id: 2, name: "iPad8,6", model: "A2014 (WiFi + 蜂窝)", weight: 633},
+            {id: 3, name: "iPad8,7", model: "A1895 (WiFi + 蜂窝)", weight: 633},
+            {id: 4, name: "iPad8,8", model: "A1983 (WiFi + 蜂窝, 国行)", weight: 633},
         ],
         cameras: {
             front: {
@@ -521,9 +523,8 @@ export const iPadPro = [
         pencil: ['Apple Pencil 2'],
         unlockMethods: ['面容解锁'],
         models: [
-            {id: 1, name: "iPad8,9", model: "A2228 (WiFi)", weight: 471},
-            {id: 2, name: "iPad8,10", model: "A2068, A2230 (WiFi + 蜂窝)", weight: 473},
-            {id: 3, name: "iPad", model: "A2231 (WiFi + 蜂窝, 国行)", weight: 473}
+            {id: 1, name: "iPad8,9", model: "A2068, A2228 (WiFi)", weight: 471},
+            {id: 2, name: "iPad8,10", model: "A2230, A2231 (WiFi + 蜂窝)", weight: 473},
         ],
         cameras: {
             front: {
@@ -611,9 +612,8 @@ export const iPadPro = [
         pencil: ['Apple Pencil 2'],
         unlockMethods: ['面容解锁'],
         models: [
-            {id: 1, name: "iPad8,11", model: "A2229 (WiFi)", weight: 641},
-            {id: 2, name: "iPad,12", model: "A2069, A2232 (WiFi + 蜂窝)", weight: 643},
-            {id: 3, name: "iPad", model: "A2233 (WiFi + 蜂窝, 国行)", weight: 643},
+            {id: 1, name: "iPad8,11", model: "A2089, A2229 (WiFi)", weight: 641},
+            {id: 2, name: "iPad8,12", model: "A2232, A2233 (WiFi + 蜂窝)", weight: 643},
         ],
         cameras: {
             front: {
@@ -705,10 +705,10 @@ export const iPadPro = [
         pencil: ['Apple Pencil 2'],
         unlockMethods: ['面容解锁'],
         models: [
-            {id: 1, name: "iPad13,4", model: "A2377 WiFi", weight: 466},
-            {id: 2, name: "iPad13,5", model: "A2459 WiFi + 蜂窝", weight: 470},
-            {id: 3, name: "iPad13,6", model: "A2301 WiFi + 蜂窝 + mmWave", weight: 470},
-            {id: 4, name: "iPad13,7", model: "A2460 WiFi + 蜂窝,国行", weight: 470},
+            {id: 1, name: "iPad13,4", model: "A2301, A2377 (WiFi)", weight: 465},
+            {id: 2, name: "iPad13,5", model: "A2459 (WiFi + 蜂窝)", weight: 468},
+            {id: 3, name: "iPad13,6", model: "A2301 (WiFi + 蜂窝 + mmWave)", weight: 468},
+            {id: 4, name: "iPad13,7", model: "A2460 (WiFi + 蜂窝, 国行)", weight: 468},
         ],
         cameras: {
             front: {
@@ -799,10 +799,10 @@ export const iPadPro = [
         pencil: ['Apple Pencil 2'],
         unlockMethods: ['面容解锁'],
         models: [
-            {id: 1, name: "iPad13,8", model: "A2378 WiFi", weight: 682},
-            {id: 2, name: "iPad13,9", model: "A2461 WiFi + 蜂窝", weight: 685},
-            {id: 3, name: "iPad13,10", model: "A2379 WiFi + 蜂窝 + mmWave", weight: 685},
-            {id: 4, name: "iPad13,11", model: "A2462 WiFi + 蜂窝,国行", weight: 685},
+            {id: 1, name: "iPad13,8", model: "A2378 (WiFi)", weight: 682},
+            {id: 2, name: "iPad13,9", model: "A2379, A2461 (WiFi + 蜂窝)", weight: 684},
+            {id: 3, name: "iPad13,10", model: "A2379 (WiFi + 蜂窝 + mmWave)", weight: 684},
+            {id: 4, name: "iPad13,11", model: "A2462 (WiFi + 蜂窝, 国行)", weight: 684},
         ],
         cameras: {
             front: {
@@ -894,8 +894,8 @@ export const iPadPro = [
         pencil: ['Apple Pencil 2'],
         unlockMethods: ['面容解锁'],
         models: [
-            {id: 1, name: "iPad14,3", model: "WiFi", weight: 466},
-            {id: 2, name: "iPad14,4", model: "WiFi + 蜂窝", weight: 468},
+            {id: 1, name: "iPad14,3", model: "A2435, A2759, A2761, A2762 (WiFi)", weight: 466},
+            {id: 2, name: "iPad14,4", model: "A2435, A2759, A2761, A2762 (WiFi + 蜂窝)", weight: 470},
         ],
         cameras: {
             front: {
@@ -986,8 +986,8 @@ export const iPadPro = [
         pencil: ['Apple Pencil 2'],
         unlockMethods: ['面容解锁'],
         models: [
-            {id: 1, name: "iPad14,5", model: "WiFi", weight: 682},
-            {id: 2, name: "iPad14,6", model: "WiFi + 蜂窝", weight: 684},
+            {id: 1, name: "iPad14,5", model: "A2436, A2437, A2764, A2766 (WiFi)", weight: 682},
+            {id: 2, name: "iPad14,6", model: "A2436, A2437, A2764, A2766 (WiFi + 蜂窝)", weight: 685},
         ],
         cameras: {
             front: {
@@ -1077,8 +1077,8 @@ export const iPadPro = [
         pencil: ['Apple Pencil(USB-C)', 'Apple Pencil Pro'],
         unlockMethods: ['面容解锁'],
         models: [
-            {id: 1, name: "", model: "WiFi", weight: 444},
-            {id: 2, name: "", model: "WiFi + 蜂窝", weight: 446},
+            {id: 1, name: "iPad16,3", model: "A2036, A2837, A3006 (WiFi)", weight: 444},
+            {id: 2, name: "iPad16,4", model: "A2036, A2837, A3006 (WiFi + 蜂窝)", weight: 446},
         ],
         cameras: {
             front: {
@@ -1156,8 +1156,8 @@ export const iPadPro = [
         pencil: ['Apple Pencil(USB-C)', 'Apple Pencil Pro'],
         unlockMethods: ['面容解锁'],
         models: [
-            {id: 1, name: "", model: "WiFi", weight: 579},
-            {id: 2, name: "", model: "WiFi + 蜂窝", weight: 582},
+            {id: 1, name: "iPad16,5", model: "A2925, A2926, A3007 (WiFi)", weight: 579},
+            {id: 2, name: "iPad16,6", model: "A2925, A2926, A3007 (WiFi + 蜂窝)", weight: 582},
         ],
         cameras: {
             front: {
@@ -1237,8 +1237,8 @@ export const iPadPro = [
         pencil: ['Apple Pencil(USB-C)', 'Apple Pencil Pro'],
         unlockMethods: ['面容解锁'],
         models: [
-            {id: 1, name: "", model: "WiFi", weight: 444},
-            {id: 2, name: "", model: "WiFi + 蜂窝", weight: 446},
+            {id: 1, name: "iPad17,1", model: "A3357, A3358, A3359 (WiFi)", weight: 444},
+            {id: 2, name: "iPad17,2", model: "A3357, A3358, A3359 (WiFi + 蜂窝)", weight: 448},
         ],
         sim: {
             type: 'eSIM',
@@ -1320,8 +1320,8 @@ export const iPadPro = [
         pencil: ['Apple Pencil(USB-C)', 'Apple Pencil Pro'],
         unlockMethods: ['面容解锁'],
         models: [
-            {id: 1, name: "", model: "WiFi", weight: 579},
-            {id: 2, name: "", model: "WiFi + 蜂窝", weight: 582},
+            {id: 1, name: "iPad17,3", model: "A3360, A3361, A3382 (WiFi)", weight: 579},
+            {id: 2, name: "iPad17,4", model: "A3360, A3361, A3382 (WiFi + 蜂窝)", weight: 582},
         ],
         sim: {
             type: 'eSIM',
@@ -1546,8 +1546,7 @@ export const iPadAir = [
         unlockMethods: ['指纹解锁'],
         models: [
             {id: 1, name: "iPad11,3", model: "A2152 (WiFi)", weight: 456},
-            {id: 2, name: "iPad11,4", model: "A2123, A2153 (WiFi + 蜂窝)", weight: 464},
-            {id: 3, name: "iPad11,4", model: "A2154 (WiFi + 蜂窝, 国行)", weight: 464},
+            {id: 2, name: "iPad11,4", model: "A2123, A2153, A2154 (WiFi + 蜂窝)", weight: 464},
         ],
         cameras: {
             front: {
@@ -1622,8 +1621,7 @@ export const iPadAir = [
         unlockMethods: ['指纹解锁'],
         models: [
             {id: 1, name: "iPad13,1", model: "A2316 (WiFi)", weight: 458},
-            {id: 2, name: "iPad13,2", model: "A2324, A2072(WiFi + 蜂窝)", weight: 460},
-            {id: 2, name: "iPad", model: "A2325 (WiFi + 蜂窝，国行)", weight: 460},
+            {id: 2, name: "iPad13,2", model: "A2072, A2324, A2325 (WiFi + 蜂窝)", weight: 460},
         ],
         cameras: {
             front: {
@@ -1700,9 +1698,8 @@ export const iPadAir = [
         pencil: ['Apple Pencil 2'],
         unlockMethods: ['指纹解锁'],
         models: [
-            {id: 1, name: "iPad13,16", model: "A2588 (WiFi)", weight: 458},
-            {id: 2, name: "iPad13,17", model: "A2589, A2072(WiFi + 蜂窝)", weight: 460},
-            {id: 2, name: "iPad13", model: "A2591 (WiFi + 蜂窝，国行)", weight: 460},
+            {id: 1, name: "iPad13,16", model: "A2588 (WiFi)", weight: 461},
+            {id: 2, name: "iPad13,17", model: "A2589, A2591 (WiFi + 蜂窝)", weight: 462},
         ],
         cameras: {
             front: {
@@ -1778,8 +1775,8 @@ export const iPadAir = [
         pencil: ['Apple Pencil(USB-C)', 'Apple Pencil Pro'],
         unlockMethods: ['指纹解锁'],
         models: [
-            {id: 1, name: "", model: "(WiFi)", weight: 462},
-            {id: 2, name: "", model: "(WiFi + 蜂窝)", weight: 462},
+            {id: 1, name: "iPad14,8", model: "A2902 (WiFi)", weight: 462},
+            {id: 2, name: "iPad14,9", model: "A2903, A2904 (WiFi + 蜂窝)", weight: 462},
         ],
         cameras: {
             front: {
@@ -1855,8 +1852,8 @@ export const iPadAir = [
         pencil: ['Apple Pencil(USB-C)', 'Apple Pencil Pro'],
         unlockMethods: ['指纹解锁'],
         models: [
-            {id: 1, name: "", model: "(WiFi)", weight: 617},
-            {id: 2, name: "", model: "(WiFi + 蜂窝)", weight: 618},
+            {id: 1, name: "iPad14,10", model: "A2898 (WiFi)", weight: 617},
+            {id: 2, name: "iPad14,11", model: "A2899, A2900 (WiFi + 蜂窝)", weight: 618},
         ],
         cameras: {
             front: {
@@ -1888,7 +1885,7 @@ export const iPadAir = [
         colors: ['蓝色', '紫色', '星光色', '深空灰色'],
         active: false,
         isPreview: false,
-        isNew: true,
+        isNew: false,
         screen:
             {
                 size: "11\"",
@@ -1919,7 +1916,7 @@ export const iPadAir = [
             core: "9"
         },
         memory: [
-            {name: "", size: "", type: ""},
+            {name: "", size: "12", type: "LPDDR5X"},
         ],
         storage: [128, 256, 512, 1024],
         price: "",
@@ -1933,8 +1930,8 @@ export const iPadAir = [
         pencil: ['Apple Pencil(USB-C)', 'Apple Pencil Pro'],
         unlockMethods: ['指纹解锁'],
         models: [
-            {id: 1, name: "", model: "(WiFi)", weight: 460},
-            {id: 2, name: "", model: "(WiFi + 蜂窝)", weight: 460},
+            {id: 1, name: "iPad15,3", model: "A3266 (WiFi)", weight: 460},
+            {id: 2, name: "iPad15,4", model: "A3267, A3270 (WiFi + 蜂窝)", weight: 460},
         ],
         cameras: {
             front: {
@@ -1966,7 +1963,7 @@ export const iPadAir = [
         colors: ['蓝色', '紫色', '星光色', '深空灰色'],
         active: false,
         isPreview: false,
-        isNew: true,
+        isNew: false,
         screen:
             {
                 size: "13\"",
@@ -1997,7 +1994,7 @@ export const iPadAir = [
             core: "9"
         },
         memory: [
-            {name: "", size: "", type: ""},
+            {name: "", size: "12", type: "LPDDR5X"},
         ],
         storage: [128, 256, 512, 1024],
         price: "",
@@ -2011,8 +2008,8 @@ export const iPadAir = [
         pencil: ['Apple Pencil(USB-C)', 'Apple Pencil Pro'],
         unlockMethods: ['指纹解锁'],
         models: [
-            {id: 1, name: "", model: "(WiFi)", weight: 616},
-            {id: 2, name: "", model: "(WiFi + 蜂窝)", weight: 617},
+            {id: 1, name: "iPad15,5", model: "A3268 (WiFi)", weight: 616},
+            {id: 2, name: "iPad15,6", model: "A3269, A3271 (WiFi + 蜂窝)", weight: 617},
         ],
         cameras: {
             front: {
@@ -2037,6 +2034,162 @@ export const iPadAir = [
             ]
         },
         release: "2025-03-12"
+    },
+    {
+        name: "iPad Air 8 11",
+        name_short: "Air 8",
+        colors: ['蓝色', '紫色', '星光色', '深空灰色'],
+        active: false,
+        isPreview: false,
+        isNew: true,
+        screen:
+            {
+                size: "11\"",
+                width: 2360,
+                height: 1640,
+                density: 264,
+                refreshRate: 60,
+                brightness: 500, // nit
+                colorP3: true,
+                trueTone: true,
+            },
+        width: 247.6,
+        height: 178.5,
+        thickness: 6.1,
+        os: {
+            init: "iPadOS 26",
+            last: lastOS
+        },
+        geekbenchScore: 0,
+        cpu: [{
+            name: '',
+            model: 'M4',
+            rate: '4.40',
+            core: 8
+        }],
+        gpu: {
+            model: "Apple",
+            core: "10"
+        },
+        memory: [
+            {name: "", size: "12", type: ""},
+        ],
+        storage: [128, 256, 512, 1024],
+        price: "",
+        battery: {
+            capacity: 0, // 容量 mah
+            capacityWH: 28.93, // wh
+            voltage: 0 // 电压 v
+        },
+        mechanicalKeys: ['开关机键','音量增减键'],
+        connector: ['USB-C', '智能接点', '磁力接点'],
+        pencil: ['Apple Pencil(USB-C)', 'Apple Pencil Pro'],
+        unlockMethods: ['指纹解锁'],
+        models: [
+            {id: 1, name: "iPad16,8", model: "A3459 (WiFi)", weight: 464},
+            {id: 2, name: "iPad16,9", model: "A3460, A3463 (WiFi + 蜂窝)", weight: 465},
+        ],
+        cameras: {
+            front: {
+                pixelCount: '1200万, ƒ/2.4',
+                dimension: [
+                    {size: '1080p', fps: []},
+                ],
+                rate: '',
+                zoomRate: '',
+                hdr: true
+            },
+            back: [
+                {
+                    name: '默认',
+                    pixelCount: '1200万, ƒ/1.8',
+                    dimension: [
+                        {size: '1080p', fps: [30]},
+                    ],
+                    zoomRate: '5',
+                    hdr: true
+                },
+            ]
+        },
+        release: "2026-03-04"
+    },
+    {
+        name: "iPad Air 8 13",
+        name_short: "Air 8",
+        colors: ['蓝色', '紫色', '星光色', '深空灰色'],
+        active: false,
+        isPreview: false,
+        isNew: true,
+        screen:
+            {
+                size: "13\"",
+                width: 2732,
+                height: 2048,
+                density: 264,
+                refreshRate: 60,
+                brightness: 600, // nit
+                colorP3: true,
+                trueTone: true,
+            },
+        width: 280.6,
+        height: 214.9,
+        thickness: 6.1,
+        os: {
+            init: "iPadOS 26",
+            last: lastOS
+        },
+        geekbenchScore: 0,
+        cpu: [{
+            name: '',
+            model: 'M4',
+            rate: '4.40',
+            core: 8
+        }],
+        gpu: {
+            model: "Apple",
+            core: "10"
+        },
+        memory: [
+            {name: "", size: "12", type: ""},
+        ],
+        storage: [128, 256, 512, 1024],
+        price: "",
+        battery: {
+            capacity: 0, // 容量 mah
+            capacityWH: 36.59, // wh
+            voltage: 0 // 电压 v
+        },
+        mechanicalKeys: ['开关机键','音量增减键'],
+        connector: ['USB-C', '智能接点', '磁力接点'],
+        pencil: ['Apple Pencil(USB-C)', 'Apple Pencil Pro'],
+        unlockMethods: ['指纹解锁'],
+        models: [
+            {id: 1, name: "iPad16,10", model: "A3461 (WiFi)", weight: 616},
+            {id: 2, name: "iPad16,11", model: "A3462, A3464 (WiFi + 蜂窝)", weight: 617},
+        ],
+        cameras: {
+            front: {
+                pixelCount: '1200万, ƒ/2.4',
+                dimension: [
+                    {size: '1080p', fps: []},
+                ],
+                rate: '',
+                zoomRate: '',
+                hdr: true
+            },
+            back: [
+                {
+                    name: '默认',
+                    pixelCount: '1200万, ƒ/1.8',
+                    dimension: [
+                        {size: '1080p', fps: [30]},
+                    ],
+                    zoomRate: '5',
+                    hdr: true
+                },
+            ]
+        },
+        release: "2026-03-04"
     },
 ]
 export const iPadMini = [

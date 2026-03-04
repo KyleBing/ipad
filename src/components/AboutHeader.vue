@@ -51,7 +51,7 @@
           更新：<a
             class="link"
             target="_blank"
-            href="https://en.wikipedia.org/wiki/iPad"
+            href="https://en.wikipedia.org/wiki/List_of_iPad_models"
             >{{ ipadStore.dateEnd }}</a
           >
         </p>
