@@ -21,6 +21,7 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.0",
     "archiver": "^7.0.1",
+    "vite-plugin-zip-pack": "^1.2.4",
     "sass": "^1.69.0",
     "typescript": "^5.9.3",
     "vite": "^5.0.0",
