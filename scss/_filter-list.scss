@@ -3,9 +3,9 @@
 $border-bottom-color: #ccc;
 
 .filter-list {
-    padding: 10px 30px 5px;
+    padding: 20px 30px 30px;
     background-color: #eee;
-    gap: 60px;
+    gap: 40px;
     display: flex;
     flex-flow: row nowrap;
     align-items: flex-start;
@@ -18,6 +18,7 @@ $border-bottom-color: #ccc;
         font-size: 16px;
         padding: 3px 5px;
         font-weight: bold;
+        margin-bottom: 5px;
     }
 }
 
@@ -117,6 +118,20 @@ $border-bottom-color: #ccc;
     align-items: center;
     justify-content: center;
     margin-left: 50px;
+}
+
+@media (max-width: 1160px) and (min-width: 768px) {
+    .filter-list {
+        gap: 10px;
+    }
+
+    .ipad-tag-wrapper {
+        .ipad-tag {
+            .release-date{
+                display: none;
+            }
+        }
+    }
 }
 
 

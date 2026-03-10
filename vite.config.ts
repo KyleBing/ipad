@@ -30,6 +30,7 @@ export default defineConfig({
     },
   },
   server: {
+    port: 1025,
     proxy: {
       '/portal': {
         target: 'http://kylebing.cn',

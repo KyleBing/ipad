@@ -35,7 +35,7 @@ $text-colors: (
         "red": $red,
         "magenta": $magenta,
         "gray": $gray,
-        "light-gray": color.adjust($gray, $lightness: 10%, $space: hsl),
+        "light-gray": color.adjust($gray, $lightness: 10%),
 );
 
 @each $name, $color in $text-colors {

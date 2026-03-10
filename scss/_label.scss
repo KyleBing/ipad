@@ -8,14 +8,14 @@ $dot-width: 20px; // 新机型标记的大小
   font-size: $fz-big;
   font-weight: bold;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   border-right: 1px solid #ccc;
   padding-right: 10px;
   .model {
     font-family: "Galvji";
     font-weight: bold;
-    margin-right: 10px;
+    margin-right: 12px;
   }
   .size{
     font-family: "Galvji";

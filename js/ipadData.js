@@ -4,7 +4,7 @@
  *****************************/
 
 export const lastOS = "最新"
-export const lastModifyDate = '2026.03.04' // 格式： 2023.03.12
+export const lastModifyDate = '2026.03.10' // 格式： 2023.03.12
 
 export const iPadPro = [
     // iPad pro 1 generation
@@ -1212,7 +1212,7 @@ export const iPadPro = [
             init: "iPadOS 26",
             last: lastOS
         },
-        geekbenchScore: 0,
+        geekbenchScore: 15531,
         cpu: [
             {name: "", model: 'M5', rate: '', core: '9'},
             {name: "≥ 1T", model: 'M5', rate: '', core: '10'},
@@ -1295,7 +1295,7 @@ export const iPadPro = [
             init: "iPadOS 26",
             last: lastOS
         },
-        geekbenchScore: 0,
+        geekbenchScore: 15679,
         cpu: [
             {name: "", model: 'M5', rate: '', core: '9'},
             {name: "≥ 1T", model: 'M5', rate: '', core: '10'},
@@ -1904,7 +1904,7 @@ export const iPadAir = [
             init: "iPadOS 18.3.1",
             last: lastOS
         },
-        geekbenchScore: 0,
+        geekbenchScore: 11679,
         cpu: [{
             name: '',
             model: 'M3',
@@ -1982,7 +1982,7 @@ export const iPadAir = [
             init: "iPadOS 18.3.1",
             last: lastOS
         },
-        geekbenchScore: 0,
+        geekbenchScore: 11669,
         cpu: [{
             name: '',
             model: 'M3',

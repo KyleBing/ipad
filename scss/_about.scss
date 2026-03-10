@@ -88,6 +88,9 @@
       margin-bottom: 0;
     }
   }
+  @media (max-width: 1160px) and (min-width: 768px){
+    display: none;
+  }
   @media (max-width: 768px){
     padding: 15px 20px;
     @include border-radius(5px);
