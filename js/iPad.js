@@ -1189,6 +1189,7 @@ const iPadPro = [
     {
         name: "iPad Pro 8 11",
         name_short: "Pro 8",
+        colors: ['银色', '深空黑色'],
         active: false,
         isPreview: false,
         isNew: true,
@@ -1222,8 +1223,8 @@ const iPadPro = [
             core: '10'
         },
         memory: [
-            {name: "", size: "8", type: "LPDDR5"},
-            {name: "≥ 1T", size: "16", type: "LPDDR5"},
+            {name: "", size: "12", type: "LPDDR5X"}, // 256/512GB 是 12GB
+            {name: "≥ 1T", size: "16", type: "LPDDR5X"}
         ],
         storage: ['256', '512', '1024', '2048'],
         price: "",
@@ -1267,11 +1268,12 @@ const iPadPro = [
                 }
             ]
         },
-        release: "2025-10-17"
+        release: "2025-10-22"
     },
     {
         name: "iPad Pro 8 13",
         name_short: "Pro 8",
+        colors: ['银色', '深空黑色'],
         active: false,
         isPreview: false,
         isNew: true,
@@ -1305,8 +1307,8 @@ const iPadPro = [
             core: '10'
         },
         memory: [
-            {name: "", size: "8", type: "LPDDR5"},
-            {name: "≥ 1T", size: "16", type: "LPDDR5"},
+            {name: "", size: "12", type: "LPDDR5X"}, // 256/512GB 是 12GB
+            {name: "≥ 1T", size: "16", type: "LPDDR5X"}
         ],
         storage: ['256', '512', '1024', '2048'],
         price: "",
@@ -1350,7 +1352,7 @@ const iPadPro = [
                 },
             ]
         },
-        release: "2025-10-17"
+        release: "2025-10-22"
     },
 ]
 const iPadAir = [
@@ -1888,7 +1890,7 @@ const iPadAir = [
         colors: ['蓝色', '紫色', '星光色', '深空灰色'],
         active: false,
         isPreview: false,
-        isNew: true,
+        isNew: false,
         screen:
             {
                 size: "11\"",
@@ -1966,7 +1968,7 @@ const iPadAir = [
         colors: ['蓝色', '紫色', '星光色', '深空灰色'],
         active: false,
         isPreview: false,
-        isNew: true,
+        isNew: false,
         screen:
             {
                 size: "13\"",
@@ -2037,6 +2039,165 @@ const iPadAir = [
             ]
         },
         release: "2025-03-12"
+    },
+    // 2026 M4 iPad Air，官方尺寸和 M3 一代几乎一样，内存升到 12GB
+    {
+        name: "iPad Air 8 11",
+        name_short: "Air 8 11",
+        colors: ['蓝色', '紫色', '星光色', '深空灰色'],
+        active: false,
+        isPreview: false,
+        isNew: true,
+        screen:
+            {
+                size: "11\"",
+                width: 2360,
+                height: 1640,
+                density: 264,
+                refreshRate: 60,
+                brightness: 500, // nit
+                colorP3: true,
+                trueTone: true,
+                material: 'Liquid Retina',
+            },
+        width: 247.6,
+        height: 178.5,
+        thickness: 6.1,
+        os: {
+            init: "iPadOS 26.3",
+            last: lastOS
+        },
+        geekbenchScore: 0,
+        cpu: [{
+            name: '',
+            model: 'M4',
+            rate: '4.1',
+            core: 8
+        }],
+        gpu: {
+            model: "Apple",
+            core: "9"
+        },
+        memory: [
+            {name: "", size: "12", type: "LPDDR5X"},
+        ],
+        storage: [128, 256, 512, 1024],
+        price: "",
+        battery: {
+            capacity: 0, // 容量 mah
+            capacityWH: 28.93, // wh
+            voltage: 0 // 电压 v
+        },
+        mechanicalKeys: ['开关机键','音量增减键'],
+        connector: ['USB-C', '智能接点', '磁力接点'],
+        pencil: ['Apple Pencil(USB-C)', 'Apple Pencil Pro'],
+        unlockMethods: ['指纹解锁'],
+        models: [
+            {id: 1, name: "", model: "(WiFi)", weight: 464},
+            {id: 2, name: "", model: "(WiFi + 蜂窝)", weight: 465},
+        ],
+        cameras: {
+            front: {
+                pixelCount: '1200万, ƒ/2.0',
+                dimension: [
+                    {size: '1080p', fps: []},
+                ],
+                rate: '',
+                zoomRate: '',
+                hdr: true
+            },
+            back: [
+                {
+                    name: '默认',
+                    pixelCount: '1200万, ƒ/1.8',
+                    dimension: [
+                        {size: '1080p', fps: [30]},
+                    ],
+                    zoomRate: '5',
+                    hdr: true
+                },
+            ]
+        },
+        release: "2026-03-11"
+    },
+    {
+        name: "iPad Air 8 13",
+        name_short: "Air 8 13",
+        colors: ['蓝色', '紫色', '星光色', '深空灰色'],
+        active: false,
+        isPreview: false,
+        isNew: true,
+        screen:
+            {
+                size: "13\"",
+                width: 2732,
+                height: 2048,
+                density: 264,
+                refreshRate: 60,
+                brightness: 600, // nit
+                colorP3: true,
+                trueTone: true,
+                material: 'Liquid Retina',
+            },
+        width: 280.6,
+        height: 214.9,
+        thickness: 6.1,
+        os: {
+            init: "iPadOS 26.3",
+            last: lastOS
+        },
+        geekbenchScore: 0,
+        cpu: [{
+            name: '',
+            model: 'M4',
+            rate: '4.1',
+            core: 8
+        }],
+        gpu: {
+            model: "Apple",
+            core: "9"
+        },
+        memory: [
+            {name: "", size: "12", type: "LPDDR5X"},
+        ],
+        storage: [128, 256, 512, 1024],
+        price: "",
+        battery: {
+            capacity: 0, // 容量 mah
+            capacityWH: 36.59, // wh
+            voltage: 0 // 电压 v
+        },
+        mechanicalKeys: ['开关机键','音量增减键'],
+        connector: ['USB-C', '智能接点', '磁力接点'],
+        pencil: ['Apple Pencil(USB-C)', 'Apple Pencil Pro'],
+        unlockMethods: ['指纹解锁'],
+        models: [
+            {id: 1, name: "", model: "(WiFi)", weight: 616},
+            {id: 2, name: "", model: "(WiFi + 蜂窝)", weight: 617},
+        ],
+        cameras: {
+            front: {
+                pixelCount: '1200万, ƒ/2.0',
+                dimension: [
+                    {size: '1080p', fps: []},
+                ],
+                rate: '',
+                zoomRate: '',
+                hdr: true
+            },
+            back: [
+                {
+                    name: '默认',
+                    pixelCount: '1200万, ƒ/1.8',
+                    dimension: [
+                        {size: '1080p', fps: [30]},
+                    ],
+                    zoomRate: '5',
+                    hdr: true
+                },
+            ]
+        },
+        release: "2026-03-11"
     },
 ]
 const iPadMini = [
@@ -2564,6 +2725,84 @@ const iPadMini = [
             ]
         },
         release: "2024-10-15"
+    },
+    // 2026 OLED iPad mini，A20 Pro；128/256GB 是 5 核 CPU，512GB 是 6 核
+    {
+        name: "iPad Mini 8",
+        name_short: "Mini 8",
+        colors: ['午夜色', '星光色'],
+        active: false,
+        isPreview: false,
+        isNew: true,
+        screen:
+            {
+                size: "8.5\"",
+                width: 2316,
+                height: 1512,
+                density: 326,
+                refreshRate: 60,
+                brightness: 600, // nit
+                colorP3: true,
+                trueTone: true,
+                material: 'OLED',
+                xdr: true,
+                xdrRange: [600, 1200],
+            },
+        width: 195.3,
+        height: 132.6,
+        thickness: 5.4,
+        os: {
+            init: "iPadOS 27",
+            last: lastOS
+        },
+        geekbenchScore: 0,
+        cpu: [
+            {name: '128/256GB', model: 'A20 Pro', rate: '4.93', core: 5},
+            {name: '512GB', model: 'A20 Pro', rate: '4.93', core: 6}
+        ],
+        gpu: {
+            model: "Apple",
+            core: 7
+        },
+        memory: [
+            {name: "", size: "12", type: "LPDDR5X"},
+        ],
+        storage: [128, 256, 512],
+        price: "",
+        battery: {
+            capacity: 4900, // 容量 mah
+            capacityWH: 18.9, // wh
+            voltage: 0 // 电压 v
+        },
+        mechanicalKeys: ['开关机键','音量增减键'],
+        connector: ['USB-C', '磁力接点'],
+        pencil: ['Apple Pencil(USB-C)', 'Apple Pencil Pro'],
+        unlockMethods: ['指纹解锁'],
+        models: [
+            {id: 1, name: "", model: "(WiFi)", weight: 255},
+            {id: 2, name: "", model: "(WiFi + 蜂窝)", weight: 263},
+        ],
+        cameras: {
+            front: {
+                pixelCount: '1200万 ƒ/2.0',
+                dimension: [
+                    {size: '1080p', fps: [60]},
+                ],
+                zoomRate: '',
+                hdr: true
+            },
+            back: [
+                {
+                    name: '默认',
+                    pixelCount: '1200万, ƒ/1.8',
+                    dimension: [
+                        {size: '4k', fps: [60]},
+                    ],
+                    zoomRate: '5',
+                    hdr: true},
+            ]
+        },
+        release: "2026-11-06"
     },
 ]
 const iPad = [
